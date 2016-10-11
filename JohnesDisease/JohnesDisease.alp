@@ -153,7 +153,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[100]]></Code>
+							<Code><![CDATA[1000]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1476136317565</Id>
@@ -452,6 +452,7 @@
 				<Variable Class="Parameter">
 					<Id>1476135583796</Id>
 					<Name><![CDATA[NotPregnantTime]]></Name>
+					<Description><![CDATA[refers to the general time between pregancys, 1-2 months for conception and 1 month for post pregnancy whatnot.]]></Description>
 					<X>260</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -464,7 +465,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[2
+							<Code><![CDATA[3
 ]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</DefaultValue>
@@ -596,10 +597,10 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Name><![CDATA[calfGrowsUp]]></Name>
 					<Description><![CDATA[calves transition to the not pregnant state]]></Description>
 					<X>90</X><Y>110</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
@@ -627,10 +628,10 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Name><![CDATA[timeoutToPossiblePregnancy]]></Name>
 					<Description><![CDATA[Reflects the approximate amount of time needed for a female cow to become pregnant.]]></Description>
 					<X>90</X><Y>190</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
@@ -655,13 +656,13 @@ newCow.jumpTo(x, y);]]></ExitAction>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476134754302</Id>
-					<Name><![CDATA[transition2]]></Name>
+					<Name><![CDATA[youArePregnant]]></Name>
 					<Description><![CDATA[Cows must be Female and pass the 90% chance to become pregnant]]></Description>
 					<X>90</X><Y>260</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
@@ -690,13 +691,14 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Id>1476134787620</Id>
 					<Name><![CDATA[transitionToTimeout]]></Name>
 					<X>102</X><Y>250</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Label><X>173</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>138</X><Y>-60</Y></Point>
+						<Point><X>166</X><Y>0</Y></Point>
+						<Point><X>166</X><Y>-60</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476135402133" Trigger="timeout">
@@ -751,10 +753,10 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Name><![CDATA[backToNotPregnant]]></Name>
 					<Description><![CDATA[After a cow has a calf it goes back to being not pregnant]]></Description>
 					<X>50</X><Y>300</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Label><X>-115</X><Y>-65</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>-110</Y></Point>
