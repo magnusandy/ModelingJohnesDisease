@@ -254,6 +254,12 @@
 						<Expression><![CDATA[]]></Expression>
 						<Condition><![CDATA[!item.isFemale]]></Condition>
 					</StatisticsItem>
+					<StatisticsItem>
+						<Name><![CDATA[cowsStat]]></Name>
+						<Type>count</Type>
+						<Expression><![CDATA[]]></Expression>
+						<Condition><![CDATA[]]></Condition>
+					</StatisticsItem>
 					<InEnvironment>true</InEnvironment>	
 					<InitialSpeedCode Class="CodeUnitValue">
 						<Code><![CDATA[10]]></Code>
@@ -387,6 +393,15 @@
 					<Expression><![CDATA[my_dataset1]]></Expression>
 					<Color>-12799119</Color>
 					<Expression2><![CDATA[cows.females()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[averagesize]]></Title>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-9807155</Color>
+					<Expression2><![CDATA[cows.size()]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
