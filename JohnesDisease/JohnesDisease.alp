@@ -1174,7 +1174,7 @@ newCow.jumpTo(x, y);]]></ExitAction>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476648694794" Target="1476648740556" Trigger="timeout">
+					<Properties Source="1476648694794" Target="1476648740556" Trigger="rate">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
