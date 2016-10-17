@@ -24,6 +24,18 @@
 				<Name><![CDATA[Female]]></Name>
 			</Option>
 		</OptionList>
+		<OptionList>
+			<Id>1476724512256</Id>
+			<Name><![CDATA[MessageList]]></Name>
+			<Option>
+				<Id>1476724526432</Id>
+				<Name><![CDATA[Culling]]></Name>
+			</Option>
+			<Option>
+				<Id>1476724530894</Id>
+				<Name><![CDATA[ExposureFromMother]]></Name>
+			</Option>
+		</OptionList>
 	</OptionLists>
 	<ActiveObjectClasses>
 		<!--   =========   Active Object Class   ========  -->
@@ -258,10 +270,10 @@
 						<Condition><![CDATA[!item.isFemale]]></Condition>
 					</StatisticsItem>
 					<StatisticsItem>
-						<Name><![CDATA[cowsStat]]></Name>
-						<Type>count</Type>
-						<Expression><![CDATA[]]></Expression>
-						<Condition><![CDATA[]]></Condition>
+						<Name><![CDATA[prevelance]]></Name>
+						<Type>average</Type>
+						<Expression><![CDATA[0.1//calculate prevelance]]></Expression>
+						<Condition><![CDATA[true]]></Condition>
 					</StatisticsItem>
 					<InEnvironment>true</InEnvironment>	
 					<InitialSpeedCode Class="CodeUnitValue">
@@ -530,7 +542,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[Color]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[lime]]></Code>
+							<Code><![CDATA[yellow]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -595,6 +607,36 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1476724586274</Id>
+					<Name><![CDATA[child]]></Name>
+					<X>500</X><Y>-70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Cow]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[null]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1476724733626</Id>
+					<Name><![CDATA[mother]]></Name>
+					<X>500</X><Y>-50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Cow]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[null]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476135491102</Id>
 					<Name><![CDATA[CalfTime]]></Name>
@@ -611,7 +653,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[13]]></Code>
+							<Code><![CDATA[7]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -639,7 +681,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[2]]></Code>
+							<Code><![CDATA[3]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -763,14 +805,15 @@
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1476134180159</Id>
-					<Name><![CDATA[Calf]]></Name>
+					<Name><![CDATA[GrazingCalf]]></Name>
 					<Description><![CDATA[First stage of a cows life, entry sets the birth time of the ow]]></Description>
-					<X>40</X><Y>80</Y>
+					<X>60</X><Y>270</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[agentColor = lime]]></EntryAction>
 						<FillColor>-16711936</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -778,7 +821,7 @@
 					<Id>1476134180161</Id>
 					<Name><![CDATA[NotPregnant]]></Name>
 					<Description><![CDATA[Interm stage before pregnancy]]></Description>
-					<X>40</X><Y>160</Y>
+					<X>60</X><Y>370</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -792,7 +835,7 @@
 					<Id>1476134694229</Id>
 					<Name><![CDATA[Pregnant]]></Name>
 					<Description><![CDATA[female cows will be in this stage for 9 months before creating a new calf.]]></Description>
-					<X>40</X><Y>300</Y>
+					<X>60</X><Y>490</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -802,7 +845,10 @@
 						<ExitAction><![CDATA[Cow newCow = main.add_cows(); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
 double x = Math.random()*main.spaceWidth();
 double y = Math.random()*main.spaceHeight();
-newCow.jumpTo(x, y);]]></ExitAction>
+newCow.jumpTo(x, y);
+child = newCow;
+newCow.mother = this;
+]]></ExitAction>
 						<FillColor>-16776961</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -810,42 +856,13 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Id>1476134723765</Id>
 					<Name><![CDATA[gettingPregnantBranch]]></Name>
 					<Description><![CDATA[Branching possibility of cows getting pregnant or not, female cows have a 90% chance of getting pregnant and transitioning to Pregnant state.]]></Description>
-					<X>90</X><Y>250</Y>
+					<X>110</X><Y>440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Properties>	
 					</Properties>	
-				</StatechartElement>
-				<StatechartElement Class="State" ParentState="ROOT_NODE">
-					<Id>1476135402133</Id>
-					<Name><![CDATA[PregnancyTimeout]]></Name>
-					<Description><![CDATA[This state is where male cows and cows that do not get pregnant will wait till next year.]]></Description>
-					<X>190</X><Y>160</Y>
-					<Label><X>0</X><Y>10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties Width="120" Height="30">
-						<EntryAction><![CDATA[agentColor = red;]]></EntryAction>
-						<FillColor>-65536</FillColor>
-					</Properties>
-				</StatechartElement>
-				<StatechartElement Class="State" ParentState="ROOT_NODE">
-					<Id>1476282165398</Id>
-					<Name><![CDATA[RemovalOfCows]]></Name>
-					<Description><![CDATA[This stage is where cows are sold, die or in general removed. the rate of removal is calcuated in removeCows based on the initial and current population]]></Description>
-					<X>200</X><Y>300</Y>
-					<Label><X>5</X><Y>15</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[agentColor = yellow;]]></EntryAction>
-						<ExitAction><![CDATA[removeCows()]]></ExitAction>
-						<FillColor/>
-					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1476648694794</Id>
@@ -874,11 +891,23 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
-					<Id>1476648772869</Id>
-					<Name><![CDATA[Infectious]]></Name>
+					<Id>1476721130594</Id>
+					<Name><![CDATA[Infective]]></Name>
+					<X>410</X><Y>230</Y>
+					<Label><X>15</X><Y>15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="170" Height="180">
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="Infective" ParentStateId="1476721130594">
+					<Id>1476721184187</Id>
+					<Name><![CDATA[SubClinical]]></Name>
 					<Description><![CDATA[This stage is the second stage of the disease, the MAP has multiplied enough to start being spread, the cow spreads the disease through manure and bodily fluids (to the calf if female).]]></Description>
-					<X>450</X><Y>230</Y>
-					<Label><X>20</X><Y>15</Y></Label>
+					<X>450</X><Y>270</Y>
+					<Label><X>17</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -886,11 +915,11 @@ newCow.jumpTo(x, y);]]></ExitAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
-				<StatechartElement Class="State" ParentState="ROOT_NODE">
-					<Id>1476648802900</Id>
-					<Name><![CDATA[Diseased]]></Name>
+				<StatechartElement Class="State" ParentState="Infective" ParentStateId="1476721130594">
+					<Id>1476721184189</Id>
+					<Name><![CDATA[Clinical]]></Name>
 					<Description><![CDATA[This is the Clinical stage of the disease, spreading of MAP is more rapid at this stage, the cows begins to show physical symptoms such as diarreha and weightloss.]]></Description>
-					<X>450</X><Y>310</Y>
+					<X>450</X><Y>330</Y>
 					<Label><X>20</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -900,10 +929,10 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="FinalState" ParentState="ROOT_NODE">
-					<Id>1476648841563</Id>
+					<Id>1476721237689</Id>
 					<Name><![CDATA[Removed]]></Name>
 					<Description><![CDATA[Unfortunatly cows do no recover from Johnes, after a period of time they succumb and die.]]></Description>
-					<X>500</X><Y>390</Y>
+					<X>370</X><Y>460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -911,10 +940,56 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Properties>	
 					</Properties>	
 				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1476723764674</Id>
+					<Name><![CDATA[WeaningCalf]]></Name>
+					<X>60</X><Y>180</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1476724089202</Id>
+					<Name><![CDATA[Bulls]]></Name>
+					<X>-90</X><Y>330</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
+					<Id>1476724154821</Id>
+					<Name><![CDATA[branch]]></Name>
+					<X>110</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties>	
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
+					<Id>1476729847052</Id>
+					<Name><![CDATA[branch1]]></Name>
+					<X>110</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties>	
+					</Properties>	
+				</StatechartElement>
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1476134180163</Id>
 					<Name><![CDATA[PregnancyCycleStateChart]]></Name>
-					<X>90</X><Y>40</Y>
+					<X>110</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -923,24 +998,24 @@ newCow.jumpTo(x, y);]]></ExitAction>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
-					<Properties Target="1476134180159">
+					<Properties Target="1476723764674">
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476134400353</Id>
 					<Name><![CDATA[calfGrowsUp]]></Name>
 					<Description><![CDATA[calves transition to the not pregnant state]]></Description>
-					<X>90</X><Y>110</Y>
+					<X>110</X><Y>300</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>50</Y></Point>
+						<Point><X>0</X><Y>30</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476134180159" Target="1476134180161" Trigger="condition">
+					<Properties Source="1476134180159" Target="1476724154821" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[CalfTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -961,14 +1036,14 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Id>1476134728289</Id>
 					<Name><![CDATA[timeoutToPossiblePregnancy]]></Name>
 					<Description><![CDATA[Reflects the approximate amount of time needed for a female cow to become pregnant.]]></Description>
-					<X>90</X><Y>190</Y>
+					<X>110</X><Y>400</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>50</Y></Point>
+						<Point><X>0</X><Y>30</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476134723765" Trigger="timeout">
@@ -992,7 +1067,7 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Id>1476134754302</Id>
 					<Name><![CDATA[youArePregnant]]></Name>
 					<Description><![CDATA[Cows must be Female and pass the 90% chance to become pregnant as well as less than 3 years old]]></Description>
-					<X>90</X><Y>260</Y>
+					<X>110</X><Y>450</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1024,7 +1099,8 @@ newCow.jumpTo(x, y);]]></ExitAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476134787620</Id>
 					<Name><![CDATA[youAreNotPregnant]]></Name>
-					<X>102</X><Y>250</Y>
+					<Description><![CDATA[cows that don't get pregnant are removed]]></Description>
+					<X>122</X><Y>440</Y>
 					<Label><X>28</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1032,73 +1108,12 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>166</X><Y>0</Y></Point>
-						<Point><X>166</X><Y>-60</Y></Point>
+						<Point><X>240.22783728973496</X><Y>18.104350558471936</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476134723765" Target="1476135402133" Trigger="timeout">
+					<Properties Source="1476134723765" Target="1476721237689" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</Timeout>
-						<Condition><![CDATA[true]]></Condition>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
-						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
-						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
-						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
-					</Properties>	
-				</StatechartElement>
-				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
-					<Id>1476135459298</Id>
-					<Name><![CDATA[transition4]]></Name>
-					<X>290</X><Y>190</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>110</Y></Point>
-					</Points>
-					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476135402133" Target="1476282165398" Trigger="timeout">
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[PregnancyTime]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</Timeout>
-						<Condition><![CDATA[true]]></Condition>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
-						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
-						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
-						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
-					</Properties>	
-				</StatechartElement>
-				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
-					<Id>1476136079841</Id>
-					<Name><![CDATA[backToNotPregnant]]></Name>
-					<Description><![CDATA[After a cow has a calf it goes back to being not pregnant]]></Description>
-					<X>140</X><Y>320</Y>
-					<Label><X>0</X><Y>-30</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>0</Y></Point>
-					</Points>
-					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476134694229" Target="1476282165398" Trigger="timeout">
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[PregnancyTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -1116,7 +1131,7 @@ newCow.jumpTo(x, y);]]></ExitAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476278047562</Id>
 					<Name><![CDATA[transition2]]></Name>
-					<X>250</X><Y>330</Y>
+					<X>110</X><Y>520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1124,12 +1139,12 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>20</Y></Point>
-						<Point><X>-230</X><Y>20</Y></Point>
-						<Point><X>-230</X><Y>-150</Y></Point>
-						<Point><X>-210</X><Y>-150</Y></Point>
+						<Point><X>-70</X><Y>20</Y></Point>
+						<Point><X>-70</X><Y>-130</Y></Point>
+						<Point><X>-50</X><Y>-130</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476282165398" Target="1476134180161" Trigger="timeout">
+					<Properties Source="1476134694229" Target="1476134180161" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[PregnancyRecoveryTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -1204,7 +1219,37 @@ newCow.jumpTo(x, y);]]></ExitAction>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476648740556" Target="1476648772869" Trigger="timeout">
+					<Properties Source="1476648740556" Target="1476721130594" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="Infective" ParentStateId="1476721130594">
+					<Id>1476721184193</Id>
+					<Name><![CDATA[transition3]]></Name>
+					<X>500</X><Y>300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-1</X><Y>30</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476721184187" Target="1476721184189" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -1222,9 +1267,54 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
-					<Id>1476648792811</Id>
-					<Name><![CDATA[transition3]]></Name>
-					<X>500</X><Y>260</Y>
+					<Id>1476721237691</Id>
+					<Name><![CDATA[transition5]]></Name>
+					<X>490</X><Y>410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-112.61538461538464</X><Y>46.923076923076906</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476721130594" Target="1476721237689" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="InitialStatePointer" ParentState="Infective" ParentStateId="1476721130594">
+					<Id>1476721271161</Id>
+					<Name><![CDATA[initialState]]></Name>
+					<X>498</X><Y>250</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>20</Y></Point>
+					</Points>
+					<Properties Target="1476721184187">
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1476722350034</Id>
+					<Name><![CDATA[transition6]]></Name>
+					<X>520</X><Y>100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1234,7 +1324,194 @@ newCow.jumpTo(x, y);]]></ExitAction>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476648772869" Target="1476648802900" Trigger="timeout">
+					<Properties Source="1476648694794" Target="1476648740556" Trigger="message">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[satisfies]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true//message is infection from mum, and calf is in 6 months d]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1476723779597</Id>
+					<Name><![CDATA[transition7]]></Name>
+					<X>110</X><Y>210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>20</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476723764674" Target="1476729847052" Trigger="timeout">
+						<Action><![CDATA[if(mother != null)
+{
+	mother.child = null;
+}]]></Action>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[6]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1476723800967</Id>
+					<Name><![CDATA[transition8]]></Name>
+					<X>122</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>242.01540289299942</X><Y>214.69108321153175</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476729847052" Target="1476721237689" Trigger="condition">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[randomTrue(.6) && !isFemale]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>false</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1476724180235</Id>
+					<Name><![CDATA[transition4]]></Name>
+					<X>98</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-88</X><Y>10</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476724154821" Target="1476724089202" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[!isFemale]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>false</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1476724200103</Id>
+					<Name><![CDATA[transition9]]></Name>
+					<X>110</X><Y>350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>20</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476724154821" Target="1476134180161" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="Infective" ParentStateId="1476721130594">
+					<Id>1476724885701</Id>
+					<Name><![CDATA[transition10]]></Name>
+					<Description><![CDATA[somehow send messages to the  calf of the this mother cow]]></Description>
+					<X>560</X><Y>230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>70</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476721130594" Target="1476721130594" Trigger="rate">
+						<Action><![CDATA[//send message to calf, picked up in susceptible]]></Action>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[0.05]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="Susceptible" ParentStateId="1476648694794">
+					<Id>1476725376908</Id>
+					<Name><![CDATA[transition11]]></Name>
+					<Description><![CDATA[recalculate the prevelance]]></Description>
+					<X>460</X><Y>100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>-30</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476648694794" Target="1476648694794" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -1252,19 +1529,19 @@ newCow.jumpTo(x, y);]]></ExitAction>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
-					<Id>1476648856975</Id>
-					<Name><![CDATA[transition5]]></Name>
-					<X>500</X><Y>340</Y>
+					<Id>1476729873456</Id>
+					<Name><![CDATA[transition12]]></Name>
+					<X>110</X><Y>250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>42</Y></Point>
+						<Point><X>0</X><Y>20</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476648802900" Target="1476648841563" Trigger="timeout">
+					<Properties Source="1476729847052" Target="1476134180159" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
