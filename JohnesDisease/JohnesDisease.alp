@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -807,12 +807,12 @@
 					<Id>1476134180159</Id>
 					<Name><![CDATA[GrazingCalf]]></Name>
 					<Description><![CDATA[First stage of a cows life, entry sets the birth time of the ow]]></Description>
-					<X>60</X><Y>270</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<X>60</X><Y>230</Y>
+					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties Width="100" Height="30">
+					<Properties Width="130" Height="40">
 						<EntryAction><![CDATA[agentColor = lime]]></EntryAction>
 						<FillColor>-16711936</FillColor>
 					</Properties>
@@ -821,12 +821,12 @@
 					<Id>1476134180161</Id>
 					<Name><![CDATA[NotPregnant]]></Name>
 					<Description><![CDATA[Interm stage before pregnancy]]></Description>
-					<X>60</X><Y>370</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<X>60</X><Y>400</Y>
+					<Label><X>0</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties Width="100" Height="30">
+					<Properties Width="130" Height="40">
 						<EntryAction><![CDATA[agentColor = cyan;]]></EntryAction>
 						<FillColor>-16711681</FillColor>
 					</Properties>
@@ -835,12 +835,12 @@
 					<Id>1476134694229</Id>
 					<Name><![CDATA[Pregnant]]></Name>
 					<Description><![CDATA[female cows will be in this stage for 9 months before creating a new calf.]]></Description>
-					<X>60</X><Y>490</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<X>60</X><Y>570</Y>
+					<Label><X>25</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties Width="100" Height="30">
+					<Properties Width="140" Height="40">
 						<EntryAction><![CDATA[agentColor = blue;]]></EntryAction>
 						<ExitAction><![CDATA[Cow newCow = main.add_cows(); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
 double x = Math.random()*main.spaceWidth();
@@ -849,14 +849,14 @@ newCow.jumpTo(x, y);
 child = newCow;
 newCow.mother = this;
 ]]></ExitAction>
-						<FillColor>-16776961</FillColor>
+						<FillColor>-65281</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
 					<Id>1476134723765</Id>
 					<Name><![CDATA[gettingPregnantBranch]]></Name>
 					<Description><![CDATA[Branching possibility of cows getting pregnant or not, female cows have a 90% chance of getting pregnant and transitioning to Pregnant state.]]></Description>
-					<X>110</X><Y>440</Y>
+					<X>110</X><Y>510</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -932,7 +932,7 @@ newCow.mother = this;
 					<Id>1476721237689</Id>
 					<Name><![CDATA[Removed]]></Name>
 					<Description><![CDATA[Unfortunatly cows do no recover from Johnes, after a period of time they succumb and die.]]></Description>
-					<X>370</X><Y>460</Y>
+					<X>370</X><Y>510</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -943,31 +943,31 @@ newCow.mother = this;
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1476723764674</Id>
 					<Name><![CDATA[WeaningCalf]]></Name>
-					<X>60</X><Y>180</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<X>60</X><Y>60</Y>
+					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties Width="100" Height="30">
+					<Properties Width="130" Height="40">
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1476724089202</Id>
 					<Name><![CDATA[Bulls]]></Name>
-					<X>-90</X><Y>330</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<X>200</X><Y>330</Y>
+					<Label><X>35</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties Width="100" Height="30">
-						<FillColor/>
+					<Properties Width="120" Height="40">
+						<FillColor>-65536</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
 					<Id>1476724154821</Id>
 					<Name><![CDATA[branch]]></Name>
-					<X>110</X><Y>340</Y>
+					<X>110</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -978,7 +978,7 @@ newCow.mother = this;
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
 					<Id>1476729847052</Id>
 					<Name><![CDATA[branch1]]></Name>
-					<X>110</X><Y>240</Y>
+					<X>110</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -989,14 +989,14 @@ newCow.mother = this;
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1476134180163</Id>
 					<Name><![CDATA[PregnancyCycleStateChart]]></Name>
-					<X>110</X><Y>140</Y>
+					<X>110</X><Y>30</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>40</Y></Point>
+						<Point><X>0</X><Y>30</Y></Point>
 					</Points>
 					<Properties Target="1476723764674">
 					</Properties>	
@@ -1005,14 +1005,14 @@ newCow.mother = this;
 					<Id>1476134400353</Id>
 					<Name><![CDATA[calfGrowsUp]]></Name>
 					<Description><![CDATA[calves transition to the not pregnant state]]></Description>
-					<X>110</X><Y>300</Y>
+					<X>110</X><Y>270</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>30</Y></Point>
+						<Point><X>0</X><Y>70</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134180159" Target="1476724154821" Trigger="timeout">
@@ -1036,14 +1036,14 @@ newCow.mother = this;
 					<Id>1476134728289</Id>
 					<Name><![CDATA[timeoutToPossiblePregnancy]]></Name>
 					<Description><![CDATA[Reflects the approximate amount of time needed for a female cow to become pregnant.]]></Description>
-					<X>110</X><Y>400</Y>
+					<X>110</X><Y>440</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>30</Y></Point>
+						<Point><X>0</X><Y>60</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476134723765" Trigger="timeout">
@@ -1067,14 +1067,14 @@ newCow.mother = this;
 					<Id>1476134754302</Id>
 					<Name><![CDATA[youArePregnant]]></Name>
 					<Description><![CDATA[Cows must be Female and pass the 90% chance to become pregnant as well as less than 3 years old]]></Description>
-					<X>110</X><Y>450</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<X>110</X><Y>520</Y>
+					<Label><X>5</X><Y>50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>40</Y></Point>
+						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476134694229" Trigger="timeout">
@@ -1100,15 +1100,14 @@ newCow.mother = this;
 					<Id>1476134787620</Id>
 					<Name><![CDATA[youAreNotPregnant]]></Name>
 					<Description><![CDATA[cows that don't get pregnant are removed]]></Description>
-					<X>122</X><Y>440</Y>
-					<Label><X>28</X><Y>-10</Y></Label>
+					<X>122</X><Y>510</Y>
+					<Label><X>28</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>166</X><Y>0</Y></Point>
-						<Point><X>240.22783728973496</X><Y>18.104350558471936</Y></Point>
+						<Point><X>240</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476721237689" Trigger="timeout">
@@ -1131,17 +1130,16 @@ newCow.mother = this;
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476278047562</Id>
 					<Name><![CDATA[transition2]]></Name>
-					<X>110</X><Y>520</Y>
+					<X>60</X><Y>590</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>20</Y></Point>
-						<Point><X>-70</X><Y>20</Y></Point>
-						<Point><X>-70</X><Y>-130</Y></Point>
-						<Point><X>-50</X><Y>-130</Y></Point>
+						<Point><X>-40</X><Y>0</Y></Point>
+						<Point><X>-40</X><Y>-170</Y></Point>
+						<Point><X>0</X><Y>-170</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134694229" Target="1476134180161" Trigger="timeout">
@@ -1276,7 +1274,7 @@ newCow.mother = this;
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-112.61538461538464</X><Y>46.923076923076906</Y></Point>
+						<Point><X>-113.85422976322099</X><Y>94.87852480268418</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476721130594" Target="1476721237689" Trigger="timeout">
@@ -1344,14 +1342,14 @@ newCow.mother = this;
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476723779597</Id>
 					<Name><![CDATA[transition7]]></Name>
-					<X>110</X><Y>210</Y>
+					<X>110</X><Y>100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>20</Y></Point>
+						<Point><X>0</X><Y>70</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476723764674" Target="1476729847052" Trigger="timeout">
@@ -1378,14 +1376,15 @@ newCow.mother = this;
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476723800967</Id>
 					<Name><![CDATA[transition8]]></Name>
-					<X>122</X><Y>240</Y>
+					<X>122</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>242.01540289299942</X><Y>214.69108321153175</Y></Point>
+						<Point><X>248</X><Y>0</Y></Point>
+						<Point><X>248</X><Y>322</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476729847052" Target="1476721237689" Trigger="condition">
@@ -1408,14 +1407,14 @@ newCow.mother = this;
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476724180235</Id>
 					<Name><![CDATA[transition4]]></Name>
-					<X>98</X><Y>340</Y>
+					<X>122</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-88</X><Y>10</Y></Point>
+						<Point><X>78</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476724154821" Target="1476724089202" Trigger="timeout">
@@ -1438,14 +1437,14 @@ newCow.mother = this;
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476724200103</Id>
 					<Name><![CDATA[transition9]]></Name>
-					<X>110</X><Y>350</Y>
+					<X>110</X><Y>360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>20</Y></Point>
+						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476724154821" Target="1476134180161" Trigger="timeout">
@@ -1531,14 +1530,14 @@ newCow.mother = this;
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476729873456</Id>
 					<Name><![CDATA[transition12]]></Name>
-					<X>110</X><Y>250</Y>
+					<X>110</X><Y>190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>20</Y></Point>
+						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476729847052" Target="1476134180159" Trigger="timeout">
