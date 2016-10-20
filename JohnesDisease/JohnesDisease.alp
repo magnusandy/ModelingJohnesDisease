@@ -818,7 +818,7 @@
 					<Id>1476134210769</Id>
 					<Name><![CDATA[Gender]]></Name>
 					<Description><![CDATA[Gender of the cow, determined randomly 50% chance male/female]]></Description>
-					<X>500</X><Y>-130</Y>
+					<X>450</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -833,7 +833,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476136556281</Id>
 					<Name><![CDATA[agentColor]]></Name>
-					<X>500</X><Y>-90</Y>
+					<X>450</X><Y>-200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -848,7 +848,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476210270621</Id>
 					<Name><![CDATA[birthTime]]></Name>
-					<X>260</X><Y>-60</Y>
+					<X>450</X><Y>-120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -863,7 +863,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476210364893</Id>
 					<Name><![CDATA[currentAge]]></Name>
-					<X>260</X><Y>-40</Y>
+					<X>450</X><Y>-100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -879,7 +879,7 @@
 					<Id>1476214008773</Id>
 					<Name><![CDATA[startingAge]]></Name>
 					<Description><![CDATA[used in the calculation of current age, for the initial cows in the model some will start at an age older than 0]]></Description>
-					<X>260</X><Y>-80</Y>
+					<X>450</X><Y>-140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -894,7 +894,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476216497330</Id>
 					<Name><![CDATA[isFemale]]></Name>
-					<X>500</X><Y>-110</Y>
+					<X>450</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -909,7 +909,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476724586274</Id>
 					<Name><![CDATA[child]]></Name>
-					<X>500</X><Y>-70</Y>
+					<X>450</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -924,7 +924,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476724733626</Id>
 					<Name><![CDATA[mother]]></Name>
-					<X>500</X><Y>-50</Y>
+					<X>450</X><Y>-160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -939,7 +939,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476996011229</Id>
 					<Name><![CDATA[outlineColor]]></Name>
-					<X>500</X><Y>-200</Y>
+					<X>450</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -955,7 +955,7 @@
 					<Id>1476135491102</Id>
 					<Name><![CDATA[CalfTime]]></Name>
 					<Description><![CDATA[Length of time which a cow stays a calf.]]></Description>
-					<X>260</X><Y>-200</Y>
+					<X>220</X><Y>-200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -983,7 +983,7 @@
 					<Id>1476135583796</Id>
 					<Name><![CDATA[NotPregnantTime]]></Name>
 					<Description><![CDATA[refers to the general time between pregancys, 1-2 months for conception and 1 month for post pregnancy whatnot.]]></Description>
-					<X>260</X><Y>-180</Y>
+					<X>220</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1010,7 +1010,7 @@
 				<Variable Class="Parameter">
 					<Id>1476135628910</Id>
 					<Name><![CDATA[PregnancyTime]]></Name>
-					<X>260</X><Y>-160</Y>
+					<X>220</X><Y>-160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1038,7 +1038,7 @@
 					<Id>1476282611161</Id>
 					<Name><![CDATA[removalMultiplier]]></Name>
 					<Description><![CDATA[multiplier used in removeCows(), used to increase the removal rate to help balance pop]]></Description>
-					<X>390</X><Y>-220</Y>
+					<X>220</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1064,7 +1064,7 @@
 					<Id>1476286132586</Id>
 					<Name><![CDATA[removalTime]]></Name>
 					<Description><![CDATA[conceptually its the time between pregnancy and going back to the not pregnant/conception stage (or just a increase on the not pregnant timeout)]]></Description>
-					<X>260</X><Y>-220</Y>
+					<X>220</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1091,7 +1091,7 @@
 				<Variable Class="Parameter">
 					<Id>1476481791665</Id>
 					<Name><![CDATA[PregnancyRecoveryTime]]></Name>
-					<X>260</X><Y>-240</Y>
+					<X>220</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1942,7 +1942,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<Event>
 					<Id>1476486708425</Id>
 					<Name><![CDATA[UpdateCurrentAge]]></Name>
-					<X>260</X><Y>-100</Y>
+					<X>20</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1973,7 +1973,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<Event>
 					<Id>1476994543175</Id>
 					<Name><![CDATA[RemoveOldCows]]></Name>
-					<X>260</X><Y>-130</Y>
+					<X>20</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2008,7 +2008,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1476213133776</Id>
 					<Name><![CDATA[InitialCowPopulation]]></Name>
-					<X>260</X><Y>-10</Y>
+					<X>620</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
