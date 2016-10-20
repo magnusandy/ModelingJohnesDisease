@@ -35,6 +35,10 @@
 				<Id>1476724530894</Id>
 				<Name><![CDATA[ExposureFromMother]]></Name>
 			</Option>
+			<Option>
+				<Id>1477001459654</Id>
+				<Name><![CDATA[ExposureFromEnviroment]]></Name>
+			</Option>
 		</OptionList>
 	</OptionLists>
 	<ActiveObjectClasses>
@@ -1449,7 +1453,6 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476648694794" Target="1476648740556" Trigger="message">
-						<Action><![CDATA[MessageList.Culling]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -1461,8 +1464,8 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<FilterType><![CDATA[equalsTo]]></FilterType>
+						<EqualsExpression><![CDATA[MessageList.ExposureFromEnviroment]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
@@ -1828,9 +1831,9 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>95.35009445024724</X><Y>133.4901322303461</Y></Point>
+						<Point><X>95</X><Y>133</Y></Point>
 					</Points>
-					<IconOffset>20.0</IconOffset>
+					<IconOffset>60.0</IconOffset>
 					<Properties Source="1476724089202" Target="1476721237689" Trigger="condition">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -1858,9 +1861,9 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>172.8445824720007</X><Y>86.42229123600032</Y></Point>
+						<Point><X>172</X><Y>86</Y></Point>
 					</Points>
-					<IconOffset>20.0</IconOffset>
+					<IconOffset>80.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476721237689" Trigger="condition">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -1944,7 +1947,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</Event>
 				<Event>
 					<Id>1477001283285</Id>
-					<Name><![CDATA[event]]></Name>
+					<Name><![CDATA[ExposureFromEnviroment]]></Name>
 					<X>20</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1971,7 +1974,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[this.deliverToRandomAgentInside(MessageList.Culling);]]></Action>
+					<Action><![CDATA[this.deliverToRandomAgentInside(MessageList.ExposureFromEnviroment);]]></Action>
 				</Event>
 			</Events>
 			<Functions>
