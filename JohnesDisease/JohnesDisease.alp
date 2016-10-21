@@ -501,9 +501,6 @@
 							</Value>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[removalMultiplier]]></Name>
-						</Parameter>
-						<Parameter>
 							<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
 						</Parameter>
 						<Parameter>
@@ -1282,32 +1279,6 @@
 					</Properties>                 
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1476282611161</Id>
-					<Name><![CDATA[removalMultiplier]]></Name>
-					<Description><![CDATA[multiplier used in removeCows(), used to increase the removal rate to help balance pop]]></Description>
-					<X>260</X><Y>-220</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[3]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1476282611159</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
 					<Id>1476286132586</Id>
 					<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
 					<Description><![CDATA[conceptually its the time between pregnancy and going back to the not pregnant/conception stage (or just a increase on the not pregnant timeout)]]></Description>
@@ -1419,7 +1390,7 @@
 				<Variable Class="Parameter">
 					<Id>1477011900683</Id>
 					<Name><![CDATA[YoungBullRemovalRate]]></Name>
-					<X>260</X><Y>-240</Y>
+					<X>260</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
