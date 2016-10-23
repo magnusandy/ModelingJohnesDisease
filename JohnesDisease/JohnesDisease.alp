@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -439,21 +439,6 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[WeaningTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maleCalfRemovalRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[motherExposureRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[InfectedDuration]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[SubclinicalDuration]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[ClinicalDuration]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
@@ -1054,21 +1039,6 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1477179740155</Id>
-					<Name><![CDATA[isCalf]]></Name>
-					<X>450</X><Y>-80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[boolean]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[true]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476135491102</Id>
 					<Name><![CDATA[CalfTime]]></Name>
@@ -1233,137 +1203,6 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477180404973</Id>
-					<Name><![CDATA[maleCalfRemovalRate]]></Name>
-					<X>260</X><Y>-120</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.8]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477180404971</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477181158829</Id>
-					<Name><![CDATA[motherExposureRate]]></Name>
-					<X>260</X><Y>-100</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.05]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477181158827</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477181257781</Id>
-					<Name><![CDATA[InfectedDuration]]></Name>
-					<X>260</X><Y>-80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[18]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477181257779</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477181287035</Id>
-					<Name><![CDATA[SubclinicalDuration]]></Name>
-					<X>260</X><Y>-40</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477181287033</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477181289386</Id>
-					<Name><![CDATA[ClinicalDuration]]></Name>
-					<X>260</X><Y>-60</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[24]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477181289384</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
 			</Variables>
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -1377,7 +1216,6 @@
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="130" Height="40">
 						<EntryAction><![CDATA[agentColor = lime]]></EntryAction>
-						<ExitAction><![CDATA[isCalf = false;]]></ExitAction>
 						<FillColor>-16711936</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -1438,6 +1276,7 @@ newCow.mother = this;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
+						<EntryAction><![CDATA[this.outlineColor = gold]]></EntryAction>
 						<FillColor>-10496</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -1451,6 +1290,7 @@ newCow.mother = this;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
+						<EntryAction><![CDATA[this.outlineColor = yellowGreen]]></EntryAction>
 						<FillColor>-6632142</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -1585,13 +1425,13 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476134400353</Id>
-					<Name><![CDATA[nextSevenMonths]]></Name>
+					<Name><![CDATA[calfGrowsUp]]></Name>
 					<Description><![CDATA[calves transition to the not pregnant state]]></Description>
 					<X>110</X><Y>270</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>70</Y></Point>
@@ -1616,13 +1456,13 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476134728289</Id>
-					<Name><![CDATA[conceptionTime]]></Name>
+					<Name><![CDATA[timeoutToPossiblePregnancy]]></Name>
 					<Description><![CDATA[Reflects the approximate amount of time needed for a female cow to become pregnant.]]></Description>
 					<X>110</X><Y>440</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>60</Y></Point>
@@ -1647,13 +1487,13 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476134754302</Id>
-					<Name><![CDATA[chanceToGetPregnant]]></Name>
+					<Name><![CDATA[youArePregnant]]></Name>
 					<Description><![CDATA[Cows must be Female and pass the 90% chance to become pregnant as well as less than 3 years old]]></Description>
 					<X>110</X><Y>520</Y>
-					<Label><X>5</X><Y>25</Y></Label>
+					<Label><X>5</X><Y>50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
@@ -1679,12 +1519,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476278047562</Id>
-					<Name><![CDATA[pregnancyPeriod]]></Name>
+					<Name><![CDATA[Pregnancy]]></Name>
 					<X>60</X><Y>590</Y>
-					<Label><X>-140</X><Y>-95</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-40</X><Y>0</Y></Point>
@@ -1726,18 +1566,18 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476648737590</Id>
-					<Name><![CDATA[rateFromEnviroment]]></Name>
+					<Name><![CDATA[Culling]]></Name>
 					<X>590</X><Y>130</Y>
-					<Label><X>-120</X><Y>20</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476648694794" Target="1476648740556" Trigger="rate">
+					<Properties Source="1476648694794" Target="1476648740556" Trigger="message">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -1756,12 +1596,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476648770424</Id>
-					<Name><![CDATA[moveToInfectiveState]]></Name>
+					<Name><![CDATA[transition1]]></Name>
 					<X>590</X><Y>210</Y>
-					<Label><X>5</X><Y>20</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
@@ -1769,7 +1609,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476648740556" Target="1476721130594" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[InfectedDuration]]></Code>
+							<Code><![CDATA[18]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -1786,12 +1626,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="Infective" ParentStateId="1476721130594">
 					<Id>1476721184193</Id>
-					<Name><![CDATA[moveToClinical]]></Name>
+					<Name><![CDATA[transition3]]></Name>
 					<X>580</X><Y>340</Y>
-					<Label><X>10</X><Y>20</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-1</X><Y>50</Y></Point>
@@ -1799,7 +1639,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476721184187" Target="1476721184189" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[SubclinicalDuration]]></Code>
+							<Code><![CDATA[24]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -1832,11 +1672,11 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476722350034</Id>
 					<Name><![CDATA[exposureFromMother]]></Name>
-					<X>640</X><Y>130</Y>
-					<Label><X>10</X><Y>15</Y></Label>
+					<X>610</X><Y>130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
@@ -1861,12 +1701,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476723779597</Id>
-					<Name><![CDATA[sixMonthsOld]]></Name>
+					<Name><![CDATA[transition7]]></Name>
 					<X>110</X><Y>100</Y>
-					<Label><X>10</X><Y>35</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>70</Y></Point>
@@ -1891,12 +1731,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476723800967</Id>
-					<Name><![CDATA[removeYoungMales]]></Name>
+					<Name><![CDATA[RemoveYoungMales]]></Name>
 					<X>122</X><Y>180</Y>
-					<Label><X>138</X><Y>-10</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>248</X><Y>0</Y></Point>
@@ -1908,7 +1748,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[randomTrue(maleCalfRemovalRate) && !isFemale]]></Condition>
+						<Condition><![CDATA[randomTrue(0.8) && !isFemale]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -1922,12 +1762,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476724180235</Id>
-					<Name><![CDATA[males]]></Name>
+					<Name><![CDATA[transition4]]></Name>
 					<X>122</X><Y>350</Y>
-					<Label><X>13</X><Y>-10</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>78</X><Y>0</Y></Point>
@@ -1952,12 +1792,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476724200103</Id>
-					<Name><![CDATA[females]]></Name>
+					<Name><![CDATA[transition9]]></Name>
 					<X>110</X><Y>360</Y>
-					<Label><X>-50</X><Y>15</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
@@ -1982,7 +1822,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="Infective" ParentStateId="1476721130594">
 					<Id>1476724885701</Id>
-					<Name><![CDATA[infectChild]]></Name>
+					<Name><![CDATA[transition10]]></Name>
 					<Description><![CDATA[somehow send messages to the  calf of the this mother cow]]></Description>
 					<X>650</X><Y>260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -2002,7 +1842,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[motherExposureRate]]></Code>
+							<Code><![CDATA[0.05]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
 						</Rate>
 						<Guard><![CDATA[this.child != null && this.inState(Infective)]]></Guard>
@@ -2015,7 +1855,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="Susceptible" ParentStateId="1476648694794">
 					<Id>1476725376908</Id>
-					<Name><![CDATA[updateInfectionRate]]></Name>
+					<Name><![CDATA[transition11]]></Name>
 					<Description><![CDATA[recalculate the prevelance]]></Description>
 					<X>550</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -2076,12 +1916,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476992823278</Id>
-					<Name><![CDATA[didNotGetPregnant]]></Name>
+					<Name><![CDATA[removeOldFemales]]></Name>
 					<X>122</X><Y>510</Y>
-					<Label><X>28</X><Y>-10</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>240</X><Y>0</Y></Point>
@@ -2108,12 +1948,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476993205705</Id>
-					<Name><![CDATA[malePopControl]]></Name>
+					<Name><![CDATA[removalByMalePopulationControl]]></Name>
 					<X>270</X><Y>370</Y>
-					<Label><X>25</X><Y>15</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>95</X><Y>133</Y></Point>
@@ -2138,12 +1978,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476993449238</Id>
-					<Name><![CDATA[femalePopControl]]></Name>
+					<Name><![CDATA[removalByFemalePopulationControl]]></Name>
 					<X>190</X><Y>420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>172</X><Y>86</Y></Point>
@@ -2168,7 +2008,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1477003254687</Id>
-					<Name><![CDATA[tooOldDropThrough]]></Name>
+					<Name><![CDATA[tooOld]]></Name>
 					<X>80</X><Y>100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2198,7 +2038,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1477003340996</Id>
-					<Name><![CDATA[tooOldDropThrough2]]></Name>
+					<Name><![CDATA[transition]]></Name>
 					<X>80</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2228,7 +2068,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1477003516236</Id>
-					<Name><![CDATA[clinicalRemoval]]></Name>
+					<Name><![CDATA[transition2]]></Name>
 					<X>580</X><Y>420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2236,12 +2076,12 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-203</X><Y>86</Y></Point>
+						<Point><X>-202.64683975985554</X><Y>86.84864561136663</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476721184189" Target="1476721237689" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[ClinicalDuration]]></Code>
+							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -2288,17 +2128,17 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1477003810447</Id>
-					<Name><![CDATA[initialInfection]]></Name>
+					<Name><![CDATA[transition6]]></Name>
 					<X>578</X><Y>60</Y>
-					<Label><X>-208</X><Y>40</Y></Label>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-128</X><Y>0</Y></Point>
-						<Point><X>-128</X><Y>140</Y></Point>
-						<Point><X>-38</X><Y>140</Y></Point>
+						<Point><X>-61</X><Y>0</Y></Point>
+						<Point><X>-59</X><Y>134</Y></Point>
+						<Point><X>-38</X><Y>134</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1477003799882" Target="1476648740556" Trigger="timeout">
@@ -2456,462 +2296,31 @@ else
 			</ContainerLinks>
 
 			<Shapes>
-				<Group>
-					<Id>1477178337070</Id>
-					<Name><![CDATA[cow]]></Name>
-					<X>0</X><Y>5</Y>
-					<Label><X>5.077</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>5</Z>
-					<Rotation>0.0</Rotation>
-					<ScaleXCode><![CDATA[isCalf ? 0.5 : 1]]></ScaleXCode>
-					<ScaleYCode><![CDATA[isCalf ? 0.5 : 1]]></ScaleYCode>
-					<ScaleZCode><![CDATA[isCalf ? 0.5 : 1]]></ScaleZCode>
-
-			<Shapes>
-				<Group>
-					<Id>1477177670460</Id>
-					<Name><![CDATA[baseCow]]></Name>
-					<X>0</X><Y>5</Y>
-					<Label><X>10.105</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Curve ControlPoints="false">
-					<Id>1477177670462</Id>
-					<Name><![CDATA[curve2]]></Name>
-					<X>7.691</X><Y>-5.17</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-4144960</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<FillColor>-4144960</FillColor>
-					<FillMaterial>null</FillMaterial>
-					<Points>
-					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>10.258</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>0</X><Y>-8.278</Y><Z>0</Z></Point>
-					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					</Points>
-					<Closed>false</Closed>
-				</Curve>
-				<Curve ControlPoints="false">
-					<Id>1477177670464</Id>
-					<Name><![CDATA[curve3]]></Name>
-					<X>-7.691</X><Y>-5.17</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-4144960</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<FillColor>-4144960</FillColor>
-					<FillMaterial>null</FillMaterial>
-					<Points>
-					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>-10.258</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>0</X><Y>-8.278</Y><Z>0</Z></Point>
-					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					</Points>
-					<Closed>false</Closed>
-				</Curve>
 				<Oval>
-					<Id>1477177670466</Id>
-					<Name><![CDATA[oval9]]></Name>
-					<X>0</X><Y>-2.408</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-8355712</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Circle>false</Circle>
-					<RadiusX>11.861</RadiusX>
-					<RadiusY>16.555</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillColorCode><![CDATA[outlineColor]]></FillColorCode>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-				<Group>
-					<Id>1477177670468</Id>
-					<Name><![CDATA[eye3]]></Name>
-					<X>-10</X><Y>-10</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Oval>
-					<Id>1477177670470</Id>
-					<Name><![CDATA[oval10]]></Name>
-					<X>4.869</X><Y>2.073</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Circle>false</Circle>
-					<RadiusX>1.923</RadiusX>
-					<RadiusY>4.139</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-16777216</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-				<Oval>
-					<Id>1477177670472</Id>
-					<Name><![CDATA[oval11]]></Name>
-					<X>4.869</X><Y>-0.686</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<RadiusX>1.4285</RadiusX>
-					<RadiusY>40</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-			</Shapes>
-
-				</Group>
-				<Group>
-					<Id>1477177670474</Id>
-					<Name><![CDATA[eye4]]></Name>
-					<X>10</X><Y>-10</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Oval>
-					<Id>1477177670476</Id>
-					<Name><![CDATA[oval12]]></Name>
-					<X>-4.868</X><Y>2.073</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Circle>false</Circle>
-					<RadiusX>1.923</RadiusX>
-					<RadiusY>4.139</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-16777216</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-				<Oval>
-					<Id>1477177670478</Id>
-					<Name><![CDATA[oval13]]></Name>
-					<X>-4.868</X><Y>-0.686</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<RadiusX>1.4285</RadiusX>
-					<RadiusY>40</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-			</Shapes>
-
-				</Group>
-				<Group>
-					<Id>1477177670480</Id>
-					<Name><![CDATA[nose1]]></Name>
-					<X>0</X><Y>10</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Oval>
-					<Id>1477177670482</Id>
-					<Name><![CDATA[oval14]]></Name>
-					<X>0</X><Y>-6.2</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>0</LineWidth>
-					<LineColor>-360334</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Circle>false</Circle>
-					<RadiusX>12.823</RadiusX>
-					<RadiusY>6.21</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-6943</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-				<Oval>
-					<Id>1477177670484</Id>
-					<Name><![CDATA[oval15]]></Name>
-					<X>-5.131</X><Y>-6.892</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<RadiusX>1.4285</RadiusX>
-					<RadiusY>40</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-16777216</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-				<Oval>
-					<Id>1477177670486</Id>
-					<Name><![CDATA[oval16]]></Name>
-					<X>5.132</X><Y>-6.892</Y>
-					<Label><X>0</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<RadiusX>1.4285</RadiusX>
-					<RadiusY>40</RadiusY>
-					<Rotation>0.0</Rotation>
-					<FillColor>-16777216</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Oval>
-			</Shapes>
-
-				</Group>
-			</Shapes>
-
-				</Group>
-				<Group>
-					<Id>1477179452902</Id>
-					<Name><![CDATA[maleBits]]></Name>
+					<Id>1476134180157</Id>
+					<Name><![CDATA[oval]]></Name>
 					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<VisibleCode><![CDATA[!isFemale]]></VisibleCode>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>3</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineColorCode><![CDATA[outlineColor]]></LineColorCode>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<RadiusX>8</RadiusX>
+					<RadiusY>40</RadiusY>
 					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Curve ControlPoints="false">
-					<Id>1477178010270</Id>
-					<Name><![CDATA[curve5]]></Name>
-					<X>7.615</X><Y>-7.774</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>5</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-989556</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<FillColor>-989556</FillColor>
+					<FillColor>-1</FillColor>
+					<FillColorCode><![CDATA[agentColor]]></FillColorCode>
 					<FillMaterial>null</FillMaterial>
-					<Points>
-					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>7.615</X><Y>-7.774</Y><Z>0</Z></Point>
-					   <Point><X>0</X><Y>-5.183</Y><Z>0</Z></Point>
-					   <Point><X>-5.077</X><Y>-5.183</Y><Z>0</Z></Point>
-					</Points>
-					<Closed>false</Closed>
-				</Curve>
-				<Curve ControlPoints="false">
-					<Id>1477177706702</Id>
-					<Name><![CDATA[curve4]]></Name>
-					<X>-7.615</X><Y>-7.774</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>5</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-989556</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<FillColor>-989556</FillColor>
-					<FillMaterial>null</FillMaterial>
-					<Points>
-					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>-7.615</X><Y>-7.774</Y><Z>0</Z></Point>
-					   <Point><X>0</X><Y>-5.183</Y><Z>0</Z></Point>
-					   <Point><X>5.077</X><Y>-5.183</Y><Z>0</Z></Point>
-					</Points>
-					<Closed>false</Closed>
-				</Curve>
-				<Curve ControlPoints="false">
-					<Id>1477178146652</Id>
-					<Name><![CDATA[curve6]]></Name>
-					<X>-5.077</X><Y>7.774</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>5</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>2</LineWidth>
-					<LineColor>-10496</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<FillColor/>
-					<FillMaterial>null</FillMaterial>
-					<Points>
-					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>0</X><Y>5.183</Y><Z>0</Z></Point>
-					   <Point><X>10.152</X><Y>5.183</Y><Z>0</Z></Point>
-					   <Point><X>10.152</X><Y>0</Y><Z>0</Z></Point>
-					</Points>
-					<Closed>false</Closed>
-				</Curve>
-			</Shapes>
-
-				</Group>
-			</Shapes>
-
-				</Group>
+				</Oval>
 			</Shapes>
 
 		</ActiveObjectClass>
