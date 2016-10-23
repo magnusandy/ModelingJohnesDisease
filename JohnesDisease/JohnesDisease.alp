@@ -1195,6 +1195,21 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1477184118014</Id>
+					<Name><![CDATA[isCalf]]></Name>
+					<X>540</X><Y>-60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[true]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476135491102</Id>
 					<Name><![CDATA[CalfTime]]></Name>
@@ -1479,6 +1494,7 @@
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="130" Height="40">
 						<EntryAction><![CDATA[agentColor = lime]]></EntryAction>
+						<ExitAction><![CDATA[isCalf = false]]></ExitAction>
 						<FillColor>-16711936</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -1539,7 +1555,6 @@ newCow.mother = this;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
-						<EntryAction><![CDATA[this.outlineColor = gold]]></EntryAction>
 						<FillColor>-10496</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -1553,7 +1568,6 @@ newCow.mother = this;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
-						<EntryAction><![CDATA[this.outlineColor = yellowGreen]]></EntryAction>
 						<FillColor>-6632142</FillColor>
 					</Properties>
 				</StatechartElement>
