@@ -35,10 +35,6 @@
 				<Id>1476724530894</Id>
 				<Name><![CDATA[ExposureFromMother]]></Name>
 			</Option>
-			<Option>
-				<Id>1477001459654</Id>
-				<Name><![CDATA[ExposureFromEnviroment]]></Name>
-			</Option>
 		</OptionList>
 	</OptionLists>
 	<ActiveObjectClasses>
@@ -415,7 +411,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[0.3]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477418004086</Id>
@@ -453,8 +449,33 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1477421265799</Id>
-					<Name><![CDATA[TestASpecification]]></Name>
-					<X>20</X><Y>-540</Y>
+					<Name><![CDATA[BloodTestSpecificity]]></Name>
+					<X>20</X><Y>-580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.99]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1477421265797</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1477424604611</Id>
+					<Name><![CDATA[BloodTestSensitivity]]></Name>
+					<X>20</X><Y>-560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -465,7 +486,54 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<ParameterEditor>
-							<Id>1477421265797</Id>
+							<Id>1477424604609</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1477424620387</Id>
+					<Name><![CDATA[FecalTestSpecificity]]></Name>
+					<X>20</X><Y>-540</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.999]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1477424620385</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1477424636282</Id>
+					<Name><![CDATA[FecalTestSensitivity]]></Name>
+					<X>20</X><Y>-520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1477424636280</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -1942,7 +2010,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[main.cows.Prevalence()]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+							<Unit Class="RateUnits"><![CDATA[PER_YEAR]]></Unit>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
@@ -3283,7 +3351,16 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[ClinicalPrevalenceModifier]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[TestASpecification]]></ParameterName>
+					<ParameterName><![CDATA[BloodTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSensitivity]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -3440,7 +3517,16 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[ClinicalPrevalenceModifier]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[TestASpecification]]></ParameterName>
+					<ParameterName><![CDATA[BloodTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSensitivity]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
