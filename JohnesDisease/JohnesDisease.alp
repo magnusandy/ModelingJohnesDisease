@@ -313,7 +313,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.25]]></Code>
+							<Code><![CDATA[0.05]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477003606766</Id>
@@ -1741,6 +1741,11 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="130" Height="40">
 						<EntryAction><![CDATA[agentColor = yellow]]></EntryAction>
+						<ExitAction><![CDATA[if (this.mother != null) {
+	this.mother.child = null;
+	this.mother = null;
+}
+]]></ExitAction>
 						<FillColor>-256</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -1929,13 +1934,14 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476648694794" Target="1476648740556" Trigger="rate">
+						<Action><![CDATA[main.InfectedFromEnviroment += 1]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[time() < 100.00 ? main.cows.Prevalence() : 0]]></Code>
+							<Code><![CDATA[main.cows.Prevalence()]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
@@ -2317,7 +2323,8 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[main.cows.females() > main.maxFemales]]></Condition>
+						<Condition><![CDATA[main.cows.females() > main.maxFemales
+&& this.child == null ]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -2605,7 +2612,9 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</RecurrenceCode>
-						<Condition><![CDATA[main.maxAge < this.currentAge]]></Condition>
+						<Condition><![CDATA[main.maxAge < this.currentAge
+&& this.child == null 
+]]></Condition>
 					</Properties>
 					<Action><![CDATA[main.remove_cows(this)]]></Action>
 				</Event>
