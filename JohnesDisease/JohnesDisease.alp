@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -127,7 +127,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005380602</Id>
 					<Name><![CDATA[deceasedCows]]></Name>
-					<X>20</X><Y>-650</Y>
+					<X>30</X><Y>-550</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -142,7 +142,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005402066</Id>
 					<Name><![CDATA[InfectedFromEnviroment]]></Name>
-					<X>20</X><Y>-630</Y>
+					<X>30</X><Y>-530</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -157,7 +157,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005428740</Id>
 					<Name><![CDATA[InfectedFromMother]]></Name>
-					<X>20</X><Y>-610</Y>
+					<X>30</X><Y>-570</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -167,35 +167,9 @@
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1476135033160</Id>
-					<Name><![CDATA[PregnancyPercentage]]></Name>
-					<X>20</X><Y>-330</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.9]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1476135033158</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
 					<Id>1476136317567</Id>
 					<Name><![CDATA[InitialPopulation]]></Name>
-					<X>20</X><Y>-350</Y>
+					<X>-250</X><Y>-500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -221,18 +195,18 @@
 				<Variable Class="Parameter">
 					<Id>1476999620162</Id>
 					<Name><![CDATA[maxMales]]></Name>
-					<X>20</X><Y>-270</Y>
+					<X>-250</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
+						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[500]]></Code>
+							<Code><![CDATA[(0.5*InitialPopulation)]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1476999620160</Id>
@@ -246,32 +220,7 @@
 				<Variable Class="Parameter">
 					<Id>1476999639948</Id>
 					<Name><![CDATA[maxFemales]]></Name>
-					<X>20</X><Y>-290</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[700]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1476999639946</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1476999663060</Id>
-					<Name><![CDATA[maxAge]]></Name>
-					<X>20</X><Y>-310</Y>
+					<X>-250</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -279,14 +228,14 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[YEAR]]></UnitOfValue>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[120.0]]></Code>
+							<Code><![CDATA[(0.7*InitialPopulation)]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
-							<Id>1476999663058</Id>
+							<Id>1476999639946</Id>
+							<Label><![CDATA[maxFemales]]></Label>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -297,7 +246,7 @@
 				<Variable Class="Parameter">
 					<Id>1477003606768</Id>
 					<Name><![CDATA[InitialInfectedPercentage]]></Name>
-					<X>20</X><Y>-460</Y>
+					<X>-250</X><Y>-340</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -323,7 +272,7 @@
 				<Variable Class="Parameter">
 					<Id>1477004236415</Id>
 					<Name><![CDATA[exposureRate]]></Name>
-					<X>20</X><Y>-210</Y>
+					<X>20</X><Y>-360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -348,7 +297,7 @@
 				<Variable Class="Parameter">
 					<Id>1477013579269</Id>
 					<Name><![CDATA[InitialSubClinicalPercentage]]></Name>
-					<X>20</X><Y>-440</Y>
+					<X>-250</X><Y>-320</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -374,7 +323,7 @@
 				<Variable Class="Parameter">
 					<Id>1477013625547</Id>
 					<Name><![CDATA[InitialClinicalPercentage]]></Name>
-					<X>20</X><Y>-420</Y>
+					<X>-250</X><Y>-360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -450,7 +399,7 @@
 				<Variable Class="Parameter">
 					<Id>1477421265799</Id>
 					<Name><![CDATA[BloodTestSpecificity]]></Name>
-					<X>20</X><Y>-580</Y>
+					<X>-250</X><Y>-670</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -475,7 +424,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424604611</Id>
 					<Name><![CDATA[BloodTestSensitivity]]></Name>
-					<X>20</X><Y>-560</Y>
+					<X>-250</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -497,7 +446,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424620387</Id>
 					<Name><![CDATA[FecalTestSpecificity]]></Name>
-					<X>20</X><Y>-540</Y>
+					<X>-250</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -522,7 +471,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424636282</Id>
 					<Name><![CDATA[FecalTestSensitivity]]></Name>
-					<X>20</X><Y>-520</Y>
+					<X>-250</X><Y>-610</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -587,7 +536,7 @@
 					</GenericParameterSubstitute>
 					<Parameters>
 						<Parameter>
-							<Name><![CDATA[CalfTime]]></Name>
+							<Name><![CDATA[GrazingCalfTime]]></Name>
 							<Value Class="CodeUnitValue">
 								<Code><![CDATA[]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -627,6 +576,12 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[MomToChildInfectionRate]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[PregnancyPercentage]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maxAge]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
@@ -747,6 +702,263 @@
 					<Latitude>0.0</Latitude>
 					<Longitude>0.0</Longitude>
 				</EmbeddedObjectPresentation>
+				<Group>
+					<Id>1477592792617</Id>
+					<Name><![CDATA[parmGroup3]]></Name>
+					<X>-150</X><Y>-620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1477592792619</Id>
+					<Name><![CDATA[rectangle4]]></Name>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>150</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477592792621</Id>
+					<Name><![CDATA[testingParameters]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Testing Parameters ]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1477592883721</Id>
+					<Name><![CDATA[parmGroup4]]></Name>
+					<X>-150</X><Y>-460</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1477592883723</Id>
+					<Name><![CDATA[rectangle5]]></Name>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>240</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477592883725</Id>
+					<Name><![CDATA[testingParameters1]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Initialization Parameters ]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1477593396370</Id>
+					<Name><![CDATA[parmGroup5]]></Name>
+					<X>124</X><Y>-525</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1477593396372</Id>
+					<Name><![CDATA[rectangle6]]></Name>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>150</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477593396374</Id>
+					<Name><![CDATA[testingParameters2]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Reporting]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1477593460415</Id>
+					<Name><![CDATA[parmGroup6]]></Name>
+					<X>120</X><Y>-350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1477593460417</Id>
+					<Name><![CDATA[rectangle7]]></Name>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>150</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477593460419</Id>
+					<Name><![CDATA[testingParameters3]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Disease Modifiers
+]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
 			</Shapes>
 			<Charts>
     			<TimePlot>
@@ -1235,7 +1447,7 @@
 					<Id>1476134210769</Id>
 					<Name><![CDATA[Gender]]></Name>
 					<Description><![CDATA[Gender of the cow, determined randomly 50% chance male/female]]></Description>
-					<X>540</X><Y>-220</Y>
+					<X>480</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1250,7 +1462,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476136556281</Id>
 					<Name><![CDATA[agentColor]]></Name>
-					<X>540</X><Y>-180</Y>
+					<X>480</X><Y>-350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1265,7 +1477,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476210270621</Id>
 					<Name><![CDATA[birthTime]]></Name>
-					<X>540</X><Y>-100</Y>
+					<X>480</X><Y>-130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1280,7 +1492,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476210364893</Id>
 					<Name><![CDATA[currentAge]]></Name>
-					<X>540</X><Y>-80</Y>
+					<X>480</X><Y>-110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1296,7 +1508,7 @@
 					<Id>1476214008773</Id>
 					<Name><![CDATA[startingAge]]></Name>
 					<Description><![CDATA[used in the calculation of current age, for the initial cows in the model some will start at an age older than 0]]></Description>
-					<X>540</X><Y>-120</Y>
+					<X>480</X><Y>-150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1311,7 +1523,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476216497330</Id>
 					<Name><![CDATA[isFemale]]></Name>
-					<X>540</X><Y>-200</Y>
+					<X>480</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1326,7 +1538,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476724586274</Id>
 					<Name><![CDATA[child]]></Name>
-					<X>540</X><Y>-160</Y>
+					<X>610</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1341,7 +1553,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476724733626</Id>
 					<Name><![CDATA[mother]]></Name>
-					<X>540</X><Y>-140</Y>
+					<X>610</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1356,7 +1568,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476996011229</Id>
 					<Name><![CDATA[outlineColor]]></Name>
-					<X>540</X><Y>-240</Y>
+					<X>480</X><Y>-370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1371,7 +1583,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477184118014</Id>
 					<Name><![CDATA[isCalf]]></Name>
-					<X>540</X><Y>-60</Y>
+					<X>480</X><Y>-170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1385,9 +1597,9 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476135491102</Id>
-					<Name><![CDATA[CalfTime]]></Name>
+					<Name><![CDATA[GrazingCalfTime]]></Name>
 					<Description><![CDATA[Length of time which a cow stays a calf.]]></Description>
-					<X>260</X><Y>-200</Y>
+					<X>240</X><Y>-320</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1415,7 +1627,7 @@
 					<Id>1476135583796</Id>
 					<Name><![CDATA[NotPregnantTime]]></Name>
 					<Description><![CDATA[refers to the general time between pregancys, 1-2 months for conception and 1 month for post pregnancy whatnot.]]></Description>
-					<X>260</X><Y>-180</Y>
+					<X>240</X><Y>-300</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1442,7 +1654,7 @@
 				<Variable Class="Parameter">
 					<Id>1476135628910</Id>
 					<Name><![CDATA[PregnancyTime]]></Name>
-					<X>260</X><Y>-160</Y>
+					<X>240</X><Y>-340</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1470,7 +1682,7 @@
 					<Id>1476286132586</Id>
 					<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
 					<Description><![CDATA[conceptually its the time between pregnancy and going back to the not pregnant/conception stage (or just a increase on the not pregnant timeout)]]></Description>
-					<X>260</X><Y>-60</Y>
+					<X>240</X><Y>-360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1497,7 +1709,7 @@
 				<Variable Class="Parameter">
 					<Id>1477003300329</Id>
 					<Name><![CDATA[WeaningTime]]></Name>
-					<X>260</X><Y>-140</Y>
+					<X>240</X><Y>-440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1524,7 +1736,7 @@
 				<Variable Class="Parameter">
 					<Id>1477011191559</Id>
 					<Name><![CDATA[MeanLatencyDuration]]></Name>
-					<X>260</X><Y>-120</Y>
+					<X>240</X><Y>-420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1536,7 +1748,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[6]]></Code>
+							<Code><![CDATA[WeaningTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1551,7 +1763,7 @@
 				<Variable Class="Parameter">
 					<Id>1477011280491</Id>
 					<Name><![CDATA[MeanInfectedDuration]]></Name>
-					<X>260</X><Y>-100</Y>
+					<X>240</X><Y>-400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1578,7 +1790,7 @@
 				<Variable Class="Parameter">
 					<Id>1477011900683</Id>
 					<Name><![CDATA[YoungBullRemovalRate]]></Name>
-					<X>260</X><Y>-220</Y>
+					<X>240</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1603,7 +1815,7 @@
 				<Variable Class="Parameter">
 					<Id>1477012464118</Id>
 					<Name><![CDATA[MeanSubClinicalDuration]]></Name>
-					<X>260</X><Y>-80</Y>
+					<X>240</X><Y>-380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1630,7 +1842,7 @@
 				<Variable Class="Parameter">
 					<Id>1477013955582</Id>
 					<Name><![CDATA[MomToChildInfectionRate]]></Name>
-					<X>260</X><Y>-40</Y>
+					<X>240</X><Y>-200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1648,6 +1860,58 @@
 						<ParameterEditor>
 							<Id>1477013955580</Id>
 							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1477593083332</Id>
+					<Name><![CDATA[PregnancyPercentage]]></Name>
+					<X>240</X><Y>-280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.9]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1477593083330</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1477593134611</Id>
+					<Name><![CDATA[maxAge]]></Name>
+					<X>240</X><Y>-260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[YEAR]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[120.0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1477593134609</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
 							<DelimeterType>NO_DELIMETER</DelimeterType>
@@ -1928,7 +2192,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[randomTrue(main.PregnancyPercentage)
+						<Condition><![CDATA[randomTrue(PregnancyPercentage)
 ]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -2452,7 +2716,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[currentAge >= CalfTime + WeaningTime]]></Condition>
+						<Condition><![CDATA[currentAge >= GrazingCalfTime + WeaningTime]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -2680,7 +2944,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</RecurrenceCode>
-						<Condition><![CDATA[main.maxAge < this.currentAge
+						<Condition><![CDATA[maxAge < this.currentAge
 && this.child == null 
 ]]></Condition>
 					</Properties>
@@ -2693,7 +2957,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1476213133776</Id>
 					<Name><![CDATA[InitialCowPopulation]]></Name>
-					<X>680</X><Y>-240</Y>
+					<X>20</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3216,6 +3480,261 @@ else
 			</Shapes>
 
 				</Group>
+				<Group>
+					<Id>1477591892868</Id>
+					<Name><![CDATA[parmGroup]]></Name>
+					<X>340</X><Y>-320</Y>
+					<Label><X>9.859</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+
+				</Group>
+				<Group>
+					<Id>1477591923681</Id>
+					<Name><![CDATA[parmGroup1]]></Name>
+					<X>340</X><Y>-160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1477591923683</Id>
+					<Name><![CDATA[rectangle2]]></Name>
+					<X>-110</X><Y>-80</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>150</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477591923685</Id>
+					<Name><![CDATA[UnconfirmedParams]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Unconfirmed Parameters
+]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1477591942667</Id>
+					<Name><![CDATA[parmGroup2]]></Name>
+					<X>570</X><Y>-330</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1477591942669</Id>
+					<Name><![CDATA[rectangle3]]></Name>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>150</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477591942671</Id>
+					<Name><![CDATA[staticParms2]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Apperance ]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1477592094344</Id>
+					<Name><![CDATA[parmGroup3]]></Name>
+					<X>570</X><Y>-160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1477592094346</Id>
+					<Name><![CDATA[rectangle4]]></Name>
+					<X>-110</X><Y>-80</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>150</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477592094348</Id>
+					<Name><![CDATA[staticParms3]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Cow Variables ]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Rectangle>
+					<Id>1477591525356</Id>
+					<Name><![CDATA[rectangle]]></Name>
+					<X>230</X><Y>-480</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>207.042</Width>
+					<Height>229.085</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1477591541605</Id>
+					<Name><![CDATA[staticParms]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>240</X><Y>-470</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Confirmed Parameters]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -3318,9 +3837,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 
 			<Parameters>			
 				<Parameter>
-					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
-				</Parameter>
-				<Parameter>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 				</Parameter>
 				<Parameter>
@@ -3328,9 +3844,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[maxFemales]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -3481,9 +3994,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 
 			<Parameters>			
 				<Parameter>
-					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
-				</Parameter>
-				<Parameter>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[5000]]></Code>
@@ -3494,9 +4004,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[maxFemales]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
