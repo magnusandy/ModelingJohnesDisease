@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -95,8 +95,8 @@
 			</EnvironmentProperties>
 			<DatasetsCreationProperties>
 				<AutoCreate>true</AutoCreate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1476172800000</OccurrenceDate>
+					<OccurrenceAtTime>false</OccurrenceAtTime>
+					<OccurrenceDate>1459497600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -206,7 +206,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[(0.5*InitialPopulation)]]></Code>
+							<Code><![CDATA[(0.2*InitialPopulation)]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1476999620160</Id>
@@ -231,7 +231,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[(0.7*InitialPopulation)]]></Code>
+							<Code><![CDATA[(1*InitialPopulation)]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1476999639946</Id>
@@ -262,31 +262,6 @@
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477003606766</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477004236415</Id>
-					<Name><![CDATA[exposureRate]]></Name>
-					<X>20</X><Y>-360</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477004236413</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -335,7 +310,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.01]]></Code>
+							<Code><![CDATA[0.002]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477013625545</Id>
@@ -385,7 +360,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[4 * SubclinicalPrevalenceModifier]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477418026125</Id>
@@ -490,6 +465,430 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021826202</Id>
+					<Name><![CDATA[YoungBullRemovalRate]]></Name>
+					<X>-250</X><Y>-210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.8]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021826200</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021826205</Id>
+					<Name><![CDATA[MomToChildInfectionRate]]></Name>
+					<Description><![CDATA[monthly rate based off the 30% infection rate over 6 months]]></Description>
+					<X>-250</X><Y>-230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[RATE]]></UnitType>
+						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[-(log(0.7))/6]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021826203</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915668</Id>
+					<Name><![CDATA[GrazingCalfTime]]></Name>
+					<Description><![CDATA[Length of time which a cow stays a calf.]]></Description>
+					<X>-480</X><Y>-370</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[7]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915666</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915671</Id>
+					<Name><![CDATA[NotPregnantTime]]></Name>
+					<Description><![CDATA[refers to the general time between pregancys, 1-2 months for conception and 1 month for post pregnancy whatnot.]]></Description>
+					<X>-480</X><Y>-350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[3]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915669</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915674</Id>
+					<Name><![CDATA[PregnancyTime]]></Name>
+					<X>-480</X><Y>-390</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[9]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915672</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915677</Id>
+					<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
+					<Description><![CDATA[conceptually its the time between pregnancy and going back to the not pregnant/conception stage (or just a increase on the not pregnant timeout)]]></Description>
+					<X>-480</X><Y>-410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915675</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915680</Id>
+					<Name><![CDATA[WeaningTime]]></Name>
+					<X>-480</X><Y>-490</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[6]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915678</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915683</Id>
+					<Name><![CDATA[MeanLatencyDuration]]></Name>
+					<X>-480</X><Y>-470</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[WeaningTime]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915681</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915686</Id>
+					<Name><![CDATA[MeanInfectedDuration]]></Name>
+					<X>-480</X><Y>-450</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[18]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915684</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915689</Id>
+					<Name><![CDATA[MeanSubClinicalDuration]]></Name>
+					<X>-480</X><Y>-430</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[24]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915687</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915692</Id>
+					<Name><![CDATA[PregnancyPercentage]]></Name>
+					<X>-480</X><Y>-330</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.9]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915690</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478021915695</Id>
+					<Name><![CDATA[maxAge]]></Name>
+					<X>-480</X><Y>-310</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[YEAR]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[120.0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478021915693</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478022571575</Id>
+					<Name><![CDATA[InitialFemalePercentage]]></Name>
+					<X>-250</X><Y>-440</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.9]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478022571573</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478024405037</Id>
+					<Name><![CDATA[FrequencyOfInfectiveContact]]></Name>
+					<X>20</X><Y>-360</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[7]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478024405035</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478024798363</Id>
+					<Name><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></Name>
+					<X>20</X><Y>-340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.5]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478024798361</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478024884875</Id>
+					<Name><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></Name>
+					<X>20</X><Y>-320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[1]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478024884873</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<AgentLinks>
 				<AgentLink>
@@ -535,54 +934,6 @@
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
-						<Parameter>
-							<Name><![CDATA[GrazingCalfTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[NotPregnantTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[PregnancyTime]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[]]></Code>
-								<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[WeaningTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[MeanLatencyDuration]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[MeanInfectedDuration]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[YoungBullRemovalRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[MeanSubClinicalDuration]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[MomToChildInfectionRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[PregnancyPercentage]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxAge]]></Name>
-						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
@@ -632,9 +983,15 @@
 						<Condition><![CDATA[item.inState(Cow.Clinical)]]></Condition>
 					</StatisticsItem>
 					<StatisticsItem>
-						<Name><![CDATA[Prevalence]]></Name>
+						<Name><![CDATA[WeightedPrevalence]]></Name>
 						<Type>average</Type>
 						<Expression><![CDATA[item.inState(Cow.SubClinical) ? SubclinicalPrevalenceModifier : item.inState(Cow.Clinical) ? ClinicalPrevalenceModifier : 0]]></Expression>
+						<Condition><![CDATA[item.isFemale]]></Condition>
+					</StatisticsItem>
+					<StatisticsItem>
+						<Name><![CDATA[Prevalence]]></Name>
+						<Type>average</Type>
+						<Expression><![CDATA[item.inState(Cow.SubClinical) ? 1 : item.inState(Cow.Clinical) ? 1 : 0]]></Expression>
 						<Condition><![CDATA[true]]></Condition>
 					</StatisticsItem>
 					<InEnvironment>true</InEnvironment>	
@@ -898,7 +1255,7 @@
 					<Id>1477593460415</Id>
 					<Name><![CDATA[parmGroup6]]></Name>
 					<X>120</X><Y>-350</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Label><X>11.764</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -912,7 +1269,7 @@
 				<Rectangle>
 					<Id>1477593460417</Id>
 					<Name><![CDATA[rectangle7]]></Name>
-					<X>-110</X><Y>-70</Y>
+					<X>-129.405</X><Y>-81.863</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -926,8 +1283,8 @@
 					<LineColor>-16777216</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>210</Width>
-					<Height>150</Height>
+					<Width>280.05</Width>
+					<Height>175.418</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -936,7 +1293,7 @@
 					<Id>1477593460419</Id>
 					<Name><![CDATA[testingParameters3]]></Name>
 					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-110</X><Y>-70</Y>
+					<X>-129.405</X><Y>-81.863</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -959,6 +1316,133 @@
 			</Shapes>
 
 				</Group>
+				<Group>
+					<Id>1478021826195</Id>
+					<Name><![CDATA[parmGroup1]]></Name>
+					<X>-150</X><Y>-190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1478021826197</Id>
+					<Name><![CDATA[rectangle2]]></Name>
+					<X>-110</X><Y>-80</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>210</Width>
+					<Height>150</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1478021826199</Id>
+					<Name><![CDATA[UnconfirmedParams]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-110</X><Y>-70</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Unconfirmed Parameters
+]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1478021915648</Id>
+					<Name><![CDATA[parmGroup]]></Name>
+					<X>-380</X><Y>-370</Y>
+					<Label><X>9.859</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+
+				</Group>
+				<Rectangle>
+					<Id>1478021915663</Id>
+					<Name><![CDATA[rectangle]]></Name>
+					<X>-490</X><Y>-530</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>207.042</Width>
+					<Height>229.085</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1478021915665</Id>
+					<Name><![CDATA[staticParms]]></Name>
+					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
+					<X>-480</X><Y>-520</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Confirmed Parameters]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 			<Charts>
     			<TimePlot>
@@ -1290,7 +1774,7 @@
     			</TimePlot>
     			<TimePlot>
 					<Id>1477418568082</Id>
-					<Name><![CDATA[plot2]]></Name>
+					<Name><![CDATA[WeightedPrevalence]]></Name>
 					<X>560</X><Y>-650</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -1341,9 +1825,18 @@
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[Prevalence]]></Title>
+						<Title><![CDATA[Weighted Prevalence]]></Title>
 					<Expression><![CDATA[my_dataset]]></Expression>
 					<Color>-2354116</Color>
+					<Expression2><![CDATA[this.cows.WeightedPrevalence()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Prevalence]]></Title>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-10496</Color>
 					<Expression2><![CDATA[this.cows.Prevalence()]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
@@ -1446,7 +1939,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476134210769</Id>
 					<Name><![CDATA[Gender]]></Name>
-					<Description><![CDATA[Gender of the cow, determined randomly 50% chance male/female]]></Description>
+					<Description><![CDATA[initially set all cows to female, cows being born during model will be 50/50 female/male]]></Description>
 					<X>480</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1455,14 +1948,15 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[GenderList]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[randomTrue(0.6) ? GenderList.Female : GenderList.Male]]></Code>
+							<Code><![CDATA[time() == 0 ? (randomTrue(main.InitialFemalePercentage) ? GenderList.Female : GenderList.Male) : randomTrue(0.5) ? GenderList.Female : GenderList.Male
+]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1476136556281</Id>
 					<Name><![CDATA[agentColor]]></Name>
-					<X>480</X><Y>-350</Y>
+					<X>220</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1568,7 +2062,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476996011229</Id>
 					<Name><![CDATA[outlineColor]]></Name>
-					<X>480</X><Y>-370</Y>
+					<X>220</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1594,329 +2088,6 @@
 							<Code><![CDATA[true]]></Code>
 						</InitialValue>
 					</Properties>
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1476135491102</Id>
-					<Name><![CDATA[GrazingCalfTime]]></Name>
-					<Description><![CDATA[Length of time which a cow stays a calf.]]></Description>
-					<X>240</X><Y>-320</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[7]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1476135491100</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1476135583796</Id>
-					<Name><![CDATA[NotPregnantTime]]></Name>
-					<Description><![CDATA[refers to the general time between pregancys, 1-2 months for conception and 1 month for post pregnancy whatnot.]]></Description>
-					<X>240</X><Y>-300</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[3]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1476135583794</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1476135628910</Id>
-					<Name><![CDATA[PregnancyTime]]></Name>
-					<X>240</X><Y>-340</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[9]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1476135628908</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1476286132586</Id>
-					<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
-					<Description><![CDATA[conceptually its the time between pregnancy and going back to the not pregnant/conception stage (or just a increase on the not pregnant timeout)]]></Description>
-					<X>240</X><Y>-360</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1476286132584</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477003300329</Id>
-					<Name><![CDATA[WeaningTime]]></Name>
-					<X>240</X><Y>-440</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[6]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477003300327</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477011191559</Id>
-					<Name><![CDATA[MeanLatencyDuration]]></Name>
-					<X>240</X><Y>-420</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[WeaningTime]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477011191557</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477011280491</Id>
-					<Name><![CDATA[MeanInfectedDuration]]></Name>
-					<X>240</X><Y>-400</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[18]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477011280489</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477011900683</Id>
-					<Name><![CDATA[YoungBullRemovalRate]]></Name>
-					<X>240</X><Y>-180</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.8]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477011900681</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477012464118</Id>
-					<Name><![CDATA[MeanSubClinicalDuration]]></Name>
-					<X>240</X><Y>-380</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[24]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477012464116</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477013955582</Id>
-					<Name><![CDATA[MomToChildInfectionRate]]></Name>
-					<X>240</X><Y>-200</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[RATE]]></UnitType>
-						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.05]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477013955580</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477593083332</Id>
-					<Name><![CDATA[PregnancyPercentage]]></Name>
-					<X>240</X><Y>-280</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.9]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477593083330</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1477593134611</Id>
-					<Name><![CDATA[maxAge]]></Name>
-					<X>240</X><Y>-260</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[YEAR]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[120.0]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1477593134609</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
 				</Variable>
 			</Variables>
 			<StatechartElements>
@@ -2086,6 +2257,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1476724089202</Id>
 					<Name><![CDATA[Bulls]]></Name>
+					<Description><![CDATA[Males are included in the population, but do not affect weightedPrevalence]]></Description>
 					<X>210</X><Y>320</Y>
 					<Label><X>45</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2163,7 +2335,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>30.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476134723765" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[NotPregnantTime]]></Code>
+							<Code><![CDATA[main.NotPregnantTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -2197,7 +2369,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[randomTrue(PregnancyPercentage)
+						<Condition><![CDATA[randomTrue(main.PregnancyPercentage)
 ]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -2228,7 +2400,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>130.0</IconOffset>
 					<Properties Source="1476134694229" Target="1476134180161" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[PregnancyTime]]></Code>
+							<Code><![CDATA[main.PregnancyTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -2281,7 +2453,11 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[main.cows.Prevalence()]]></Code>
+							<Code><![CDATA[this.inState(WeaningCalf) ? 
+	main.cows.WeightedPrevalence()* main.FrequencyOfInfectiveContact * main.WeaningCalfIntensityOfPrevalenceModifer : 
+	this.inState(GrazingCalf) ? 
+		main.cows.WeightedPrevalence() * main.FrequencyOfInfectiveContact * main.GrazingCalfIntensityOfPrevalenceModifer : 
+		0]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_YEAR]]></Unit>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
@@ -2307,7 +2483,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476648740556" Target="1476721130594" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[MeanInfectedDuration]]></Code>
+							<Code><![CDATA[main.MeanInfectedDuration]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -2338,7 +2514,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476721184187" Target="1476721184189" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[MeanSubClinicalDuration]]></Code>
+							<Code><![CDATA[main.MeanSubClinicalDuration]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -2420,7 +2596,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[randomTrue(YoungBullRemovalRate) && !isFemale]]></Condition>
+						<Condition><![CDATA[time() == 0 ? false : (randomTrue(main.YoungBullRemovalRate) && !isFemale)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -2518,7 +2694,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[MomToChildInfectionRate]]></Code>
+							<Code><![CDATA[main.MomToChildInfectionRate]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
@@ -2539,13 +2715,13 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>-30</Y></Point>
+						<Point><X>10</X><Y>-30</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476648694794" Target="1476648694794" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -2633,7 +2809,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>95.56239843019819</X><Y>143.34359764529722</Y></Point>
+						<Point><X>95</X><Y>143</Y></Point>
 					</Points>
 					<IconOffset>30.0</IconOffset>
 					<Properties Source="1476724089202" Target="1476721237689" Trigger="condition">
@@ -2664,7 +2840,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>162.92969666922352</X><Y>86.25689823664771</Y></Point>
+						<Point><X>162</X><Y>86</Y></Point>
 					</Points>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476721237689" Trigger="condition">
@@ -2704,7 +2880,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[currentAge > WeaningTime]]></Condition>
+						<Condition><![CDATA[currentAge > main.WeaningTime]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -2735,7 +2911,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[currentAge >= GrazingCalfTime + WeaningTime]]></Condition>
+						<Condition><![CDATA[currentAge >= main.GrazingCalfTime + main.WeaningTime]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -2763,7 +2939,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476721184189" Target="1476721237689" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[MeanClincalRemovalDuration]]></Code>
+							<Code><![CDATA[main.MeanClincalRemovalDuration]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -2829,7 +3005,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= MeanLatencyDuration) 
+						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration) 
 && randomTrue(main.InitialInfectedPercentage)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -2862,7 +3038,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= MeanLatencyDuration + MeanInfectedDuration) 
+						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
 && randomTrue(main.InitialSubClinicalPercentage)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -2895,7 +3071,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= MeanLatencyDuration + MeanInfectedDuration + MeanSubClinicalDuration)
+						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
 && randomTrue(main.InitialClinicalPercentage)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -2968,7 +3144,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</RecurrenceCode>
-						<Condition><![CDATA[maxAge < this.currentAge
+						<Condition><![CDATA[main.maxAge < this.currentAge
 && this.child == null 
 ]]></Condition>
 					</Properties>
@@ -2989,7 +3165,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Body><![CDATA[//Generates cows of the following starting ages (0,12,24,....,108 months)
 if(time() == 0)
 {
-	int randomNum = uniform_discr(0,9);
+	int randomNum = uniform_discr(1,9);
 	int age = (randomNum*12);
 	return age;
 }
@@ -3505,90 +3681,9 @@ else
 
 				</Group>
 				<Group>
-					<Id>1477591892868</Id>
-					<Name><![CDATA[parmGroup]]></Name>
-					<X>340</X><Y>-320</Y>
-					<Label><X>9.859</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-
-				</Group>
-				<Group>
-					<Id>1477591923681</Id>
-					<Name><![CDATA[parmGroup1]]></Name>
-					<X>340</X><Y>-160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Rectangle>
-					<Id>1477591923683</Id>
-					<Name><![CDATA[rectangle2]]></Name>
-					<X>-110</X><Y>-80</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>210</Width>
-					<Height>150</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1477591923685</Id>
-					<Name><![CDATA[UnconfirmedParams]]></Name>
-					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-110</X><Y>-70</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Unconfirmed Parameters
-]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>10</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-			</Shapes>
-
-				</Group>
-				<Group>
 					<Id>1477591942667</Id>
 					<Name><![CDATA[parmGroup2]]></Name>
-					<X>570</X><Y>-330</Y>
+					<X>310</X><Y>-170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -3713,52 +3808,6 @@ else
 			</Shapes>
 
 				</Group>
-				<Rectangle>
-					<Id>1477591525356</Id>
-					<Name><![CDATA[rectangle]]></Name>
-					<X>230</X><Y>-480</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>207.042</Width>
-					<Height>229.085</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1477591541605</Id>
-					<Name><![CDATA[staticParms]]></Name>
-					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>240</X><Y>-470</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Confirmed Parameters]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>10</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -3796,7 +3845,7 @@ else
 				<CloseConfirmation>false</CloseConfirmation>
 			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
-			<MaximumMemory>256</MaximumMemory>
+			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<SeedValue>1</SeedValue>
@@ -3873,9 +3922,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[exposureRate]]></ParameterName>
-				</Parameter>
-				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
@@ -3899,6 +3945,54 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestSensitivity]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungBullRemovalRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MomToChildInfectionRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[NotPregnantTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanClincalRemovalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanLatencyDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanInfectedDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanSubClinicalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -3908,7 +4002,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				ToolbarCustomizableAtRuntime="true"
 				EnableZoom="true">
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
-				<CpuRatio><![CDATA[ratio_1_2]]></CpuRatio>	        
+				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
 				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
 				<RealTimeScale>1.0</RealTimeScale>
@@ -3933,8 +4027,8 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<StopOption><![CDATA[Stop at specified time]]></StopOption>
 				<InitialDate><![CDATA[1476057600000]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[3031257600000]]></FinalDate>	
-				<FinalTime><![CDATA[600.0]]></FinalTime>	
+				<FinalDate><![CDATA[2098137600000]]></FinalDate>	
+				<FinalTime><![CDATA[240.0]]></FinalTime>	
 			</ModelTimeProperties>
 		</SimulationExperiment>
 		<!--   =========   Simulation Experiment   ========  -->
@@ -4033,9 +4127,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[exposureRate]]></ParameterName>
-				</Parameter>
-				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
@@ -4058,6 +4149,54 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungBullRemovalRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MomToChildInfectionRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[NotPregnantTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanClincalRemovalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanLatencyDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanInfectedDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanSubClinicalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
