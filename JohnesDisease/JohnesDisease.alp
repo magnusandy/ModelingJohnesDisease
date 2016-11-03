@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -360,7 +360,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[4 * SubclinicalPrevalenceModifier]]></Code>
+							<Code><![CDATA[ClinicalMultiplier * SubclinicalPrevalenceModifier]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477418026125</Id>
@@ -889,6 +889,32 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478210458940</Id>
+					<Name><![CDATA[ClinicalMultiplier]]></Name>
+					<Description><![CDATA[increase in disease spreading based on being in clinical state]]></Description>
+					<X>20</X><Y>-300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[4]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478210458938</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<AgentLinks>
 				<AgentLink>
@@ -1062,6 +1088,7 @@
 				<Group>
 					<Id>1477592792617</Id>
 					<Name><![CDATA[parmGroup3]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>-150</X><Y>-620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -1126,6 +1153,7 @@
 				<Group>
 					<Id>1477592883721</Id>
 					<Name><![CDATA[parmGroup4]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>-150</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -1190,6 +1218,7 @@
 				<Group>
 					<Id>1477593396370</Id>
 					<Name><![CDATA[parmGroup5]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>124</X><Y>-525</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -1254,6 +1283,7 @@
 				<Group>
 					<Id>1477593460415</Id>
 					<Name><![CDATA[parmGroup6]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>120</X><Y>-350</Y>
 					<Label><X>11.764</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -1319,6 +1349,7 @@
 				<Group>
 					<Id>1478021826195</Id>
 					<Name><![CDATA[parmGroup1]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>-150</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2596,7 +2627,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[time() == 0 ? false : (randomTrue(main.YoungBullRemovalRate) && !isFemale)]]></Condition>
+						<Condition><![CDATA[birthTime == 0 ? false : (randomTrue(main.YoungBullRemovalRate) && !isFemale)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -4053,6 +4084,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<Parameter>
 					<ParameterName><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ClinicalMultiplier]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -4257,6 +4291,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ClinicalMultiplier]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
