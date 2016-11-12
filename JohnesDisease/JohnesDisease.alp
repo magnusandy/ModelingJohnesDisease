@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -34,6 +34,18 @@
 			<Option>
 				<Id>1476724530894</Id>
 				<Name><![CDATA[ExposureFromMother]]></Name>
+			</Option>
+		</OptionList>
+		<OptionList>
+			<Id>1478920993322</Id>
+			<Name><![CDATA[TestingType]]></Name>
+			<Option>
+				<Id>1478920993323</Id>
+				<Name><![CDATA[Blood]]></Name>
+			</Option>
+			<Option>
+				<Id>1478920993324</Id>
+				<Name><![CDATA[Fecal]]></Name>
 			</Option>
 		</OptionList>
 	</OptionLists>
@@ -127,7 +139,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005380602</Id>
 					<Name><![CDATA[deceasedCows]]></Name>
-					<X>30</X><Y>-550</Y>
+					<X>20</X><Y>-610</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -142,7 +154,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005402066</Id>
 					<Name><![CDATA[InfectedFromEnviroment]]></Name>
-					<X>30</X><Y>-530</Y>
+					<X>20</X><Y>-590</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -157,13 +169,103 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005428740</Id>
 					<Name><![CDATA[InfectedFromMother]]></Name>
-					<X>30</X><Y>-570</Y>
+					<X>20</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1478900354664</Id>
+					<Name><![CDATA[removedUsingFecalTesting]]></Name>
+					<X>20</X><Y>-570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1478900549762</Id>
+					<Name><![CDATA[countFecalTestTruePositive]]></Name>
+					<X>20</X><Y>-530</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1478900572314</Id>
+					<Name><![CDATA[countFecalTestFalsePositive]]></Name>
+					<X>20</X><Y>-510</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1478904071124</Id>
+					<Name><![CDATA[countBloodTestTruePositive]]></Name>
+					<X>20</X><Y>-490</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1478904088388</Id>
+					<Name><![CDATA[countBloodTestFalsePositive]]></Name>
+					<X>20</X><Y>-470</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1478904119386</Id>
+					<Name><![CDATA[removedUsingBloodTesting]]></Name>
+					<X>20</X><Y>-550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
@@ -374,6 +476,7 @@
 				<Variable Class="Parameter">
 					<Id>1477421265799</Id>
 					<Name><![CDATA[BloodTestSpecificity]]></Name>
+					<Description><![CDATA[Specificity (Sp) is defined as ‘the ability of a test to correctly identify non-diseased animals as test negative (true negative)’.]]></Description>
 					<X>-250</X><Y>-670</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -399,6 +502,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424604611</Id>
 					<Name><![CDATA[BloodTestSensitivity]]></Name>
+					<Description><![CDATA[Sensitivity (Se) is defined as ‘the ability of a test to correctly identify diseased animals as test positive (true positive)’ ie the proportion of diseased animals that will react to the test.]]></Description>
 					<X>-250</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -409,6 +513,9 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.4]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477424604609</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
@@ -421,6 +528,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424620387</Id>
 					<Name><![CDATA[FecalTestSpecificity]]></Name>
+					<Description><![CDATA[Specificity (Sp) is defined as ‘the ability of a test to correctly identify non-diseased animals as test negative (true negative)’.]]></Description>
 					<X>-250</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -446,6 +554,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424636282</Id>
 					<Name><![CDATA[FecalTestSensitivity]]></Name>
+					<Description><![CDATA[Sensitivity (Se) is defined as ‘the ability of a test to correctly identify diseased animals as test positive (true positive)’ ie the proportion of diseased animals that will react to the test.]]></Description>
 					<X>-250</X><Y>-610</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -456,6 +565,9 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.3]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477424636280</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
@@ -915,6 +1027,58 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478921834310</Id>
+					<Name><![CDATA[BloodTestingDelayInMonths]]></Name>
+					<Description><![CDATA[Blood testing takes 2 weeks, or 0.5 months]]></Description>
+					<X>-250</X><Y>-180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.5]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478921834308</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1478921859148</Id>
+					<Name><![CDATA[FecalTestingDelayInMonths]]></Name>
+					<Description><![CDATA[Fecal testing takes 14 weeks, or 3.5 months]]></Description>
+					<X>-250</X><Y>-160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[3.5]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1478921859146</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<AgentLinks>
 				<AgentLink>
@@ -1094,6 +1258,7 @@
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -1159,6 +1324,7 @@
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -1219,11 +1385,12 @@
 					<Id>1477593396370</Id>
 					<Name><![CDATA[parmGroup5]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>124</X><Y>-525</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>120</X><Y>-550</Y>
+					<Label><X>9.718</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -1234,7 +1401,7 @@
 				<Rectangle>
 					<Id>1477593396372</Id>
 					<Name><![CDATA[rectangle6]]></Name>
-					<X>-110</X><Y>-70</Y>
+					<X>-120</X><Y>-110</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1248,8 +1415,8 @@
 					<LineColor>-16777216</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>210</Width>
-					<Height>150</Height>
+					<Width>200</Width>
+					<Height>196.078</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -1258,7 +1425,7 @@
 					<Id>1477593396374</Id>
 					<Name><![CDATA[testingParameters2]]></Name>
 					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-110</X><Y>-70</Y>
+					<X>-50</X><Y>-110</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1289,6 +1456,7 @@
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -1355,6 +1523,7 @@
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -1436,6 +1605,7 @@
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -1806,7 +1976,7 @@
     			<TimePlot>
 					<Id>1477418568082</Id>
 					<Name><![CDATA[WeightedPrevalence]]></Name>
-					<X>560</X><Y>-650</Y>
+					<X>560</X><Y>-670</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1888,6 +2058,7 @@
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<Import><![CDATA[import java.util.concurrent.TimeoutException;]]></Import>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1476134176437</Id>
@@ -2120,6 +2291,21 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1478899343651</Id>
+					<Name><![CDATA[toRemove]]></Name>
+					<X>610</X><Y>-170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 			</Variables>
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -2334,6 +2520,80 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>false</ShowLabel>
 					<Properties>	
 					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1478918964624</Id>
+					<Name><![CDATA[FecalTestingIdle]]></Name>
+					<X>80</X><Y>720</Y>
+					<Label><X>0</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1478919711310</Id>
+					<Name><![CDATA[FecalTestDelay]]></Name>
+					<X>240</X><Y>720</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1478919747192</Id>
+					<Name><![CDATA[FecalTesting]]></Name>
+					<X>400</X><Y>720</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[fecalTestActionChart();]]></EntryAction>
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1478920665042</Id>
+					<Name><![CDATA[BloodTestingIdle]]></Name>
+					<X>880</X><Y>720</Y>
+					<Label><X>0</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1478920665052</Id>
+					<Name><![CDATA[BloodTestDelay]]></Name>
+					<X>1040</X><Y>720</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<FillColor/>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1478920665054</Id>
+					<Name><![CDATA[BloodTesting]]></Name>
+					<X>1200</X><Y>720</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[bloodTestActionChart();]]></EntryAction>
+						<FillColor/>
+					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1476134180163</Id>
@@ -3175,7 +3435,481 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
+				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
+					<Id>1478918971567</Id>
+					<Name><![CDATA[fecalTestingStateChart]]></Name>
+					<X>40</X><Y>740</Y>
+					<Label><X>-30</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+					</Points>
+					<Properties Target="1478918964624">
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1478919099703</Id>
+					<Name><![CDATA[transition2]]></Name>
+					<X>180</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1478918964624" Target="1478919711310" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[12]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1478919741772</Id>
+					<Name><![CDATA[transition3]]></Name>
+					<X>340</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1478919711310" Target="1478919747192" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[main.FecalTestingDelayInMonths]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1478920037072</Id>
+					<Name><![CDATA[transition4]]></Name>
+					<X>500</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>60</Y></Point>
+						<Point><X>-320</X><Y>60</Y></Point>
+						<Point><X>-340</X><Y>10</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1478919747192" Target="1478918964624" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
+					<Id>1478920665056</Id>
+					<Name><![CDATA[bloodTestingStateChart]]></Name>
+					<X>840</X><Y>740</Y>
+					<Label><X>-30</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+					</Points>
+					<Properties Target="1478920665042">
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1478920665062</Id>
+					<Name><![CDATA[transition5]]></Name>
+					<X>980</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1478920665042" Target="1478920665052" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[12]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1478920665064</Id>
+					<Name><![CDATA[transition6]]></Name>
+					<X>1140</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1478920665052" Target="1478920665054" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[main.BloodTestingDelayInMonths]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1478920665066</Id>
+					<Name><![CDATA[transition7]]></Name>
+					<X>1300</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>60</Y></Point>
+						<Point><X>-320</X><Y>60</Y></Point>
+						<Point><X>-340</X><Y>10</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1478920665054" Target="1478920665042" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
 			</StatechartElements>
+			<ActionChartElements>
+				<ActionChartElement Class="ActionChart">
+					<Id>1478737137383</Id>
+					<Name><![CDATA[fecalTestActionChart]]></Name>
+					<X>140</X><Y>880</Y>
+					<Label><X>-60</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties AccessType="default" StaticFunction="false" Width="20" Height="20" Next="1478737484041" >
+						<FillColor/>
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478737484041</Id>
+					<Name><![CDATA[isFemaleFecalTest]]></Name>
+					<Description><![CDATA[We are only testing Female Cows. If this condition proves to be faulty or unnecessary later it can be removed. ]]></Description>
+					<X>140</X><Y>930</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Is the Cow Female?]]></Comment>
+					<Properties Width="200" Height="40" Appearance="0" Previous="1478737137383" Next="1478737151229" TrueAction="1478898211477" >
+						<FillColor/>
+						<Condition><![CDATA[this.isFemale]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1478899257212</Id>
+					<Name><![CDATA[removeFecalTestPositive]]></Name>
+					<Description><![CDATA[Removes all cows with positive test results.]]></Description>
+					<X>430</X><Y>1170</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Removing Positive testing cows]]></Comment>
+					<Properties Width="200" Height="30" Previous="1478898211477" >
+						<FillColor/>
+						<Code><![CDATA[if (this.toRemove) {
+	agentColor = purple; 
+	main.remove_cows(this);
+	main.deceasedCows = main.deceasedCows + 1;
+	main.removedUsingFecalTesting = main.removedUsingFecalTesting + 1;
+}]]></Code>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478898211477</Id>
+					<Name><![CDATA[isInfectiveFecalTest]]></Name>
+					<Description><![CDATA[Required to split the cows into categoties of 'Infective or worse' and 'Not Infective' for proper specificity and sensitivity testing. This allows separate logical testing in the model for true positive and false positive results.]]></Description>
+					<X>430</X><Y>980</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Is the Cow Infective or worse?]]></Comment>
+					<Properties Width="240" Height="40" Appearance="0" Previous="1478737484041" Next="1478899257212" TrueAction="1478740206197" FalseAction="1478898241268" >
+						<FillColor/>
+						<Condition><![CDATA[this.inState(Infective)]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478740206197</Id>
+					<Name><![CDATA[isFecalSeTestPositive]]></Name>
+					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to false negatives.]]></Description>
+					<X>570</X><Y>1030</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Fecal Sensitivity Test]]></Comment>
+					<Properties Width="180" Height="40" Appearance="0" Previous="1478898211477" TrueAction="1478897823095" >
+						<FillColor/>
+						<Condition><![CDATA[randomTrue(main.FecalTestSensitivity)]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1478897823095</Id>
+					<Name><![CDATA[setSeFecalRemoval]]></Name>
+					<X>680</X><Y>1080</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Set to remove]]></Comment>
+					<Properties Width="100" Height="30" Previous="1478740206197" >
+						<FillColor/>
+						<Code><![CDATA[this.toRemove = true;
+main.countFecalTestTruePositive++;]]></Code>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478898241268</Id>
+					<Name><![CDATA[isFecalSpTestPositive]]></Name>
+					<Description><![CDATA[The true values of this condition equate to false positive test results. The false values equate to true negatives.]]></Description>
+					<X>260</X><Y>1030</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Fecal Specificity Test]]></Comment>
+					<Properties Width="180" Height="40" Appearance="0" Previous="1478898211477" TrueAction="1478898255794" >
+						<FillColor/>
+						<Condition><![CDATA[randomTrue((1 - main.FecalTestSpecificity))]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1478898255794</Id>
+					<Name><![CDATA[setSpFecalRemoval]]></Name>
+					<X>370</X><Y>1080</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Set to remove]]></Comment>
+					<Properties Width="100" Height="30" Previous="1478898241268" >
+						<FillColor/>
+						<Code><![CDATA[this.toRemove = true;
+main.countFecalTestFalsePositive++;]]></Code>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="Return">
+					<Id>1478737151229</Id>
+					<Name><![CDATA[returnStatementFecalTest]]></Name>
+					<X>140</X><Y>1240</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="80" Height="20" Previous="1478737484041" >
+						<FillColor/>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="ActionChart">
+					<Id>1478903772636</Id>
+					<Name><![CDATA[bloodTestActionChart]]></Name>
+					<X>940</X><Y>880</Y>
+					<Label><X>-60</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties AccessType="default" StaticFunction="false" Width="20" Height="20" Next="1478903772650" >
+						<FillColor/>
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478903772650</Id>
+					<Name><![CDATA[isFemaleBloodTest]]></Name>
+					<Description><![CDATA[We are only testing Female Cows. If this condition proves to be faulty or unnecessary later it can be removed. ]]></Description>
+					<X>940</X><Y>930</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Is the Cow Female?]]></Comment>
+					<Properties Width="200" Height="40" Appearance="0" Previous="1478903772636" Next="1478903772657" TrueAction="1478903772651" >
+						<FillColor/>
+						<Condition><![CDATA[this.isFemale]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478903772651</Id>
+					<Name><![CDATA[isInfectiveBloodTest]]></Name>
+					<Description><![CDATA[Required to split the cows into categoties of 'Infective or worse' and 'Not Infective' for proper specificity and sensitivity testing. This allows separate logical testing in the model for true positive and false positive results.]]></Description>
+					<X>1230</X><Y>980</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Is the Cow Infective or worse?]]></Comment>
+					<Properties Width="240" Height="40" Appearance="0" Previous="1478903772650" Next="1478903772656" TrueAction="1478903772652" FalseAction="1478903772654" >
+						<FillColor/>
+						<Condition><![CDATA[this.inState(Infective)]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478903772652</Id>
+					<Name><![CDATA[isBloodSeTestPositive]]></Name>
+					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to false negatives.]]></Description>
+					<X>1370</X><Y>1030</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Blood Sensitivity Test]]></Comment>
+					<Properties Width="180" Height="40" Appearance="0" Previous="1478903772651" TrueAction="1478903772653" >
+						<FillColor/>
+						<Condition><![CDATA[randomTrue(main.BloodTestSensitivity)]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1478903772653</Id>
+					<Name><![CDATA[setSeBloodRemoval]]></Name>
+					<X>1480</X><Y>1080</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Set to remove]]></Comment>
+					<Properties Width="100" Height="30" Previous="1478903772652" >
+						<FillColor/>
+						<Code><![CDATA[this.toRemove = true;
+main.countBloodTestTruePositive++;]]></Code>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="Decision">
+					<Id>1478903772654</Id>
+					<Name><![CDATA[isBloodSpTestPositive]]></Name>
+					<Description><![CDATA[The true values of this condition equate to false positive test results. The false values equate to true negatives.]]></Description>
+					<X>1060</X><Y>1030</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Blood Specificity Test]]></Comment>
+					<Properties Width="180" Height="40" Appearance="0" Previous="1478903772651" TrueAction="1478903772655" >
+						<FillColor/>
+						<Condition><![CDATA[randomTrue(0.001)]]></Condition>
+					</Properties>
+				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1478903772655</Id>
+					<Name><![CDATA[setSpBloodRemoval]]></Name>
+					<X>1170</X><Y>1080</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Set to remove]]></Comment>
+					<Properties Width="100" Height="30" Previous="1478903772654" >
+						<FillColor/>
+						<Code><![CDATA[this.toRemove = true;
+main.countBloodTestFalsePositive++;]]></Code>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1478903772656</Id>
+					<Name><![CDATA[removeBloodTestPositive]]></Name>
+					<Description><![CDATA[Removes all cows with positive test results.]]></Description>
+					<X>1230</X><Y>1170</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Removing Positive testing cows]]></Comment>
+					<Properties Width="200" Height="30" Previous="1478903772651" >
+						<FillColor/>
+						<Code><![CDATA[if (this.toRemove) {
+	agentColor = purple; 
+	main.remove_cows(this);
+	main.deceasedCows = main.deceasedCows + 1;
+	main.removedUsingBloodTesting = main.removedUsingBloodTesting + 1;
+}]]></Code>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="Return">
+					<Id>1478903772657</Id>
+					<Name><![CDATA[returnStatementBloodTest]]></Name>
+					<X>940</X><Y>1240</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="80" Height="20" Previous="1478903772650" >
+						<FillColor/>
+					</Properties>	
+				</ActionChartElement>
+			</ActionChartElements>
 			<Events>
 				<Event>
 					<Id>1476486708425</Id>
@@ -3241,6 +3975,38 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					</Properties>
 					<Action><![CDATA[main.remove_cows(this)]]></Action>
 				</Event>
+				<Event>
+					<Id>1478900079462</Id>
+					<Name><![CDATA[FecalTestingEvent]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>20</X><Y>-290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1478937600000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[12]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[fecalTestActionChart();]]></Action>
+				</Event>
 			</Events>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
@@ -3288,6 +4054,16 @@ else
 						<PackageName><![CDATA[johnesdisease]]></PackageName>
 						<ClassName><![CDATA[Cow]]></ClassName>
 						<ItemName><![CDATA[JohnesStateChart]]></ItemName>
+					</StatechartReference>
+					<StatechartReference>
+						<PackageName><![CDATA[johnesdisease]]></PackageName>
+						<ClassName><![CDATA[Cow]]></ClassName>
+						<ItemName><![CDATA[fecalTestingStateChart]]></ItemName>
+					</StatechartReference>
+					<StatechartReference>
+						<PackageName><![CDATA[johnesdisease]]></PackageName>
+						<ClassName><![CDATA[Cow]]></ClassName>
+						<ItemName><![CDATA[bloodTestingStateChart]]></ItemName>
 					</StatechartReference>
 					<LineStyle>SOLID</LineStyle>
 					<LineWidth>1</LineWidth>
@@ -3838,8 +4614,8 @@ else
 				<Group>
 					<Id>1477592094344</Id>
 					<Name><![CDATA[parmGroup3]]></Name>
-					<X>570</X><Y>-160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>562</X><Y>-160</Y>
+					<Label><X>11.558</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -3853,7 +4629,7 @@ else
 				<Rectangle>
 					<Id>1477592094346</Id>
 					<Name><![CDATA[rectangle4]]></Name>
-					<X>-110</X><Y>-80</Y>
+					<X>-108.759</X><Y>-88.989</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -3867,8 +4643,8 @@ else
 					<LineColor>-16777216</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>210</Width>
-					<Height>150</Height>
+					<Width>242.724</Width>
+					<Height>172.549</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -3877,7 +4653,7 @@ else
 					<Id>1477592094348</Id>
 					<Name><![CDATA[staticParms3]]></Name>
 					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-110</X><Y>-70</Y>
+					<X>-32</X><Y>-80</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -3937,7 +4713,7 @@ else
 			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
-			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
@@ -4086,6 +4862,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[ClinicalMultiplier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestingDelayInMonths]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestingDelayInMonths]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -4294,6 +5076,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[ClinicalMultiplier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestingDelayInMonths]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestingDelayInMonths]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
