@@ -3963,7 +3963,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1478898211477</Id>
 					<Name><![CDATA[isInfectiveFecalTest]]></Name>
 					<Description><![CDATA[Required to split the cows into categoties of 'Infective or worse' and 'Not Infective' for proper specificity and sensitivity testing. This allows separate logical testing in the model for true positive and false positive results.]]></Description>
-					<X>430</X><Y>980</Y>
+					<X>450</X><Y>980</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3977,11 +3977,11 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1478740206197</Id>
 					<Name><![CDATA[isCowInfected]]></Name>
 					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to false negatives.]]></Description>
-					<X>850</X><Y>1030</Y>
+					<X>870</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Is Cow Infected?]]></Comment>
+					<Comment><![CDATA[Is Cow in Infected State?]]></Comment>
 					<Properties Width="180" Height="40" Appearance="0" Previous="1478898211477" TrueAction="1479235218750" FalseAction="1479235204970" >
 						<FillColor/>
 						<Condition><![CDATA[this.inState(Infected)]]></Condition>
@@ -3990,7 +3990,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<ActionChartElement Class="Decision">
 					<Id>1479235218750</Id>
 					<Name><![CDATA[FecalnfectedTest]]></Name>
-					<X>960</X><Y>1080</Y>
+					<X>980</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4003,7 +4003,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<ActionChartElement Class="Code">
 					<Id>1478897823095</Id>
 					<Name><![CDATA[setSeFecalRemoval]]></Name>
-					<X>1030</X><Y>1150</Y>
+					<X>1050</X><Y>1150</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4017,12 +4017,12 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235204970</Id>
 					<Name><![CDATA[decision]]></Name>
-					<X>640</X><Y>1080</Y>
+					<X>660</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Is Cow Subclinical?]]></Comment>
-					<Properties Width="100" Height="40" Appearance="0" Previous="1478740206197" TrueAction="1479235474225" FalseAction="1479235467980" >
+					<Comment><![CDATA[Is Cow in Subclinical State?]]></Comment>
+					<Properties Width="100" Height="60" Appearance="0" Previous="1478740206197" TrueAction="1479235474225" FalseAction="1479235467980" >
 						<FillColor/>
 						<Condition><![CDATA[this.inState(SubClinical)]]></Condition>
 					</Properties>
@@ -4030,7 +4030,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235474225</Id>
 					<Name><![CDATA[FecalsubclinicalTest]]></Name>
-					<X>720</X><Y>1130</Y>
+					<X>740</X><Y>1140</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4043,7 +4043,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479235474228</Id>
 					<Name><![CDATA[setSeFecalRemoval2]]></Name>
-					<X>790</X><Y>1200</Y>
+					<X>810</X><Y>1210</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4057,7 +4057,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235467980</Id>
 					<Name><![CDATA[FecaCinicalTest]]></Name>
-					<X>510</X><Y>1130</Y>
+					<X>530</X><Y>1140</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4070,7 +4070,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479235467982</Id>
 					<Name><![CDATA[setSeFecalRemoval1]]></Name>
-					<X>580</X><Y>1205</Y>
+					<X>600</X><Y>1215</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4085,34 +4085,20 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Id>1478898241268</Id>
 					<Name><![CDATA[isFecalSpTestPositive]]></Name>
 					<Description><![CDATA[The true values of this condition equate to false positive test results. The false values equate to true negatives.]]></Description>
-					<X>260</X><Y>1030</Y>
+					<X>310</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[False Positive]]></Comment>
-					<Properties Width="180" Height="40" Appearance="0" Previous="1478898211477" TrueAction="1478898255794" >
+					<Comment><![CDATA[Specificity Test of Susceptibles]]></Comment>
+					<Properties Width="180" Height="40" Appearance="0" Previous="1478898211477" FalseAction="1478898255794" >
 						<FillColor/>
-						<Condition><![CDATA[randomTrue((1 - main.FecalTestSpecificity))]]></Condition>
+						<Condition><![CDATA[randomTrue((main.FecalTestSpecificity))]]></Condition>
 					</Properties>
-				</ActionChartElement>
-				<ActionChartElement Class="Code">
-					<Id>1478898255794</Id>
-					<Name><![CDATA[setSpFecalRemoval]]></Name>
-					<X>370</X><Y>1080</Y>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Set to remove]]></Comment>
-					<Properties Width="100" Height="30" Previous="1478898241268" >
-						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
-main.countFecalTestFalsePositive++;]]></Code>
-					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Return">
 					<Id>1478737151229</Id>
 					<Name><![CDATA[returnStatementFecalTest]]></Name>
-					<X>140</X><Y>1355</Y>
+					<X>140</X><Y>1365</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4307,6 +4293,20 @@ main.countBloodTestFalsePositive++;]]></Code>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="80" Height="20" Previous="1479236233914" >
 						<FillColor/>
+					</Properties>	
+				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1478898255794</Id>
+					<Name><![CDATA[setSpFecalRemoval]]></Name>
+					<X>200</X><Y>1080</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Set to remove]]></Comment>
+					<Properties Width="100" Height="30" Previous="1478898241268" >
+						<FillColor/>
+						<Code><![CDATA[this.toRemove = true;
+main.countFecalTestFalsePositive++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 			</ActionChartElements>
