@@ -2347,7 +2347,7 @@
 					<Id>1476134210769</Id>
 					<Name><![CDATA[Gender]]></Name>
 					<Description><![CDATA[initially set all cows to female, cows being born during model will be 50/50 female/male]]></Description>
-					<X>480</X><Y>-210</Y>
+					<X>720</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2363,7 +2363,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476136556281</Id>
 					<Name><![CDATA[agentColor]]></Name>
-					<X>220</X><Y>-190</Y>
+					<X>460</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2378,7 +2378,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476210270621</Id>
 					<Name><![CDATA[birthTime]]></Name>
-					<X>480</X><Y>-130</Y>
+					<X>720</X><Y>-130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2393,7 +2393,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476210364893</Id>
 					<Name><![CDATA[currentAge]]></Name>
-					<X>480</X><Y>-110</Y>
+					<X>720</X><Y>-110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2409,7 +2409,7 @@
 					<Id>1476214008773</Id>
 					<Name><![CDATA[startingAge]]></Name>
 					<Description><![CDATA[used in the calculation of current age, for the initial cows in the model some will start at an age older than 0]]></Description>
-					<X>480</X><Y>-150</Y>
+					<X>720</X><Y>-150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2424,7 +2424,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476216497330</Id>
 					<Name><![CDATA[isFemale]]></Name>
-					<X>480</X><Y>-190</Y>
+					<X>720</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2439,7 +2439,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476724586274</Id>
 					<Name><![CDATA[child]]></Name>
-					<X>610</X><Y>-210</Y>
+					<X>850</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2454,7 +2454,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476724733626</Id>
 					<Name><![CDATA[mother]]></Name>
-					<X>610</X><Y>-190</Y>
+					<X>850</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2469,7 +2469,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1476996011229</Id>
 					<Name><![CDATA[outlineColor]]></Name>
-					<X>220</X><Y>-210</Y>
+					<X>460</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2484,7 +2484,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477184118014</Id>
 					<Name><![CDATA[isCalf]]></Name>
-					<X>480</X><Y>-170</Y>
+					<X>720</X><Y>-170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2499,7 +2499,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478899343651</Id>
 					<Name><![CDATA[toRemove]]></Name>
-					<X>610</X><Y>-170</Y>
+					<X>850</X><Y>-170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2514,7 +2514,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479241954231</Id>
 					<Name><![CDATA[numBloodTests]]></Name>
-					<X>610</X><Y>-150</Y>
+					<X>850</X><Y>-150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2532,7 +2532,7 @@
 					<Id>1476134180159</Id>
 					<Name><![CDATA[GrazingCalf]]></Name>
 					<Description><![CDATA[This stage captures the second half of a cows childhood (about 7 months) in this stage the cow is less likely to contract infection but still susceptible]]></Description>
-					<X>70</X><Y>230</Y>
+					<X>310</X><Y>230</Y>
 					<Label><X>30</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2547,7 +2547,7 @@
 					<Id>1476134180161</Id>
 					<Name><![CDATA[NotPregnant]]></Name>
 					<Description><![CDATA[Interm stage before pregnancy]]></Description>
-					<X>70</X><Y>400</Y>
+					<X>310</X><Y>400</Y>
 					<Label><X>25</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2561,7 +2561,7 @@
 					<Id>1476134694229</Id>
 					<Name><![CDATA[Pregnant]]></Name>
 					<Description><![CDATA[female cows will be in this stage for 9 months before creating a new calf. The calf's mother variable and the mother's calf variable are set here.]]></Description>
-					<X>60</X><Y>570</Y>
+					<X>300</X><Y>570</Y>
 					<Label><X>45</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2582,7 +2582,7 @@ newCow.mother = this;
 					<Id>1476134723765</Id>
 					<Name><![CDATA[gettingPregnantBranch]]></Name>
 					<Description><![CDATA[Branching possibility of cows getting pregnant or not, female cows have a 90% chance of getting pregnant and transitioning to Pregnant state.]]></Description>
-					<X>130</X><Y>510</Y>
+					<X>370</X><Y>510</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2594,7 +2594,7 @@ newCow.mother = this;
 					<Id>1476648694794</Id>
 					<Name><![CDATA[Susceptible]]></Name>
 					<Description><![CDATA[In this stage, cows do not yet have the disease, they are not yet infected]]></Description>
-					<X>610</X><Y>200</Y>
+					<X>850</X><Y>200</Y>
 					<Label><X>25</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2607,7 +2607,7 @@ newCow.mother = this;
 					<Id>1476648740556</Id>
 					<Name><![CDATA[Infected]]></Name>
 					<Description><![CDATA[Infection of the disease comes in 3 stages, infection wherein the MAP bacteria is multiplying but not being spread (this stage)]]></Description>
-					<X>610</X><Y>280</Y>
+					<X>850</X><Y>280</Y>
 					<Label><X>35</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2620,7 +2620,7 @@ newCow.mother = this;
 					<Id>1476721130594</Id>
 					<Name><![CDATA[Infective]]></Name>
 					<Description><![CDATA[Encapsulates the infective state wherein cows will be spreading the disease at varying rates depending on Clinicality ]]></Description>
-					<X>580</X><Y>360</Y>
+					<X>820</X><Y>360</Y>
 					<Label><X>65</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2633,7 +2633,7 @@ newCow.mother = this;
 					<Id>1476721184187</Id>
 					<Name><![CDATA[SubClinical]]></Name>
 					<Description><![CDATA[This stage is the second stage of the disease, the disease has multiplied enough to start being spread, the cow spreads the disease through manure and bodily fluids (to the calf if female).]]></Description>
-					<X>610</X><Y>410</Y>
+					<X>850</X><Y>410</Y>
 					<Label><X>25</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2647,7 +2647,7 @@ newCow.mother = this;
 					<Id>1476721184189</Id>
 					<Name><![CDATA[Clinical]]></Name>
 					<Description><![CDATA[This is the Clinical stage of the disease, spreading of MAP is more rapid at this stage, the cows begins to show physical symptoms such as diarreha and weightloss.]]></Description>
-					<X>610</X><Y>490</Y>
+					<X>850</X><Y>490</Y>
 					<Label><X>40</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2661,7 +2661,7 @@ newCow.mother = this;
 					<Id>1476721237689</Id>
 					<Name><![CDATA[Removed]]></Name>
 					<Description><![CDATA[This state is a catch-all for any kind of removal from the population like death (natural or otherwise) and sale. ]]></Description>
-					<X>370</X><Y>510</Y>
+					<X>610</X><Y>510</Y>
 					<Label><X>-25</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2676,7 +2676,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476723764674</Id>
 					<Name><![CDATA[WeaningCalf]]></Name>
 					<Description><![CDATA[This initial state of the cow captures the first 6 months of a cows life, these first 6 months are critical for spread of the disease as during this time the cows is most susceptible to being infected (both from mother during weaning and from environmental factors)]]></Description>
-					<X>70</X><Y>80</Y>
+					<X>310</X><Y>80</Y>
 					<Label><X>25</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2695,7 +2695,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476724089202</Id>
 					<Name><![CDATA[Bulls]]></Name>
 					<Description><![CDATA[Males are included in the population, but do not affect weightedPrevalence]]></Description>
-					<X>210</X><Y>320</Y>
+					<X>450</X><Y>320</Y>
 					<Label><X>45</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2709,7 +2709,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476724154821</Id>
 					<Name><![CDATA[branch]]></Name>
 					<Description><![CDATA[split the population by gender]]></Description>
-					<X>130</X><Y>340</Y>
+					<X>370</X><Y>340</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2721,7 +2721,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476729847052</Id>
 					<Name><![CDATA[growUpOrRemoval]]></Name>
 					<Description><![CDATA[This branch splits calves up, young male cows have a high probability of being removed from the population at this stage]]></Description>
-					<X>130</X><Y>180</Y>
+					<X>370</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2733,7 +2733,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1477003799882</Id>
 					<Name><![CDATA[InitialMAPsState]]></Name>
 					<Description><![CDATA[splits the initial population and "seeds" the infection to several cows]]></Description>
-					<X>860</X><Y>360</Y>
+					<X>1100</X><Y>360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2744,46 +2744,49 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1478918964624</Id>
 					<Name><![CDATA[FecalTestingIdle]]></Name>
-					<X>-20</X><Y>720</Y>
-					<Label><X>0</X><Y>10</Y></Label>
+					<Description><![CDATA[Interm state between testing]]></Description>
+					<X>170</X><Y>720</Y>
+					<Label><X>5</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<FillColor/>
+						<FillColor>-4144960</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1478919747192</Id>
 					<Name><![CDATA[FecalTesting]]></Name>
-					<X>150</X><Y>720</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<Description><![CDATA[Performs the fecal testing of the cow, this has the option to disable the testing but unchecking parameter "runFecalTest" in main]]></Description>
+					<X>380</X><Y>720</Y>
+					<Label><X>15</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[if(main.runFecalTest) fecalTestActionChart();]]></EntryAction>
+						<EntryAction><![CDATA[if(main.runFecalTest) FecalTestActionChart();]]></EntryAction>
 						<FillColor>-3308225</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1478920665042</Id>
 					<Name><![CDATA[BloodTestingIdle]]></Name>
-					<X>660</X><Y>730</Y>
-					<Label><X>0</X><Y>10</Y></Label>
+					<Description><![CDATA[waiting state before/after testing. waits until the specified date then ]]></Description>
+					<X>980</X><Y>720</Y>
+					<Label><X>5</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[numBloodTests++]]></EntryAction>
-						<FillColor/>
+						<FillColor>-4144960</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1478920665054</Id>
 					<Name><![CDATA[BloodTesting]]></Name>
-					<X>490</X><Y>730</Y>
-					<Label><X>10</X><Y>10</Y></Label>
+					<Description><![CDATA[Performs the blood testing of the cow, this has the option to disable the testing but unchecking parameter "runBloodTest" in main]]></Description>
+					<X>750</X><Y>720</Y>
+					<Label><X>10</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -2794,8 +2797,9 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
 					<Id>1479235980372</Id>
-					<Name><![CDATA[branch1]]></Name>
-					<X>320</X><Y>740</Y>
+					<Name><![CDATA[removeIfTestPositive]]></Name>
+					<Description><![CDATA[branch checks if the cow is marked for removal due to testing and then removes them.]]></Description>
+					<X>580</X><Y>740</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2806,7 +2810,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
 					<Id>1479236937923</Id>
 					<Name><![CDATA[branch2]]></Name>
-					<X>430</X><Y>740</Y>
+					<X>640</X><Y>740</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2817,7 +2821,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1476134180163</Id>
 					<Name><![CDATA[PregnancyCycleStateChart]]></Name>
-					<X>130</X><Y>50</Y>
+					<X>370</X><Y>50</Y>
 					<Label><X>-65</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2833,7 +2837,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476134728289</Id>
 					<Name><![CDATA[conceptionTime]]></Name>
 					<Description><![CDATA[Reflects the approximate amount of time needed for a female cow to become pregnant. ]]></Description>
-					<X>130</X><Y>440</Y>
+					<X>370</X><Y>440</Y>
 					<Label><X>-100</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2864,7 +2868,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476134754302</Id>
 					<Name><![CDATA[becomingPregnant]]></Name>
 					<Description><![CDATA[female cows have a 90% chance to become pregnant]]></Description>
-					<X>130</X><Y>520</Y>
+					<X>370</X><Y>520</Y>
 					<Label><X>-110</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2896,7 +2900,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476278047562</Id>
 					<Name><![CDATA[PregnancyDuration]]></Name>
 					<Description><![CDATA[pregnancy last for 9 months before a new calf is created]]></Description>
-					<X>60</X><Y>590</Y>
+					<X>300</X><Y>590</Y>
 					<Label><X>-225</X><Y>-95</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2929,7 +2933,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476648677420</Id>
 					<Name><![CDATA[JohnesStateChart]]></Name>
 					<Description><![CDATA[Controls the transmission of Johnes Disease throughout a cattle population. The first branch node controls the initial states of the Cows when initializing the model. The state any given initial cow is in depends on InitialClinicalPercentage, InitialSubClinicalPercentage and InitialInfectedPercentage.]]></Description>
-					<X>900</X><Y>360</Y>
+					<X>1140</X><Y>360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2945,7 +2949,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476648737590</Id>
 					<Name><![CDATA[exposureFromEnviroment]]></Name>
 					<Description><![CDATA[Uses the prevelance in main as the rate of transition for a cow to become infected, this rate is calculated based on the numbers of clinical and subclinical cows in the population ]]></Description>
-					<X>660</X><Y>230</Y>
+					<X>900</X><Y>230</Y>
 					<Label><X>-150</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2981,7 +2985,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476648770424</Id>
 					<Name><![CDATA[infectedToInfective]]></Name>
 					<Description><![CDATA[It takes about 18 months for cows to move into the infective state, where they will begin spreading infection]]></Description>
-					<X>670</X><Y>310</Y>
+					<X>910</X><Y>310</Y>
 					<Label><X>-120</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3012,7 +3016,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476721184193</Id>
 					<Name><![CDATA[becomeClinical]]></Name>
 					<Description><![CDATA[after about 2 years, infective cows begin to show phyiscal symptoms]]></Description>
-					<X>670</X><Y>440</Y>
+					<X>910</X><Y>440</Y>
 					<Label><X>-90</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3042,7 +3046,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="InitialStatePointer" ParentState="Infective" ParentStateId="1476721130594">
 					<Id>1476721271161</Id>
 					<Name><![CDATA[initialState]]></Name>
-					<X>670</X><Y>390</Y>
+					<X>910</X><Y>390</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3058,7 +3062,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476722350034</Id>
 					<Name><![CDATA[motherToChildEffectiveContactRate]]></Name>
 					<Description><![CDATA[While a cow is still in WeaningCalf state, they have a chance (if mother is infected) to be exposed directly from the mother.]]></Description>
-					<X>680</X><Y>230</Y>
+					<X>920</X><Y>230</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3090,7 +3094,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476723800967</Id>
 					<Name><![CDATA[removeYoungMales]]></Name>
 					<Description><![CDATA[Young male animals are often sold/removed at this time of their life because a large population of male cows is not necessary to maintain the population.]]></Description>
-					<X>142</X><Y>180</Y>
+					<X>382</X><Y>180</Y>
 					<Label><X>68</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3122,7 +3126,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476724180235</Id>
 					<Name><![CDATA[calfToBull]]></Name>
 					<Description><![CDATA[pull all male cows into the Bull state]]></Description>
-					<X>142</X><Y>340</Y>
+					<X>382</X><Y>340</Y>
 					<Label><X>3</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3153,7 +3157,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476724200103</Id>
 					<Name><![CDATA[CalfToHeifer]]></Name>
 					<Description><![CDATA[all females will go into the pregnancy cycle]]></Description>
-					<X>130</X><Y>350</Y>
+					<X>370</X><Y>350</Y>
 					<Label><X>-85</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3184,7 +3188,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476724885701</Id>
 					<Name><![CDATA[infectChild]]></Name>
 					<Description><![CDATA[if a cow has a child and are in the infective state, they have a chance to spread the disease to their calf]]></Description>
-					<X>610</X><Y>360</Y>
+					<X>850</X><Y>360</Y>
 					<Label><X>-80</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3218,7 +3222,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476725376908</Id>
 					<Name><![CDATA[susceptibleUpdate]]></Name>
 					<Description><![CDATA[because prevelance of disease in the population is calculated as a "global" in main, each cow needs to fetch the latest rate of transition often]]></Description>
-					<X>620</X><Y>230</Y>
+					<X>860</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3248,7 +3252,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476729873456</Id>
 					<Name><![CDATA[continueGrowingUp]]></Name>
-					<X>130</X><Y>190</Y>
+					<X>370</X><Y>190</Y>
 					<Label><X>5</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3279,7 +3283,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476992823278</Id>
 					<Name><![CDATA[infertileCowRemoval]]></Name>
 					<Description><![CDATA[any cows that do not become pregnant (10%) will be removed from the population]]></Description>
-					<X>142</X><Y>510</Y>
+					<X>382</X><Y>510</Y>
 					<Label><X>48</X><Y>5</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3312,7 +3316,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476993205705</Id>
 					<Name><![CDATA[malePopulationControl]]></Name>
 					<Description><![CDATA[in the population of male cows gets too high we start removing them]]></Description>
-					<X>270</X><Y>360</Y>
+					<X>510</X><Y>360</Y>
 					<Label><X>-115</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3343,7 +3347,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1476993449238</Id>
 					<Name><![CDATA[femalePopulationControl]]></Name>
 					<Description><![CDATA[if the population of female cows gets too high we start removing them, but only if they do not currently have a weaning calf]]></Description>
-					<X>200</X><Y>420</Y>
+					<X>440</X><Y>420</Y>
 					<Label><X>-45</X><Y>50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3375,7 +3379,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1477003254687</Id>
 					<Name><![CDATA[growingOutOfWeaning]]></Name>
 					<Description><![CDATA[This transition moves the cow out of the critial "Weaning stage" which encompases the first 6 months of life]]></Description>
-					<X>130</X><Y>120</Y>
+					<X>370</X><Y>120</Y>
 					<Label><X>-140</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3406,7 +3410,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1477003340996</Id>
 					<Name><![CDATA[calfToBullOrHeifer]]></Name>
 					<Description><![CDATA[Cows grow up and move into the pregnancy cycle (if female) or into the "Bull" state for males.]]></Description>
-					<X>130</X><Y>270</Y>
+					<X>370</X><Y>270</Y>
 					<Label><X>-110</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3437,7 +3441,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1477003516236</Id>
 					<Name><![CDATA[removalOfClinicalCattle]]></Name>
 					<Description><![CDATA[generally, when cows hit the clinical stage, physical symptons occur and the cows are removed fairly rapidly from the population]]></Description>
-					<X>610</X><Y>510</Y>
+					<X>850</X><Y>510</Y>
 					<Label><X>-185</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3467,7 +3471,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1477003802991</Id>
 					<Name><![CDATA[SusceptableCowEntryPoint]]></Name>
-					<X>860</X><Y>350</Y>
+					<X>1100</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3499,7 +3503,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1477003810447</Id>
 					<Name><![CDATA[InitializeInfected]]></Name>
 					<Description><![CDATA[Initializes the Johnes Disease state of individual Cows to Infected based on InitialInfectedPercentage]]></Description>
-					<X>860</X><Y>350</Y>
+					<X>1100</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3532,7 +3536,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1477012570315</Id>
 					<Name><![CDATA[InitializeSubClinical]]></Name>
 					<Description><![CDATA[Initializes the Johnes Disease state of individual Cows to SubClinical based on InitialSubClinicalPercentage]]></Description>
-					<X>860</X><Y>370</Y>
+					<X>1100</X><Y>370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3565,7 +3569,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1477012719636</Id>
 					<Name><![CDATA[InitalizeClinical]]></Name>
 					<Description><![CDATA[Initializes the Johnes Disease state of individual Cows to Clinical based on InitialClinicalPercentage]]></Description>
-					<X>860</X><Y>370</Y>
+					<X>1100</X><Y>370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3597,7 +3601,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1478029430384</Id>
 					<Name><![CDATA[transition]]></Name>
-					<X>160</X><Y>120</Y>
+					<X>400</X><Y>120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3627,7 +3631,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1478029499690</Id>
 					<Name><![CDATA[transition1]]></Name>
-					<X>160</X><Y>270</Y>
+					<X>400</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3657,8 +3661,8 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1478918971567</Id>
 					<Name><![CDATA[fecalTestingStateChart]]></Name>
-					<X>-60</X><Y>740</Y>
-					<Label><X>-30</X><Y>-30</Y></Label>
+					<X>130</X><Y>740</Y>
+					<Label><X>-100</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3671,18 +3675,18 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1478919099703</Id>
-					<Name><![CDATA[transition2]]></Name>
-					<X>80</X><Y>740</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[waitUntilFecalTestDate]]></Name>
+					<X>270</X><Y>740</Y>
+					<Label><X>-10</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>32</X><Y>0</Y></Point>
-						<Point><X>70</X><Y>0</Y></Point>
+						<Point><X>110</X><Y>0</Y></Point>
 					</Points>
-					<IconOffset>20.0</IconOffset>
+					<IconOffset>60.0</IconOffset>
 					<Properties Source="1478918964624" Target="1478919747192" Trigger="condition">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[12]]></Code>
@@ -3702,21 +3706,22 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1478920037072</Id>
-					<Name><![CDATA[transition4]]></Name>
-					<X>250</X><Y>740</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[fecalTestDelay]]></Name>
+					<Description><![CDATA[encompases both the delay in getting results back from the test, as well as the delay of removing the cow from the population]]></Description>
+					<X>480</X><Y>740</Y>
+					<Label><X>5</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>58</X><Y>0</Y></Point>
+						<Point><X>88</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1478919747192" Target="1479235980372" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[main.FecalTestDelay]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -3733,7 +3738,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1478920665056</Id>
 					<Name><![CDATA[bloodTestingStateChart]]></Name>
-					<X>800</X><Y>750</Y>
+					<X>1120</X><Y>740</Y>
 					<Label><X>-30</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3747,15 +3752,15 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1478920665062</Id>
-					<Name><![CDATA[transition5]]></Name>
-					<X>660</X><Y>740</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[waitUntilBloodTestDate]]></Name>
+					<X>980</X><Y>740</Y>
+					<Label><X>-130</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>0</Y></Point>
+						<Point><X>-130</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1478920665042" Target="1478920665054" Trigger="condition">
@@ -3777,15 +3782,16 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1479235811977</Id>
-					<Name><![CDATA[transition3]]></Name>
-					<X>320</X><Y>730</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[fecalTestPositiveResult]]></Name>
+					<Description><![CDATA[cow tests positive for diesase due to fecal testing, and is removed from the population]]></Description>
+					<X>580</X><Y>730</Y>
+					<Label><X>-115</X><Y>-110</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>48.227031171288274</X><Y>-212.19893715366834</Y></Point>
+						<Point><X>28.919094362133478</X><Y>-212.07335865564562</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1479235980372" Target="1476721237689" Trigger="condition">
@@ -3807,17 +3813,17 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1479236042879</Id>
-					<Name><![CDATA[transition8]]></Name>
-					<X>320</X><Y>750</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[fecalTestNegativeResult]]></Name>
+					<X>580</X><Y>750</Y>
+					<Label><X>-255</X><Y>50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
-						<Point><X>-300</X><Y>40</Y></Point>
-						<Point><X>-300</X><Y>0</Y></Point>
+						<Point><X>-370</X><Y>40</Y></Point>
+						<Point><X>-370</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1479235980372" Target="1478918964624" Trigger="timeout">
@@ -3839,15 +3845,16 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1479236945422</Id>
-					<Name><![CDATA[transition6]]></Name>
-					<X>490</X><Y>740</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[bloodTestDelay]]></Name>
+					<Description><![CDATA[encompases both the delay in getting results back from the test, as well as the delay of removing the cow from the population]]></Description>
+					<X>750</X><Y>740</Y>
+					<Label><X>-90</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-48</X><Y>0</Y></Point>
+						<Point><X>-98</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1478920665054" Target="1479236937923" Trigger="timeout">
@@ -3869,17 +3876,17 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1479236991324</Id>
-					<Name><![CDATA[transition7]]></Name>
-					<X>430</X><Y>750</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[bloodTestNegativeResult]]></Name>
+					<X>640</X><Y>750</Y>
+					<Label><X>140</X><Y>50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
-						<Point><X>290</X><Y>40</Y></Point>
-						<Point><X>290</X><Y>10</Y></Point>
+						<Point><X>400</X><Y>40</Y></Point>
+						<Point><X>400</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1479236937923" Target="1478920665042" Trigger="timeout">
@@ -3901,15 +3908,15 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1479237019406</Id>
-					<Name><![CDATA[transition9]]></Name>
-					<X>430</X><Y>730</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[bloodTestPositiveResult]]></Name>
+					<X>640</X><Y>730</Y>
+					<Label><X>-10</X><Y>-110</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-57.89506075366313</X><Y>-212.2818894300981</Y></Point>
+						<Point><X>-28.919094362133478</X><Y>-212.07335865564562</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1479236937923" Target="1476721237689" Trigger="timeout">
@@ -3933,8 +3940,9 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 			<ActionChartElements>
 				<ActionChartElement Class="ActionChart">
 					<Id>1478737137383</Id>
-					<Name><![CDATA[fecalTestActionChart]]></Name>
-					<X>140</X><Y>880</Y>
+					<Name><![CDATA[FecalTestActionChart]]></Name>
+					<Description><![CDATA[This action chart is the visual description of the testing process based on various values for sensitivity and specificity. In this model, Only cows in the Pregnant or Non-Pregnant states are tested, everyone else (that is to say all males and calves) are ignored. the chart filters the cows based on their current diease state (Susceptible, Infected, Subclinical, Clinical) and applies various levels of Sensitivity or Specificity to the cow.]]></Description>
+					<X>380</X><Y>880</Y>
 					<Label><X>-60</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3949,7 +3957,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1478737484041</Id>
 					<Name><![CDATA[isFemaleFecalTest]]></Name>
 					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant state, not calves or Male cows]]></Description>
-					<X>140</X><Y>930</Y>
+					<X>380</X><Y>930</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3962,8 +3970,8 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<ActionChartElement Class="Decision">
 					<Id>1478898211477</Id>
 					<Name><![CDATA[isInfectiveFecalTest]]></Name>
-					<Description><![CDATA[Required to split the cows into categoties of 'Infective or worse' and 'Not Infective' for proper specificity and sensitivity testing. This allows separate logical testing in the model for true positive and false positive results.]]></Description>
-					<X>450</X><Y>980</Y>
+					<Description><![CDATA[Splits first on if the cows are susceptible or not]]></Description>
+					<X>690</X><Y>980</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3977,7 +3985,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<Id>1478740206197</Id>
 					<Name><![CDATA[isCowInfected]]></Name>
 					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to false negatives.]]></Description>
-					<X>870</X><Y>1030</Y>
+					<X>1110</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3990,7 +3998,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<ActionChartElement Class="Decision">
 					<Id>1479235218750</Id>
 					<Name><![CDATA[FecalnfectedTest]]></Name>
-					<X>980</X><Y>1080</Y>
+					<X>1220</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4003,7 +4011,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				<ActionChartElement Class="Code">
 					<Id>1478897823095</Id>
 					<Name><![CDATA[setSeFecalRemoval]]></Name>
-					<X>1050</X><Y>1150</Y>
+					<X>1290</X><Y>1150</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4017,11 +4025,11 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235204970</Id>
 					<Name><![CDATA[decision]]></Name>
-					<X>660</X><Y>1080</Y>
+					<X>900</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Is Cow in Subclinical State?]]></Comment>
+					<Comment><![CDATA[Is Cow in SubClinical State?]]></Comment>
 					<Properties Width="100" Height="60" Appearance="0" Previous="1478740206197" TrueAction="1479235474225" FalseAction="1479235467980" >
 						<FillColor/>
 						<Condition><![CDATA[this.inState(SubClinical)]]></Condition>
@@ -4030,11 +4038,11 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235474225</Id>
 					<Name><![CDATA[FecalsubclinicalTest]]></Name>
-					<X>740</X><Y>1140</Y>
+					<X>980</X><Y>1140</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Subclinical Sensitivity Test]]></Comment>
+					<Comment><![CDATA[SubClinical Sensitivity Test]]></Comment>
 					<Properties Width="100" Height="80" Appearance="0" Previous="1479235204970" TrueAction="1479235474228" >
 						<FillColor/>
 						<Condition><![CDATA[randomTrue(main.FecalTestSubclinicalSensitivity)]]></Condition>
@@ -4043,7 +4051,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479235474228</Id>
 					<Name><![CDATA[setSeFecalRemoval2]]></Name>
-					<X>810</X><Y>1210</Y>
+					<X>1050</X><Y>1210</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4057,7 +4065,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235467980</Id>
 					<Name><![CDATA[FecaCinicalTest]]></Name>
-					<X>530</X><Y>1140</Y>
+					<X>770</X><Y>1140</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4070,7 +4078,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479235467982</Id>
 					<Name><![CDATA[setSeFecalRemoval1]]></Name>
-					<X>600</X><Y>1215</Y>
+					<X>840</X><Y>1215</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4085,7 +4093,7 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Id>1478898241268</Id>
 					<Name><![CDATA[isFecalSpTestPositive]]></Name>
 					<Description><![CDATA[The true values of this condition equate to false positive test results. The false values equate to true negatives.]]></Description>
-					<X>310</X><Y>1030</Y>
+					<X>550</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4098,7 +4106,7 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Return">
 					<Id>1478737151229</Id>
 					<Name><![CDATA[returnStatementFecalTest]]></Name>
-					<X>140</X><Y>1365</Y>
+					<X>380</X><Y>1365</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4109,7 +4117,8 @@ main.countFecalTestTruePositive++;]]></Code>
 				<ActionChartElement Class="ActionChart">
 					<Id>1479236233911</Id>
 					<Name><![CDATA[bloodTestActionChart]]></Name>
-					<X>1310</X><Y>880</Y>
+					<Description><![CDATA[This action chart is the visual description of the testing process based on various values for sensitivity and specificity. In this model, Only cows in the Pregnant or Non-Pregnant states are tested, everyone else (that is to say all males and calves) are ignored. the chart filters the cows based on their current diease state (Susceptible, Infected, Subclinical, Clinical) and applies various levels of Sensitivity or Specificity to the cow.]]></Description>
+					<X>1550</X><Y>880</Y>
 					<Label><X>-60</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4124,7 +4133,7 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Id>1479236233914</Id>
 					<Name><![CDATA[isFemaleBloodTest]]></Name>
 					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant state, not calves or Male cows]]></Description>
-					<X>1310</X><Y>930</Y>
+					<X>1550</X><Y>930</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4138,7 +4147,7 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Id>1479236233915</Id>
 					<Name><![CDATA[isInfectiveBloodTest]]></Name>
 					<Description><![CDATA[Required to split the cows into categoties of 'Infective or worse' and 'Not Infective' for proper specificity and sensitivity testing. This allows separate logical testing in the model for true positive and false positive results.]]></Description>
-					<X>1600</X><Y>980</Y>
+					<X>1840</X><Y>980</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4152,11 +4161,11 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Id>1479236233916</Id>
 					<Name><![CDATA[isCowInfectedBlood]]></Name>
 					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to false negatives.]]></Description>
-					<X>2020</X><Y>1030</Y>
+					<X>2260</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Is Cow Infected?]]></Comment>
+					<Comment><![CDATA[Is Cow in Infected State?]]></Comment>
 					<Properties Width="180" Height="40" Appearance="0" Previous="1479236233915" TrueAction="1479236233917" FalseAction="1479236233923" >
 						<FillColor/>
 						<Condition><![CDATA[this.inState(Infected)]]></Condition>
@@ -4164,8 +4173,8 @@ main.countFecalTestTruePositive++;]]></Code>
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233917</Id>
-					<Name><![CDATA[BloodnfectedTest]]></Name>
-					<X>2130</X><Y>1080</Y>
+					<Name><![CDATA[BloodInfectedTest]]></Name>
+					<X>2370</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4177,8 +4186,8 @@ main.countFecalTestTruePositive++;]]></Code>
 				</ActionChartElement>
 				<ActionChartElement Class="Code">
 					<Id>1479236233918</Id>
-					<Name><![CDATA[setSeFecalRemoval3]]></Name>
-					<X>2200</X><Y>1150</Y>
+					<Name><![CDATA[setBloodRemoval]]></Name>
+					<X>2440</X><Y>1150</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4192,11 +4201,11 @@ main.countBloodTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233923</Id>
 					<Name><![CDATA[decisionBlood]]></Name>
-					<X>1810</X><Y>1080</Y>
+					<X>2050</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Is Cow Subclinical?]]></Comment>
+					<Comment><![CDATA[Is Cow in Subclinical State?]]></Comment>
 					<Properties Width="100" Height="40" Appearance="0" Previous="1479236233916" TrueAction="1479236233925" FalseAction="1479236233927" >
 						<FillColor/>
 						<Condition><![CDATA[this.inState(SubClinical)]]></Condition>
@@ -4205,7 +4214,7 @@ main.countBloodTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233925</Id>
 					<Name><![CDATA[FecalsubclinicalTest1]]></Name>
-					<X>1890</X><Y>1130</Y>
+					<X>2130</X><Y>1130</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4217,8 +4226,8 @@ main.countBloodTestTruePositive++;]]></Code>
 				</ActionChartElement>
 				<ActionChartElement Class="Code">
 					<Id>1479236233926</Id>
-					<Name><![CDATA[setSeFecalRemoval4]]></Name>
-					<X>1960</X><Y>1200</Y>
+					<Name><![CDATA[setBloodRemoval1]]></Name>
+					<X>2200</X><Y>1200</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4232,7 +4241,7 @@ main.countBloodTestTruePositive++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233927</Id>
 					<Name><![CDATA[FecaCinicalTest1]]></Name>
-					<X>1680</X><Y>1130</Y>
+					<X>1920</X><Y>1130</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4244,8 +4253,8 @@ main.countBloodTestTruePositive++;]]></Code>
 				</ActionChartElement>
 				<ActionChartElement Class="Code">
 					<Id>1479236233928</Id>
-					<Name><![CDATA[setSeFecalRemoval5]]></Name>
-					<X>1750</X><Y>1195</Y>
+					<Name><![CDATA[setSetBloodRemoval5]]></Name>
+					<X>1990</X><Y>1195</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4260,7 +4269,7 @@ main.countBloodTestTruePositive++;]]></Code>
 					<Id>1479236233930</Id>
 					<Name><![CDATA[isFecalSpTestPositive1]]></Name>
 					<Description><![CDATA[The true values of this condition equate to false positive test results. The false values equate to true negatives.]]></Description>
-					<X>1430</X><Y>1030</Y>
+					<X>1670</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4272,8 +4281,8 @@ main.countBloodTestTruePositive++;]]></Code>
 				</ActionChartElement>
 				<ActionChartElement Class="Code">
 					<Id>1479236233931</Id>
-					<Name><![CDATA[setSpFecalRemoval1]]></Name>
-					<X>1540</X><Y>1080</Y>
+					<Name><![CDATA[setBloodRemoval1]]></Name>
+					<X>1780</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4287,7 +4296,7 @@ main.countBloodTestFalsePositive++;]]></Code>
 				<ActionChartElement Class="Return">
 					<Id>1479236233932</Id>
 					<Name><![CDATA[returnStatementFecalTest1]]></Name>
-					<X>1310</X><Y>1350</Y>
+					<X>1550</X><Y>1350</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4298,7 +4307,7 @@ main.countBloodTestFalsePositive++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1478898255794</Id>
 					<Name><![CDATA[setSpFecalRemoval]]></Name>
-					<X>200</X><Y>1080</Y>
+					<X>440</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4314,7 +4323,7 @@ main.countFecalTestFalsePositive++;]]></Code>
 				<Event>
 					<Id>1476486708425</Id>
 					<Name><![CDATA[UpdateCurrentAge]]></Name>
-					<X>20</X><Y>-240</Y>
+					<X>260</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4345,7 +4354,7 @@ main.countFecalTestFalsePositive++;]]></Code>
 				<Event>
 					<Id>1476994543175</Id>
 					<Name><![CDATA[RemoveOldCows]]></Name>
-					<X>20</X><Y>-260</Y>
+					<X>260</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4379,7 +4388,7 @@ main.countFecalTestFalsePositive++;]]></Code>
 					<Id>1478900079462</Id>
 					<Name><![CDATA[FecalTestingEvent]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>20</X><Y>-290</Y>
+					<X>260</X><Y>-290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4414,7 +4423,7 @@ main.countFecalTestFalsePositive++;]]></Code>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1476213133776</Id>
 					<Name><![CDATA[InitialCowPopulation]]></Name>
-					<X>20</X><Y>-220</Y>
+					<X>260</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4494,7 +4503,7 @@ else
 				<Group>
 					<Id>1477183354132</Id>
 					<Name><![CDATA[cow]]></Name>
-					<X>0</X><Y>0</Y>
+					<X>240</X><Y>0</Y>
 					<Label><X>5.077</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4950,7 +4959,7 @@ else
 				<Group>
 					<Id>1477591942667</Id>
 					<Name><![CDATA[parmGroup2]]></Name>
-					<X>310</X><Y>-170</Y>
+					<X>550</X><Y>-170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -5014,7 +5023,7 @@ else
 				<Group>
 					<Id>1477592094344</Id>
 					<Name><![CDATA[parmGroup3]]></Name>
-					<X>562</X><Y>-160</Y>
+					<X>802</X><Y>-160</Y>
 					<Label><X>11.558</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
