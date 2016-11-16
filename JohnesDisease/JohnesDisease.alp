@@ -121,7 +121,7 @@
 			<ScaleRuler>
 				<Id>1476133888233</Id>
 				<Name><![CDATA[scale]]></Name>
-				<X>0</X><Y>-150</Y>
+				<X>0</X><Y>-80</Y>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>false</PresentationFlag>
 				<ShowLabel>false</ShowLabel>
@@ -226,7 +226,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478904071124</Id>
 					<Name><![CDATA[countBloodTestTruePositive]]></Name>
-					<X>20</X><Y>-490</Y>
+					<X>20</X><Y>-470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -241,7 +241,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478904088388</Id>
 					<Name><![CDATA[countBloodTestFalsePositive]]></Name>
-					<X>20</X><Y>-470</Y>
+					<X>20</X><Y>-490</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -348,7 +348,7 @@
 				<Variable Class="Parameter">
 					<Id>1477003606768</Id>
 					<Name><![CDATA[InitialInfectedPercentage]]></Name>
-					<X>-250</X><Y>-340</Y>
+					<X>-250</X><Y>-400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -374,7 +374,7 @@
 				<Variable Class="Parameter">
 					<Id>1477013579269</Id>
 					<Name><![CDATA[InitialSubClinicalPercentage]]></Name>
-					<X>-250</X><Y>-320</Y>
+					<X>-250</X><Y>-380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -400,7 +400,7 @@
 				<Variable Class="Parameter">
 					<Id>1477013625547</Id>
 					<Name><![CDATA[InitialClinicalPercentage]]></Name>
-					<X>-250</X><Y>-360</Y>
+					<X>-250</X><Y>-420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -426,7 +426,7 @@
 				<Variable Class="Parameter">
 					<Id>1477418004088</Id>
 					<Name><![CDATA[SubclinicalPrevalenceModifier]]></Name>
-					<X>20</X><Y>-400</Y>
+					<X>20</X><Y>-410</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -451,7 +451,7 @@
 				<Variable Class="Parameter">
 					<Id>1477418026127</Id>
 					<Name><![CDATA[ClinicalPrevalenceModifier]]></Name>
-					<X>20</X><Y>-380</Y>
+					<X>20</X><Y>-390</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -477,7 +477,7 @@
 					<Id>1477421265799</Id>
 					<Name><![CDATA[BloodTestSpecificity]]></Name>
 					<Description><![CDATA[Specificity (Sp) is defined as ‘the ability of a test to correctly identify non-diseased animals as test negative (true negative)’.]]></Description>
-					<X>-250</X><Y>-670</Y>
+					<X>-250</X><Y>-640</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -503,7 +503,7 @@
 					<Id>1477424604611</Id>
 					<Name><![CDATA[BloodTestClinicalSensitivity]]></Name>
 					<Description><![CDATA[Sensitivity (Se) is defined as ‘the ability of a test to correctly identify diseased animals as test positive (true positive)’ ie the proportion of diseased animals that will react to the test.]]></Description>
-					<X>-250</X><Y>-780</Y>
+					<X>-250</X><Y>-580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -529,7 +529,7 @@
 					<Id>1477424620387</Id>
 					<Name><![CDATA[FecalTestSpecificity]]></Name>
 					<Description><![CDATA[Specificity (Sp) is defined as ‘the ability of a test to correctly identify non-diseased animals as test negative (true negative)’.]]></Description>
-					<X>-250</X><Y>-630</Y>
+					<X>-250</X><Y>-790</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -555,7 +555,7 @@
 					<Id>1477424636282</Id>
 					<Name><![CDATA[FecalTestClinicalSensitivity]]></Name>
 					<Description><![CDATA[Sensitivity (Se) is defined as ‘the ability of a test to correctly identify diseased animals as test positive (true positive)’ ie the proportion of diseased animals that will react to the test.]]></Description>
-					<X>-250</X><Y>-700</Y>
+					<X>-250</X><Y>-730</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -580,7 +580,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021826202</Id>
 					<Name><![CDATA[YoungBullRemovalRate]]></Name>
-					<X>-250</X><Y>-210</Y>
+					<X>20</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -606,7 +606,7 @@
 					<Id>1478021826205</Id>
 					<Name><![CDATA[MomToChildInfectionRate]]></Name>
 					<Description><![CDATA[monthly rate based off the 30% infection rate over 6 months]]></Description>
-					<X>-250</X><Y>-230</Y>
+					<X>20</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -634,7 +634,7 @@
 					<Id>1478021915668</Id>
 					<Name><![CDATA[GrazingCalfTime]]></Name>
 					<Description><![CDATA[Length of time which a cow stays a calf.]]></Description>
-					<X>-480</X><Y>-370</Y>
+					<X>-250</X><Y>-200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -662,7 +662,7 @@
 					<Id>1478021915671</Id>
 					<Name><![CDATA[NotPregnantTime]]></Name>
 					<Description><![CDATA[refers to the general time between pregancys, 1-2 months for conception and 1 month for post pregnancy whatnot.]]></Description>
-					<X>-480</X><Y>-350</Y>
+					<X>-250</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -689,7 +689,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915674</Id>
 					<Name><![CDATA[PregnancyTime]]></Name>
-					<X>-480</X><Y>-390</Y>
+					<X>-250</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -717,7 +717,7 @@
 					<Id>1478021915677</Id>
 					<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
 					<Description><![CDATA[conceptually its the time between pregnancy and going back to the not pregnant/conception stage (or just a increase on the not pregnant timeout)]]></Description>
-					<X>-480</X><Y>-410</Y>
+					<X>20</X><Y>-230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -744,7 +744,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915680</Id>
 					<Name><![CDATA[WeaningTime]]></Name>
-					<X>-480</X><Y>-490</Y>
+					<X>-250</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -771,7 +771,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915683</Id>
 					<Name><![CDATA[MeanLatencyDuration]]></Name>
-					<X>-480</X><Y>-470</Y>
+					<X>20</X><Y>-290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -798,7 +798,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915686</Id>
 					<Name><![CDATA[MeanInfectedDuration]]></Name>
-					<X>-480</X><Y>-450</Y>
+					<X>20</X><Y>-270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -825,7 +825,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915689</Id>
 					<Name><![CDATA[MeanSubClinicalDuration]]></Name>
-					<X>-480</X><Y>-430</Y>
+					<X>20</X><Y>-250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -852,7 +852,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915692</Id>
 					<Name><![CDATA[PregnancyPercentage]]></Name>
-					<X>-480</X><Y>-330</Y>
+					<X>-250</X><Y>-160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -878,7 +878,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915695</Id>
 					<Name><![CDATA[maxAge]]></Name>
-					<X>-480</X><Y>-310</Y>
+					<X>-250</X><Y>-140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -929,7 +929,7 @@
 				<Variable Class="Parameter">
 					<Id>1478024405037</Id>
 					<Name><![CDATA[FrequencyOfInfectiveContact]]></Name>
-					<X>20</X><Y>-360</Y>
+					<X>20</X><Y>-370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -954,7 +954,7 @@
 				<Variable Class="Parameter">
 					<Id>1478024798363</Id>
 					<Name><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></Name>
-					<X>20</X><Y>-340</Y>
+					<X>20</X><Y>-350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -979,7 +979,7 @@
 				<Variable Class="Parameter">
 					<Id>1478024884875</Id>
 					<Name><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></Name>
-					<X>20</X><Y>-320</Y>
+					<X>20</X><Y>-330</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1005,7 +1005,7 @@
 					<Id>1478210458940</Id>
 					<Name><![CDATA[ClinicalMultiplier]]></Name>
 					<Description><![CDATA[increase in disease spreading based on being in clinical state]]></Description>
-					<X>20</X><Y>-300</Y>
+					<X>20</X><Y>-310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1030,7 +1030,7 @@
 				<Variable Class="Parameter">
 					<Id>1479232868866</Id>
 					<Name><![CDATA[FecalTestingDate]]></Name>
-					<X>-250</X><Y>-590</Y>
+					<X>-250</X><Y>-830</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1056,7 +1056,7 @@
 				<Variable Class="Parameter">
 					<Id>1479233572331</Id>
 					<Name><![CDATA[BloodTestingDate]]></Name>
-					<X>-250</X><Y>-570</Y>
+					<X>-250</X><Y>-680</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1082,7 +1082,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234381331</Id>
 					<Name><![CDATA[FecalTestInfectedSensitivity]]></Name>
-					<X>-250</X><Y>-740</Y>
+					<X>-250</X><Y>-770</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1107,7 +1107,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234384187</Id>
 					<Name><![CDATA[FecalTestSubclinicalSensitivity]]></Name>
-					<X>-250</X><Y>-720</Y>
+					<X>-250</X><Y>-750</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1132,7 +1132,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234591572</Id>
 					<Name><![CDATA[BloodTestInfectedSensitivity]]></Name>
-					<X>-250</X><Y>-820</Y>
+					<X>-250</X><Y>-620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1158,7 +1158,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234656857</Id>
 					<Name><![CDATA[BloodTestSubclinicalSensitivity]]></Name>
-					<X>-250</X><Y>-800</Y>
+					<X>-250</X><Y>-600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1183,7 +1183,7 @@
 				<Variable Class="Parameter">
 					<Id>1479238143385</Id>
 					<Name><![CDATA[runFecalTest]]></Name>
-					<X>-250</X><Y>-860</Y>
+					<X>-250</X><Y>-850</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1208,7 +1208,7 @@
 				<Variable Class="Parameter">
 					<Id>1479238150188</Id>
 					<Name><![CDATA[runBloodTest]]></Name>
-					<X>-250</X><Y>-880</Y>
+					<X>-250</X><Y>-700</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1233,7 +1233,7 @@
 				<Variable Class="Parameter">
 					<Id>1479238992775</Id>
 					<Name><![CDATA[FecalTestDelay]]></Name>
-					<X>-250</X><Y>-940</Y>
+					<X>-250</X><Y>-810</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1260,7 +1260,7 @@
 				<Variable Class="Parameter">
 					<Id>1479239029046</Id>
 					<Name><![CDATA[BloodTestDelay]]></Name>
-					<X>-250</X><Y>-920</Y>
+					<X>-250</X><Y>-660</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1434,7 +1434,7 @@
 				<EmbeddedObjectPresentation>
 					<Id>1476136300553</Id>
 					<Name><![CDATA[cows_presentation]]></Name>
-					<X>5</X><Y>5</Y>
+					<X>0</X><Y>10</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1463,61 +1463,12 @@
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 
-			<Shapes>
-				<Rectangle>
-					<Id>1477592792619</Id>
-					<Name><![CDATA[rectangle4]]></Name>
-					<X>-110</X><Y>-70</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>210</Width>
-					<Height>150</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1477592792621</Id>
-					<Name><![CDATA[testingParameters]]></Name>
-					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-110</X><Y>-70</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Testing Parameters ]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>10</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-			</Shapes>
 
 				</Group>
 				<Group>
@@ -1590,7 +1541,7 @@
 					<Id>1477593396370</Id>
 					<Name><![CDATA[parmGroup5]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>120</X><Y>-550</Y>
+					<X>120</X><Y>-540</Y>
 					<Label><X>9.718</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1656,8 +1607,40 @@
 					<Id>1477593460415</Id>
 					<Name><![CDATA[parmGroup6]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>120</X><Y>-350</Y>
+					<X>120</X><Y>-330</Y>
 					<Label><X>11.764</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+
+				</Group>
+				<Group>
+					<Id>1478021915648</Id>
+					<Name><![CDATA[parmGroup]]></Name>
+					<X>-150</X><Y>-120</Y>
+					<Label><X>9.859</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+
+				</Group>
+				<Group>
+					<Id>1479328259093</Id>
+					<Name><![CDATA[group]]></Name>
+					<X>140</X><Y>-290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -1672,7 +1655,7 @@
 				<Rectangle>
 					<Id>1477593460417</Id>
 					<Name><![CDATA[rectangle7]]></Name>
-					<X>-129.405</X><Y>-81.863</Y>
+					<X>-139.405</X><Y>-151.012</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1687,7 +1670,7 @@
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>280.05</Width>
-					<Height>175.418</Height>
+					<Height>306.737</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -1696,7 +1679,7 @@
 					<Id>1477593460419</Id>
 					<Name><![CDATA[testingParameters3]]></Name>
 					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-129.405</X><Y>-81.863</Y>
+					<X>-139.405</X><Y>-151.012</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1707,7 +1690,7 @@
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Disease Modifiers
+					<Text><![CDATA[Disease Parameters
 ]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -1720,13 +1703,12 @@
 
 				</Group>
 				<Group>
-					<Id>1478021826195</Id>
-					<Name><![CDATA[parmGroup1]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>-150</X><Y>-190</Y>
+					<Id>1479328514071</Id>
+					<Name><![CDATA[group1]]></Name>
+					<X>-150</X><Y>-710</Y>
 					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
@@ -1737,12 +1719,12 @@
 
 			<Shapes>
 				<Rectangle>
-					<Id>1478021826197</Id>
-					<Name><![CDATA[rectangle2]]></Name>
-					<X>-110</X><Y>-80</Y>
+					<Id>1477592792619</Id>
+					<Name><![CDATA[rectangle4]]></Name>
+					<X>-110</X><Y>-180</Y>
 					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
@@ -1754,19 +1736,19 @@
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>210</Width>
-					<Height>150</Height>
+					<Height>347.647</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
 				</Rectangle>
 				<Text>
-					<Id>1478021826199</Id>
-					<Name><![CDATA[UnconfirmedParams]]></Name>
+					<Id>1477592792621</Id>
+					<Name><![CDATA[testingParameters]]></Name>
 					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-110</X><Y>-70</Y>
+					<X>-110</X><Y>-180</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
@@ -1774,8 +1756,7 @@
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Unconfirmed Parameters
-]]></Text>
+					<Text><![CDATA[Testing Parameters ]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>10</Size>
@@ -1787,30 +1768,29 @@
 
 				</Group>
 				<Group>
-					<Id>1478021915648</Id>
-					<Name><![CDATA[parmGroup]]></Name>
-					<X>-380</X><Y>-370</Y>
-					<Label><X>9.859</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<Id>1479328561895</Id>
+					<Name><![CDATA[group2]]></Name>
+					<X>-160</X><Y>-160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 
-
-				</Group>
+			<Shapes>
 				<Rectangle>
 					<Id>1478021915663</Id>
 					<Name><![CDATA[rectangle]]></Name>
-					<X>-490</X><Y>-530</Y>
+					<X>-100</X><Y>-120</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -1830,7 +1810,7 @@
 					<Id>1478021915665</Id>
 					<Name><![CDATA[staticParms]]></Name>
 					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-480</X><Y>-520</Y>
+					<X>-90</X><Y>-110</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -1841,7 +1821,7 @@
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Confirmed Parameters]]></Text>
+					<Text><![CDATA[Cow Parameters]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>10</Size>
@@ -1849,6 +1829,9 @@
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+			</Shapes>
+
+				</Group>
 			</Shapes>
 			<Charts>
     			<TimePlot>
@@ -4226,7 +4209,7 @@ main.countBloodTestTruePositive++;]]></Code>
 				</ActionChartElement>
 				<ActionChartElement Class="Code">
 					<Id>1479236233926</Id>
-					<Name><![CDATA[setBloodRemoval1]]></Name>
+					<Name><![CDATA[setBloodRemoval11]]></Name>
 					<X>2200</X><Y>1200</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
