@@ -297,6 +297,7 @@
 				<Variable Class="Parameter">
 					<Id>1476999620162</Id>
 					<Name><![CDATA[maxMales]]></Name>
+					<Description><![CDATA[used in keeping the population steady, if the population of males goes above this number, cows start being removed]]></Description>
 					<X>-250</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -322,6 +323,7 @@
 				<Variable Class="Parameter">
 					<Id>1476999639948</Id>
 					<Name><![CDATA[maxFemales]]></Name>
+					<Description><![CDATA[used in keeping the population steady, if the population of females goes above this number, cows start being removed]]></Description>
 					<X>-250</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -348,6 +350,7 @@
 				<Variable Class="Parameter">
 					<Id>1477003606768</Id>
 					<Name><![CDATA[InitialInfectedPercentage]]></Name>
+					<Description><![CDATA[Percent of cows initially infected, these cows can be of any age]]></Description>
 					<X>-250</X><Y>-400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -374,6 +377,7 @@
 				<Variable Class="Parameter">
 					<Id>1477013579269</Id>
 					<Name><![CDATA[InitialSubClinicalPercentage]]></Name>
+					<Description><![CDATA[Percentage of subclinical cows, these cows must be older than the timeout between infected and subclinical]]></Description>
 					<X>-250</X><Y>-380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -400,6 +404,7 @@
 				<Variable Class="Parameter">
 					<Id>1477013625547</Id>
 					<Name><![CDATA[InitialClinicalPercentage]]></Name>
+					<Description><![CDATA[Percentage of initial cows who are put into the clinical state (the cows must also be above a certian age, the incubation time of the disease).]]></Description>
 					<X>-250</X><Y>-420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -426,6 +431,7 @@
 				<Variable Class="Parameter">
 					<Id>1477418004088</Id>
 					<Name><![CDATA[SubclinicalPrevalenceModifier]]></Name>
+					<Description><![CDATA[baseline Prevelance modifier for subclinical animals, should be 1.]]></Description>
 					<X>20</X><Y>-410</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -451,6 +457,7 @@
 				<Variable Class="Parameter">
 					<Id>1477418026127</Id>
 					<Name><![CDATA[ClinicalPrevalenceModifier]]></Name>
+					<Description><![CDATA[Prevelance modifier based on subclinical modifier, the Clinical Prevelance modifier should always be larger than subclinical]]></Description>
 					<X>20</X><Y>-390</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -502,7 +509,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424604611</Id>
 					<Name><![CDATA[BloodTestClinicalSensitivity]]></Name>
-					<Description><![CDATA[Sensitivity (Se) is defined as ‘the ability of a test to correctly identify diseased animals as test positive (true positive)’ ie the proportion of diseased animals that will react to the test.]]></Description>
+					<Description><![CDATA[Sensitivity refers  to the percentage chance of correctly detecting if a sick cow is indeed sick (true positive pecentage)]]></Description>
 					<X>-250</X><Y>-580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -554,7 +561,7 @@
 				<Variable Class="Parameter">
 					<Id>1477424636282</Id>
 					<Name><![CDATA[FecalTestClinicalSensitivity]]></Name>
-					<Description><![CDATA[Sensitivity (Se) is defined as ‘the ability of a test to correctly identify diseased animals as test positive (true positive)’ ie the proportion of diseased animals that will react to the test.]]></Description>
+					<Description><![CDATA[Sensitivity refers  to the percentage chance of correctly detecting if a sick cow is indeed sick (true positive pecentage)]]></Description>
 					<X>-250</X><Y>-730</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -580,6 +587,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021826202</Id>
 					<Name><![CDATA[YoungBullRemovalRate]]></Name>
+					<Description><![CDATA[removal rate of male cows at weaning, most males are removed as only a few are necessary to keep up the herd.]]></Description>
 					<X>20</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -605,7 +613,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021826205</Id>
 					<Name><![CDATA[MomToChildInfectionRate]]></Name>
-					<Description><![CDATA[monthly rate based off the 30% infection rate over 6 months]]></Description>
+					<Description><![CDATA[monthly rate based off the 30% infection rate over 6 months.]]></Description>
 					<X>20</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -633,7 +641,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915668</Id>
 					<Name><![CDATA[GrazingCalfTime]]></Name>
-					<Description><![CDATA[Length of time which a cow stays a calf.]]></Description>
+					<Description><![CDATA[Length of time which a cow stays a calf after weaning.]]></Description>
 					<X>-250</X><Y>-200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -689,6 +697,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915674</Id>
 					<Name><![CDATA[PregnancyTime]]></Name>
+					<Description><![CDATA[length of time the female cows are pregnant]]></Description>
 					<X>-250</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -716,7 +725,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915677</Id>
 					<Name><![CDATA[MeanClincalRemovalDuration]]></Name>
-					<Description><![CDATA[conceptually its the time between pregnancy and going back to the not pregnant/conception stage (or just a increase on the not pregnant timeout)]]></Description>
+					<Description><![CDATA[length of time after the cow his the clinical state before it is removed. encompases death, as well as sale/removal after physical sysptoms begin mainfesting]]></Description>
 					<X>20</X><Y>-230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -729,7 +738,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[2]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -744,6 +753,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915680</Id>
 					<Name><![CDATA[WeaningTime]]></Name>
+					<Description><![CDATA[Time between Weaning and Grazing calf states]]></Description>
 					<X>-250</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -798,6 +808,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915686</Id>
 					<Name><![CDATA[MeanInfectedDuration]]></Name>
+					<Description><![CDATA[length of time in infected state]]></Description>
 					<X>20</X><Y>-270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -825,6 +836,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915689</Id>
 					<Name><![CDATA[MeanSubClinicalDuration]]></Name>
+					<Description><![CDATA[length of time in the subclinical state]]></Description>
 					<X>20</X><Y>-250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -852,6 +864,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915692</Id>
 					<Name><![CDATA[PregnancyPercentage]]></Name>
+					<Description><![CDATA[Percentage chance that female cows have of getting pregnant]]></Description>
 					<X>-250</X><Y>-160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -878,6 +891,7 @@
 				<Variable Class="Parameter">
 					<Id>1478021915695</Id>
 					<Name><![CDATA[maxAge]]></Name>
+					<Description><![CDATA[max age a cow can reach before being removed/dying]]></Description>
 					<X>-250</X><Y>-140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -904,6 +918,7 @@
 				<Variable Class="Parameter">
 					<Id>1478022571575</Id>
 					<Name><![CDATA[InitialFemalePercentage]]></Name>
+					<Description><![CDATA[Percentage of female cows in the initial population]]></Description>
 					<X>-250</X><Y>-440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -954,6 +969,7 @@
 				<Variable Class="Parameter">
 					<Id>1478024798363</Id>
 					<Name><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></Name>
+					<Description><![CDATA[Modifier used to increase or decrease Grazing cows susceptibility to the diesease. Should be less than Weaning cows Grazing cows are older/larger and less susceptible to catching the diesease.]]></Description>
 					<X>20</X><Y>-350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -979,6 +995,7 @@
 				<Variable Class="Parameter">
 					<Id>1478024884875</Id>
 					<Name><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></Name>
+					<Description><![CDATA[Modifier used to increase or decrease Weaning cows susceptibility of the diesease. Should be 1 for Weaning cows as they are susceptiable at normal levels.]]></Description>
 					<X>20</X><Y>-330</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1004,7 +1021,7 @@
 				<Variable Class="Parameter">
 					<Id>1478210458940</Id>
 					<Name><![CDATA[ClinicalMultiplier]]></Name>
-					<Description><![CDATA[increase in disease spreading based on being in clinical state]]></Description>
+					<Description><![CDATA[Multiplier used to increase the spread of the disease when the cows is in the clinical state.]]></Description>
 					<X>20</X><Y>-310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1030,6 +1047,7 @@
 				<Variable Class="Parameter">
 					<Id>1479232868866</Id>
 					<Name><![CDATA[FecalTestingDate]]></Name>
+					<Description><![CDATA[testing is specified by a date rather than a timeout. the date coensides with weaning of cows (calves are born in april and wean around october)]]></Description>
 					<X>-250</X><Y>-830</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1056,6 +1074,7 @@
 				<Variable Class="Parameter">
 					<Id>1479233572331</Id>
 					<Name><![CDATA[BloodTestingDate]]></Name>
+					<Description><![CDATA[testing is specified by a date rather than a timeout. the date coensides with weaning of cows (calves are born in april and wean around october)]]></Description>
 					<X>-250</X><Y>-680</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1082,6 +1101,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234381331</Id>
 					<Name><![CDATA[FecalTestInfectedSensitivity]]></Name>
+					<Description><![CDATA[Sensitivity refers  to the percentage chance of correctly detecting if a sick cow is indeed sick (true positive pecentage)]]></Description>
 					<X>-250</X><Y>-770</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1107,6 +1127,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234384187</Id>
 					<Name><![CDATA[FecalTestSubclinicalSensitivity]]></Name>
+					<Description><![CDATA[Sensitivity refers  to the percentage chance of correctly detecting if a sick cow is indeed sick (true positive pecentage)]]></Description>
 					<X>-250</X><Y>-750</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1132,6 +1153,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234591572</Id>
 					<Name><![CDATA[BloodTestInfectedSensitivity]]></Name>
+					<Description><![CDATA[Sensitivity refers  to the percentage chance of correctly detecting if a sick cow is indeed sick (true positive pecentage)]]></Description>
 					<X>-250</X><Y>-620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1158,6 +1180,7 @@
 				<Variable Class="Parameter">
 					<Id>1479234656857</Id>
 					<Name><![CDATA[BloodTestSubclinicalSensitivity]]></Name>
+					<Description><![CDATA[Sensitivity refers  to the percentage chance of correctly detecting if a sick cow is indeed sick (true positive pecentage)]]></Description>
 					<X>-250</X><Y>-600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1183,6 +1206,7 @@
 				<Variable Class="Parameter">
 					<Id>1479238143385</Id>
 					<Name><![CDATA[runFecalTest]]></Name>
+					<Description><![CDATA[Allows for the fecal tests to be toggled on and off]]></Description>
 					<X>-250</X><Y>-850</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1208,6 +1232,7 @@
 				<Variable Class="Parameter">
 					<Id>1479238150188</Id>
 					<Name><![CDATA[runBloodTest]]></Name>
+					<Description><![CDATA[allows for the blood tests to be toggled on and off]]></Description>
 					<X>-250</X><Y>-700</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1232,7 +1257,8 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1479238992775</Id>
-					<Name><![CDATA[FecalTestDelay]]></Name>
+					<Name><![CDATA[FecalTestReturnDelay]]></Name>
+					<Description><![CDATA[Length of time necessary to get results of tests returned back for the animal]]></Description>
 					<X>-250</X><Y>-810</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1241,12 +1267,12 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<UnitOfValue Class="TimeUnits"><![CDATA[WEEK]]></UnitOfValue>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Code><![CDATA[2]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1479238992773</Id>
@@ -1259,7 +1285,8 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1479239029046</Id>
-					<Name><![CDATA[BloodTestDelay]]></Name>
+					<Name><![CDATA[BloodTestReturnDelay]]></Name>
+					<Description><![CDATA[Length of time necessary to get results of tests returned back for the animal]]></Description>
 					<X>-250</X><Y>-660</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1277,6 +1304,34 @@
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1479239029044</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1479412158080</Id>
+					<Name><![CDATA[PositiveCowRemovalDelay]]></Name>
+					<Description><![CDATA[length of time necessary to remove a test positive cow from the population, because it is not always possible or reasonable to remove a cow the instant the test results come back]]></Description>
+					<X>-250</X><Y>-550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[WEEK]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1479412158078</Id>
 							<EditorContolType>UNIT_EDITOR</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -2645,7 +2700,7 @@ newCow.mother = this;
 					<Name><![CDATA[Removed]]></Name>
 					<Description><![CDATA[This state is a catch-all for any kind of removal from the population like death (natural or otherwise) and sale. ]]></Description>
 					<X>610</X><Y>510</Y>
-					<Label><X>-25</X><Y>15</Y></Label>
+					<Label><X>5</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3306,7 +3361,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>95</X><Y>143</Y></Point>
+						<Point><X>95.56239843019819</X><Y>143.34359764529722</Y></Point>
 					</Points>
 					<IconOffset>30.0</IconOffset>
 					<Properties Source="1476724089202" Target="1476721237689" Trigger="condition">
@@ -3337,7 +3392,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>162</X><Y>86</Y></Point>
+						<Point><X>162.92969666922352</X><Y>86.25689823664771</Y></Point>
 					</Points>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476721237689" Trigger="condition">
@@ -3703,7 +3758,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1478919747192" Target="1479235980372" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[main.FecalTestDelay]]></Code>
+							<Code><![CDATA[main.FecalTestReturnDelay + main.PositiveCowRemovalDelay]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -3842,7 +3897,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1478920665054" Target="1479236937923" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[main.BloodTestDelay]]></Code>
+							<Code><![CDATA[main.BloodTestReturnDelay + main.PositiveCowRemovalDelay]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -4365,7 +4420,8 @@ main.countFecalTestFalsePositive++;]]></Code>
 && this.child == null 
 ]]></Condition>
 					</Properties>
-					<Action><![CDATA[main.remove_cows(this)]]></Action>
+					<Action><![CDATA[main.deceasedCows = main.deceasedCows + 1;
+main.remove_cows(this); ]]></Action>
 				</Event>
 				<Event>
 					<Id>1478900079462</Id>
@@ -4486,7 +4542,7 @@ else
 				<Group>
 					<Id>1477183354132</Id>
 					<Name><![CDATA[cow]]></Name>
-					<X>240</X><Y>0</Y>
+					<X>0</X><Y>0</Y>
 					<Label><X>5.077</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5280,10 +5336,13 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[FecalTestDelay]]></ParameterName>
+					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[BloodTestDelay]]></ParameterName>
+					<ParameterName><![CDATA[BloodTestReturnDelay]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PositiveCowRemovalDelay]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -5518,10 +5577,13 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[FecalTestDelay]]></ParameterName>
+					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[BloodTestDelay]]></ParameterName>
+					<ParameterName><![CDATA[BloodTestReturnDelay]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PositiveCowRemovalDelay]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -5771,10 +5833,13 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[FecalTestDelay]]></ParameterName>
+					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[BloodTestDelay]]></ParameterName>
+					<ParameterName><![CDATA[BloodTestReturnDelay]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PositiveCowRemovalDelay]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
