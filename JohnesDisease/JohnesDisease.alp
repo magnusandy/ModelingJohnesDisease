@@ -989,7 +989,7 @@
 				<Variable Class="Parameter">
 					<Id>1478024405037</Id>
 					<Name><![CDATA[FrequencyOfInfectiveContact]]></Name>
-					<X>-560</X><Y>-240</Y>
+					<X>-560</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1067,7 +1067,7 @@
 					<Id>1478210458940</Id>
 					<Name><![CDATA[ClinicalMultiplier]]></Name>
 					<Description><![CDATA[Multiplier used to increase the spread of the disease when the cows is in the clinical state.]]></Description>
-					<X>-560</X><Y>-180</Y>
+					<X>-560</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1388,7 +1388,7 @@
 			<Events>
 				<Event>
 					<Id>1479503911788</Id>
-					<Name><![CDATA[event]]></Name>
+					<Name><![CDATA[perMonthCountHelper]]></Name>
 					<X>-240</X><Y>-1120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2392,9 +2392,9 @@ momInfectedCountPerMonth = 0;]]></Action>
     			</TimePlot>
     			<TimePlot>
 					<Id>1479503718259</Id>
-					<Name><![CDATA[monthlyInfectionRate]]></Name>
+					<Name><![CDATA[independantMonthlyInfectionCount]]></Name>
 					<X>0</X><Y>-500</Y>
-					<Label><X>80</X><Y>20</Y></Label>
+					<Label><X>40</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
