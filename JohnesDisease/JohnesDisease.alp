@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -5474,6 +5474,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -5726,6 +5729,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -5990,6 +5996,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -6248,6 +6257,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -6506,6 +6518,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -6773,6 +6788,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -7034,6 +7052,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -7304,6 +7325,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -7415,7 +7439,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<CloseConfirmation>false</CloseConfirmation>
 			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
-			<MaximumMemory>512</MaximumMemory>
+			<MaximumMemory>2048</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<BeforeEachExperimentRunCode><![CDATA[histogramData.reset();]]></BeforeEachExperimentRunCode>
@@ -7597,6 +7621,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			</FreeformParamValue>
 			<FreeformParamValue>	
 				<Id>1478024405037</Id>
+				<Expression Class="CodeValue">
+					<Code><![CDATA[7.5]]></Code>
+				</Expression>
 			</FreeformParamValue>
 			<FreeformParamValue>	
 				<Id>1478024798363</Id>
