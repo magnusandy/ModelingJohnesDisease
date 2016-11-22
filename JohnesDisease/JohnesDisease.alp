@@ -271,7 +271,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479503854955</Id>
 					<Name><![CDATA[envInfectedCountPerMonth]]></Name>
-					<X>-240</X><Y>-960</Y>
+					<X>-680</X><Y>-1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -286,7 +286,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479505244736</Id>
 					<Name><![CDATA[birthsPerMonth]]></Name>
-					<X>-240</X><Y>-920</Y>
+					<X>-680</X><Y>-1230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -301,7 +301,154 @@
 				<Variable Class="PlainVariable">
 					<Id>1479506088776</Id>
 					<Name><![CDATA[momInfectedCountPerMonth]]></Name>
-					<X>-240</X><Y>-940</Y>
+					<X>-680</X><Y>-1210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839721152</Id>
+					<Name><![CDATA[RemovedByFemalePopulationControlCountPerYear]]></Name>
+					<X>-680</X><Y>-1150</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839742435</Id>
+					<Name><![CDATA[RemovedByBullPopulationControlCountPerYear]]></Name>
+					<X>-680</X><Y>-1130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839838651</Id>
+					<Name><![CDATA[RemovedByClinicalSicknessCountPerYear]]></Name>
+					<X>-680</X><Y>-1110</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839868941</Id>
+					<Name><![CDATA[RemovedByYoungBullCullingCountPerYear]]></Name>
+					<X>-680</X><Y>-1090</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839879310</Id>
+					<Name><![CDATA[RemovedByTruePositiveBloodTestCountPerYear]]></Name>
+					<X>-680</X><Y>-1070</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839894800</Id>
+					<Name><![CDATA[RemovedByFalsePositiveBloodTestCountPerYear]]></Name>
+					<X>-680</X><Y>-1050</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839906313</Id>
+					<Name><![CDATA[RemovedByTruePositiveFecalTestCountPerYear]]></Name>
+					<X>-680</X><Y>-1030</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839923700</Id>
+					<Name><![CDATA[RemovedByFalsePositiveFecalTestCountPerYear]]></Name>
+					<X>-680</X><Y>-1010</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839939240</Id>
+					<Name><![CDATA[RemovedByFailedPregnancyCountPerYear]]></Name>
+					<X>-680</X><Y>-990</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1479839960753</Id>
+					<Name><![CDATA[RemovedByOldAgeCountPerYear]]></Name>
+					<X>-680</X><Y>-970</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1389,7 +1536,7 @@
 				<Event>
 					<Id>1479503911788</Id>
 					<Name><![CDATA[perMonthCountHelper]]></Name>
-					<X>-240</X><Y>-1120</Y>
+					<X>-890</X><Y>-1210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1417,18 +1564,82 @@
 					</Properties>
 					<Action><![CDATA[birthsPerMonthSet.add(birthsPerMonth);
 birthsPerMonth  = 0;
+
+MomInfectionsPerMonth.add(momInfectedCountPerMonth);
+momInfectedCountPerMonth = 0;
+
 EnvInfectionsPerMonth.add(envInfectedCountPerMonth);
 envInfectedCountPerMonth = 0;
 
-MomInfectionsPerMonth.add(momInfectedCountPerMonth);
-momInfectedCountPerMonth = 0;]]></Action>
+this.independantMonthlyInfectionCount.refresh();]]></Action>
+				</Event>
+				<Event>
+					<Id>1479840114432</Id>
+					<Name><![CDATA[perYearCountHelper]]></Name>
+					<X>-880</X><Y>-1070</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1479888000000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[RemovalByFemalePopulationControlPerYear.add(RemovedByFemalePopulationControlCountPerYear);
+RemovedByFemalePopulationControlCountPerYear = 0;
+
+RemovalByBullPopulationControlPerYear.add(RemovedByBullPopulationControlCountPerYear);
+RemovedByBullPopulationControlCountPerYear = 0;
+
+RemovalByClinicalSicknessPerYear.add(RemovedByClinicalSicknessCountPerYear);
+RemovedByClinicalSicknessCountPerYear = 0;
+
+RemovalByFailedPregnancyPerYear.add(RemovedByFailedPregnancyCountPerYear);
+RemovedByFailedPregnancyCountPerYear = 0;
+
+RemovalByFalsePositiveBloodTestPerYear.add(RemovedByFalsePositiveBloodTestCountPerYear);
+RemovedByFalsePositiveBloodTestCountPerYear = 0;
+
+RemovalByFalsePositiveFecalTestPerYear.add(RemovedByFalsePositiveFecalTestCountPerYear);
+RemovedByFalsePositiveFecalTestCountPerYear = 0;
+
+RemovalByOldAgePerYear.add(RemovedByOldAgeCountPerYear);
+RemovedByOldAgeCountPerYear = 0;
+
+RemovalByTruePositiveBloodTestPerYear.add(RemovedByTruePositiveBloodTestCountPerYear);
+RemovedByTruePositiveBloodTestCountPerYear = 0;
+
+RemovalByTruePositiveFecalTestPerYear.add(RemovedByTruePositiveFecalTestCountPerYear);
+RemovedByTruePositiveFecalTestCountPerYear = 0;
+
+RemovalByYoungBullCullingPerYear.add(RemovedByYoungBullCullingCountPerYear);
+RemovedByYoungBullCullingCountPerYear = 0;
+
+this.PerYearRemovals.refresh();]]></Action>
 				</Event>
 			</Events>
 			<AnalysisData>
     			<DataSet>
 					<Id>1479503623169</Id>
 					<Name><![CDATA[EnvInfectionsPerMonth]]></Name>
-					<X>-240</X><Y>-1080</Y>
+					<X>-240</X><Y>-1200</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1450,7 +1661,7 @@ momInfectedCountPerMonth = 0;]]></Action>
     			<DataSet>
 					<Id>1479505066791</Id>
 					<Name><![CDATA[birthsPerMonthSet]]></Name>
-					<X>-240</X><Y>-1040</Y>
+					<X>-240</X><Y>-1240</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1472,7 +1683,7 @@ momInfectedCountPerMonth = 0;]]></Action>
     			<DataSet>
 					<Id>1479506130608</Id>
 					<Name><![CDATA[MomInfectionsPerMonth]]></Name>
-					<X>-240</X><Y>-1000</Y>
+					<X>-240</X><Y>-1220</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1494,7 +1705,7 @@ momInfectedCountPerMonth = 0;]]></Action>
     			<DataSet>
 					<Id>1479684854197</Id>
 					<Name><![CDATA[prevelanceOverTime]]></Name>
-					<X>-240</X><Y>-980</Y>
+					<X>-240</X><Y>-950</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1513,6 +1724,226 @@ momInfectedCountPerMonth = 0;]]></Action>
 					<FreezeXAxis>true</FreezeXAxis>
 					<VerticalAxisExpression><![CDATA[cows.Prevalence()]]></VerticalAxisExpression>
 					<SamplesToKeep>240</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839140199</Id>
+					<Name><![CDATA[RemovalByFemalePopulationControlPerYear]]></Name>
+					<X>-240</X><Y>-1160</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839207982</Id>
+					<Name><![CDATA[RemovalByBullPopulationControlPerYear]]></Name>
+					<X>-240</X><Y>-1140</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839242556</Id>
+					<Name><![CDATA[RemovalByClinicalSicknessPerYear]]></Name>
+					<X>-240</X><Y>-1120</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839278274</Id>
+					<Name><![CDATA[RemovalByYoungBullCullingPerYear]]></Name>
+					<X>-240</X><Y>-1100</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839412135</Id>
+					<Name><![CDATA[RemovalByTruePositiveBloodTestPerYear]]></Name>
+					<X>-240</X><Y>-1080</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839457334</Id>
+					<Name><![CDATA[RemovalByFalsePositiveBloodTestPerYear]]></Name>
+					<X>-240</X><Y>-1060</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839613077</Id>
+					<Name><![CDATA[RemovalByTruePositiveFecalTestPerYear]]></Name>
+					<X>-240</X><Y>-1040</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839638772</Id>
+					<Name><![CDATA[RemovalByFalsePositiveFecalTestPerYear]]></Name>
+					<X>-240</X><Y>-1020</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839655414</Id>
+					<Name><![CDATA[RemovalByFailedPregnancyPerYear]]></Name>
+					<X>-240</X><Y>-1000</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1479839681500</Id>
+					<Name><![CDATA[RemovalByOldAgePerYear]]></Name>
+					<X>-240</X><Y>-980</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
 				</DataSet>
 			</AnalysisData>
 			<AgentLinks>
@@ -2488,6 +2919,153 @@ momInfectedCountPerMonth = 0;]]></Action>
 					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
+    			<TimePlot>
+					<Id>1479841898512</Id>
+					<Name><![CDATA[PerYearRemovals]]></Name>
+					<X>310</X><Y>-1030</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479888000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>YEAR</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[-1]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[300]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByBullPopulationControlPerYear]]></Title>
+					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
+					<Color>-23296</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByClinicalSicknessPerYear]]></Title>
+					<Expression><![CDATA[RemovalByClinicalSicknessPerYear]]></Expression>
+					<Color>-4343957</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByFailedPregnancyPerYear]]></Title>
+					<Expression><![CDATA[RemovalByFailedPregnancyPerYear]]></Expression>
+					<Color>-12004916</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByFalsePositiveBloodTestPerYear]]></Title>
+					<Expression><![CDATA[RemovalByFalsePositiveBloodTestPerYear]]></Expression>
+					<Color>-8097537</Color>
+					<Expression2><![CDATA[RemovedByFalsePositiveBloodTestCountPerYear]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByFalsePositiveFecalTestPerYear]]></Title>
+					<Expression><![CDATA[RemovalByFalsePositiveFecalTestPerYear]]></Expression>
+					<Color>-60269</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByFemalePopulationControlPerYear]]></Title>
+					<Expression><![CDATA[RemovalByFemalePopulationControlPerYear]]></Expression>
+					<Color>-29696</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByTruePositiveBloodTestPerYear]]></Title>
+					<Expression><![CDATA[RemovalByTruePositiveBloodTestPerYear]]></Expression>
+					<Color>-12799119</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByTruePositiveFecalTestPerYear]]></Title>
+					<Expression><![CDATA[RemovalByTruePositiveFecalTestPerYear]]></Expression>
+					<Color>-9807155</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByYoungBullCullingPerYear]]></Title>
+					<Expression><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression>
+					<Color>-2987746</Color>
+					<Expression2><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Dataset Title]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-2448096</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
 			</Charts>
 
 		</ActiveObjectClass>
@@ -3344,6 +3922,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476729847052" Target="1476721237689" Trigger="condition">
+						<Action><![CDATA[main.RemovedByYoungBullCullingCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -3532,6 +4111,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>120.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476721237689" Trigger="condition">
+						<Action><![CDATA[main.RemovedByFailedPregnancyCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -3565,6 +4145,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>30.0</IconOffset>
 					<Properties Source="1476724089202" Target="1476721237689" Trigger="condition">
+						<Action><![CDATA[main.RemovedByBullPopulationControlCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -3596,6 +4177,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476721237689" Trigger="condition">
+						<Action><![CDATA[main.RemovedByFemalePopulationControlCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -3690,6 +4272,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476721184189" Target="1476721237689" Trigger="timeout">
+						<Action><![CDATA[main.RemovedByClinicalSicknessCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[main.MeanClincalRemovalDuration]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -4257,7 +4840,8 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Properties Width="100" Height="30" Previous="1479235218750" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countFecalTestTruePositive++;]]></Code>
+main.countFecalTestTruePositive++;
+main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4297,7 +4881,8 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Properties Width="100" Height="30" Previous="1479235474225" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countFecalTestTruePositive++;]]></Code>
+main.countFecalTestTruePositive++;
+main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4324,7 +4909,8 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Properties Width="100" Height="30" Previous="1479235467980" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countFecalTestTruePositive++;]]></Code>
+main.countFecalTestTruePositive++;
+main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4433,7 +5019,8 @@ main.countFecalTestTruePositive++;]]></Code>
 					<Properties Width="100" Height="30" Previous="1479236233917" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countBloodTestTruePositive++;]]></Code>
+main.countBloodTestTruePositive++;
+main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4473,7 +5060,8 @@ main.countBloodTestTruePositive++;]]></Code>
 					<Properties Width="100" Height="30" Previous="1479236233925" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countBloodTestTruePositive++;]]></Code>
+main.countBloodTestTruePositive++;
+main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4500,7 +5088,8 @@ main.countBloodTestTruePositive++;]]></Code>
 					<Properties Width="100" Height="30" Previous="1479236233927" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countBloodTestTruePositive++;]]></Code>
+main.countBloodTestTruePositive++;
+main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4539,7 +5128,8 @@ main.countBloodTestTruePositive++;]]></Code>
 					<Properties Width="100" Height="30" Previous="1478898241268" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countFecalTestFalsePositive++;]]></Code>
+main.countFecalTestFalsePositive++;
+main.RemovedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Code">
@@ -4553,7 +5143,8 @@ main.countFecalTestFalsePositive++;]]></Code>
 					<Properties Width="100" Height="30" Previous="1479236233930" >
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
-main.countBloodTestFalsePositive++;]]></Code>
+main.countBloodTestFalsePositive++;
+main.RemovedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 			</ActionChartElements>
@@ -4621,6 +5212,7 @@ main.countBloodTestFalsePositive++;]]></Code>
 ]]></Condition>
 					</Properties>
 					<Action><![CDATA[main.deceasedCows = main.deceasedCows + 1;
+main.RemovedByOldAgeCountPerYear += 1;
 main.remove_cows(this); ]]></Action>
 				</Event>
 			</Events>
