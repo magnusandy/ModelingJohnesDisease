@@ -2779,7 +2779,7 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Id>1477418568082</Id>
 					<Name><![CDATA[WeightedPrevalence]]></Name>
 					<X>10</X><Y>-770</Y>
-					<Label><X>45</X><Y>-20</Y></Label>
+					<Label><X>80</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -2801,9 +2801,9 @@ this.PerYearRemovals.refresh();]]></Action>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
-						<YOffset>0</YOffset>
+						<YOffset>10</YOffset>
 						<Width>180</Width>
-						<Height>140</Height>
+						<Height>150</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -2811,7 +2811,7 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Legend>
 						<Place>SOUTH</Place>
 						<TextColor>-16777216</TextColor>
-						<Size>90</Size>
+						<Size>70</Size>
 					</Legend>
 					<Labels>
 						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
@@ -2938,10 +2938,10 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Id>1479841898512</Id>
 					<Name><![CDATA[PerYearRemovals]]></Name>
 					<X>290</X><Y>-800</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
+					<Label><X>90</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<AutoUpdate>false</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1479888000000</OccurrenceDate>
@@ -8031,6 +8031,528 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<FinalTime><![CDATA[240.0]]></FinalTime>	
 			</ModelTimeProperties>
 		</SimulationExperiment>
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1476133888236">
+			<Id>1480017502301</Id>
+			<Name><![CDATA[slowRemovalAfterTesting]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
+			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<Frame>
+				<X>0</X>
+				<Y>0</Y>
+				<Width>1000</Width>
+				<Height>600</Height>
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+			</Frame>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1010101010</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+			<SnapshotFile></SnapshotFile>
+
+			<Shapes>
+				<Text>
+					<Id>1480017502305</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>40</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[JohnesDisease]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+			<Controls>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1480017502303</Id>
+					<Name><![CDATA[button]]></Name>
+					<X>40</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[if ( getState() == IDLE )
+	run();
+getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Run]]></LabelText>
+						<LabelCode><![CDATA[getState() == IDLE ?
+	"Run" :
+	"Top level agent"]]></LabelCode>
+					</ExtendedProperties>
+				</Control>
+			</Controls>
+
+			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxMales]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[0.07]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[0.04]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[SubclinicalPrevalenceModifier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ClinicalPrevalenceModifier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestClinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestClinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungBullRemovalRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MomToChildInfectionRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[NotPregnantTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanClincalRemovalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanLatencyDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanInfectedDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanSubClinicalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ClinicalMultiplier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestingDate]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[toDate(2016, 9, 1, 0, 0, 0)]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestingDate]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[toDate(2016, 9, 1, 0, 0, 0)]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestInfectedSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSubclinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestInfectedSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestReturnDelay]]></ParameterName>
+					<ParameterValue Class="CodeUnitValue">
+						<Code><![CDATA[2]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PositiveCowRemovalDelay]]></ParameterName>
+					<ParameterValue Class="CodeUnitValue">
+						<Code><![CDATA[8]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+					</ParameterValue>
+				</Parameter>
+			</Parameters>			
+			<PresentationProperties 
+				EnableAdaptiveFrameManagement="true" 
+				EnableAntiAliasing="true"
+				EnableEnhancedModelElementsAnimation="true"
+				EnablePanning="true"
+				ToolbarCustomizableAtRuntime="true"
+				EnableZoom="true">
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
+				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
+				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
+				<RealTimeScale>1.0</RealTimeScale>
+				<UIProperty Name="Experiment Progress" Value="false"/>
+				<UIProperty Name="Simulation Progress" Value="true"/>
+				<UIProperty Name="Statusbar Events Per Second" Value="false"/>
+				<UIProperty Name="Statusbar Frames Per Second" Value="false"/>
+				<UIProperty Name="Statusbar Memory" Value="true"/>
+				<UIProperty Name="Statusbar Model Date" Value="true"/>
+				<UIProperty Name="Statusbar Model Step" Value="false"/>
+				<UIProperty Name="Statusbar Model Time" Value="true"/>
+				<UIProperty Name="Statusbar Real Time Of Simulation" Value="false"/>
+				<UIProperty Name="Statusbar Status" Value="true"/>
+				<UIProperty Name="Toolbar Animation setup" Value="false"/>
+				<UIProperty Name="Toolbar Execution control" Value="true"/>
+				<UIProperty Name="Toolbar File" Value="false"/>
+				<UIProperty Name="Toolbar Model navigation" Value="true"/>
+				<UIProperty Name="Toolbar Time scale setup" Value="true"/>
+				<UIProperty Name="Toolbar View" Value="false"/>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<InitialDate><![CDATA[1459468800000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[2081548800000]]></FinalDate>	
+				<FinalTime><![CDATA[240.0]]></FinalTime>	
+			</ModelTimeProperties>
+		</SimulationExperiment>
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1476133888236">
+			<Id>1480017788629</Id>
+			<Name><![CDATA[fastRemovalAfterTesting]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
+			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<Frame>
+				<X>0</X>
+				<Y>0</Y>
+				<Width>1000</Width>
+				<Height>600</Height>
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+			</Frame>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1010101010</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+			<SnapshotFile></SnapshotFile>
+
+			<Shapes>
+				<Text>
+					<Id>1480017788633</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>40</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[JohnesDisease]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+			<Controls>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1480017788631</Id>
+					<Name><![CDATA[button]]></Name>
+					<X>40</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[if ( getState() == IDLE )
+	run();
+getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Run]]></LabelText>
+						<LabelCode><![CDATA[getState() == IDLE ?
+	"Run" :
+	"Top level agent"]]></LabelCode>
+					</ExtendedProperties>
+				</Control>
+			</Controls>
+
+			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxMales]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[0.07]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[0.04]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[SubclinicalPrevalenceModifier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ClinicalPrevalenceModifier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestClinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSpecificity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestClinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungBullRemovalRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MomToChildInfectionRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[NotPregnantTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanClincalRemovalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanLatencyDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanInfectedDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MeanSubClinicalDuration]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[maxAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[7.5]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[WeaningCalfIntensityOfPrevalenceModifer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ClinicalMultiplier]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestingDate]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[toDate(2016, 9, 1, 0, 0, 0)]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestingDate]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[toDate(2016, 9, 1, 0, 0, 0)]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestInfectedSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestSubclinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestInfectedSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[BloodTestReturnDelay]]></ParameterName>
+					<ParameterValue Class="CodeUnitValue">
+						<Code><![CDATA[2]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PositiveCowRemovalDelay]]></ParameterName>
+					<ParameterValue Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+					</ParameterValue>
+				</Parameter>
+			</Parameters>			
+			<PresentationProperties 
+				EnableAdaptiveFrameManagement="true" 
+				EnableAntiAliasing="true"
+				EnableEnhancedModelElementsAnimation="true"
+				EnablePanning="true"
+				ToolbarCustomizableAtRuntime="true"
+				EnableZoom="true">
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
+				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
+				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
+				<RealTimeScale>1.0</RealTimeScale>
+				<UIProperty Name="Experiment Progress" Value="false"/>
+				<UIProperty Name="Simulation Progress" Value="true"/>
+				<UIProperty Name="Statusbar Events Per Second" Value="false"/>
+				<UIProperty Name="Statusbar Frames Per Second" Value="false"/>
+				<UIProperty Name="Statusbar Memory" Value="true"/>
+				<UIProperty Name="Statusbar Model Date" Value="true"/>
+				<UIProperty Name="Statusbar Model Step" Value="false"/>
+				<UIProperty Name="Statusbar Model Time" Value="true"/>
+				<UIProperty Name="Statusbar Real Time Of Simulation" Value="false"/>
+				<UIProperty Name="Statusbar Status" Value="true"/>
+				<UIProperty Name="Toolbar Animation setup" Value="false"/>
+				<UIProperty Name="Toolbar Execution control" Value="true"/>
+				<UIProperty Name="Toolbar File" Value="false"/>
+				<UIProperty Name="Toolbar Model navigation" Value="true"/>
+				<UIProperty Name="Toolbar Time scale setup" Value="true"/>
+				<UIProperty Name="Toolbar View" Value="false"/>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<InitialDate><![CDATA[1459468800000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[2081548800000]]></FinalDate>	
+				<FinalTime><![CDATA[240.0]]></FinalTime>	
+			</ModelTimeProperties>
+		</SimulationExperiment>
 		<!--   =========  Parameter Variation Experiment   ========  -->
 		<ParamVariationExperiment ActiveObjectClassId="1476133888236">
 			<Id>1479684464828</Id>
@@ -8050,8 +8572,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<MaximumMemory>2048</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
-			<BeforeEachExperimentRunCode><![CDATA[histogramData.reset();]]></BeforeEachExperimentRunCode>
+			<BeforeEachExperimentRunCode><![CDATA[histogramData.reset(); histogramDataSmallRange.reset(); ]]></BeforeEachExperimentRunCode>
 			<AfterSimulationRunCode><![CDATA[histogramData.add( root.prevelanceOverTime );
+histogramDataSmallRange.add( root.prevelanceOverTime );
 ]]></AfterSimulationRunCode>
 			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
@@ -8063,7 +8586,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<Id>1479684554950</Id>
 					<Name><![CDATA[histogramData]]></Name>
 					<Description><![CDATA[data from each rum of main, storing the current prevalance for each time interval]]></Description>
-					<X>10</X><Y>-20</Y>
+					<X>-10</X><Y>-10</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8090,13 +8613,44 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<Envelope>0.5</Envelope>
 					<Envelope>0.75</Envelope>
 				</Histogram2DData>
+    			<Histogram2DData>
+					<Id>1480015974431</Id>
+					<Name><![CDATA[histogramDataSmallRange]]></Name>
+					<Description><![CDATA[data from each rum of main, storing the current prevalance for each time interval]]></Description>
+					<X>-10</X><Y>310</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479715200000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>false</FreezeXAxis>
+					<HorizontalIntervals>240</HorizontalIntervals>
+					<VerticalIntervals>30</VerticalIntervals>
+					<VerticalRangeFromExpression><![CDATA[0]]></VerticalRangeFromExpression>
+					<VerticalRangeToExpression><![CDATA[0.08]]></VerticalRangeToExpression>
+					<HorizontalRangeFromExpression><![CDATA[0]]></HorizontalRangeFromExpression>
+					<HorizontalRangeToExpression><![CDATA[240]]></HorizontalRangeToExpression>
+					<Envelope>0.25</Envelope>
+					<Envelope>0.5</Envelope>
+					<Envelope>0.75</Envelope>
+				</Histogram2DData>
 			</AnalysisData>
 
 			<Charts>
     			<Histogram2D>
 					<Id>1479684565150</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>20</X><Y>30</Y>
+					<X>0</X><Y>0</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8141,6 +8695,60 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ShowType>SHOW_ENVELOPES</ShowType>
 					<HistogramDataExpression>
 					<Expression><![CDATA[histogramData]]></Expression>
+					<Color>-14774017</Color>
+					<Expression2><![CDATA[null]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>  
+							<Title><![CDATA[Infection Prevelance]]></Title>
+					</HistogramDataExpression>
+    			</Histogram2D>
+    			<Histogram2D>
+					<Id>1480015995273</Id>
+					<Name><![CDATA[chart1]]></Name>
+					<X>0</X><Y>320</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479715200000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>500</Width>
+					<Height>290</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>420</Width>
+						<Height>200</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<ShowType>SHOW_ENVELOPES</ShowType>
+					<HistogramDataExpression>
+					<Expression><![CDATA[histogramDataSmallRange]]></Expression>
 					<Color>-14774017</Color>
 					<Expression2><![CDATA[null]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>  
