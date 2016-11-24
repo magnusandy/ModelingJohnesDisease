@@ -2048,6 +2048,12 @@ this.PerYearRemovals.refresh();]]></Action>
 						<Name><![CDATA[Prevalence]]></Name>
 						<Type>average</Type>
 						<Expression><![CDATA[item.inState(Cow.SubClinical) ? 1 : item.inState(Cow.Clinical) ? 1 : 0]]></Expression>
+						<Condition><![CDATA[item.isFemale]]></Condition>
+					</StatisticsItem>
+					<StatisticsItem>
+						<Name><![CDATA[OverallPrevalence]]></Name>
+						<Type>average</Type>
+						<Expression><![CDATA[item.inState(Cow.SubClinical) ? 1 : item.inState(Cow.Clinical) ? 1 : 0]]></Expression>
 						<Condition><![CDATA[true]]></Condition>
 					</StatisticsItem>
 					<InEnvironment>true</InEnvironment>	
@@ -2835,6 +2841,15 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Expression><![CDATA[my_dataset1]]></Expression>
 					<Color>-10496</Color>
 					<Expression2><![CDATA[this.cows.Prevalence()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Overall Prevalence]]></Title>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-6632142</Color>
+					<Expression2><![CDATA[this.cows.OverallPrevalence()]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
@@ -8214,7 +8229,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<FreeformParamValue>	
 				<Id>1478024405037</Id>
 				<Expression Class="CodeValue">
-					<Code><![CDATA[7.5]]></Code>
+					<Code><![CDATA[7.3]]></Code>
 				</Expression>
 			</FreeformParamValue>
 			<FreeformParamValue>	
