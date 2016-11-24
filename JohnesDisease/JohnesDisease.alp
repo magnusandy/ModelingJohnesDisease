@@ -3429,7 +3429,7 @@ main.birthsPerMonth = main.birthsPerMonth +1;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
-						<FillColor>-10496</FillColor>
+						<FillColor>-1</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -3442,7 +3442,8 @@ main.birthsPerMonth = main.birthsPerMonth +1;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
-						<FillColor>-6632142</FillColor>
+						<EntryAction><![CDATA[this.outlineColor = gainsboro]]></EntryAction>
+						<FillColor>-2302756</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -3531,7 +3532,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="40">
 						<EntryAction><![CDATA[agentColor = red]]></EntryAction>
-						<FillColor>-65536</FillColor>
+						<FillColor>-5952982</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
