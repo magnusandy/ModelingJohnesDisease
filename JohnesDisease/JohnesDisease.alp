@@ -713,7 +713,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.4]]></Code>
+							<Code><![CDATA[0.8]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477424604609</Id>
@@ -1384,7 +1384,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.80]]></Code>
+							<Code><![CDATA[0.40]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1479234656855</Id>
@@ -1487,12 +1487,12 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<UnitOfValue Class="TimeUnits"><![CDATA[WEEK]]></UnitOfValue>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Code><![CDATA[2]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1479239029044</Id>
@@ -1519,7 +1519,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[]]></Code>
+							<Code><![CDATA[2]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -6082,9 +6082,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -6265,15 +6262,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -6337,9 +6328,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -6532,15 +6520,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -6604,9 +6586,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -6793,15 +6772,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -6865,9 +6838,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -7054,15 +7024,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -7126,9 +7090,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -7324,15 +7285,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -7396,9 +7351,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -7588,15 +7540,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -7660,9 +7606,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -7933,9 +7876,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -8122,15 +8062,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -8194,9 +8128,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
@@ -8383,15 +8314,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.07]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialSubClinicalPercentage]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[0.04]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialClinicalPercentage]]></ParameterName>
@@ -8455,9 +8380,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FrequencyOfInfectiveContact]]></ParameterName>
-					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[7.5]]></Code>
-					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[GrazingCalfIntensityOfPrevalenceModifer]]></ParameterName>
