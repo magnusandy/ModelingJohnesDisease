@@ -780,7 +780,7 @@
 					<Id>1478021826202</Id>
 					<Name><![CDATA[YoungBullRemovalRate]]></Name>
 					<Description><![CDATA[removal rate of male cows at weaning, most males are removed as only a few are necessary to keep up the herd.]]></Description>
-					<X>-560</X><Y>-60</Y>
+					<X>-250</X><Y>-100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1945,6 +1945,68 @@ this.PerYearRemovals.refresh();]]></Action>
 					<FreezeXAxis>true</FreezeXAxis>
 					<SamplesToKeep>20</SamplesToKeep>
 				</DataSet>
+    			<HistogramData>
+					<Id>1480359136550</Id>
+					<Name><![CDATA[FecalTestTimeToCure]]></Name>
+					<X>650</X><Y>-790</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480406400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<Value><![CDATA[]]></Value>
+					<NumberOfIntervals>10</NumberOfIntervals>
+					<MinMaxAutodetect>true</MinMaxAutodetect>
+					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
+					<RangeMaxExpression><![CDATA[1]]></RangeMaxExpression>
+					<InitialIntervalSize><![CDATA[0.1]]></InitialIntervalSize>
+					<CalculateCDF>true</CalculateCDF>
+					<CalculatePercentiles>false</CalculatePercentiles>
+					<LowPercent>10</LowPercent>
+					<HighPercent>10</HighPercent>
+					<Title><![CDATA[]]></Title>
+				</HistogramData>
+    			<HistogramData>
+					<Id>1480359901355</Id>
+					<Name><![CDATA[BloodTestTimeToCure]]></Name>
+					<X>900</X><Y>-790</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480406400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<Value><![CDATA[]]></Value>
+					<NumberOfIntervals>10</NumberOfIntervals>
+					<MinMaxAutodetect>true</MinMaxAutodetect>
+					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
+					<RangeMaxExpression><![CDATA[1]]></RangeMaxExpression>
+					<InitialIntervalSize><![CDATA[0.1]]></InitialIntervalSize>
+					<CalculateCDF>true</CalculateCDF>
+					<CalculatePercentiles>false</CalculatePercentiles>
+					<LowPercent>10</LowPercent>
+					<HighPercent>10</HighPercent>
+					<Title><![CDATA[]]></Title>
+				</HistogramData>
 			</AnalysisData>
 			<AgentLinks>
 				<AgentLink>
@@ -3081,6 +3143,132 @@ this.PerYearRemovals.refresh();]]></Action>
 					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
+    			<Histogram>
+					<Id>1480359058693</Id>
+					<Name><![CDATA[FecalTestingTimeToCureChart]]></Name>
+					<X>600</X><Y>-780</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480406400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<ShowPDF>true</ShowPDF>
+					<ShowCDF>false</ShowCDF>
+					<ShowMean>false</ShowMean>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+					<HistogramDataExpression>
+					<Expression><![CDATA[FecalTestTimeToCure]]></Expression>
+						<ColorPDF>-6632142</ColorPDF>
+						<ColorCDF>-9807155</ColorCDF>
+						<ColorLowPercent>-2354116</ColorLowPercent>
+						<ColorHighPercent>-12004916</ColorHighPercent>
+						<ColorMean>-6632142</ColorMean>
+						<LineWidth>1</LineWidth>						
+						<Title><![CDATA[Histogram Data Title]]></Title>							
+					</HistogramDataExpression>
+    			</Histogram>
+    			<Histogram>
+					<Id>1480359901352</Id>
+					<Name><![CDATA[BloodTestingTimeToCureChart]]></Name>
+					<X>850</X><Y>-780</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480406400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<ShowPDF>true</ShowPDF>
+					<ShowCDF>false</ShowCDF>
+					<ShowMean>false</ShowMean>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+					<HistogramDataExpression>
+					<Expression><![CDATA[BloodTestTimeToCure]]></Expression>
+						<ColorPDF>-6632142</ColorPDF>
+						<ColorCDF>-9807155</ColorCDF>
+						<ColorLowPercent>-2354116</ColorLowPercent>
+						<ColorHighPercent>-12004916</ColorHighPercent>
+						<ColorMean>-6632142</ColorMean>
+						<LineWidth>1</LineWidth>						
+						<Title><![CDATA[Histogram Data Title]]></Title>							
+					</HistogramDataExpression>
+    			</Histogram>
 			</Charts>
 
 		</ActiveObjectClass>
@@ -3326,8 +3514,8 @@ this.PerYearRemovals.refresh();]]></Action>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1478899343651</Id>
-					<Name><![CDATA[toRemove]]></Name>
-					<X>-100</X><Y>240</Y>
+					<Name><![CDATA[toRemoveFecal]]></Name>
+					<X>-250</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3351,6 +3539,57 @@ this.PerYearRemovals.refresh();]]></Action>
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1480359236025</Id>
+					<Name><![CDATA[infectionAge]]></Name>
+					<X>-100</X><Y>280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1480359355431</Id>
+					<Name><![CDATA[fecalRemovalAge]]></Name>
+					<X>-100</X><Y>300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1480360083386</Id>
+					<Name><![CDATA[bloodRemovalAge]]></Name>
+					<X>-100</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1480361524772</Id>
+					<Name><![CDATA[toRemoveBlood]]></Name>
+					<X>-250</X><Y>370</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -3442,7 +3681,8 @@ main.birthsPerMonth = main.birthsPerMonth +1;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
-						<EntryAction><![CDATA[this.outlineColor = gainsboro]]></EntryAction>
+						<EntryAction><![CDATA[this.outlineColor = gainsboro;
+this.infectionAge = this.currentAge;]]></EntryAction>
 						<FillColor>-2302756</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -4636,7 +4876,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[this.toRemove == true]]></Condition>
+						<Condition><![CDATA[this.toRemoveFecal == true]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -4761,7 +5001,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[this.toRemove == true]]></Condition>
+						<Condition><![CDATA[this.toRemoveBlood == true]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -4818,6 +5058,24 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<Condition><![CDATA[!(this.inState(Susceptible))]]></Condition>
 					</Properties>
 				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1480360822942</Id>
+					<Name><![CDATA[code2]]></Name>
+					<X>1170</X><Y>1325</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Update FecalTestingTimeToCureChart]]></Comment>
+					<Properties Width="280" Height="30" Previous="1478740206197" >
+						<FillColor/>
+						<Code><![CDATA[if(this.toRemoveFecal)
+{
+this.fecalRemovalAge = this.currentAge;
+main.FecalTestTimeToCure.add(this.fecalRemovalAge - this.infectionAge);
+main.FecalTestingTimeToCureChart.refresh();
+}]]></Code>
+					</Properties>	
+				</ActionChartElement>
 				<ActionChartElement Class="Decision">
 					<Id>1478740206197</Id>
 					<Name><![CDATA[isCowInfected]]></Name>
@@ -4827,7 +5085,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Comment><![CDATA[Is Cow in Infected State?]]></Comment>
-					<Properties Width="180" Height="40" Appearance="0" Previous="1478898211477" TrueAction="1479235218750" FalseAction="1479235204970" >
+					<Properties Width="180" Height="40" Appearance="0" Previous="1478898211477" Next="1480360822942" TrueAction="1479235218750" FalseAction="1479235204970" >
 						<FillColor/>
 						<Condition><![CDATA[this.inState(Infected)]]></Condition>
 					</Properties>
@@ -4855,7 +5113,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1479235218750" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestTruePositive++;
 main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -4896,7 +5154,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1479235474225" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestTruePositive++;
 main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -4924,7 +5182,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1479235467980" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestTruePositive++;
 main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -4946,7 +5204,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Return">
 					<Id>1478737151229</Id>
 					<Name><![CDATA[returnStatementFecalTest]]></Name>
-					<X>380</X><Y>1365</Y>
+					<X>380</X><Y>1415</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4997,6 +5255,24 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 						<Condition><![CDATA[!(this.inState(Susceptible))]]></Condition>
 					</Properties>
 				</ActionChartElement>
+				<ActionChartElement Class="Code">
+					<Id>1480360756724</Id>
+					<Name><![CDATA[code1]]></Name>
+					<X>2350</X><Y>1325</Y>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Comment><![CDATA[Update BloodTestingTimeToCureChart]]></Comment>
+					<Properties Width="300" Height="30" Previous="1479236233916" >
+						<FillColor/>
+						<Code><![CDATA[if(this.toRemoveBlood)
+{
+this.bloodRemovalAge = this.currentAge;
+main.BloodTestTimeToCure.add(this.bloodRemovalAge - this.infectionAge);
+main.BloodTestingTimeToCureChart.refresh();
+}]]></Code>
+					</Properties>	
+				</ActionChartElement>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233916</Id>
 					<Name><![CDATA[isCowInfectedBlood]]></Name>
@@ -5006,7 +5282,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Comment><![CDATA[Is Cow in Infected State?]]></Comment>
-					<Properties Width="180" Height="40" Appearance="0" Previous="1479236233915" TrueAction="1479236233917" FalseAction="1479236233923" >
+					<Properties Width="180" Height="40" Appearance="0" Previous="1479236233915" Next="1480360756724" TrueAction="1479236233917" FalseAction="1479236233923" >
 						<FillColor/>
 						<Condition><![CDATA[this.inState(Infected)]]></Condition>
 					</Properties>
@@ -5034,7 +5310,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1479236233917" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestTruePositive++;
 main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -5075,7 +5351,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1479236233925" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestTruePositive++;
 main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -5103,7 +5379,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1479236233927" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestTruePositive++;
 main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -5125,7 +5401,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Return">
 					<Id>1479236233932</Id>
 					<Name><![CDATA[returnStatementBloodTest]]></Name>
-					<X>1550</X><Y>1365</Y>
+					<X>1550</X><Y>1415</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5143,7 +5419,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1478898241268" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestFalsePositive++;
 main.removedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -5158,7 +5434,7 @@ main.removedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 					<Comment><![CDATA[Set to remove]]></Comment>
 					<Properties Width="100" Height="30" Previous="1479236233930" >
 						<FillColor/>
-						<Code><![CDATA[this.toRemove = true;
+						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestFalsePositive++;
 main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -6625,6 +6901,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[false]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
