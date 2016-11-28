@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -153,7 +153,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1477005402066</Id>
-					<Name><![CDATA[InfectedFromEnviroment]]></Name>
+					<Name><![CDATA[infectedFromEnvironment]]></Name>
 					<X>-560</X><Y>-520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -168,7 +168,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1477005428740</Id>
-					<Name><![CDATA[InfectedFromMother]]></Name>
+					<Name><![CDATA[infectedFromMother]]></Name>
 					<X>-560</X><Y>-540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -315,7 +315,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839721152</Id>
-					<Name><![CDATA[RemovedByFemalePopulationControlCountPerYear]]></Name>
+					<Name><![CDATA[removedByFemalePopulationControlCountPerYear]]></Name>
 					<X>-680</X><Y>-1150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -330,7 +330,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839742435</Id>
-					<Name><![CDATA[RemovedByBullPopulationControlCountPerYear]]></Name>
+					<Name><![CDATA[removedByBullPopulationControlCountPerYear]]></Name>
 					<X>-680</X><Y>-1130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -345,7 +345,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839838651</Id>
-					<Name><![CDATA[RemovedByClinicalSicknessCountPerYear]]></Name>
+					<Name><![CDATA[removedByClinicalSicknessCountPerYear]]></Name>
 					<X>-680</X><Y>-1110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -360,7 +360,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839868941</Id>
-					<Name><![CDATA[RemovedByYoungBullCullingCountPerYear]]></Name>
+					<Name><![CDATA[removedByYoungBullCullingCountPerYear]]></Name>
 					<X>-680</X><Y>-1090</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -375,7 +375,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839879310</Id>
-					<Name><![CDATA[RemovedByTruePositiveBloodTestCountPerYear]]></Name>
+					<Name><![CDATA[removedByTruePositiveBloodTestCountPerYear]]></Name>
 					<X>-680</X><Y>-1070</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -390,7 +390,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839894800</Id>
-					<Name><![CDATA[RemovedByFalsePositiveBloodTestCountPerYear]]></Name>
+					<Name><![CDATA[removedByFalsePositiveBloodTestCountPerYear]]></Name>
 					<X>-680</X><Y>-1050</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -405,7 +405,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839906313</Id>
-					<Name><![CDATA[RemovedByTruePositiveFecalTestCountPerYear]]></Name>
+					<Name><![CDATA[removedByTruePositiveFecalTestCountPerYear]]></Name>
 					<X>-680</X><Y>-1030</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -420,7 +420,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839923700</Id>
-					<Name><![CDATA[RemovedByFalsePositiveFecalTestCountPerYear]]></Name>
+					<Name><![CDATA[removedByFalsePositiveFecalTestCountPerYear]]></Name>
 					<X>-680</X><Y>-1010</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -432,7 +432,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839939240</Id>
-					<Name><![CDATA[RemovedByFailedPregnancyCountPerYear]]></Name>
+					<Name><![CDATA[removedByFailedPregnancyCountPerYear]]></Name>
 					<X>-680</X><Y>-990</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -447,7 +447,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1479839960753</Id>
-					<Name><![CDATA[RemovedByOldAgeCountPerYear]]></Name>
+					<Name><![CDATA[removedByOldAgeCountPerYear]]></Name>
 					<X>-680</X><Y>-970</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -488,7 +488,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476999620162</Id>
-					<Name><![CDATA[maxMales]]></Name>
+					<Name><![CDATA[MaxMales]]></Name>
 					<Description><![CDATA[used in keeping the population steady, if the population of males goes above this number, cows start being removed]]></Description>
 					<X>-250</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -514,7 +514,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476999639948</Id>
-					<Name><![CDATA[maxFemales]]></Name>
+					<Name><![CDATA[MaxFemales]]></Name>
 					<Description><![CDATA[used in keeping the population steady, if the population of females goes above this number, cows start being removed]]></Description>
 					<X>-250</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1082,7 +1082,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1478021915695</Id>
-					<Name><![CDATA[maxAge]]></Name>
+					<Name><![CDATA[MaxAge]]></Name>
 					<Description><![CDATA[max age a cow can reach before being removed/dying]]></Description>
 					<X>-250</X><Y>-140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1397,7 +1397,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1479238143385</Id>
-					<Name><![CDATA[runFecalTest]]></Name>
+					<Name><![CDATA[RunFecalTest]]></Name>
 					<Description><![CDATA[Allows for the fecal tests to be toggled on and off]]></Description>
 					<X>-250</X><Y>-850</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1423,7 +1423,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1479238150188</Id>
-					<Name><![CDATA[runBloodTest]]></Name>
+					<Name><![CDATA[RunBloodTest]]></Name>
 					<Description><![CDATA[allows for the blood tests to be toggled on and off]]></Description>
 					<X>-250</X><Y>-700</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1562,7 +1562,7 @@
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[birthsPerMonthSet.add(birthsPerMonth);
+					<Action><![CDATA[BirthsPerMonthSet.add(birthsPerMonth);
 birthsPerMonth  = 0;
 
 MomInfectionsPerMonth.add(momInfectedCountPerMonth);
@@ -1602,35 +1602,35 @@ this.independantMonthlyInfectionCount.refresh();]]></Action>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[RemovalByFemalePopulationControlPerYear.add(RemovedByFemalePopulationControlCountPerYear);
-RemovedByFemalePopulationControlCountPerYear = 0;
+					<Action><![CDATA[RemovalByFemalePopulationControlPerYear.add(removedByFemalePopulationControlCountPerYear);
+removedByFemalePopulationControlCountPerYear = 0;
 
-RemovalByBullPopulationControlPerYear.add(RemovedByBullPopulationControlCountPerYear);
-RemovedByBullPopulationControlCountPerYear = 0;
+RemovalByBullPopulationControlPerYear.add(removedByBullPopulationControlCountPerYear);
+removedByBullPopulationControlCountPerYear = 0;
 
-RemovalByClinicalSicknessPerYear.add(RemovedByClinicalSicknessCountPerYear);
-RemovedByClinicalSicknessCountPerYear = 0;
+RemovalByClinicalSicknessPerYear.add(removedByClinicalSicknessCountPerYear);
+removedByClinicalSicknessCountPerYear = 0;
 
-RemovalByFailedPregnancyPerYear.add(RemovedByFailedPregnancyCountPerYear);
-RemovedByFailedPregnancyCountPerYear = 0;
+RemovalByFailedPregnancyPerYear.add(removedByFailedPregnancyCountPerYear);
+removedByFailedPregnancyCountPerYear = 0;
 
-RemovalByFalsePositiveBloodTestPerYear.add(RemovedByFalsePositiveBloodTestCountPerYear);
-RemovedByFalsePositiveBloodTestCountPerYear = 0;
+RemovalByFalsePositiveBloodTestPerYear.add(removedByFalsePositiveBloodTestCountPerYear);
+removedByFalsePositiveBloodTestCountPerYear = 0;
 
-RemovalByFalsePositiveFecalTestPerYear.add(RemovedByFalsePositiveFecalTestCountPerYear);
-RemovedByFalsePositiveFecalTestCountPerYear = 0;
+RemovalByFalsePositiveFecalTestPerYear.add(removedByFalsePositiveFecalTestCountPerYear);
+removedByFalsePositiveFecalTestCountPerYear = 0;
 
-RemovalByOldAgePerYear.add(RemovedByOldAgeCountPerYear);
-RemovedByOldAgeCountPerYear = 0;
+RemovalByOldAgePerYear.add(removedByOldAgeCountPerYear);
+removedByOldAgeCountPerYear = 0;
 
-RemovalByTruePositiveBloodTestPerYear.add(RemovedByTruePositiveBloodTestCountPerYear);
-RemovedByTruePositiveBloodTestCountPerYear = 0;
+RemovalByTruePositiveBloodTestPerYear.add(removedByTruePositiveBloodTestCountPerYear);
+removedByTruePositiveBloodTestCountPerYear = 0;
 
-RemovalByTruePositiveFecalTestPerYear.add(RemovedByTruePositiveFecalTestCountPerYear);
-RemovedByTruePositiveFecalTestCountPerYear = 0;
+RemovalByTruePositiveFecalTestPerYear.add(removedByTruePositiveFecalTestCountPerYear);
+removedByTruePositiveFecalTestCountPerYear = 0;
 
-RemovalByYoungBullCullingPerYear.add(RemovedByYoungBullCullingCountPerYear);
-RemovedByYoungBullCullingCountPerYear = 0;
+RemovalByYoungBullCullingPerYear.add(removedByYoungBullCullingCountPerYear);
+removedByYoungBullCullingCountPerYear = 0;
 
 this.PerYearRemovals.refresh();]]></Action>
 				</Event>
@@ -1660,7 +1660,7 @@ this.PerYearRemovals.refresh();]]></Action>
 				</DataSet>
     			<DataSet>
 					<Id>1479505066791</Id>
-					<Name><![CDATA[birthsPerMonthSet]]></Name>
+					<Name><![CDATA[BirthsPerMonthSet]]></Name>
 					<X>-240</X><Y>-1240</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1704,7 +1704,7 @@ this.PerYearRemovals.refresh();]]></Action>
 				</DataSet>
     			<DataSet>
 					<Id>1479684854197</Id>
-					<Name><![CDATA[prevelanceOverTime]]></Name>
+					<Name><![CDATA[PrevelanceOverTime]]></Name>
 					<X>-240</X><Y>-950</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2756,7 +2756,7 @@ this.PerYearRemovals.refresh();]]></Action>
 						<Title><![CDATA[infected from mom]]></Title>
 					<Expression><![CDATA[my_dataset]]></Expression>
 					<Color>-13447886</Color>
-					<Expression2><![CDATA[this.InfectedFromMother]]></Expression2>
+					<Expression2><![CDATA[this.infectedFromMother]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
@@ -2765,7 +2765,7 @@ this.PerYearRemovals.refresh();]]></Action>
 						<Title><![CDATA[infected From enviroment]]></Title>
 					<Expression><![CDATA[my_dataset1]]></Expression>
 					<Color>-9404272</Color>
-					<Expression2><![CDATA[this.InfectedFromEnviroment]]></Expression2>
+					<Expression2><![CDATA[this.infectedFromEnvironment]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
@@ -2922,7 +2922,7 @@ this.PerYearRemovals.refresh();]]></Action>
 					</DatasetExpression>
 					<DatasetExpression>  
 						<Title><![CDATA[Births]]></Title>
-					<Expression><![CDATA[birthsPerMonthSet]]></Expression>
+					<Expression><![CDATA[BirthsPerMonthSet]]></Expression>
 					<Color>-2987746</Color>
 					<Expression2><![CDATA[0]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
@@ -3017,7 +3017,7 @@ this.PerYearRemovals.refresh();]]></Action>
 						<Title><![CDATA[RemovalByFalsePositiveBloodTestPerYear]]></Title>
 					<Expression><![CDATA[RemovalByFalsePositiveBloodTestPerYear]]></Expression>
 					<Color>-8097537</Color>
-					<Expression2><![CDATA[RemovedByFalsePositiveBloodTestCountPerYear]]></Expression2>
+					<Expression2><![CDATA[removedByFalsePositiveBloodTestCountPerYear]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
@@ -3173,7 +3173,7 @@ this.PerYearRemovals.refresh();]]></Action>
 			<Variables>
 				<Variable Class="PlainVariable">
 					<Id>1476134210769</Id>
-					<Name><![CDATA[Gender]]></Name>
+					<Name><![CDATA[gender]]></Name>
 					<Description><![CDATA[initially set all cows to female, cows being born during model will be 50/50 female/male]]></Description>
 					<X>-220</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3260,7 +3260,7 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[boolean]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[(Gender == GenderList.Female)]]></Code>
+							<Code><![CDATA[(gender == GenderList.Female)]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -3594,7 +3594,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[if(main.runFecalTest) FecalTestActionChart();]]></EntryAction>
+						<EntryAction><![CDATA[if(main.RunFecalTest) FecalTestActionChart();]]></EntryAction>
 						<FillColor>-3308225</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -3621,7 +3621,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[if(main.runBloodTest) BloodTestActionChart();]]></EntryAction>
+						<EntryAction><![CDATA[if(main.RunBloodTest) BloodTestActionChart();]]></EntryAction>
 						<FillColor>-65536</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -3728,7 +3728,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476278047562</Id>
-					<Name><![CDATA[PregnancyDuration]]></Name>
+					<Name><![CDATA[pregnancyDuration]]></Name>
 					<Description><![CDATA[pregnancy last for 9 months before a new calf is created]]></Description>
 					<X>300</X><Y>590</Y>
 					<Label><X>-180</X><Y>-80</Y></Label>
@@ -3777,7 +3777,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476648737590</Id>
-					<Name><![CDATA[exposureFromEnviroment]]></Name>
+					<Name><![CDATA[exposureFromEnvironment]]></Name>
 					<Description><![CDATA[Uses the prevelance in main as the rate of transition for a cow to become infected, this rate is calculated based on the numbers of clinical and subclinical cows in the population ]]></Description>
 					<X>900</X><Y>230</Y>
 					<Label><X>-150</X><Y>20</Y></Label>
@@ -3790,7 +3790,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476648694794" Target="1476648740556" Trigger="rate">
-						<Action><![CDATA[main.InfectedFromEnviroment += 1;
+						<Action><![CDATA[main.infectedFromEnvironment += 1;
 main.envInfectedCountPerMonth = main.envInfectedCountPerMonth +1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -3904,7 +3904,7 @@ main.envInfectedCountPerMonth = main.envInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476648694794" Target="1476648740556" Trigger="message">
-						<Action><![CDATA[main.InfectedFromMother = main.InfectedFromMother + 1;
+						<Action><![CDATA[main.infectedFromMother = main.infectedFromMother + 1;
 main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -3938,7 +3938,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476729847052" Target="1476721237689" Trigger="condition">
-						<Action><![CDATA[main.RemovedByYoungBullCullingCountPerYear += 1;]]></Action>
+						<Action><![CDATA[main.removedByYoungBullCullingCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -3988,7 +3988,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476724200103</Id>
-					<Name><![CDATA[CalfToHeifer]]></Name>
+					<Name><![CDATA[calfToHeifer]]></Name>
 					<Description><![CDATA[all females will go into the pregnancy cycle]]></Description>
 					<X>370</X><Y>350</Y>
 					<Label><X>-85</X><Y>15</Y></Label>
@@ -4127,7 +4127,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>120.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476721237689" Trigger="condition">
-						<Action><![CDATA[main.RemovedByFailedPregnancyCountPerYear += 1;]]></Action>
+						<Action><![CDATA[main.removedByFailedPregnancyCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -4161,12 +4161,12 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>30.0</IconOffset>
 					<Properties Source="1476724089202" Target="1476721237689" Trigger="condition">
-						<Action><![CDATA[main.RemovedByBullPopulationControlCountPerYear += 1;]]></Action>
+						<Action><![CDATA[main.removedByBullPopulationControlCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[main.cows.males() > main.maxMales]]></Condition>
+						<Condition><![CDATA[main.cows.males() > main.MaxMales]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -4193,12 +4193,12 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476721237689" Trigger="condition">
-						<Action><![CDATA[main.RemovedByFemalePopulationControlCountPerYear += 1;]]></Action>
+						<Action><![CDATA[main.removedByFemalePopulationControlCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[main.cows.females() > main.maxFemales
+						<Condition><![CDATA[main.cows.females() > main.MaxFemales
 && this.child == null ]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
@@ -4288,7 +4288,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476721184189" Target="1476721237689" Trigger="timeout">
-						<Action><![CDATA[main.RemovedByClinicalSicknessCountPerYear += 1;]]></Action>
+						<Action><![CDATA[main.removedByClinicalSicknessCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[main.MeanClincalRemovalDuration]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -4857,7 +4857,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countFecalTestTruePositive++;
-main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
+main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4898,7 +4898,7 @@ main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countFecalTestTruePositive++;
-main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
+main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -4926,7 +4926,7 @@ main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countFecalTestTruePositive++;
-main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
+main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -5036,7 +5036,7 @@ main.RemovedByTruePositiveFecalTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countBloodTestTruePositive++;
-main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
+main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -5077,7 +5077,7 @@ main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countBloodTestTruePositive++;
-main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
+main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -5105,7 +5105,7 @@ main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countBloodTestTruePositive++;
-main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
+main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -5145,7 +5145,7 @@ main.RemovedByTruePositiveBloodTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countFecalTestFalsePositive++;
-main.RemovedByFalsePositiveFecalTestCountPerYear++;]]></Code>
+main.removedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Code">
@@ -5160,7 +5160,7 @@ main.RemovedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemove = true;
 main.countBloodTestFalsePositive++;
-main.RemovedByFalsePositiveBloodTestCountPerYear++;]]></Code>
+main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 			</ActionChartElements>
@@ -5223,12 +5223,12 @@ main.RemovedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</RecurrenceCode>
-						<Condition><![CDATA[main.maxAge < this.currentAge
+						<Condition><![CDATA[main.MaxAge < this.currentAge
 && this.child == null 
 ]]></Condition>
 					</Properties>
 					<Action><![CDATA[main.deceasedCows = main.deceasedCows + 1;
-main.RemovedByOldAgeCountPerYear += 1;
+main.removedByOldAgeCountPerYear += 1;
 main.remove_cows(this); ]]></Action>
 				</Event>
 			</Events>
@@ -6009,10 +6009,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -6075,7 +6075,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -6111,10 +6111,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
@@ -6255,10 +6255,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -6321,7 +6321,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -6363,13 +6363,13 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[false]]></Code>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[false]]></Code>
 					</ParameterValue>
@@ -6513,10 +6513,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -6579,7 +6579,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -6621,10 +6621,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
@@ -6765,10 +6765,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -6831,7 +6831,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -6873,10 +6873,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
@@ -7017,10 +7017,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -7083,7 +7083,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7125,13 +7125,13 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[false]]></Code>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[false]]></Code>
 					</ParameterValue>
@@ -7278,10 +7278,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -7344,7 +7344,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7386,10 +7386,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
@@ -7533,10 +7533,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -7599,7 +7599,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7641,13 +7641,13 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[false]]></Code>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[false]]></Code>
 					</ParameterValue>
@@ -7794,10 +7794,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -7869,7 +7869,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7911,10 +7911,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
@@ -8055,10 +8055,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -8121,7 +8121,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -8163,10 +8163,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
@@ -8307,10 +8307,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[InitialPopulation]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxMales]]></ParameterName>
+					<ParameterName><![CDATA[MaxMales]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxFemales]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemales]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialInfectedPercentage]]></ParameterName>
@@ -8373,7 +8373,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[maxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -8415,10 +8415,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[BloodTestSubclinicalSensitivity]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runFecalTest]]></ParameterName>
+					<ParameterName><![CDATA[RunFecalTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[runBloodTest]]></ParameterName>
+					<ParameterName><![CDATA[RunBloodTest]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FecalTestReturnDelay]]></ParameterName>
@@ -8495,8 +8495,8 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<BeforeEachExperimentRunCode><![CDATA[histogramData.reset(); histogramDataSmallRange.reset(); ]]></BeforeEachExperimentRunCode>
-			<AfterSimulationRunCode><![CDATA[histogramData.add( root.prevelanceOverTime );
-histogramDataSmallRange.add( root.prevelanceOverTime );
+			<AfterSimulationRunCode><![CDATA[histogramData.add( root.PrevelanceOverTime );
+histogramDataSmallRange.add( root.PrevelanceOverTime );
 ]]></AfterSimulationRunCode>
 			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
