@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171835" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -1662,7 +1662,7 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Id>1480445546803</Id>
 					<Name><![CDATA[updateCurrentAgeVsState]]></Name>
 					<Description><![CDATA[1 through 4 indicate infection stages from susceptible to clinical]]></Description>
-					<X>190</X><Y>-1010</Y>
+					<X>70</X><Y>-1050</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1706,7 +1706,7 @@ for (Cow c : cows)
 	}
 	currentAgeVsState.add(c.currentAge, state);
 }
-ageVsStateScatter.refresh();]]></Action>
+AgeVsStateScatter.refresh();]]></Action>
 				</Event>
 			</Events>
 			<Functions>
@@ -3542,12 +3542,12 @@ return 0;
 						<ColorHighPercent>-12004916</ColorHighPercent>
 						<ColorMean>-16728065</ColorMean>
 						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Age of Initial Infection]]></Title>							
+						<Title><![CDATA[Age of Infection Per Cow]]></Title>							
 					</HistogramDataExpression>
     			</Histogram>
     			<Plot>
 					<Id>1480445473299</Id>
-					<Name><![CDATA[ageVsStateScatter]]></Name>
+					<Name><![CDATA[AgeVsStateScatter]]></Name>
 					<X>10</X><Y>-1000</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -3612,7 +3612,7 @@ return 0;
     			</Plot>
     			<Plot>
 					<Id>1480448540398</Id>
-					<Name><![CDATA[plot]]></Name>
+					<Name><![CDATA[PositiveTestsOverDiseasedPopulation]]></Name>
 					<X>320</X><Y>-1010</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -3677,7 +3677,7 @@ return 0;
     			</Plot>
     			<Plot>
 					<Id>1480449582458</Id>
-					<Name><![CDATA[plot1]]></Name>
+					<Name><![CDATA[NegativeTestsOverDiseasedPopulation]]></Name>
 					<X>600</X><Y>-1010</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -3834,7 +3834,7 @@ return 0;
 					<Id>1476134210769</Id>
 					<Name><![CDATA[gender]]></Name>
 					<Description><![CDATA[initially set all cows to female, cows being born during model will be 50/50 female/male]]></Description>
-					<X>-220</X><Y>200</Y>
+					<X>-230</X><Y>170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3865,7 +3865,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1476210270621</Id>
 					<Name><![CDATA[birthTime]]></Name>
-					<X>-220</X><Y>280</Y>
+					<X>-230</X><Y>250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3880,7 +3880,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1476210364893</Id>
 					<Name><![CDATA[currentAge]]></Name>
-					<X>-220</X><Y>300</Y>
+					<X>-230</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3896,7 +3896,7 @@ return 0;
 					<Id>1476214008773</Id>
 					<Name><![CDATA[startingAge]]></Name>
 					<Description><![CDATA[used in the calculation of current age, for the initial cows in the model some will start at an age older than 0]]></Description>
-					<X>-220</X><Y>260</Y>
+					<X>-230</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3911,7 +3911,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1476216497330</Id>
 					<Name><![CDATA[isFemale]]></Name>
-					<X>-220</X><Y>220</Y>
+					<X>-230</X><Y>190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3926,7 +3926,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1476724586274</Id>
 					<Name><![CDATA[child]]></Name>
-					<X>-100</X><Y>200</Y>
+					<X>-230</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3941,7 +3941,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1476724733626</Id>
 					<Name><![CDATA[mother]]></Name>
-					<X>-100</X><Y>220</Y>
+					<X>-230</X><Y>310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3971,7 +3971,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1477184118014</Id>
 					<Name><![CDATA[isCalf]]></Name>
-					<X>-220</X><Y>240</Y>
+					<X>-230</X><Y>210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3986,7 +3986,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1478899343651</Id>
 					<Name><![CDATA[toRemoveFecal]]></Name>
-					<X>-250</X><Y>350</Y>
+					<X>-130</X><Y>190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4001,7 +4001,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1479241954231</Id>
 					<Name><![CDATA[numBloodTests]]></Name>
-					<X>-100</X><Y>260</Y>
+					<X>-130</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4016,7 +4016,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1480359236025</Id>
 					<Name><![CDATA[infectionAge]]></Name>
-					<X>-100</X><Y>280</Y>
+					<X>-130</X><Y>250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4028,7 +4028,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1480359355431</Id>
 					<Name><![CDATA[fecalRemovalAge]]></Name>
-					<X>-100</X><Y>300</Y>
+					<X>-130</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4040,7 +4040,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1480360083386</Id>
 					<Name><![CDATA[bloodRemovalAge]]></Name>
-					<X>-100</X><Y>320</Y>
+					<X>-130</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4052,7 +4052,7 @@ return 0;
 				<Variable Class="PlainVariable">
 					<Id>1480361524772</Id>
 					<Name><![CDATA[toRemoveBlood]]></Name>
-					<X>-250</X><Y>370</Y>
+					<X>-130</X><Y>210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5492,7 +5492,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Id>1478737137383</Id>
 					<Name><![CDATA[FecalTestActionChart]]></Name>
 					<Description><![CDATA[This action chart is the visual description of the testing process based on various values for sensitivity and specificity. In this model, Only cows in the Pregnant or Non-Pregnant states are tested, everyone else (that is to say all males and calves) are ignored. the chart filters the cows based on their current diease state (Susceptible, Infected, Subclinical, Clinical) and applies various levels of Sensitivity or Specificity to the cow.]]></Description>
-					<X>380</X><Y>880</Y>
+					<X>140</X><Y>880</Y>
 					<Label><X>-60</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5507,7 +5507,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Id>1478737484041</Id>
 					<Name><![CDATA[isFemaleFecalTest]]></Name>
 					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant state, not calves or Male cows]]></Description>
-					<X>380</X><Y>930</Y>
+					<X>140</X><Y>930</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5521,7 +5521,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Id>1478898211477</Id>
 					<Name><![CDATA[isInfectiveFecalTest]]></Name>
 					<Description><![CDATA[Splits first on if the cows are susceptible or not]]></Description>
-					<X>800</X><Y>980</Y>
+					<X>540</X><Y>980</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5534,7 +5534,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 				<ActionChartElement Class="Code">
 					<Id>1480360822942</Id>
 					<Name><![CDATA[code2]]></Name>
-					<X>1260</X><Y>1325</Y>
+					<X>1000</X><Y>1325</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5553,7 +5553,7 @@ main.FecalTestingTimeToCureChart.refresh();
 					<Id>1478740206197</Id>
 					<Name><![CDATA[isCowInfected]]></Name>
 					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to false negatives.]]></Description>
-					<X>1260</X><Y>1030</Y>
+					<X>1000</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5566,7 +5566,7 @@ main.FecalTestingTimeToCureChart.refresh();
 				<ActionChartElement Class="Decision">
 					<Id>1479235218750</Id>
 					<Name><![CDATA[FecalnfectedTest]]></Name>
-					<X>1370</X><Y>1080</Y>
+					<X>1110</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5579,7 +5579,7 @@ main.FecalTestingTimeToCureChart.refresh();
 				<ActionChartElement Class="Code">
 					<Id>1478897823095</Id>
 					<Name><![CDATA[setSeFecalRemoval]]></Name>
-					<X>1450</X><Y>1150</Y>
+					<X>1190</X><Y>1150</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5594,7 +5594,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235204970</Id>
 					<Name><![CDATA[isClinicalSubclinicalFecal]]></Name>
-					<X>1010</X><Y>1080</Y>
+					<X>750</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5607,7 +5607,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235474225</Id>
 					<Name><![CDATA[FecalSubclinicalTest]]></Name>
-					<X>1130</X><Y>1140</Y>
+					<X>870</X><Y>1140</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5620,7 +5620,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479235474228</Id>
 					<Name><![CDATA[setSeFecalRemoval2]]></Name>
-					<X>1200</X><Y>1210</Y>
+					<X>940</X><Y>1210</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5635,7 +5635,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479235467980</Id>
 					<Name><![CDATA[FecalCinicalTest]]></Name>
-					<X>880</X><Y>1140</Y>
+					<X>620</X><Y>1140</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5648,7 +5648,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479235467982</Id>
 					<Name><![CDATA[setSeFecalRemoval1]]></Name>
-					<X>950</X><Y>1215</Y>
+					<X>690</X><Y>1215</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5663,8 +5663,8 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1478898241268</Id>
 					<Name><![CDATA[isFecalSpTestPositive]]></Name>
-					<Description><![CDATA[The true values of this condition equate to false positive test results. The false values equate to true negatives.]]></Description>
-					<X>570</X><Y>1030</Y>
+					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to true false positives, and the cow is set to be removed even though it is in the susceptible state.]]></Description>
+					<X>330</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5677,12 +5677,12 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1480449481594</Id>
 					<Name><![CDATA[code]]></Name>
-					<X>700</X><Y>1080</Y>
+					<X>460</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Comment><![CDATA[Mark True Negative]]></Comment>
-					<Properties Width="180" Height="30" Previous="1478898241268" >
+					<Properties Width="140" Height="30" Previous="1478898241268" >
 						<FillColor/>
 						<Code><![CDATA[main.countFecalTrueNegative++;]]></Code>
 					</Properties>	
@@ -5690,7 +5690,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Return">
 					<Id>1478737151229</Id>
 					<Name><![CDATA[returnStatementFecalTest]]></Name>
-					<X>380</X><Y>1415</Y>
+					<X>140</X><Y>1415</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5702,7 +5702,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<Id>1479236233911</Id>
 					<Name><![CDATA[BloodTestActionChart]]></Name>
 					<Description><![CDATA[This action chart is the visual description of the testing process based on various values for sensitivity and specificity. In this model, Only cows in the Pregnant or Non-Pregnant states are tested, everyone else (that is to say all males and calves) are ignored. the chart filters the cows based on their current diease state (Susceptible, Infected, Subclinical, Clinical) and applies various levels of Sensitivity or Specificity to the cow.]]></Description>
-					<X>1550</X><Y>880</Y>
+					<X>1490</X><Y>880</Y>
 					<Label><X>-60</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5717,7 +5717,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<Id>1479236233914</Id>
 					<Name><![CDATA[isFemaleBloodTest]]></Name>
 					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant state, not calves or Male cows]]></Description>
-					<X>1550</X><Y>930</Y>
+					<X>1490</X><Y>930</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5731,7 +5731,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<Id>1479236233915</Id>
 					<Name><![CDATA[isInfectiveBloodTest]]></Name>
 					<Description><![CDATA[Required to split the cows into categoties of 'Infective or worse' and 'Not Infective' for proper specificity and sensitivity testing. This allows separate logical testing in the model for true positive and false positive results.]]></Description>
-					<X>1950</X><Y>980</Y>
+					<X>1890</X><Y>980</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5744,7 +5744,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1480360756724</Id>
 					<Name><![CDATA[code1]]></Name>
-					<X>2420</X><Y>1325</Y>
+					<X>2360</X><Y>1325</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5763,7 +5763,7 @@ main.BloodTestingTimeToCureChart.refresh();
 					<Id>1479236233916</Id>
 					<Name><![CDATA[isCowInfectedBlood]]></Name>
 					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to false negatives.]]></Description>
-					<X>2420</X><Y>1030</Y>
+					<X>2360</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5776,7 +5776,7 @@ main.BloodTestingTimeToCureChart.refresh();
 				<ActionChartElement Class="Decision">
 					<Id>1479236233917</Id>
 					<Name><![CDATA[BloodInfectedTest]]></Name>
-					<X>2530</X><Y>1080</Y>
+					<X>2470</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5789,7 +5789,7 @@ main.BloodTestingTimeToCureChart.refresh();
 				<ActionChartElement Class="Code">
 					<Id>1479236233918</Id>
 					<Name><![CDATA[setSeBloodRemoval]]></Name>
-					<X>2600</X><Y>1150</Y>
+					<X>2540</X><Y>1150</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5804,7 +5804,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233923</Id>
 					<Name><![CDATA[isClinicalSubclinicalBlood]]></Name>
-					<X>2160</X><Y>1080</Y>
+					<X>2100</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5817,7 +5817,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233925</Id>
 					<Name><![CDATA[BloodSubclinicalTest]]></Name>
-					<X>2290</X><Y>1145</Y>
+					<X>2230</X><Y>1145</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5830,7 +5830,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479236233926</Id>
 					<Name><![CDATA[setSeBloodRemoval2]]></Name>
-					<X>2360</X><Y>1215</Y>
+					<X>2300</X><Y>1215</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5845,7 +5845,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233927</Id>
 					<Name><![CDATA[BloodCinicalTest]]></Name>
-					<X>2030</X><Y>1145</Y>
+					<X>1970</X><Y>1145</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5858,7 +5858,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479236233928</Id>
 					<Name><![CDATA[setSeBloodRemoval1]]></Name>
-					<X>2100</X><Y>1210</Y>
+					<X>2040</X><Y>1210</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5873,8 +5873,8 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233930</Id>
 					<Name><![CDATA[isBloodSpTestPositive]]></Name>
-					<Description><![CDATA[The true values of this condition equate to false positive test results. The false values equate to true negatives.]]></Description>
-					<X>1740</X><Y>1030</Y>
+					<Description><![CDATA[The true values of this condition equate to true positive test results. The false values equate to true false positives, and the cow is set to be removed even though it is in the susceptible state.]]></Description>
+					<X>1680</X><Y>1030</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5887,7 +5887,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1480449537441</Id>
 					<Name><![CDATA[code3]]></Name>
-					<X>1870</X><Y>1080</Y>
+					<X>1810</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5900,7 +5900,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Return">
 					<Id>1479236233932</Id>
 					<Name><![CDATA[returnStatementBloodTest]]></Name>
-					<X>1550</X><Y>1415</Y>
+					<X>1490</X><Y>1415</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5911,7 +5911,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1478898255794</Id>
 					<Name><![CDATA[setSpFecalRemoval]]></Name>
-					<X>440</X><Y>1080</Y>
+					<X>200</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5926,7 +5926,7 @@ main.removedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 				<ActionChartElement Class="Code">
 					<Id>1479236233931</Id>
 					<Name><![CDATA[setSpBloodRemoval]]></Name>
-					<X>1610</X><Y>1080</Y>
+					<X>1550</X><Y>1080</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
