@@ -737,7 +737,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.8]]></Code>
+							<Code><![CDATA[0.4]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477424604609</Id>
@@ -1171,7 +1171,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[7.1]]></Code>
+							<Code><![CDATA[2.7]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1478024405035</Id>
@@ -1408,7 +1408,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.40]]></Code>
+							<Code><![CDATA[0.80]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1479234656855</Id>
@@ -4781,7 +4781,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Properties Source="1476648694794" Target="1476648694794" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -9021,9 +9021,6 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			</FreeformParamValue>
 			<FreeformParamValue>	
 				<Id>1478024405037</Id>
-				<Expression Class="CodeValue">
-					<Code><![CDATA[7.3]]></Code>
-				</Expression>
 			</FreeformParamValue>
 			<FreeformParamValue>	
 				<Id>1478024798363</Id>
