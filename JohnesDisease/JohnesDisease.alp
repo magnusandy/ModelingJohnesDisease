@@ -271,7 +271,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479503854955</Id>
 					<Name><![CDATA[envInfectedCountPerMonth]]></Name>
-					<X>-550</X><Y>-1210</Y>
+					<X>-680</X><Y>-1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -286,7 +286,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479505244736</Id>
 					<Name><![CDATA[birthsPerMonth]]></Name>
-					<X>-550</X><Y>-1250</Y>
+					<X>-680</X><Y>-1230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -301,7 +301,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479506088776</Id>
 					<Name><![CDATA[momInfectedCountPerMonth]]></Name>
-					<X>-550</X><Y>-1230</Y>
+					<X>-680</X><Y>-1210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -316,7 +316,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839721152</Id>
 					<Name><![CDATA[removedByFemalePopulationControlCountPerYear]]></Name>
-					<X>-550</X><Y>-1140</Y>
+					<X>-680</X><Y>-1150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -331,7 +331,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839742435</Id>
 					<Name><![CDATA[removedByBullPopulationControlCountPerYear]]></Name>
-					<X>-550</X><Y>-1120</Y>
+					<X>-680</X><Y>-1130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -346,7 +346,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839838651</Id>
 					<Name><![CDATA[removedByClinicalSicknessCountPerYear]]></Name>
-					<X>-550</X><Y>-1100</Y>
+					<X>-680</X><Y>-1110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -361,7 +361,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839868941</Id>
 					<Name><![CDATA[removedByYoungBullCullingCountPerYear]]></Name>
-					<X>-550</X><Y>-1080</Y>
+					<X>-680</X><Y>-1090</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -376,7 +376,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839879310</Id>
 					<Name><![CDATA[removedByTruePositiveBloodTestCountPerYear]]></Name>
-					<X>-550</X><Y>-1060</Y>
+					<X>-680</X><Y>-1070</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -391,7 +391,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839894800</Id>
 					<Name><![CDATA[removedByFalsePositiveBloodTestCountPerYear]]></Name>
-					<X>-550</X><Y>-1040</Y>
+					<X>-680</X><Y>-1050</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -406,7 +406,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839906313</Id>
 					<Name><![CDATA[removedByTruePositiveFecalTestCountPerYear]]></Name>
-					<X>-550</X><Y>-1020</Y>
+					<X>-680</X><Y>-1030</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -421,7 +421,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839923700</Id>
 					<Name><![CDATA[removedByFalsePositiveFecalTestCountPerYear]]></Name>
-					<X>-550</X><Y>-1000</Y>
+					<X>-680</X><Y>-1010</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -433,7 +433,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839939240</Id>
 					<Name><![CDATA[removedByFailedPregnancyCountPerYear]]></Name>
-					<X>-550</X><Y>-980</Y>
+					<X>-680</X><Y>-990</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -448,7 +448,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1479839960753</Id>
 					<Name><![CDATA[removedByOldAgeCountPerYear]]></Name>
-					<X>-550</X><Y>-960</Y>
+					<X>-680</X><Y>-970</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -737,7 +737,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.4]]></Code>
+							<Code><![CDATA[0.8]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1477424604609</Id>
@@ -815,7 +815,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.8]]></Code>
+							<Code><![CDATA[1]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1478021826200</Id>
@@ -1106,7 +1106,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1478021915695</Id>
-					<Name><![CDATA[MaxAge]]></Name>
+					<Name><![CDATA[MaxFemaleAge]]></Name>
 					<Description><![CDATA[max age a cow can reach before being removed/dying]]></Description>
 					<X>-250</X><Y>-140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1171,7 +1171,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[2.7]]></Code>
+							<Code><![CDATA[7.1]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1478024405035</Id>
@@ -1408,7 +1408,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.80]]></Code>
+							<Code><![CDATA[0.40]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1479234656855</Id>
@@ -1555,12 +1555,62 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1492725636801</Id>
+					<Name><![CDATA[MaxBullAge]]></Name>
+					<X>-250</X><Y>-120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[72.0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1492725636799</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1492725821268</Id>
+					<Name><![CDATA[YoungFemaleRemovalRate]]></Name>
+					<X>-250</X><Y>-80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[.2]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1492725821266</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<Events>
 				<Event>
 					<Id>1479503911788</Id>
 					<Name><![CDATA[perMonthCountHelper]]></Name>
-					<X>-730</X><Y>-1230</Y>
+					<X>-890</X><Y>-1210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1600,7 +1650,7 @@ this.independantMonthlyInfectionCount.refresh();]]></Action>
 				<Event>
 					<Id>1479840114432</Id>
 					<Name><![CDATA[perYearCountHelper]]></Name>
-					<X>-730</X><Y>-1050</Y>
+					<X>-880</X><Y>-1070</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1662,7 +1712,7 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Id>1480445546803</Id>
 					<Name><![CDATA[updateCurrentAgeVsState]]></Name>
 					<Description><![CDATA[1 through 4 indicate infection stages from susceptible to clinical]]></Description>
-					<X>1050</X><Y>-1240</Y>
+					<X>70</X><Y>-1050</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1688,7 +1738,7 @@ this.PerYearRemovals.refresh();]]></Action>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[currentStateVsAge.reset();
+					<Action><![CDATA[currentAgeVsState.reset();
 for (Cow c : cows)
 {
 	int state;
@@ -1704,9 +1754,9 @@ for (Cow c : cows)
 	else{
 		state = 4;
 	}
-	currentStateVsAge.add(c.currentAge, state);
+	currentAgeVsState.add(c.currentAge, state);
 }
-StateVsAgeScatter.refresh();]]></Action>
+AgeVsStateScatter.refresh();]]></Action>
 				</Event>
 			</Events>
 			<Functions>
@@ -1714,15 +1764,15 @@ StateVsAgeScatter.refresh();]]></Action>
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1480449036911</Id>
-					<Name><![CDATA[truePositiveTotal]]></Name>
-					<X>1550</X><Y>-1240</Y>
+					<Name><![CDATA[positiveTotal]]></Name>
+					<X>380</X><Y>-1050</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[if(infectedFromMother != 0 || infectedFromEnvironment != 0)
 {
-	return (countFecalTestTruePositive + countBloodTestTruePositive)/(infectedFromMother + infectedFromEnvironment);
+	return (countFecalTestTruePositive + countBloodTestTruePositive)/(infectedFromMother+infectedFromEnvironment);
 }
 else 
 {
@@ -1733,15 +1783,15 @@ return 0;
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1480449582460</Id>
-					<Name><![CDATA[trueNegativeTotal]]></Name>
-					<X>1950</X><Y>-1240</Y>
+					<Name><![CDATA[negativeTotal]]></Name>
+					<X>660</X><Y>-1040</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[if(infectedFromMother != 0 || infectedFromEnvironment != 0)
 {
-	return (countFecalTrueNegative + countBloodTrueNegative)/(infectedFromMother + infectedFromEnvironment);
+	return (countFecalTrueNegative + countBloodTrueNegative)/(infectedFromMother+infectedFromEnvironment);
 }
 else 
 {
@@ -1753,7 +1803,7 @@ return 0;
     			<DataSet>
 					<Id>1479503623169</Id>
 					<Name><![CDATA[EnvInfectionsPerMonth]]></Name>
-					<X>-250</X><Y>-1210</Y>
+					<X>-240</X><Y>-1200</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1775,7 +1825,7 @@ return 0;
     			<DataSet>
 					<Id>1479505066791</Id>
 					<Name><![CDATA[BirthsPerMonthSet]]></Name>
-					<X>-250</X><Y>-1250</Y>
+					<X>-240</X><Y>-1240</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1797,7 +1847,7 @@ return 0;
     			<DataSet>
 					<Id>1479506130608</Id>
 					<Name><![CDATA[MomInfectionsPerMonth]]></Name>
-					<X>-250</X><Y>-1230</Y>
+					<X>-240</X><Y>-1220</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1819,7 +1869,7 @@ return 0;
     			<DataSet>
 					<Id>1479684854197</Id>
 					<Name><![CDATA[PrevelanceOverTime]]></Name>
-					<X>-250</X><Y>-910</Y>
+					<X>-240</X><Y>-950</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1842,7 +1892,7 @@ return 0;
     			<DataSet>
 					<Id>1479839140199</Id>
 					<Name><![CDATA[RemovalByFemalePopulationControlPerYear]]></Name>
-					<X>-250</X><Y>-1140</Y>
+					<X>-240</X><Y>-1160</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1864,7 +1914,7 @@ return 0;
     			<DataSet>
 					<Id>1479839207982</Id>
 					<Name><![CDATA[RemovalByBullPopulationControlPerYear]]></Name>
-					<X>-250</X><Y>-1120</Y>
+					<X>-240</X><Y>-1140</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1886,7 +1936,7 @@ return 0;
     			<DataSet>
 					<Id>1479839242556</Id>
 					<Name><![CDATA[RemovalByClinicalSicknessPerYear]]></Name>
-					<X>-250</X><Y>-1100</Y>
+					<X>-240</X><Y>-1120</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1908,7 +1958,7 @@ return 0;
     			<DataSet>
 					<Id>1479839278274</Id>
 					<Name><![CDATA[RemovalByYoungBullCullingPerYear]]></Name>
-					<X>-250</X><Y>-1080</Y>
+					<X>-240</X><Y>-1100</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1930,7 +1980,7 @@ return 0;
     			<DataSet>
 					<Id>1479839412135</Id>
 					<Name><![CDATA[RemovalByTruePositiveBloodTestPerYear]]></Name>
-					<X>-250</X><Y>-1060</Y>
+					<X>-240</X><Y>-1080</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1952,7 +2002,7 @@ return 0;
     			<DataSet>
 					<Id>1479839457334</Id>
 					<Name><![CDATA[RemovalByFalsePositiveBloodTestPerYear]]></Name>
-					<X>-250</X><Y>-1040</Y>
+					<X>-240</X><Y>-1060</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1974,7 +2024,7 @@ return 0;
     			<DataSet>
 					<Id>1479839613077</Id>
 					<Name><![CDATA[RemovalByTruePositiveFecalTestPerYear]]></Name>
-					<X>-250</X><Y>-1020</Y>
+					<X>-240</X><Y>-1040</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1996,7 +2046,7 @@ return 0;
     			<DataSet>
 					<Id>1479839638772</Id>
 					<Name><![CDATA[RemovalByFalsePositiveFecalTestPerYear]]></Name>
-					<X>-250</X><Y>-1000</Y>
+					<X>-240</X><Y>-1020</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2018,7 +2068,7 @@ return 0;
     			<DataSet>
 					<Id>1479839655414</Id>
 					<Name><![CDATA[RemovalByFailedPregnancyPerYear]]></Name>
-					<X>-250</X><Y>-980</Y>
+					<X>-240</X><Y>-1000</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2040,7 +2090,7 @@ return 0;
     			<DataSet>
 					<Id>1479839681500</Id>
 					<Name><![CDATA[RemovalByOldAgePerYear]]></Name>
-					<X>-250</X><Y>-960</Y>
+					<X>-240</X><Y>-980</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2061,8 +2111,8 @@ return 0;
 				</DataSet>
     			<HistogramData>
 					<Id>1480359136550</Id>
-					<Name><![CDATA[FecalTestTimeToDiagnosis]]></Name>
-					<X>1550</X><Y>-860</Y>
+					<Name><![CDATA[FecalTestTimeToCure]]></Name>
+					<X>650</X><Y>-790</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2092,8 +2142,8 @@ return 0;
 				</HistogramData>
     			<HistogramData>
 					<Id>1480359901355</Id>
-					<Name><![CDATA[BloodTestTimeToDiagnosis]]></Name>
-					<X>1950</X><Y>-860</Y>
+					<Name><![CDATA[BloodTestTimeToCure]]></Name>
+					<X>900</X><Y>-790</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2124,7 +2174,7 @@ return 0;
     			<HistogramData>
 					<Id>1480444126801</Id>
 					<Name><![CDATA[InfectionAge]]></Name>
-					<X>650</X><Y>-1210</Y>
+					<X>870</X><Y>-540</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2154,8 +2204,8 @@ return 0;
 				</HistogramData>
     			<DataSet>
 					<Id>1480445483846</Id>
-					<Name><![CDATA[currentStateVsAge]]></Name>
-					<X>1050</X><Y>-1210</Y>
+					<Name><![CDATA[currentAgeVsState]]></Name>
+					<X>70</X><Y>-1010</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2176,8 +2226,8 @@ return 0;
 				</DataSet>
     			<DataSet>
 					<Id>1480448699300</Id>
-					<Name><![CDATA[TruePositiveOverTotal]]></Name>
-					<X>1550</X><Y>-1210</Y>
+					<Name><![CDATA[positiveOverTotal]]></Name>
+					<X>380</X><Y>-1020</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2194,13 +2244,13 @@ return 0;
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<FreezeXAxis>true</FreezeXAxis>
-					<VerticalAxisExpression><![CDATA[truePositiveTotal()]]></VerticalAxisExpression>
+					<VerticalAxisExpression><![CDATA[positiveTotal()]]></VerticalAxisExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 				</DataSet>
     			<DataSet>
 					<Id>1480449582463</Id>
-					<Name><![CDATA[TrueNegativeOverTotal]]></Name>
-					<X>1950</X><Y>-1210</Y>
+					<Name><![CDATA[negativeOverTotal]]></Name>
+					<X>660</X><Y>-1010</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2217,7 +2267,7 @@ return 0;
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<FreezeXAxis>true</FreezeXAxis>
-					<VerticalAxisExpression><![CDATA[trueNegativeTotal()]]></VerticalAxisExpression>
+					<VerticalAxisExpression><![CDATA[negativeTotal()]]></VerticalAxisExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 				</DataSet>
 			</AnalysisData>
@@ -2721,80 +2771,340 @@ return 0;
 			</Shapes>
 
 				</Group>
-				<Group>
-					<Id>1492671148373</Id>
-					<Name><![CDATA[infectionAnalysisGroup]]></Name>
-					<X>200</X><Y>-1280</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Rectangle>
-					<Id>1492671241546</Id>
-					<Name><![CDATA[InfectionAnalyticsBorder]]></Name>
-					<X>-20</X><Y>-20</Y>
-					<Label><X>600</X><Y>20</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>1300</Width>
-					<Height>1100</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1492671405074</Id>
-					<Name><![CDATA[InfectionGraphGroup]]></Name>
-					<X>560</X><Y>0</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Infection analytics]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>20</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
 			</Shapes>
 			<Charts>
     			<TimePlot>
-					<Id>1492671271647</Id>
+					<Id>1476215973837</Id>
+					<Name><![CDATA[populationOfCowsOverTime]]></Name>
+					<X>290</X><Y>-230</Y>
+					<Label><X>60</X><Y>20</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1476259200000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[males]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-65536</Color>
+					<Expression2><![CDATA[cows.males()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[females]]></Title>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-16711681</Color>
+					<Expression2><![CDATA[cows.females()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Total]]></Title>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-9807155</Color>
+					<Expression2><![CDATA[cows.size()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
+					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1476996836268</Id>
+					<Name><![CDATA[infectionSpreadOverTime]]></Name>
+					<X>280</X><Y>-500</Y>
+					<Label><X>60</X><Y>20</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1477036800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[susceptable]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-23296</Color>
+					<Expression2><![CDATA[this.cows.totalSusceptable()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[infected]]></Title>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-4343957</Color>
+					<Expression2><![CDATA[this.cows.totalInfected()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[infective]]></Title>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-12004916</Color>
+					<Expression2><![CDATA[this.cows.totalInfective()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[subclinical]]></Title>
+					<Expression><![CDATA[my_dataset3]]></Expression>
+					<Color>-8097537</Color>
+					<Expression2><![CDATA[this.cows.totalSubClinical()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[clinical]]></Title>
+					<Expression><![CDATA[my_dataset4]]></Expression>
+					<Color>-60269</Color>
+					<Expression2><![CDATA[this.cows.totalClinical()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
+					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1476997783598</Id>
+					<Name><![CDATA[cowsRemoved]]></Name>
+					<X>560</X><Y>-500</Y>
+					<Label><X>100</X><Y>20</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1477036800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[DeceasedCows]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-9404272</Color>
+					<Expression2><![CDATA[this.deceasedCows]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
+					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1477005450420</Id>
+					<Name><![CDATA[infectionFromSource]]></Name>
+					<X>560</X><Y>-227</Y>
+					<Label><X>80</X><Y>17</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1477036800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[infected from mom]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-13447886</Color>
+					<Expression2><![CDATA[this.infectedFromMother]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[infected From enviroment]]></Title>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-9404272</Color>
+					<Expression2><![CDATA[this.infectedFromEnvironment]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
+					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1477418568082</Id>
 					<Name><![CDATA[WeightedPrevalence]]></Name>
-					<Description><![CDATA[The WeightedPrevalence is a statistic in the cows population which takes the average of the prevalence modifiers for the population. See the cows population for more details.
-
-The Prevalence is a statistic in the cows population which takes the average number of Clinical and Subclinical cows in the female population.
-
-The OverallPrevalence is a statistic in the cows population which takes the average number of Clinical and Subclinical cows in the population (male and female).
-
-]]></Description>
-					<X>-20</X><Y>80</Y>
-					<Label><X>260</X><Y>20</Y></Label>
+					<X>10</X><Y>-770</Y>
+					<Label><X>80</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -2810,15 +3120,15 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
+					<Width>260</Width>
+					<Height>260</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>190</Height>
+						<YOffset>10</YOffset>
+						<Width>180</Width>
+						<Height>150</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -2874,18 +3184,17 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
-    			<Histogram>
-					<Id>1492671333560</Id>
-					<Name><![CDATA[InfectionAgeHistogram]]></Name>
-					<Description><![CDATA[A histogram showing the percentage of infected cows at different ages (1 - 12).]]></Description>
-					<X>380</X><Y>80</Y>
-					<Label><X>245</X><Y>20</Y></Label>
+    			<TimePlot>
+					<Id>1479503718259</Id>
+					<Name><![CDATA[independantMonthlyInfectionCount]]></Name>
+					<X>0</X><Y>-500</Y>
+					<Label><X>40</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<AutoUpdate>false</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -2895,15 +3204,15 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
+					<Width>260</Width>
+					<Height>210</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
+						<Width>180</Width>
+						<Height>120</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -2920,96 +3229,41 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					</Labels>
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
-					<ShowPDF>true</ShowPDF>
-					<ShowCDF>false</ShowCDF>
-					<ShowMean>false</ShowMean>
-					<Bars>
-						<Direction>UP</Direction>
-						<RelativeWidth>0.8</RelativeWidth>
-					</Bars>
-					<HistogramDataExpression>
-					<Expression><![CDATA[InfectionAge]]></Expression>
-						<ColorPDF>-12799119</ColorPDF>
-						<ColorCDF>-10496</ColorCDF>
-						<ColorLowPercent>-32944</ColorLowPercent>
-						<ColorHighPercent>-12004916</ColorHighPercent>
-						<ColorMean>-16728065</ColorMean>
-						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Age of Infection Per Cow]]></Title>							
-					</HistogramDataExpression>
-    			</Histogram>
-    			<Plot>
-					<Id>1492671342322</Id>
-					<Name><![CDATA[StateVsAgeScatter]]></Name>
-					<Description><![CDATA[A plot of each Cow's State (1 = Susceptible, 2 = Infected, 3 = SubClinical, 4 = Clinical) vs the age of the Cow. The ages overlap, so there will be fewer plots than there are Cows in the population.]]></Description>
-					<X>780</X><Y>80</Y>
-					<Label><X>270</X><Y>20</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1480492800000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<Persistent>true</Persistent>
-					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[5]]></VerScaleToExpression>
-					<VerScaleType>FIXED</VerScaleType>
-					<DrawLine>false</DrawLine>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[State vs Age (In Months) (1-4 = Susceptible-Clinical)]]></Title>
-					<Expression><![CDATA[currentStateVsAge]]></Expression>
+						<Title><![CDATA[Infections]]></Title>
+					<Expression><![CDATA[EnvInfectionsPerMonth]]></Expression>
+					<Color>-9807155</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Births]]></Title>
+					<Expression><![CDATA[BirthsPerMonthSet]]></Expression>
 					<Color>-2987746</Color>
 					<Expression2><![CDATA[0]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>SQUARE</PointStyle>
+						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
-						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
 					</DatasetExpression>
-					<SamplesToKeep>2000</SamplesToKeep>
-					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[120]]></HorScaleToExpression>
-					<HorScaleType>FIXED</HorScaleType>
-    			</Plot>
+					<SamplesToKeep>240</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
+					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
     			<TimePlot>
-					<Id>1492671352806</Id>
+					<Id>1479841898512</Id>
 					<Name><![CDATA[PerYearRemovals]]></Name>
-					<Description><![CDATA[Graphs the removal of cows on 12 month inervals. ]]></Description>
-					<X>-20</X><Y>380</Y>
-					<Label><X>275</X><Y>20</Y></Label>
+					<X>290</X><Y>-800</Y>
+					<Label><X>90</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3025,15 +3279,15 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>460</Height>
+					<Width>260</Width>
+					<Height>280</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>260</Height>
+						<Width>180</Width>
+						<Height>140</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -3041,7 +3295,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<Legend>
 						<Place>SOUTH</Place>
 						<TextColor>-16777216</TextColor>
-						<Size>140</Size>
+						<Size>80</Size>
 					</Legend>
 					<Labels>
 						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
@@ -3152,335 +3406,10 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
-    			<TimePlot>
-					<Id>1492671360703</Id>
-					<Name><![CDATA[infectionFromSourceTimePlot]]></Name>
-					<Description><![CDATA[Graphs the source of infection for infected cows.]]></Description>
-					<X>380</X><Y>380</Y>
-					<Label><X>205</X><Y>20</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1477036800000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<Persistent>true</Persistent>
-					<ShowLegend>true</ShowLegend>
-					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[infected from mom]]></Title>
-					<Expression><![CDATA[my_dataset]]></Expression>
-					<Color>-13447886</Color>
-					<Expression2><![CDATA[this.infectedFromMother]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[infected From enviroment]]></Title>
-					<Expression><![CDATA[my_dataset1]]></Expression>
-					<Color>-9404272</Color>
-					<Expression2><![CDATA[this.infectedFromEnvironment]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<SamplesToKeep>240</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
-					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
-    			</TimePlot>
-    			<TimePlot>
-					<Id>1492671375436</Id>
-					<Name><![CDATA[independantMonthlyInfectionCount]]></Name>
-					<Description><![CDATA[Graphs the monthly infection count alongside the monthly birth count.
-
-TODO: Decide whether it's worth it to keep this graph. Why have birth count alongside infections per month? Also Infection per month can easily be inferred from the infectionFromSourceTimePlot if the data is exported.]]></Description>
-					<X>780</X><Y>380</Y>
-					<Label><X>40</X><Y>20</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1479542400000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<Persistent>true</Persistent>
-					<ShowLegend>true</ShowLegend>
-					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[Infections]]></Title>
-					<Expression><![CDATA[EnvInfectionsPerMonth]]></Expression>
-					<Color>-9807155</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[Births]]></Title>
-					<Expression><![CDATA[BirthsPerMonthSet]]></Expression>
-					<Color>-2987746</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<SamplesToKeep>240</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
-					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
-    			</TimePlot>
-    			<TimePlot>
-					<Id>1492671387381</Id>
-					<Name><![CDATA[infectionSpreadOverTime]]></Name>
-					<Description><![CDATA[Graphs the total number of Susceptible, Infected, Infective, Subclinical and Clinical cows every month.]]></Description>
-					<X>380</X><Y>680</Y>
-					<Label><X>60</X><Y>20</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1477036800000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>320</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>50</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<Persistent>true</Persistent>
-					<ShowLegend>true</ShowLegend>
-					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[susceptable]]></Title>
-					<Expression><![CDATA[my_dataset]]></Expression>
-					<Color>-23296</Color>
-					<Expression2><![CDATA[this.cows.totalSusceptable()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[infected]]></Title>
-					<Expression><![CDATA[my_dataset1]]></Expression>
-					<Color>-4343957</Color>
-					<Expression2><![CDATA[this.cows.totalInfected()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[infective]]></Title>
-					<Expression><![CDATA[my_dataset2]]></Expression>
-					<Color>-12004916</Color>
-					<Expression2><![CDATA[this.cows.totalInfective()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[subclinical]]></Title>
-					<Expression><![CDATA[my_dataset3]]></Expression>
-					<Color>-8097537</Color>
-					<Expression2><![CDATA[this.cows.totalSubClinical()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[clinical]]></Title>
-					<Expression><![CDATA[my_dataset4]]></Expression>
-					<Color>-60269</Color>
-					<Expression2><![CDATA[this.cows.totalClinical()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<SamplesToKeep>240</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
-					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
-    			</TimePlot>
-			</Charts>
-
-				</Group>
-				<Group>
-					<Id>1492671469308</Id>
-					<Name><![CDATA[testingAnalyticsGroup]]></Name>
-					<X>1520</X><Y>-1280</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Rectangle>
-					<Id>1492671913931</Id>
-					<Name><![CDATA[TestingGroupBorder]]></Name>
-					<X>-20</X><Y>-20</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>900</Width>
-					<Height>800</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1492671769647</Id>
-					<Name><![CDATA[TestingGroup]]></Name>
-					<X>320</X><Y>0</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Testing analytics]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>20</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-			</Shapes>
-			<Charts>
     			<Histogram>
-					<Id>1492671598656</Id>
-					<Name><![CDATA[BloodTestingTimeToDiagnosisHistogram]]></Name>
-					<Description><![CDATA[This histogram plots the number of months each Cow was infected before being diagnosed through Blood testing. 
-Y axis: Percentage of the total number of Cows diagnosed through Blood testing.
-X axis: Number of months between time of infection and diagnosis.]]></Description>
-					<X>380</X><Y>430</Y>
+					<Id>1480359058693</Id>
+					<Name><![CDATA[FecalTestingTimeToCureChart]]></Name>
+					<X>600</X><Y>-780</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3497,15 +3426,15 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
+					<Width>260</Width>
+					<Height>210</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
+						<Width>180</Width>
+						<Height>120</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -3530,295 +3459,27 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
 						<RelativeWidth>0.8</RelativeWidth>
 					</Bars>
 					<HistogramDataExpression>
-					<Expression><![CDATA[BloodTestTimeToDiagnosis]]></Expression>
-						<ColorPDF>-65536</ColorPDF>
-						<ColorCDF>-9807155</ColorCDF>
-						<ColorLowPercent>-2354116</ColorLowPercent>
-						<ColorHighPercent>-12004916</ColorHighPercent>
-						<ColorMean>-6632142</ColorMean>
-						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Blood - Number of months from infection to diagnosis]]></Title>							
-					</HistogramDataExpression>
-    			</Histogram>
-    			<Plot>
-					<Id>1492671598660</Id>
-					<Name><![CDATA[TrueNegativeTestsOverDiseasedPopulation]]></Name>
-					<Description><![CDATA[TODO: Read description of TruePositiveTestsOverDiseasedPopulation and do the same for this timeplot.]]></Description>
-					<X>380</X><Y>80</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1480492800000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<Persistent>true</Persistent>
-					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[True Negative Tests / Total Diseased]]></Title>
-					<Expression><![CDATA[TrueNegativeOverTotal]]></Expression>
-					<Color>-8097537</Color>
-					<Expression2><![CDATA[time()]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
-					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
-    			</Plot>
-    			<Plot>
-					<Id>1492671598664</Id>
-					<Name><![CDATA[TruePositiveTestsOverDiseasedPopulation]]></Name>
-					<Description><![CDATA[TODO discuss whether this graph is even useful. Open up a git issue to start discussion. It only captures True Positive test results and compares to the total number infected from mother and environment. It also fails to capture any information on initially infected herd numbers, which is why the value at any point in the timeplot is ~4 or more.
-
-I think we should rethink the purpose of this plot and capture that purpose.]]></Description>
-					<X>-20</X><Y>80</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1480492800000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<Persistent>true</Persistent>
-					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[True Positive Tests / Total Diseased]]></Title>
-					<Expression><![CDATA[TruePositiveOverTotal]]></Expression>
-					<Color>-8097537</Color>
-					<Expression2><![CDATA[time()]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
-					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
-    			</Plot>
-    			<Histogram>
-					<Id>1492671598668</Id>
-					<Name><![CDATA[FecalTestingTimeToDiagnosisHistogram]]></Name>
-					<Description><![CDATA[This histogram plots the number of months each Cow was infected before being diagnosed through Fecal testing. 
-Y axis: Percentage of the total number of Cows diagnosed through Fecal testing.
-X axis: Number of months between time of infection and diagnosis.]]></Description>
-					<X>-20</X><Y>430</Y>
-					<Label><X>150</X><Y>20</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1480406400000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<Persistent>true</Persistent>
-					<ShowLegend>true</ShowLegend>
-					<ShowPDF>true</ShowPDF>
-					<ShowCDF>false</ShowCDF>
-					<ShowMean>false</ShowMean>
-					<Bars>
-						<Direction>UP</Direction>
-						<RelativeWidth>0.8</RelativeWidth>
-					</Bars>
-					<HistogramDataExpression>
-					<Expression><![CDATA[FecalTestTimeToDiagnosis]]></Expression>
+					<Expression><![CDATA[FecalTestTimeToCure]]></Expression>
 						<ColorPDF>-3308225</ColorPDF>
 						<ColorCDF>-9807155</ColorCDF>
 						<ColorLowPercent>-2354116</ColorLowPercent>
 						<ColorHighPercent>-12004916</ColorHighPercent>
 						<ColorMean>-6632142</ColorMean>
 						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Fecal - Number of months from infection to diagnosis]]></Title>							
+						<Title><![CDATA[Fecal time to diagnosis]]></Title>							
 					</HistogramDataExpression>
     			</Histogram>
-			</Charts>
-
-				</Group>
-				<Group>
-					<Id>1492672065252</Id>
-					<Name><![CDATA[populationAnalyticsGroup]]></Name>
-					<X>2430</X><Y>-1290</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-
-			<Shapes>
-				<Rectangle>
-					<Id>1492672139858</Id>
-					<Name><![CDATA[PopulationGroupBorder]]></Name>
-					<X>-10</X><Y>-10</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>800</Width>
-					<Height>500</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Text>
-					<Id>1492672139860</Id>
-					<Name><![CDATA[PopulationGroup]]></Name>
-					<X>270</X><Y>10</Y>
+    			<Histogram>
+					<Id>1480359901352</Id>
+					<Name><![CDATA[BloodTestingTimeToCureChart]]></Name>
+					<X>850</X><Y>-780</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<AsObject>true</AsObject>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[General Population analytics]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>20</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-			</Shapes>
-			<Charts>
-    			<TimePlot>
-					<Id>1492672139864</Id>
-					<Name><![CDATA[cowsRemoved]]></Name>
-					<Description><![CDATA[Graphs the total number of cows removed.
-
-TODO: Decide whether or not to perhaps merge this graph with the births timeplot from independentMonthlyInfectionCount timeplot and then remove the  independentMonthlyInfectionCount timeplot altogether.]]></Description>
-					<X>-10</X><Y>90</Y>
-					<Label><X>100</X><Y>20</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
+					<AutoUpdate>false</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1477036800000</OccurrenceDate>
+					<OccurrenceDate>1480406400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -3828,15 +3489,15 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
+					<Width>260</Width>
+					<Height>210</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
+						<Width>180</Width>
+						<Height>120</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -3853,39 +3514,35 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					</Labels>
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
-					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
-					<DrawLine>true</DrawLine>
-					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[DeceasedCows]]></Title>
-					<Expression><![CDATA[my_dataset]]></Expression>
-					<Color>-9404272</Color>
-					<Expression2><![CDATA[this.deceasedCows]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<SamplesToKeep>240</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
-					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
-    			</TimePlot>
-    			<TimePlot>
-					<Id>1492672139870</Id>
-					<Name><![CDATA[populationOfCowsOverTime]]></Name>
-					<Description><![CDATA[Graphs the total population of cows on monthly intervals.]]></Description>
-					<X>390</X><Y>90</Y>
-					<Label><X>60</X><Y>20</Y></Label>
+					<ShowPDF>true</ShowPDF>
+					<ShowCDF>false</ShowCDF>
+					<ShowMean>false</ShowMean>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+					<HistogramDataExpression>
+					<Expression><![CDATA[BloodTestTimeToCure]]></Expression>
+						<ColorPDF>-65536</ColorPDF>
+						<ColorCDF>-9807155</ColorCDF>
+						<ColorLowPercent>-2354116</ColorLowPercent>
+						<ColorHighPercent>-12004916</ColorHighPercent>
+						<ColorMean>-6632142</ColorMean>
+						<LineWidth>1</LineWidth>						
+						<Title><![CDATA[Fecal Time to Diagnosis]]></Title>							
+					</HistogramDataExpression>
+    			</Histogram>
+    			<Histogram>
+					<Id>1480444122584</Id>
+					<Name><![CDATA[chart]]></Name>
+					<X>840</X><Y>-520</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1476259200000</OccurrenceDate>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -3895,15 +3552,15 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>400</Width>
-					<Height>300</Height>
+					<Width>260</Width>
+					<Height>210</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>320</Width>
-						<Height>210</Height>
+						<Width>180</Width>
+						<Height>120</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -3920,49 +3577,220 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					</Labels>
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
-					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<ShowPDF>true</ShowPDF>
+					<ShowCDF>false</ShowCDF>
+					<ShowMean>false</ShowMean>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+					<HistogramDataExpression>
+					<Expression><![CDATA[InfectionAge]]></Expression>
+						<ColorPDF>-12799119</ColorPDF>
+						<ColorCDF>-10496</ColorCDF>
+						<ColorLowPercent>-32944</ColorLowPercent>
+						<ColorHighPercent>-12004916</ColorHighPercent>
+						<ColorMean>-16728065</ColorMean>
+						<LineWidth>1</LineWidth>						
+						<Title><![CDATA[Age of Infection Per Cow]]></Title>							
+					</HistogramDataExpression>
+    			</Histogram>
+    			<Plot>
+					<Id>1480445473299</Id>
+					<Name><![CDATA[AgeVsStateScatter]]></Name>
+					<X>10</X><Y>-1000</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[5]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>false</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Age vs State (1-4 = Susceptible-Clinical)]]></Title>
+					<Expression><![CDATA[currentAgeVsState]]></Expression>
+					<Color>-2987746</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
+					</DatasetExpression>
+					<SamplesToKeep>2000</SamplesToKeep>
+					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
+					<HorScaleToExpression><![CDATA[150]]></HorScaleToExpression>
+					<HorScaleType>FIXED</HorScaleType>
+    			</Plot>
+    			<Plot>
+					<Id>1480448540398</Id>
+					<Name><![CDATA[PositiveTestsOverDiseasedPopulation]]></Name>
+					<X>320</X><Y>-1010</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
 					<VerScaleType>AUTO</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[males]]></Title>
-					<Expression><![CDATA[my_dataset]]></Expression>
-					<Color>-65536</Color>
-					<Expression2><![CDATA[cows.males()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
+						<Title><![CDATA[positiveTests/TotalDiseased]]></Title>
+					<Expression><![CDATA[positiveOverTotal]]></Expression>
+					<Color>-8097537</Color>
+					<Expression2><![CDATA[time()]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
 						<LineWidth>1.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
 					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
+					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
+					<HorScaleType>AUTO</HorScaleType>
+    			</Plot>
+    			<Plot>
+					<Id>1480449582458</Id>
+					<Name><![CDATA[NegativeTestsOverDiseasedPopulation]]></Name>
+					<X>600</X><Y>-1010</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[females]]></Title>
-					<Expression><![CDATA[my_dataset1]]></Expression>
-					<Color>-16711681</Color>
-					<Expression2><![CDATA[cows.females()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
+						<Title><![CDATA[MissedTests/TotalDiseased]]></Title>
+					<Expression><![CDATA[negativeOverTotal]]></Expression>
+					<Color>-8097537</Color>
+					<Expression2><![CDATA[time()]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
 						<LineWidth>1.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
 					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[Total]]></Title>
-					<Expression><![CDATA[my_dataset2]]></Expression>
-					<Color>-9807155</Color>
-					<Expression2><![CDATA[cows.size()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<SamplesToKeep>240</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
-					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
-    			</TimePlot>
+					<SamplesToKeep>100</SamplesToKeep>
+					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
+					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
+					<HorScaleType>AUTO</HorScaleType>
+    			</Plot>
 			</Charts>
-
-				</Group>
-			</Shapes>
 
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
@@ -4290,7 +4118,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1476134180159</Id>
-					<Name><![CDATA[GrazingCalf]]></Name>
+					<Name><![CDATA[WeaningCalf]]></Name>
 					<Description><![CDATA[This stage captures the second half of a cows childhood (about 7 months) in this stage the cow is less likely to contract infection but still susceptible]]></Description>
 					<X>310</X><Y>230</Y>
 					<Label><X>30</X><Y>20</Y></Label>
@@ -4439,7 +4267,7 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1476723764674</Id>
-					<Name><![CDATA[WeaningCalf]]></Name>
+					<Name><![CDATA[PreWeaningCalf]]></Name>
 					<Description><![CDATA[This initial state of the cow captures the first 6 months of a cows life, these first 6 months are critical for spread of the disease as during this time the cows is most susceptible to being infected (both from mother during weaning and from environmental factors)]]></Description>
 					<X>310</X><Y>80</Y>
 					<Label><X>25</X><Y>20</Y></Label>
@@ -4454,20 +4282,6 @@ main.deceasedCows = main.deceasedCows + 1;]]></Action>
 }
 ]]></ExitAction>
 						<FillColor>-256</FillColor>
-					</Properties>
-				</StatechartElement>
-				<StatechartElement Class="State" ParentState="ROOT_NODE">
-					<Id>1476724089202</Id>
-					<Name><![CDATA[Bulls]]></Name>
-					<Description><![CDATA[Males are included in the population, but do not affect weightedPrevalence]]></Description>
-					<X>450</X><Y>320</Y>
-					<Label><X>45</X><Y>20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties Width="120" Height="40">
-						<EntryAction><![CDATA[agentColor = red]]></EntryAction>
-						<FillColor>-5952982</FillColor>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
@@ -4868,8 +4682,8 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>228</X><Y>0</Y></Point>
-						<Point><X>228</X><Y>322</Y></Point>
+						<Point><X>168</X><Y>0</Y></Point>
+						<Point><X>226.56891649440013</X><Y>322.12904071920076</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476729847052" Target="1476721237689" Trigger="condition">
@@ -4879,37 +4693,6 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[birthTime == 0 ? false : (randomTrue(main.YoungBullRemovalRate) && !isFemale)]]></Condition>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
-						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
-						<DefaultTransition>false</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
-						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
-					</Properties>	
-				</StatechartElement>
-				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
-					<Id>1476724180235</Id>
-					<Name><![CDATA[calfToBull]]></Name>
-					<Description><![CDATA[pull all male cows into the Bull state]]></Description>
-					<X>382</X><Y>340</Y>
-					<Label><X>3</X><Y>-15</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>68</X><Y>0</Y></Point>
-					</Points>
-					<IconOffset>20.0</IconOffset>
-					<Properties Source="1476724154821" Target="1476724089202" Trigger="timeout">
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</Timeout>
-						<Condition><![CDATA[!isFemale]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -5003,7 +4786,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Properties Source="1476648694794" Target="1476648694794" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -5021,7 +4804,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Id>1476729873456</Id>
 					<Name><![CDATA[continueGrowingUp]]></Name>
 					<X>370</X><Y>190</Y>
-					<Label><X>5</X><Y>10</Y></Label>
+					<Label><X>-170</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5082,38 +4865,6 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
-					<Id>1476993205705</Id>
-					<Name><![CDATA[malePopulationControl]]></Name>
-					<Description><![CDATA[in the population of male cows gets too high we start removing them]]></Description>
-					<X>510</X><Y>360</Y>
-					<Label><X>-115</X><Y>20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>95</X><Y>143</Y></Point>
-					</Points>
-					<IconOffset>30.0</IconOffset>
-					<Properties Source="1476724089202" Target="1476721237689" Trigger="condition">
-						<Action><![CDATA[main.removedByBullPopulationControlCountPerYear += 1;]]></Action>
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</Timeout>
-						<Condition><![CDATA[main.cows.males() > main.MaxMales]]></Condition>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
-						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
-						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
-						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
-					</Properties>	
-				</StatechartElement>
-				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1476993449238</Id>
 					<Name><![CDATA[femalePopulationControl]]></Name>
 					<Description><![CDATA[if the population of female cows gets too high we start removing them, but only if they do not currently have a weaning calf]]></Description>
@@ -5128,13 +4879,11 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>110.0</IconOffset>
 					<Properties Source="1476134180161" Target="1476721237689" Trigger="condition">
-						<Action><![CDATA[main.removedByFemalePopulationControlCountPerYear += 1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[main.cows.females() > main.MaxFemales
-&& this.child == null ]]></Condition>
+						<Condition><![CDATA[this.child == null && this.currentAge > main.MaxFemaleAge ]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -5151,7 +4900,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Name><![CDATA[growingOutOfWeaning]]></Name>
 					<Description><![CDATA[This transition moves the cow out of the critial "Weaning stage" which encompases the first 6 months of life]]></Description>
 					<X>370</X><Y>120</Y>
-					<Label><X>-140</X><Y>25</Y></Label>
+					<Label><X>-195</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5182,7 +4931,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Name><![CDATA[calfToBullOrHeifer]]></Name>
 					<Description><![CDATA[Cows grow up and move into the pregnancy cycle (if female) or into the "Bull" state for males.]]></Description>
 					<X>370</X><Y>270</Y>
-					<Label><X>-110</X><Y>30</Y></Label>
+					<Label><X>-155</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5708,6 +5457,37 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1492725725899</Id>
+					<Name><![CDATA[removeYoungFemals]]></Name>
+					<X>382</X><Y>180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>95</X><Y>55</Y></Point>
+						<Point><X>224.51688170161185</X><Y>322.7980636687462</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476729847052" Target="1476721237689" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[birthTime == 0 ? false : (randomTrue(main.YoungFemaleRemovalRate) && isFemale)]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>false</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
 			</StatechartElements>
 			<ActionChartElements>
 				<ActionChartElement Class="ActionChart">
@@ -5766,8 +5546,8 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<Code><![CDATA[if(this.toRemoveFecal)
 {
 this.fecalRemovalAge = this.currentAge;
-main.FecalTestTimeToDiagnosis.add(this.fecalRemovalAge - this.infectionAge);
-main.FecalTestingTimeToDiagnosisHistogram.refresh();
+main.FecalTestTimeToCure.add(this.fecalRemovalAge - this.infectionAge);
+main.FecalTestingTimeToCureChart.refresh();
 }]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -5976,8 +5756,8 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 						<Code><![CDATA[if(this.toRemoveBlood)
 {
 this.bloodRemovalAge = this.currentAge;
-main.BloodTestTimeToDiagnosis.add(this.bloodRemovalAge - this.infectionAge);
-main.BloodTestingTimeToDiagnosisHistogram.refresh();
+main.BloodTestTimeToCure.add(this.bloodRemovalAge - this.infectionAge);
+main.BloodTestingTimeToCureChart.refresh();
 }]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -6269,11 +6049,6 @@ else
 					<StatechartReference>
 						<PackageName><![CDATA[johnesdisease]]></PackageName>
 						<ClassName><![CDATA[Cow]]></ClassName>
-						<ItemName><![CDATA[PregnancyCycleStateChart]]></ItemName>
-					</StatechartReference>
-					<StatechartReference>
-						<PackageName><![CDATA[johnesdisease]]></PackageName>
-						<ClassName><![CDATA[Cow]]></ClassName>
 						<ItemName><![CDATA[JohnesStateChart]]></ItemName>
 					</StatechartReference>
 					<StatechartReference>
@@ -6285,6 +6060,11 @@ else
 						<PackageName><![CDATA[johnesdisease]]></PackageName>
 						<ClassName><![CDATA[Cow]]></ClassName>
 						<ItemName><![CDATA[BloodTestingStateChart]]></ItemName>
+					</StatechartReference>
+					<StatechartReference>
+						<PackageName><![CDATA[johnesdisease]]></PackageName>
+						<ClassName><![CDATA[Cow]]></ClassName>
+						<ItemName><![CDATA[PregnancyCycleStateChart]]></ItemName>
 					</StatechartReference>
 					<LineStyle>SOLID</LineStyle>
 					<LineWidth>1</LineWidth>
@@ -6901,6 +6681,193 @@ else
 			</Shapes>
 
 		</ActiveObjectClass>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1492726114971</Id>
+			<Name><![CDATA[Bull]]></Name>
+			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
+			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1492726114970</Id>
+				<Name><![CDATA[1492726114970]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor/>
+			<AgentProperties>
+	 			<SpaceType>CONTINUOUS</SpaceType>			
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+			</AgentProperties>
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1492761600000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1492726114968</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<ConnectionsId>1492726114967</ConnectionsId>
+			<StatechartElements>
+				<StatechartElement Class="State" ParentState="ROOT_NODE">
+					<Id>1492726131860</Id>
+					<Name><![CDATA[Bulls]]></Name>
+					<Description><![CDATA[Males are included in the population, but do not affect weightedPrevalence]]></Description>
+					<X>350</X><Y>190</Y>
+					<Label><X>45</X><Y>20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Width="120" Height="40">
+						<EntryAction><![CDATA[agentColor = red]]></EntryAction>
+						<FillColor>-5952982</FillColor>
+					</Properties>
+				</StatechartElement>
+				<StatechartElement Class="FinalState" ParentState="ROOT_NODE">
+					<Id>1492726213545</Id>
+					<Name><![CDATA[finalState]]></Name>
+					<X>410</X><Y>310</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties>	
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
+					<Id>1492726184573</Id>
+					<Name><![CDATA[BuyYoungBull]]></Name>
+					<X>410</X><Y>160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>30</Y></Point>
+					</Points>
+					<Properties Target="1492726131860">
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1492726219078</Id>
+					<Name><![CDATA[transition]]></Name>
+					<X>410</X><Y>230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>72</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1492726131860" Target="1492726213545" Trigger="condition">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[this.currentAge > main.MaxBullAge]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+			</StatechartElements>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1492726114967</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<StatechartReference>
+						<PackageName><![CDATA[johnesdisease]]></PackageName>
+						<ClassName><![CDATA[Bull]]></ClassName>
+						<ItemName><![CDATA[BuyYoungBull]]></ItemName>
+					</StatechartReference>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+
+
+		</ActiveObjectClass>
 	</ActiveObjectClasses>	
 	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
 	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
@@ -7069,7 +7036,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7138,6 +7105,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[2]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -7327,7 +7300,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7390,6 +7363,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[2]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -7582,7 +7561,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7651,6 +7630,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[2]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -7840,7 +7825,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -7903,6 +7888,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[8]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -8092,7 +8083,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -8155,6 +8146,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[1]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -8347,7 +8344,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -8410,6 +8407,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[2]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -8599,7 +8602,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -8665,6 +8668,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[2]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -8854,7 +8863,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[PregnancyPercentage]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[MaxAge]]></ParameterName>
+					<ParameterName><![CDATA[MaxFemaleAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[InitialFemalePercentage]]></ParameterName>
@@ -8920,6 +8929,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Code><![CDATA[2]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[WEEK]]></Unit>
 					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaxBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -8992,7 +9007,7 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 					<Id>1479684554950</Id>
 					<Name><![CDATA[histogramData]]></Name>
 					<Description><![CDATA[data from each rum of main, storing the current prevalance for each time interval]]></Description>
-					<X>500</X><Y>150</Y>
+					<X>-10</X><Y>-10</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9023,7 +9038,7 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 					<Id>1480015974431</Id>
 					<Name><![CDATA[histogramDataSmallRange]]></Name>
 					<Description><![CDATA[data from each rum of main, storing the current prevalance for each time interval]]></Description>
-					<X>500</X><Y>450</Y>
+					<X>-10</X><Y>310</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9056,7 +9071,7 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
     			<Histogram2D>
 					<Id>1479684565150</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>0</X><Y>20</Y>
+					<X>0</X><Y>0</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9110,7 +9125,7 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
     			<Histogram2D>
 					<Id>1480015995273</Id>
 					<Name><![CDATA[chart1]]></Name>
-					<X>0</X><Y>310</Y>
+					<X>0</X><Y>320</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9243,6 +9258,9 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			</FreeformParamValue>
 			<FreeformParamValue>	
 				<Id>1478024405037</Id>
+				<Expression Class="CodeValue">
+					<Code><![CDATA[7.3]]></Code>
+				</Expression>
 			</FreeformParamValue>
 			<FreeformParamValue>	
 				<Id>1478024798363</Id>
@@ -9291,6 +9309,12 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			</FreeformParamValue>
 			<FreeformParamValue>	
 				<Id>1479412158080</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1492725636801</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1492725821268</Id>
 			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1476136317567</Id>
@@ -9458,6 +9482,14 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 				<Id>1479412158080</Id>
 				<Type>FIXED</Type>
 			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1492725636801</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1492725821268</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
 			<ModelTimeProperties>
 				<StopOption><![CDATA[Stop at specified time]]></StopOption>
 				<InitialDate><![CDATA[1459468800000]]></InitialDate>	
@@ -9469,9 +9501,9 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="false"
+				EnablePanning="true"
 				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="false">
+				EnableZoom="true">
 				<CpuRatio><![CDATA[ratio_1_2]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : SensitivityAnalysisAndCalibrationOfInfectionModel]]></Title>	
 				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
