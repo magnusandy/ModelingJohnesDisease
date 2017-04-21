@@ -1,0 +1,27 @@
+This is an instruction file for merging changes now that we have multiple
+branches. I'll be using the following branches as examples:
+
+staging_alex : This was branched off of the 'staging' branch.
+staging : This was branched off of the 'master' branch
+
+The goal is to merge changes from staging_alex into staging. Ensure you have
+committed all changes locally before you attempt a merge. These are the steps 
+in raw git commands, which you can generalize:
+
+git fetch
+git checkout staging_alex
+git pull
+git checkout staging
+git merge staging_alex --no-ff 
+
+If merge issues occur, resolve them. use 'git status' to show which files have
+issues.
+
+git push
+
+Now all changes should appear on github. If you wish to merge a branch into
+master but master is not the immediate prent branch of your current branch,
+then you must first merge into the parent branch. For example if I wanted to
+merge my changes from staging_alex into master, I would first merge
+staging_alex to staging, and then merge staging to master. Doing otherwise may
+cause merge issues later.
