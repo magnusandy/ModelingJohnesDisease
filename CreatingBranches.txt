@@ -1,0 +1,17 @@
+This is an instruction file for creating branches. The branches I'll be using
+for examples are:
+
+staging_alex : This will be branched off of the 'staging' branch
+staging : This was branched off of the 'master' branch
+
+The goal is to create a new branch called 'staging_alex' from existing branch
+'staging'. The following is an example. DO NOT USE THESE COMMANDS EXACTLY:
+
+git checkout staging
+git checkout -b staging_alex
+git push origin staging_alex:staging_alex
+
+The branch should now show up on github. It's ideal to keep local work in your
+own staging branch and then once work is finished to merge with the main
+staging branch. Only when a delivarable is due should the staging branch be
+merged with master.
