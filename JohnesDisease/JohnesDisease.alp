@@ -578,7 +578,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[(1*InitialPopulation)]]></Code>
+							<Code><![CDATA[(0.95*InitialPopulation)]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1476999639946</Id>
@@ -839,6 +839,7 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
@@ -1141,17 +1142,18 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[YEAR]]></UnitOfValue>
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
+						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[120.0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1478021915693</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
 							<DelimeterType>NO_DELIMETER</DelimeterType>
@@ -1591,16 +1593,18 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
+						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[72.0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1492725636799</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
 							<DelimeterType>NO_DELIMETER</DelimeterType>
@@ -1626,6 +1630,60 @@
 						<ParameterEditor>
 							<Id>1492725821266</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1495311194306</Id>
+					<Name><![CDATA[PurchasedBullAge]]></Name>
+					<X>-250</X><Y>-60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[12]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1495311194304</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1495313280537</Id>
+					<Name><![CDATA[FertileAge]]></Name>
+					<X>-250</X><Y>-40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[24]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1495313280535</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
 							<DelimeterType>NO_DELIMETER</DelimeterType>
@@ -1770,7 +1828,8 @@ this.PerYearRemovals.refresh();]]></Action>
 					<Action><![CDATA[if (cows.adultMales()  < MaxMales) {
 	boolean purchasedBull = true;
 	Cow newCow = this.add_cows(purchasedBull); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
-	newCow.currentAge = 1;
+	//newCow.currentAge = PurchasedBullAge;
+	
 	double x = Math.random()*this.spaceWidth();
 	double y = Math.random()*this.spaceHeight();
 	newCow.jumpTo(x, y);
@@ -3291,8 +3350,8 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
 					<DatasetExpression>  
-						<Title><![CDATA[RemovalByOldAgePerYear]]></Title>
-					<Expression><![CDATA[RemovalByOldAgePerYear]]></Expression>
+						<Title><![CDATA[RemovalByMalePopulationControl]]></Title>
+					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
 					<Color>-2448096</Color>
 					<Expression2><![CDATA[0]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
@@ -4498,7 +4557,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Id>1476134694229</Id>
 					<Name><![CDATA[Pregnant]]></Name>
 					<Description><![CDATA[female cows will be in this stage for 9 months before creating a new calf. The calf's mother variable and the mother's calf variable are set here.]]></Description>
-					<X>300</X><Y>570</Y>
+					<X>150</X><Y>580</Y>
 					<Label><X>45</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4520,7 +4579,7 @@ main.birthsPerMonth = main.birthsPerMonth +1;
 					<Id>1476134723765</Id>
 					<Name><![CDATA[gettingPregnantBranch]]></Name>
 					<Description><![CDATA[Branching possibility of cows getting pregnant or not, female cows have a 90% chance of getting pregnant and transitioning to Pregnant state.]]></Description>
-					<X>370</X><Y>510</Y>
+					<X>370</X><Y>550</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4758,6 +4817,9 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="140" Height="40">
+						<EntryAction><![CDATA[this.isCalf = false;
+
+]]></EntryAction>
 						<FillColor>-65536</FillColor>
 					</Properties>
 				</StatechartElement>
@@ -4765,6 +4827,17 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 					<Id>1492814886166</Id>
 					<Name><![CDATA[branch1]]></Name>
 					<X>500</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties>	
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
+					<Id>1495312643327</Id>
+					<Name><![CDATA[branch3]]></Name>
+					<X>370</X><Y>490</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4798,10 +4871,10 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>60</Y></Point>
+						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
-					<IconOffset>30.0</IconOffset>
-					<Properties Source="1476134180161" Target="1476134723765" Trigger="timeout">
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1476134180161" Target="1495312643327" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[main.NotPregnantTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -4822,14 +4895,14 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 					<Id>1476134754302</Id>
 					<Name><![CDATA[becomingPregnant]]></Name>
 					<Description><![CDATA[female cows have a 90% chance to become pregnant]]></Description>
-					<X>370</X><Y>520</Y>
+					<X>358</X><Y>550</Y>
 					<Label><X>-110</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>50</Y></Point>
+						<Point><X>-138</X><Y>30</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476134694229" Trigger="timeout">
@@ -4854,16 +4927,15 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 					<Id>1476278047562</Id>
 					<Name><![CDATA[pregnancyDuration]]></Name>
 					<Description><![CDATA[pregnancy last for 9 months before a new calf is created]]></Description>
-					<X>300</X><Y>590</Y>
+					<X>160</X><Y>580</Y>
 					<Label><X>-180</X><Y>-80</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-50</X><Y>0</Y></Point>
-						<Point><X>-50</X><Y>-170</Y></Point>
 						<Point><X>10</X><Y>-170</Y></Point>
+						<Point><X>150</X><Y>-170</Y></Point>
 					</Points>
 					<IconOffset>130.0</IconOffset>
 					<Properties Source="1476134694229" Target="1476134180161" Trigger="timeout">
@@ -5209,14 +5281,14 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<Id>1476992823278</Id>
 					<Name><![CDATA[infertileCowRemoval]]></Name>
 					<Description><![CDATA[any cows that do not become pregnant (10%) will be removed from the population]]></Description>
-					<X>382</X><Y>510</Y>
+					<X>382</X><Y>550</Y>
 					<Label><X>38</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>220</X><Y>0</Y></Point>
+						<Point><X>220.12034380282944</X><Y>-38.617604175935014</Y></Point>
 					</Points>
 					<IconOffset>120.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476721237689" Trigger="condition">
@@ -5877,9 +5949,10 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1492728359305" Target="1476721237689" Trigger="timeout">
+						<Action><![CDATA[main.removedByBullPopulationControlCountPerYear +=1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[main.MaxBullAge ]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -5918,6 +5991,97 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1495312666161</Id>
+					<Name><![CDATA[transition2]]></Name>
+					<X>360</X><Y>500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>10</X><Y>0</Y></Point>
+						<Point><X>10</X><Y>40</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1495312643327" Target="1476134723765" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[(this.currentAge > main.FertileAge) && (this.currentAge < main.MaxFemaleAge)]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>false</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1495312694987</Id>
+					<Name><![CDATA[notOldEnough]]></Name>
+					<X>370</X><Y>480</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>-40</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1495312643327" Target="1476134180161" Trigger="timeout">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[true]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[unconditionally]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1495313720828</Id>
+					<Name><![CDATA[transition4]]></Name>
+					<X>382</X><Y>490</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>220.0306022084062</X><Y>19.300930018281235</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1495312643327" Target="1476721237689" Trigger="timeout">
+						<Action><![CDATA[main.removedByFemalePopulationControlCountPerYear +=1;]]></Action>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[this.child == null && this.currentAge > main.MaxFemaleAge]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>false</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
 						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
@@ -6408,36 +6572,6 @@ main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>
 					<Action><![CDATA[this.currentAge = this.startingAge + (time()-this.birthTime)]]></Action>
 				</Event>
-				<Event>
-					<Id>1492729753714</Id>
-					<Name><![CDATA[removeOldCows]]></Name>
-					<X>-140</X><Y>410</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties TriggerType="condition" Mode="occuresOnce">
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</Timeout>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
-						</Rate>
-						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1492761600000</OccurrenceDate>
-						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</OccurrenceTime>
-						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</RecurrenceCode>
-						<Condition><![CDATA[this.child == null && this.currentAge > main.MaxFemaleAge]]></Condition>
-					</Properties>
-				</Event>
 			</Events>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
@@ -6451,7 +6585,11 @@ main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[//Generates cows of the following starting ages (0,12,24,....,108 months)
-if(time() == 0)
+if (isBullPurchased) 
+{
+	return 12;
+}
+else if(time() == 0)
 {
 	int randomNum = uniform_discr(1,9);
 	int age = (randomNum*12);
@@ -7355,6 +7493,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -7612,6 +7756,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -7880,6 +8030,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -8138,6 +8294,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -8395,6 +8557,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -8657,6 +8825,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -8918,6 +9092,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -9178,6 +9358,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[YoungFemaleRemovalRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[PurchasedBullAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FertileAge]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -9559,6 +9745,12 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			<FreeformParamValue>	
 				<Id>1492725821268</Id>
 			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1495311194306</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1495313280537</Id>
+			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1476136317567</Id>
 				<Type>FIXED</Type>
@@ -9731,6 +9923,14 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1492725821268</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1495311194306</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1495313280537</Id>
 				<Type>FIXED</Type>
 			</RangeVariationParamValue>
 			<ModelTimeProperties>
