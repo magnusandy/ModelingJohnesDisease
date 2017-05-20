@@ -6106,16 +6106,16 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
 					<Id>1478737484041</Id>
-					<Name><![CDATA[isFemaleFecalTest]]></Name>
-					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant state, not calves or Male cows]]></Description>
+					<Name><![CDATA[isAdultFecalTest]]></Name>
+					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant or Male states]]></Description>
 					<X>140</X><Y>930</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Is the Cow Adult Female?]]></Comment>
+					<Comment><![CDATA[Is the cow an adult?]]></Comment>
 					<Properties Width="200" Height="40" Appearance="0" Previous="1478737137383" Next="1478737151229" TrueAction="1478898211477" >
 						<FillColor/>
-						<Condition><![CDATA[(this.inState(NotPregnant) || this.inState(Pregnant))]]></Condition>
+						<Condition><![CDATA[this.inState(NotPregnant) || this.inState(Pregnant) || this.inState(Bull)]]></Condition>
 					</Properties>
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
@@ -6316,16 +6316,16 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
 					<Id>1479236233914</Id>
-					<Name><![CDATA[isFemaleBloodTest]]></Name>
-					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant state, not calves or Male cows]]></Description>
+					<Name><![CDATA[isAdultBloodTest]]></Name>
+					<Description><![CDATA[We are only testing is focused only on cows in the Pregnant or NotPregnant or Bull States]]></Description>
 					<X>1490</X><Y>930</Y>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Comment><![CDATA[Is the Cow Adult Female?]]></Comment>
+					<Comment><![CDATA[Is the cow an adult?]]></Comment>
 					<Properties Width="200" Height="40" Appearance="0" Previous="1479236233911" Next="1479236233932" TrueAction="1479236233915" >
 						<FillColor/>
-						<Condition><![CDATA[(this.inState(NotPregnant) || this.inState(Pregnant))]]></Condition>
+						<Condition><![CDATA[this.inState(NotPregnant) || this.inState(Pregnant) || this.inState(Bull)]]></Condition>
 					</Properties>
 				</ActionChartElement>
 				<ActionChartElement Class="Decision">
