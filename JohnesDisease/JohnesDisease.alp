@@ -1200,7 +1200,7 @@
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[7.1]]></Code>
+							<Code><![CDATA[6.6]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1478024405035</Id>
@@ -9688,7 +9688,7 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			<FreeformParamValue>	
 				<Id>1478024405037</Id>
 				<Expression Class="CodeValue">
-					<Code><![CDATA[7.3]]></Code>
+					<Code><![CDATA[6.6]]></Code>
 				</Expression>
 			</FreeformParamValue>
 			<FreeformParamValue>	
