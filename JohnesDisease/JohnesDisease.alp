@@ -4468,7 +4468,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1476724586274</Id>
-					<Name><![CDATA[child]]></Name>
+					<Name><![CDATA[offspring]]></Name>
 					<X>-230</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -4674,7 +4674,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Properties Width="140" Height="40">
 						<EntryAction><![CDATA[agentColor = magenta;]]></EntryAction>
 						<ExitAction><![CDATA[Cow newCow = main.add_cows(); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
-child = newCow;
+offspring = newCow;
 newCow.mother = this;
 main.birthsPerMonth = main.birthsPerMonth +1;
 ]]></ExitAction>
@@ -4794,7 +4794,7 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 					<Properties Width="130" Height="40">
 						<EntryAction><![CDATA[agentColor = yellow]]></EntryAction>
 						<ExitAction><![CDATA[if (this.mother != null) {
-	this.mother.child = null;
+	this.mother.offspring = null;
 	this.mother = null;
 }
 ]]></ExitAction>
@@ -5303,9 +5303,9 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1476721130594" Target="1476721130594" Trigger="rate">
-						<Action><![CDATA[if (this.child != null)
-	if (this.child.inState(PreWeaningCalf)) 
-		this.send(MessageList.ExposureFromMother, this.child);]]></Action>
+						<Action><![CDATA[if (this.offspring != null)
+	if (this.offspring.inState(PreWeaningCalf)) 
+		this.send(MessageList.ExposureFromMother, this.offspring);]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
@@ -6181,7 +6181,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[this.child == null && this.currentAge > main.MaxFemaleAge]]></Condition>
+						<Condition><![CDATA[this.offspring == null && this.currentAge > main.MaxFemaleAge]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
