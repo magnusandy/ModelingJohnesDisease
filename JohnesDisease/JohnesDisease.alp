@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="7.3.5.201608171904" AlpVersion="7.3.3">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.4.201703301517" AlpVersion="8.0.4">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -90,14 +90,14 @@
 						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</StepDurationCode>
 					<SpaceType>CONTINUOUS</SpaceType>
-					<WidthCode><![CDATA[500]]></WidthCode>
-					<HeightCode><![CDATA[500]]></HeightCode>
+					<WidthCode><![CDATA[1500]]></WidthCode>
+					<HeightCode><![CDATA[700]]></HeightCode>
 					<ZHeightCode><![CDATA[0]]></ZHeightCode>
 					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
 					<RowsCountCode><![CDATA[100]]></RowsCountCode>
 					<NeigborhoodType>MOORE</NeigborhoodType>
-					<LayoutType>RANDOM</LayoutType>
-					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>false</LayoutTypeApplyOnStartup>
 					<NetworkType>USER_DEF</NetworkType>
 					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
 					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
@@ -523,7 +523,6 @@
 						<Type><![CDATA[int]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[SECOND]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[1000]]></Code>
@@ -549,7 +548,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[(0.05*InitialPopulation)]]></Code>
@@ -575,7 +573,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[(0.95*InitialPopulation)]]></Code>
@@ -603,7 +600,6 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_SECOND]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.06]]></Code>
@@ -630,7 +626,6 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_SECOND]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.03]]></Code>
@@ -657,7 +652,6 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_SECOND]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.002]]></Code>
@@ -683,7 +677,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[1]]></Code>
@@ -709,7 +702,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[ClinicalMultiplier * SubclinicalPrevalenceModifier]]></Code>
@@ -735,7 +727,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.99]]></Code>
@@ -761,7 +752,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.8]]></Code>
@@ -787,7 +777,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.999]]></Code>
@@ -813,7 +802,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.5]]></Code>
@@ -840,7 +828,6 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[1]]></Code>
@@ -867,7 +854,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[RATE]]></UnitType>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[-(log(0.7))/6]]></Code>
@@ -895,7 +881,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[6]]></Code>
@@ -923,7 +908,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[3]]></Code>
@@ -951,7 +935,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[9]]></Code>
@@ -979,7 +962,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[2]]></Code>
@@ -1007,7 +989,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[6]]></Code>
@@ -1034,7 +1015,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[WeaningTime]]></Code>
@@ -1062,7 +1042,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[18]]></Code>
@@ -1090,7 +1069,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[24]]></Code>
@@ -1118,7 +1096,6 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.9]]></Code>
@@ -1145,7 +1122,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[120.0]]></Code>
@@ -1172,7 +1148,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.9]]></Code>
@@ -1197,7 +1172,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[6.6]]></Code>
@@ -1223,7 +1197,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.5]]></Code>
@@ -1249,7 +1222,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[1]]></Code>
@@ -1275,7 +1247,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[4]]></Code>
@@ -1302,7 +1273,6 @@
 						<Type><![CDATA[Date]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[SECOND]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[toDate(2016, 10, 1, 0, 0, 0)]]></Code>
@@ -1329,7 +1299,6 @@
 						<Type><![CDATA[Date]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[SECOND]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[toDate(2016, 10, 1, 0, 0, 0) ]]></Code>
@@ -1355,7 +1324,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.01]]></Code>
@@ -1381,7 +1349,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.3]]></Code>
@@ -1407,7 +1374,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.1
@@ -1434,7 +1400,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[0.40]]></Code>
@@ -1460,7 +1425,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[boolean]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[true]]></Code>
@@ -1486,7 +1450,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[boolean]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[true]]></Code>
@@ -1513,7 +1476,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[WEEK]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[2]]></Code>
@@ -1541,7 +1503,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[WEEK]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[2]]></Code>
@@ -1569,7 +1530,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[WEEK]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[2]]></Code>
@@ -1596,7 +1556,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[72.0]]></Code>
@@ -1622,7 +1581,6 @@
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[.99]]></Code>
@@ -1648,7 +1606,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[12]]></Code>
@@ -1675,7 +1632,6 @@
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[24]]></Code>
@@ -1830,9 +1786,6 @@ this.PerYearRemovals.refresh();]]></Action>
 	Cow newCow = this.add_cows(purchasedBull); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
 	//newCow.currentAge = PurchasedBullAge;
 	
-	double x = Math.random()*this.spaceWidth();
-	double y = Math.random()*this.spaceHeight();
-	newCow.jumpTo(x, y);
 }
 
 
@@ -2547,7 +2500,7 @@ return 0;
 						<Code><![CDATA[10]]></Code>
 						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 					</InitialSpeedCode>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>NODE</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -2569,6 +2522,8 @@ return 0;
 					<LongitudeCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</LongitudeCode>
+					<NodeCode><![CDATA[(!self.isBullPurchased)?this.femalePen:this.malePen;
+]]></NodeCode>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
@@ -2584,6 +2539,29 @@ return 0;
 			</EmbeddedObjects>
 
 			<Shapes>
+				<Rectangle>
+					<Id>1496596833135</Id>
+					<Name><![CDATA[Pasture]]></Name>
+					<X>-20</X><Y>-20</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>0</ZHeight>
+					<LineWidth>3</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1540</Width>
+					<Height>740</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-983056</FillColor>
+					<FillMaterial>grass</FillMaterial>
+				</Rectangle>
 				<EmbeddedObjectPresentation>
 					<Id>1476136300553</Id>
 					<Name><![CDATA[cows_presentation]]></Name>
@@ -2593,12 +2571,9 @@ return 0;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<ReplicationCode Class="CodeValue">
-						<Code><![CDATA[cows.size()]]></Code>
-					</ReplicationCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
+					<Z>1</Z>
 					<Rotation>0.0</Rotation>
 					<DrawingMode>AGENT_CURRENT_POSITION</DrawingMode>
 					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
@@ -3082,7 +3057,6 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
     			<Histogram>
@@ -3360,7 +3334,6 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
     			<TimePlot>
@@ -3436,7 +3409,6 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
     			<TimePlot>
@@ -3514,7 +3486,6 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
     			<TimePlot>
@@ -3617,7 +3588,6 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
 			</Charts>
@@ -4082,7 +4052,6 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
     			<TimePlot>
@@ -4167,12 +4136,103 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[240]]></TimeWindowExpression>
-					<CustomLabelFormat><![CDATA[dd.MM.yyyy HH:mm:ss]]></CustomLabelFormat>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
 			</Charts>
 
 				</Group>
+				<RectangleNode>
+					<Id>1496597342663</Id>
+					<Name><![CDATA[femalePen]]></Name>
+					<X>320</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-14774017</LineColor>
+					<FillColor/>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillMaterial>null</FillMaterial>
+					<LineStyle>DASHED</LineStyle>
+					<AttractorsLayout>random</AttractorsLayout>
+
+					<Width>1180</Width>
+					<Height>640</Height>
+					<Rotation>0.0</Rotation>
+				</RectangleNode>
+				<RectangleNode>
+					<Id>1496597366896</Id>
+					<Name><![CDATA[malePen]]></Name>
+					<X>0</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-14774017</LineColor>
+					<FillColor/>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillMaterial>null</FillMaterial>
+					<LineStyle>DASHED</LineStyle>
+					<AttractorsLayout>random</AttractorsLayout>
+
+					<Width>220</Width>
+					<Height>640</Height>
+					<Rotation>0.0</Rotation>
+				</RectangleNode>
+				<Text>
+					<Id>1496598737161</Id>
+					<Name><![CDATA[bullPenLabel]]></Name>
+					<X>30</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ScaleXCode><![CDATA[3]]></ScaleXCode>
+					<ScaleYCode><![CDATA[3]]></ScaleYCode>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Bull Pen]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496598808367</Id>
+					<Name><![CDATA[mainHerdLabel]]></Name>
+					<X>350</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ScaleXCode><![CDATA[3]]></ScaleXCode>
+					<ScaleYCode><![CDATA[3]]></ScaleYCode>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Main Herd]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -4508,7 +4568,6 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[boolean]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
-						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
 							<Code><![CDATA[false]]></Code>
@@ -4565,9 +4624,6 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Properties Width="140" Height="40">
 						<EntryAction><![CDATA[agentColor = magenta;]]></EntryAction>
 						<ExitAction><![CDATA[Cow newCow = main.add_cows(); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
-double x = Math.random()*main.spaceWidth();
-double y = Math.random()*main.spaceHeight();
-newCow.jumpTo(x, y);
 child = newCow;
 newCow.mother = this;
 main.birthsPerMonth = main.birthsPerMonth +1;
@@ -5288,7 +5344,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>220.12034380282944</X><Y>-38.617604175935014</Y></Point>
+						<Point><X>220</X><Y>-39</Y></Point>
 					</Points>
 					<IconOffset>120.0</IconOffset>
 					<Properties Source="1476134723765" Target="1476721237689" Trigger="condition">
@@ -6066,7 +6122,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>220.0306022084062</X><Y>19.300930018281235</Y></Point>
+						<Point><X>220</X><Y>19</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1495312643327" Target="1476721237689" Trigger="timeout">
@@ -7257,6 +7313,10 @@ else
 	<FixedTimeStep>0.001</FixedTimeStep>
 	<RelativeAccuracy>1.0E-5</RelativeAccuracy>
 	<TimeAccuracy>1.0E-5</TimeAccuracy>
+	<Frame>
+		<Width>1000</Width>
+		<Height>600</Height>
+	</Frame>
 	<Database>
 		<Logging>false</Logging>
 		<AutoExport>false</AutoExport>
@@ -7265,7 +7325,30 @@ else
 		<ExportSettings>
 			<ExportExcelFilePath><![CDATA[]]></ExportExcelFilePath>
 		</ExportSettings>
-	</Database>	
+	</Database>
+	
+	<RunConfiguration ActiveObjectClassId="1476133888236">
+		<Id>1496596588602</Id>
+		<Name><![CDATA[RunConfiguration]]></Name>
+		<ModelTimeProperties>
+			<StopOption><![CDATA[Stop at specified time]]></StopOption>
+			<InitialDate><![CDATA[1459468800000]]></InitialDate>	
+			<InitialTime><![CDATA[0.0]]></InitialTime>	
+			<FinalDate><![CDATA[2081548800000]]></FinalDate>	
+			<FinalTime><![CDATA[240.0]]></FinalTime>	
+		</ModelTimeProperties>
+		<AnimationProperties>
+			<StopNever>false</StopNever>
+			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<RealTimeScale>1.0</RealTimeScale>
+			<EnableZoomAndPanning>true</EnableZoomAndPanning>
+			<Maximized>false</Maximized>
+		</AnimationProperties>
+		<Inputs>		
+		</Inputs>
+		<Outputs>
+		</Outputs>
+	</RunConfiguration>
 	<Experiments>	
 		<!--   =========   Simulation Experiment   ========  -->
 		<SimulationExperiment ActiveObjectClassId="1476133888236">
@@ -7274,14 +7357,6 @@ else
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
@@ -7504,9 +7579,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -7544,14 +7620,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
@@ -7768,9 +7836,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -7808,14 +7877,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
@@ -8041,9 +8102,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -8081,14 +8143,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
@@ -8305,9 +8359,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -8345,14 +8400,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
@@ -8569,9 +8616,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -8609,14 +8657,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
@@ -8836,9 +8876,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -8876,14 +8917,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
@@ -9103,9 +9136,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -9143,14 +9177,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
@@ -9370,9 +9396,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_16]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : Simulation]]></Title>	
@@ -9410,14 +9437,6 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>1000</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>2048</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
@@ -9944,9 +9963,10 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<CpuRatio><![CDATA[ratio_1_2]]></CpuRatio>	        
 				<Title><![CDATA[JohnesDisease : SensitivityAnalysisAndCalibrationOfInfectionModel]]></Title>	
 				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
