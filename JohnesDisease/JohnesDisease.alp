@@ -3211,14 +3211,14 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Width>400</Width>
-					<Height>460</Height>
+					<Height>420</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
 						<Width>320</Width>
-						<Height>260</Height>
+						<Height>220</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -3243,27 +3243,9 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[RemovalByBullPopulationControlPerYear]]></Title>
-					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
-					<Color>-23296</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
 						<Title><![CDATA[RemovalByClinicalSicknessPerYear]]></Title>
 					<Expression><![CDATA[RemovalByClinicalSicknessPerYear]]></Expression>
 					<Color>-4343957</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[RemovalByFailedPregnancyPerYear]]></Title>
-					<Expression><![CDATA[RemovalByFailedPregnancyPerYear]]></Expression>
-					<Color>-12004916</Color>
 					<Expression2><![CDATA[0]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
@@ -3288,15 +3270,6 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
 					<DatasetExpression>  
-						<Title><![CDATA[RemovalByFemalePopulationControlPerYear]]></Title>
-					<Expression><![CDATA[RemovalByFemalePopulationControlPerYear]]></Expression>
-					<Color>-29696</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
 						<Title><![CDATA[RemovalByTruePositiveBloodTestPerYear]]></Title>
 					<Expression><![CDATA[RemovalByTruePositiveBloodTestPerYear]]></Expression>
 					<Color>-12799119</Color>
@@ -3309,24 +3282,6 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 						<Title><![CDATA[RemovalByTruePositiveFecalTestPerYear]]></Title>
 					<Expression><![CDATA[RemovalByTruePositiveFecalTestPerYear]]></Expression>
 					<Color>-9807155</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[RemovalByYoungBullCullingPerYear]]></Title>
-					<Expression><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression>
-					<Color>-2987746</Color>
-					<Expression2><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[RemovalByMalePopulationControl]]></Title>
-					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
-					<Color>-2448096</Color>
 					<Expression2><![CDATA[0]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
@@ -4234,6 +4189,101 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Alignment>LEFT</Alignment>
 				</Text>
 			</Shapes>
+			<Charts>
+    			<TimePlot>
+					<Id>1496600382240</Id>
+					<Name><![CDATA[populationControlRemovals]]></Name>
+					<Description><![CDATA[Graphs the removal of cows on 12 month inervals. ]]></Description>
+					<X>200</X><Y>-520</Y>
+					<Label><X>275</X><Y>20</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479888000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>400</Width>
+					<Height>320</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>320</Width>
+						<Height>150</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>100</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>YEAR</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[-1]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[400]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByBullPopulationControlPerYear]]></Title>
+					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
+					<Color>-65536</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByFemalePopulationControlPerYear]]></Title>
+					<Expression><![CDATA[RemovalByFemalePopulationControlPerYear]]></Expression>
+					<Color>-10496</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByYoungBullCullingPerYear]]></Title>
+					<Expression><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression>
+					<Color>-16711936</Color>
+					<Expression2><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[RemovalByMalePopulationControl]]></Title>
+					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
+					<Color>-16776961</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+			</Charts>
 
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
