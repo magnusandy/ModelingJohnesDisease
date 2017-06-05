@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.4.201703301517" AlpVersion="8.0.4">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.5.201704071710" AlpVersion="8.0.4">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -2299,7 +2299,7 @@ return 0;
 					<NumberOfIntervals>10</NumberOfIntervals>
 					<MinMaxAutodetect>false</MinMaxAutodetect>
 					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
-					<RangeMaxExpression><![CDATA[24]]></RangeMaxExpression>
+					<RangeMaxExpression><![CDATA[12]]></RangeMaxExpression>
 					<InitialIntervalSize><![CDATA[0.1]]></InitialIntervalSize>
 					<CalculateCDF>true</CalculateCDF>
 					<CalculatePercentiles>false</CalculatePercentiles>
@@ -2542,7 +2542,7 @@ return 0;
 				<Rectangle>
 					<Id>1496596833135</Id>
 					<Name><![CDATA[Pasture]]></Name>
-					<X>-20</X><Y>-20</Y>
+					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2565,7 +2565,7 @@ return 0;
 				<EmbeddedObjectPresentation>
 					<Id>1476136300553</Id>
 					<Name><![CDATA[cows_presentation]]></Name>
-					<X>0</X><Y>10</Y>
+					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2940,7 +2940,7 @@ return 0;
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>1300</Width>
-					<Height>1100</Height>
+					<Height>1200</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -2980,7 +2980,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 
 ]]></Description>
 					<X>-20</X><Y>80</Y>
-					<Label><X>260</X><Y>20</Y></Label>
+					<Label><X>255</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3004,7 +3004,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
 						<Width>320</Width>
-						<Height>190</Height>
+						<Height>200</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -3012,7 +3012,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<Legend>
 						<Place>SOUTH</Place>
 						<TextColor>-16777216</TextColor>
-						<Size>70</Size>
+						<Size>40</Size>
 					</Legend>
 					<Labels>
 						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
@@ -3022,7 +3022,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
 					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowUnits>MONTH</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[0.2]]></VerScaleToExpression>
 					<VerScaleType>FIXED</VerScaleType>
@@ -3373,7 +3373,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 
 TODO: Decide whether it's worth it to keep this graph. Why have birth count alongside infections per month? Also Infection per month can easily be inferred from the infectionFromSourceTimePlot if the data is exported.]]></Description>
 					<X>780</X><Y>380</Y>
-					<Label><X>40</X><Y>20</Y></Label>
+					<Label><X>175</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3448,7 +3448,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					<Name><![CDATA[infectionSpreadOverTime]]></Name>
 					<Description><![CDATA[Graphs the total number of Susceptible, Infected, Infective, Subclinical and Clinical cows every month.]]></Description>
 					<X>380</X><Y>680</Y>
-					<Label><X>60</X><Y>20</Y></Label>
+					<Label><X>230</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4099,7 +4099,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 				<RectangleNode>
 					<Id>1496597342663</Id>
 					<Name><![CDATA[femalePen]]></Name>
-					<X>320</X><Y>60</Y>
+					<X>340</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4121,7 +4121,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 				<RectangleNode>
 					<Id>1496597366896</Id>
 					<Name><![CDATA[malePen]]></Name>
-					<X>0</X><Y>60</Y>
+					<X>20</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4143,7 +4143,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 				<Text>
 					<Id>1496598737161</Id>
 					<Name><![CDATA[bullPenLabel]]></Name>
-					<X>30</X><Y>20</Y>
+					<X>50</X><Y>40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4167,7 +4167,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 				<Text>
 					<Id>1496598808367</Id>
 					<Name><![CDATA[mainHerdLabel]]></Name>
-					<X>350</X><Y>20</Y>
+					<X>370</X><Y>40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4188,14 +4188,258 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+				<Text>
+					<Id>1496641074015</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>250</X><Y>-1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Prevalence / Time (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496641171414</Id>
+					<Name><![CDATA[text1]]></Name>
+					<X>650</X><Y>-1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Infection / Age (Years)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496642304105</Id>
+					<Name><![CDATA[text2]]></Name>
+					<X>1050</X><Y>-1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[State / Age (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496642332232</Id>
+					<Name><![CDATA[text3]]></Name>
+					<X>250</X><Y>-890</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Count Removed / Time (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496643361923</Id>
+					<Name><![CDATA[modelTime]]></Name>
+					<Description><![CDATA[The model time in months]]></Description>
+					<X>160</X><Y>-20</Y>
+					<Label><X>-70</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[text]]></Text>
+					<TextCode><![CDATA["Time since model start: " + (int)this.time() + " months "]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496644635230</Id>
+					<Name><![CDATA[text4]]></Name>
+					<X>650</X><Y>-890</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Infection Source / Time (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496644734422</Id>
+					<Name><![CDATA[text5]]></Name>
+					<X>1050</X><Y>-890</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Total Infections & Births / Time (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496644778973</Id>
+					<Name><![CDATA[text6]]></Name>
+					<X>250</X><Y>-470</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Count Removed / Time (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496644786613</Id>
+					<Name><![CDATA[text7]]></Name>
+					<X>650</X><Y>-590</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Count in State / Time (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496644969022</Id>
+					<Name><![CDATA[text8]]></Name>
+					<X>1570</X><Y>-1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[True Positive Ratio / Time (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1496645030885</Id>
+					<Name><![CDATA[text9]]></Name>
+					<X>1970</X><Y>-1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[True negative Results / Total Diseased]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 			<Charts>
     			<TimePlot>
 					<Id>1496600382240</Id>
 					<Name><![CDATA[populationControlRemovals]]></Name>
 					<Description><![CDATA[Graphs the removal of cows on 12 month inervals. ]]></Description>
-					<X>200</X><Y>-520</Y>
-					<Label><X>275</X><Y>20</Y></Label>
+					<X>200</X><Y>-480</Y>
+					<Label><X>230</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -4212,14 +4456,14 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Width>400</Width>
-					<Height>320</Height>
+					<Height>380</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
 						<Width>320</Width>
-						<Height>150</Height>
+						<Height>210</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
