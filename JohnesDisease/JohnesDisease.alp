@@ -1958,35 +1958,54 @@ StateVsAgeScatter.refresh();]]></Action>
 
 
 
-TruePositiveOverTotalPerMonth.add(count);
+TruePositivePerMonth.add(count);
 countBloodTestTruePositivePerMonth = 0;
 countFecalTestTruePositivePerMonth = 0;
 
 
-this.TruePositiveTestsOverDiseasedPopulation.refresh();]]></Action>
+this.TruePositiveTestsPerMonth.refresh();]]></Action>
 				</Event>
-			</Events>
-			<Functions>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1493000376534</Id>
-					<Name><![CDATA[trueNegativeTotal]]></Name>
+				<Event>
+					<Id>1496892532441</Id>
+					<Name><![CDATA[trueNegativePerMonthCountHelper]]></Name>
 					<X>1970</X><Y>-1240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[if(infectedFromMother != 0 || infectedFromEnvironment != 0)
-{
-	return (countFecalTrueNegative + countBloodTrueNegative)/(this.cows.size());
-}
-else 
-{
-return 0;
-}]]></Body>
-				</Function>
-			</Functions>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1479542400000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[int count = countBloodTrueNegativePerMonth+countFecalTrueNegativePerMonth; 
+
+
+
+TrueNegativesPerMonth.add(count);
+countBloodTrueNegativePerMonth = 0;
+countFecalTrueNegativePerMonth = 0;
+
+
+this.TrueNegativeTestsPerMonth.refresh();]]></Action>
+				</Event>
+			</Events>
 			<AnalysisData>
     			<DataSet>
 					<Id>1479503623169</Id>
@@ -2436,7 +2455,7 @@ return 0;
 				</DataSet>
     			<DataSet>
 					<Id>1493000376549</Id>
-					<Name><![CDATA[TruePositiveOverTotalPerMonth]]></Name>
+					<Name><![CDATA[TruePositivePerMonth]]></Name>
 					<X>1570</X><Y>-1210</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2458,7 +2477,7 @@ return 0;
 				</DataSet>
     			<DataSet>
 					<Id>1493000376552</Id>
-					<Name><![CDATA[TrueNegativeOverTotal]]></Name>
+					<Name><![CDATA[TrueNegativesPerMonth]]></Name>
 					<X>1970</X><Y>-1210</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2476,7 +2495,6 @@ return 0;
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<FreezeXAxis>true</FreezeXAxis>
-					<VerticalAxisExpression><![CDATA[trueNegativeTotal()]]></VerticalAxisExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 				</DataSet>
 			</AnalysisData>
@@ -3782,14 +3800,14 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
     			</Histogram>
     			<Plot>
 					<Id>1493000376506</Id>
-					<Name><![CDATA[TrueNegativeTestsOverDiseasedPopulation]]></Name>
+					<Name><![CDATA[TrueNegativeTestsPerMonth]]></Name>
 					<Description><![CDATA[TODO: Read description of TruePositiveTestsOverDiseasedPopulation and do the same for this timeplot.]]></Description>
 					<X>380</X><Y>80</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
+					<AutoUpdate>false</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1480492800000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
@@ -3827,13 +3845,13 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
+					<VerScaleToExpression><![CDATA[2000]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[True Negative Tests / Total Population]]></Title>
-					<Expression><![CDATA[TrueNegativeOverTotal]]></Expression>
+						<Title><![CDATA[True Negative Tests]]></Title>
+					<Expression><![CDATA[TrueNegativesPerMonth]]></Expression>
 					<Color>-8097537</Color>
 					<Expression2><![CDATA[time()]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
@@ -3841,14 +3859,14 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
 						<LineWidth>1.0</LineWidth>
 						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
 					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
+					<SamplesToKeep>240</SamplesToKeep>
 					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
+					<HorScaleToExpression><![CDATA[240]]></HorScaleToExpression>
+					<HorScaleType>FIXED</HorScaleType>
     			</Plot>
     			<Plot>
 					<Id>1493000376510</Id>
-					<Name><![CDATA[TruePositiveTestsOverDiseasedPopulation]]></Name>
+					<Name><![CDATA[TruePositiveTestsPerMonth]]></Name>
 					<Description><![CDATA[TODO discuss whether this graph is even useful. Open up a git issue to start discussion. It only captures True Positive test results and compares to the total number infected from mother and environment. It also fails to capture any information on initially infected herd numbers, which is why the value at any point in the timeplot is ~4 or more.
 
 I think we should rethink the purpose of this plot and capture that purpose.]]></Description>
@@ -3857,7 +3875,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
+					<AutoUpdate>false</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1480492800000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
@@ -3895,13 +3913,13 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-					<VerScaleType>AUTO</VerScaleType>
+					<VerScaleToExpression><![CDATA[50]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[True Positive Tests / Total Population]]></Title>
-					<Expression><![CDATA[TruePositiveOverTotalPerMonth]]></Expression>
+						<Title><![CDATA[True Positive Tests ]]></Title>
+					<Expression><![CDATA[TruePositivePerMonth]]></Expression>
 					<Color>-8097537</Color>
 					<Expression2><![CDATA[time()]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
@@ -3909,10 +3927,10 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 						<LineWidth>1.0</LineWidth>
 						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
 					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
+					<SamplesToKeep>240</SamplesToKeep>
 					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
-					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
-					<HorScaleType>AUTO</HorScaleType>
+					<HorScaleToExpression><![CDATA[240]]></HorScaleToExpression>
+					<HorScaleType>FIXED</HorScaleType>
     			</Plot>
     			<Histogram>
 					<Id>1493000376514</Id>
@@ -4506,7 +4524,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[True Positive Ratio / Time (Months)]]></Text>
+					<Text><![CDATA[True Positives Per Month]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>14</Size>
@@ -4528,7 +4546,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[True negative Results / Total Diseased]]></Text>
+					<Text><![CDATA[True Negatives Per Month]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>14</Size>
@@ -4631,6 +4649,74 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
+    			<Plot>
+					<Id>1496893662241</Id>
+					<Name><![CDATA[TruePositiveTestsPerMonth1]]></Name>
+					<Description><![CDATA[TODO discuss whether this graph is even useful. Open up a git issue to start discussion. It only captures True Positive test results and compares to the total number infected from mother and environment. It also fails to capture any information on initially infected herd numbers, which is why the value at any point in the timeplot is ~4 or more.
+
+I think we should rethink the purpose of this plot and capture that purpose.]]></Description>
+					<X>1520</X><Y>-490</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>400</Width>
+					<Height>300</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>320</Width>
+						<Height>210</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[50]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[True Positive Tests ]]></Title>
+					<Expression><![CDATA[TruePositivePerMonth]]></Expression>
+					<Color>-8097537</Color>
+					<Expression2><![CDATA[time()]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
+					<HorScaleToExpression><![CDATA[240]]></HorScaleToExpression>
+					<HorScaleType>FIXED</HorScaleType>
+    			</Plot>
 			</Charts>
 
 		</ActiveObjectClass>
