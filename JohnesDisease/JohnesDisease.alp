@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.5.201704071710" AlpVersion="8.0.4">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.4.201703301517" AlpVersion="8.0.4">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -3151,25 +3151,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[Weighted Prevalence]]></Title>
-					<Expression><![CDATA[my_dataset]]></Expression>
-					<Color>-2354116</Color>
-					<Expression2><![CDATA[this.cows.WeightedPrevalence()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
 						<Title><![CDATA[Prevalence]]></Title>
-					<Expression><![CDATA[my_dataset1]]></Expression>
-					<Color>-10496</Color>
-					<Expression2><![CDATA[this.cows.Prevalence()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[Overall Prevalence]]></Title>
 					<Expression><![CDATA[my_dataset2]]></Expression>
 					<Color>-6632142</Color>
 					<Expression2><![CDATA[this.cows.OverallPrevalence()]]></Expression2>
@@ -3361,7 +3343,7 @@ The OverallPrevalence is a statistic in the cows population which takes the aver
 					<TimeWindowUnits>YEAR</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[-1]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[400]]></VerScaleToExpression>
-					<VerScaleType>FIXED</VerScaleType>
+					<VerScaleType>AUTO</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
@@ -3795,7 +3777,7 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
 						<ColorHighPercent>-12004916</ColorHighPercent>
 						<ColorMean>-6632142</ColorMean>
 						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Blood - Number of months from infection to diagnosis]]></Title>							
+						<Title><![CDATA[Blood - Cumulative months to diagnose]]></Title>							
 					</HistogramDataExpression>
     			</Histogram>
     			<Plot>
@@ -3995,7 +3977,7 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
 						<ColorHighPercent>-12004916</ColorHighPercent>
 						<ColorMean>-6632142</ColorMean>
 						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Fecal - Number of months from infection to diagnosis]]></Title>							
+						<Title><![CDATA[Fecal Test - Cumulative months to diagnose]]></Title>							
 					</HistogramDataExpression>
     			</Histogram>
 			</Charts>
@@ -4607,18 +4589,9 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<TimeWindowUnits>YEAR</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[-1]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[400]]></VerScaleToExpression>
-					<VerScaleType>FIXED</VerScaleType>
+					<VerScaleType>AUTO</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
-					<DatasetExpression>  
-						<Title><![CDATA[RemovalByBullPopulationControlPerYear]]></Title>
-					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
-					<Color>-65536</Color>
-					<Expression2><![CDATA[0]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
 					<DatasetExpression>  
 						<Title><![CDATA[RemovalByFemalePopulationControlPerYear]]></Title>
 					<Expression><![CDATA[RemovalByFemalePopulationControlPerYear]]></Expression>
@@ -4633,15 +4606,6 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<Expression><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression>
 					<Color>-16711936</Color>
 					<Expression2><![CDATA[RemovalByYoungBullCullingPerYear]]></Expression2>
-					<Expression2Flag>false</Expression2Flag>
-						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
-					</DatasetExpression>
-					<DatasetExpression>  
-						<Title><![CDATA[RemovalByMalePopulationControl]]></Title>
-					<Expression><![CDATA[RemovalByBullPopulationControlPerYear]]></Expression>
-					<Color>-16776961</Color>
-					<Expression2><![CDATA[0]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
@@ -8249,7 +8213,7 @@ else
 				<Text>
 					<Id>1496906009581</Id>
 					<Name><![CDATA[popSize]]></Name>
-					<X>527</X><Y>170</Y>
+					<X>520</X><Y>170</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8318,7 +8282,7 @@ else
 				<Text>
 					<Id>1496907928649</Id>
 					<Name><![CDATA[bullsRatio]]></Name>
-					<X>557</X><Y>200</Y>
+					<X>550</X><Y>200</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8522,7 +8486,7 @@ else
 				<Text>
 					<Id>1496909431866</Id>
 					<Name><![CDATA[text5]]></Name>
-					<X>720</X><Y>250</Y>
+					<X>720</X><Y>270</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8545,7 +8509,7 @@ else
 				<Text>
 					<Id>1496909431868</Id>
 					<Name><![CDATA[text6]]></Name>
-					<X>920</X><Y>250</Y>
+					<X>920</X><Y>270</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8568,7 +8532,7 @@ else
 				<Text>
 					<Id>1496909431869</Id>
 					<Name><![CDATA[text7]]></Name>
-					<X>820</X><Y>250</Y>
+					<X>820</X><Y>270</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8591,7 +8555,7 @@ else
 				<Text>
 					<Id>1496909433869</Id>
 					<Name><![CDATA[text8]]></Name>
-					<X>720</X><Y>300</Y>
+					<X>720</X><Y>340</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8614,7 +8578,7 @@ else
 				<Text>
 					<Id>1496909433870</Id>
 					<Name><![CDATA[text9]]></Name>
-					<X>920</X><Y>300</Y>
+					<X>920</X><Y>340</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8637,7 +8601,7 @@ else
 				<Text>
 					<Id>1496909433871</Id>
 					<Name><![CDATA[text10]]></Name>
-					<X>820</X><Y>300</Y>
+					<X>820</X><Y>340</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9159,6 +9123,72 @@ else
 					<Dy>0</Dy>
 					<Dz>0</Dz>
 				</Line>
+				<Text>
+					<Id>1497840702872</Id>
+					<Name><![CDATA[text30]]></Name>
+					<X>720</X><Y>160</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Percentage of initial cows Infected]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1497840771279</Id>
+					<Name><![CDATA[text31]]></Name>
+					<X>720</X><Y>230</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Percentage of initial cows SubClinical]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1497840801160</Id>
+					<Name><![CDATA[text32]]></Name>
+					<X>720</X><Y>300</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Percentage of initial cows Clinical]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 			<Controls>
 				<Control Type="Button">
@@ -9192,12 +9222,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1496905312804</Id>
 					<Name><![CDATA[checkbox_bloodTesting]]></Name>
-					<X>110</X><Y>160</Y>
+					<X>100</X><Y>160</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<BasicProperties Width="100" Height="30" 
+					<BasicProperties Width="150" Height="30" 
 				AsObject="true">
                         <EmbeddedIcon>false</EmbeddedIcon>				
 						<FillColor/>
@@ -9215,12 +9245,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1496905815443</Id>
 					<Name><![CDATA[checkbox_fecalTesting]]></Name>
-					<X>110</X><Y>190</Y>
+					<X>100</X><Y>190</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<BasicProperties Width="100" Height="30" 
+					<BasicProperties Width="150" Height="30" 
 				AsObject="true">
                         <EmbeddedIcon>false</EmbeddedIcon>				
 						<FillColor/>
@@ -9382,7 +9412,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1496908763507</Id>
 					<Name><![CDATA[slider_initialSubclinicalPercentage]]></Name>
-					<X>720</X><Y>220</Y>
+					<X>720</X><Y>240</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9406,7 +9436,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1496908818865</Id>
 					<Name><![CDATA[slider_initialClinicalPercentage]]></Name>
-					<X>720</X><Y>270</Y>
+					<X>720</X><Y>310</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
