@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.5.201704071710" AlpVersion="8.0.4">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.4.201703301517" AlpVersion="8.0.4">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -590,21 +590,6 @@
 					<Id>1496892029614</Id>
 					<Name><![CDATA[countBloodTrueNegativePerYear]]></Name>
 					<X>-810</X><Y>-400</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1499311122908</Id>
-					<Name><![CDATA[totalDiseasePositiveAtTestingTime]]></Name>
-					<X>1570</X><Y>-1280</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1978,8 +1963,8 @@ StateVsAgeScatter.refresh();]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
 						</Rate>
-						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1479542400000</OccurrenceDate>
+						<OccurrenceAtTime>false</OccurrenceAtTime>
+						<OccurrenceDate>1468915200000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
@@ -1990,16 +1975,17 @@ StateVsAgeScatter.refresh();]]></Action>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[int count = countBloodTestTruePositivePerYear+countFecalTestTruePositivePerYear;   
-int stat;
-if (totalDiseasePositiveAtTestingTime > 0)
-	stat = count/totalDiseasePositiveAtTestingTime;
-else stat = Integer.MAX_VALUE;
+					<Action><![CDATA[//need to be floats or truncated
+float count = countBloodTestTruePositivePerYear+countFecalTestTruePositivePerYear;   
+float stat;
+float totalSick = this.cows.totalSickAdults();//only want to the population we are actually testing
+if (totalSick > 0)
+	stat = count/totalSick;
+else stat = Integer.MAX_VALUE;//plz no
 
 TruePositivePerYear.add(stat);
 countBloodTestTruePositivePerYear = 0;
 countFecalTestTruePositivePerYear = 0;
-totalDiseasePositiveAtTestingTime = 0;
 
 this.TruePositiveTestsPerYear.refresh();]]></Action>
 				</Event>
@@ -2047,40 +2033,9 @@ TrueNegativesPerYear.add(stat);
 countBloodTrueNegativePerYear = 0;
 countFecalTrueNegativePerYear = 0;
 totalDiseaseNegativeAtTestingTime = 0;
-
+HashSet set = new HashSet<>();
 
 this.TrueNegativeTestsPerYear.refresh();]]></Action>
-				</Event>
-				<Event>
-					<Id>1499310923257</Id>
-					<Name><![CDATA[countTheTotalDiseasePositiveAtTestingTime]]></Name>
-					<X>1570</X><Y>-1260</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties TriggerType="timeout" Mode="cyclic">
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</Timeout>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
-						</Rate>
-						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1499328000000</OccurrenceDate>
-						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[10]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
-						</OccurrenceTime>
-						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
-						</RecurrenceCode>
-						<Condition><![CDATA[false]]></Condition>
-					</Properties>
-					<Action><![CDATA[totalDiseasePositiveAtTestingTime = this.cows.totalInfected() + this.cows.totalInfective();]]></Action>
 				</Event>
 				<Event>
 					<Id>1499311255876</Id>
@@ -2724,6 +2679,14 @@ this.TrueNegativeTestsPerYear.refresh();]]></Action>
 						<Type>count</Type>
 						<Expression><![CDATA[]]></Expression>
 						<Condition><![CDATA[item.inState(Cow.Bull)]]></Condition>
+					</StatisticsItem>
+					<StatisticsItem>
+						<Name><![CDATA[totalSickAdults]]></Name>
+						<Type>count</Type>
+						<Expression><![CDATA[]]></Expression>
+						<Condition><![CDATA[(item.inState(Cow.Pregnant) || item.inState(Cow.NotPregnant) || item.inState(Cow.Bull))
+&&
+(item.inState(Cow.Infective) || item.inState(Cow.Infected))]]></Condition>
 					</StatisticsItem>
 					<InEnvironment>true</InEnvironment>	
 					<InitialSpeedCode Class="CodeUnitValue">
@@ -4085,7 +4048,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[(True Positives/ Total Diseased Positive) Per Month]]></Text>
+					<Text><![CDATA[(True Positives/ Total Diseased Positive) Per Year]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>14</Size>
@@ -4341,8 +4304,8 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 					</Labels>
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[50]]></VerScaleToExpression>
+					<VerScaleFromExpression><![CDATA[0.0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1.0]]></VerScaleToExpression>
 					<VerScaleType>FIXED</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
