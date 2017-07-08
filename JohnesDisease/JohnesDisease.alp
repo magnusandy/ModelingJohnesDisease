@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.5.201704071710" AlpVersion="8.0.4">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.4.201703301517" AlpVersion="8.0.4">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -513,7 +513,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1496891302439</Id>
-					<Name><![CDATA[countFecalTestTruePositivePerMonth]]></Name>
+					<Name><![CDATA[countFecalTestTruePositivePerYear]]></Name>
 					<X>-810</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -528,7 +528,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1496891302455</Id>
-					<Name><![CDATA[countFecalTestFalsePositivePerMonth]]></Name>
+					<Name><![CDATA[countFecalTestFalsePositivePerYear]]></Name>
 					<X>-810</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -543,7 +543,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1496891302457</Id>
-					<Name><![CDATA[countBloodTestTruePositivePerMonth]]></Name>
+					<Name><![CDATA[countBloodTestTruePositivePerYear]]></Name>
 					<X>-810</X><Y>-440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -558,7 +558,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1496891302459</Id>
-					<Name><![CDATA[countBloodTestFalsePositivePerMonth]]></Name>
+					<Name><![CDATA[countBloodTestFalsePositivePerYear]]></Name>
 					<X>-810</X><Y>-420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -573,7 +573,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1496892029612</Id>
-					<Name><![CDATA[countFecalTrueNegativePerMonth]]></Name>
+					<Name><![CDATA[countFecalTrueNegativePerYear]]></Name>
 					<X>-810</X><Y>-380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -581,11 +581,14 @@
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1496892029614</Id>
-					<Name><![CDATA[countBloodTrueNegativePerMonth]]></Name>
+					<Name><![CDATA[countBloodTrueNegativePerYear]]></Name>
 					<X>-810</X><Y>-400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -593,6 +596,9 @@
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
@@ -1927,7 +1933,7 @@ StateVsAgeScatter.refresh();]]></Action>
 				</Event>
 				<Event>
 					<Id>1496891769297</Id>
-					<Name><![CDATA[truePositivePerMonthCountHelper]]></Name>
+					<Name><![CDATA[truePositiveBloodPerYearCountHelper]]></Name>
 					<X>1570</X><Y>-1240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1942,33 +1948,34 @@ StateVsAgeScatter.refresh();]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
 						</Rate>
-						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1479542400000</OccurrenceDate>
+						<OccurrenceAtTime>false</OccurrenceAtTime>
+						<OccurrenceDate>1468915200000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[int count = countBloodTestTruePositivePerMonth+countFecalTestTruePositivePerMonth; 
+					<Action><![CDATA[//need to be floats or truncated
+float count = countBloodTestTruePositivePerYear;   
+float stat = 0;
+float totalSick = this.cows.totalSickAdults();//only want to the population we are actually testing
+if (totalSick > 0)
+	stat = count/totalSick;
 
 
-
-TruePositivePerMonth.add(count);
-countBloodTestTruePositivePerMonth = 0;
-countFecalTestTruePositivePerMonth = 0;
-
-
-this.TruePositiveTestsPerMonth.refresh();]]></Action>
+TruePositiveBloodPerYear.add(stat);
+countBloodTestTruePositivePerYear = 0;
+this.TruePositiveBloodTestsPerYear.refresh();]]></Action>
 				</Event>
 				<Event>
 					<Id>1496892532441</Id>
-					<Name><![CDATA[trueNegativePerMonthCountHelper]]></Name>
-					<X>1970</X><Y>-1240</Y>
+					<Name><![CDATA[trueNegativeBloodPerYearCountHelper]]></Name>
+					<X>2030</X><Y>-1240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1985,25 +1992,109 @@ this.TruePositiveTestsPerMonth.refresh();]]></Action>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
 						<OccurrenceDate>1479542400000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[int count = countBloodTrueNegativePerMonth+countFecalTrueNegativePerMonth; 
+					<Action><![CDATA[//need to be floats or truncated
+float count = countBloodTrueNegativePerYear;   
+float stat = 0;
+float totalSick = this.cows.totalHealthyAdults();//only want to the population we are actually testing
+if (totalSick > 0)
+	stat = count/totalSick;
+
+TrueNegativesBloodPerYear.add(stat);
+countBloodTrueNegativePerYear = 0;
+
+this.TrueNegativeBloodTestsPerYear.refresh();]]></Action>
+				</Event>
+				<Event>
+					<Id>1499532718613</Id>
+					<Name><![CDATA[truePositiveFecalPerYearCountHelper]]></Name>
+					<X>1540</X><Y>-840</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>false</OccurrenceAtTime>
+						<OccurrenceDate>1468915200000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[//need to be floats or truncated
+float count = countFecalTestTruePositivePerYear;   
+float stat = 0;
+float totalSick = this.cows.totalSickAdults();//only want to the population we are actually testing
+if (totalSick > 0)
+	stat = count/totalSick;
 
 
+TruePositiveFecalPerYear.add(stat);
+countFecalTestTruePositivePerYear = 0;
 
-TrueNegativesPerMonth.add(count);
-countBloodTrueNegativePerMonth = 0;
-countFecalTrueNegativePerMonth = 0;
+this.TruePositiveFecalTestsPerYear.refresh();]]></Action>
+				</Event>
+				<Event>
+					<Id>1499533161967</Id>
+					<Name><![CDATA[trueNegativeFecalPerYearCountHelper]]></Name>
+					<X>2010</X><Y>-860</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1479542400000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[//need to be floats or truncated
+float count = countFecalTrueNegativePerYear;   
+float stat = 0;
+float totalSick = this.cows.totalHealthyAdults();//only want to the population we are actually testing
+if (totalSick > 0)
+	stat = count/totalSick;
 
+TrueNegativesFecalPerYear.add(stat);
+countFecalTrueNegativePerYear = 0;
 
-this.TrueNegativeTestsPerMonth.refresh();]]></Action>
+this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 				</Event>
 			</Events>
 			<AnalysisData>
@@ -2341,7 +2432,7 @@ this.TrueNegativeTestsPerMonth.refresh();]]></Action>
     			<HistogramData>
 					<Id>1493000376537</Id>
 					<Name><![CDATA[FecalTestTimeToDiagnosis]]></Name>
-					<X>1570</X><Y>-860</Y>
+					<X>1560</X><Y>-490</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2372,7 +2463,7 @@ this.TrueNegativeTestsPerMonth.refresh();]]></Action>
     			<HistogramData>
 					<Id>1493000376540</Id>
 					<Name><![CDATA[BloodTestTimeToDiagnosis]]></Name>
-					<X>1970</X><Y>-860</Y>
+					<X>1990</X><Y>-500</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2455,8 +2546,8 @@ this.TrueNegativeTestsPerMonth.refresh();]]></Action>
 				</DataSet>
     			<DataSet>
 					<Id>1493000376549</Id>
-					<Name><![CDATA[TruePositivePerMonth]]></Name>
-					<X>1570</X><Y>-1210</Y>
+					<Name><![CDATA[TruePositiveBloodPerYear]]></Name>
+					<X>1570</X><Y>-1220</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2477,8 +2568,52 @@ this.TrueNegativeTestsPerMonth.refresh();]]></Action>
 				</DataSet>
     			<DataSet>
 					<Id>1493000376552</Id>
-					<Name><![CDATA[TrueNegativesPerMonth]]></Name>
-					<X>1970</X><Y>-1210</Y>
+					<Name><![CDATA[TrueNegativesBloodPerYear]]></Name>
+					<X>2030</X><Y>-1220</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>240</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1499532731632</Id>
+					<Name><![CDATA[TruePositiveFecalPerYear]]></Name>
+					<X>1540</X><Y>-820</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>240</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1499533168147</Id>
+					<Name><![CDATA[TrueNegativesFecalPerYear]]></Name>
+					<X>2010</X><Y>-840</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2616,6 +2751,22 @@ this.TrueNegativeTestsPerMonth.refresh();]]></Action>
 						<Type>count</Type>
 						<Expression><![CDATA[]]></Expression>
 						<Condition><![CDATA[item.inState(Cow.Bull)]]></Condition>
+					</StatisticsItem>
+					<StatisticsItem>
+						<Name><![CDATA[totalSickAdults]]></Name>
+						<Type>count</Type>
+						<Expression><![CDATA[]]></Expression>
+						<Condition><![CDATA[(item.inState(Cow.Pregnant) || item.inState(Cow.NotPregnant) || item.inState(Cow.Bull))
+&&
+(item.inState(Cow.Infective) || item.inState(Cow.Infected))]]></Condition>
+					</StatisticsItem>
+					<StatisticsItem>
+						<Name><![CDATA[totalHealthyAdults]]></Name>
+						<Type>count</Type>
+						<Expression><![CDATA[]]></Expression>
+						<Condition><![CDATA[(item.inState(Cow.Pregnant) || item.inState(Cow.NotPregnant) || item.inState(Cow.Bull))
+&&
+(item.inState(Cow.Susceptible))]]></Condition>
 					</StatisticsItem>
 					<InEnvironment>true</InEnvironment>	
 					<InitialSpeedCode Class="CodeUnitValue">
@@ -3936,7 +4087,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>900</Width>
-					<Height>800</Height>
+					<Height>1130</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -3977,7 +4128,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[True Positives Per Month]]></Text>
+					<Text><![CDATA[Blood Test Sensitivity Per Year]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>14</Size>
@@ -3999,7 +4150,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[True Negatives Per Month]]></Text>
+					<Text><![CDATA[Blood Test Specificity Per Year]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>14</Size>
@@ -4010,7 +4161,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 				<Text>
 					<Id>1497843699487</Id>
 					<Name><![CDATA[text10]]></Name>
-					<X>-10</X><Y>440</Y>
+					<X>-20</X><Y>810</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4032,7 +4183,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 				<Text>
 					<Id>1497843701678</Id>
 					<Name><![CDATA[text11]]></Name>
-					<X>400</X><Y>440</Y>
+					<X>420</X><Y>800</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4059,7 +4210,7 @@ TODO: Decide whether it's worth it to keep this graph. Why have birth count alon
 					<Description><![CDATA[This histogram plots the number of months each Cow was infected before being diagnosed through Blood testing. 
 Y axis: Percentage of the total number of Cows diagnosed through Blood testing.
 X axis: Number of months between time of infection and diagnosis.]]></Description>
-					<X>380</X><Y>430</Y>
+					<X>410</X><Y>790</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4121,7 +4272,7 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
     			</Histogram>
     			<Plot>
 					<Id>1493000376506</Id>
-					<Name><![CDATA[TrueNegativeTestsPerMonth]]></Name>
+					<Name><![CDATA[TrueNegativeBloodTestsPerYear]]></Name>
 					<Description><![CDATA[TODO: Read description of TruePositiveTestsOverDiseasedPopulation and do the same for this timeplot.]]></Description>
 					<X>380</X><Y>80</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -4165,19 +4316,19 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
 					</Labels>
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[2000]]></VerScaleToExpression>
+					<VerScaleFromExpression><![CDATA[0.0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1.0]]></VerScaleToExpression>
 					<VerScaleType>FIXED</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[True Negative Tests]]></Title>
-					<Expression><![CDATA[TrueNegativesPerMonth]]></Expression>
-					<Color>-8097537</Color>
+						<Title><![CDATA[(True Negative/ Total Disease Negative) per Year]]></Title>
+					<Expression><![CDATA[TrueNegativesBloodPerYear]]></Expression>
+					<Color>-65536</Color>
 					<Expression2><![CDATA[time()]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
 						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
+						<LineWidth>0.0</LineWidth>
 						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
@@ -4187,7 +4338,7 @@ X axis: Number of months between time of infection and diagnosis.]]></Descriptio
     			</Plot>
     			<Plot>
 					<Id>1493000376510</Id>
-					<Name><![CDATA[TruePositiveTestsPerMonth]]></Name>
+					<Name><![CDATA[TruePositiveBloodTestsPerYear]]></Name>
 					<Description><![CDATA[TODO discuss whether this graph is even useful. Open up a git issue to start discussion. It only captures True Positive test results and compares to the total number infected from mother and environment. It also fails to capture any information on initially infected herd numbers, which is why the value at any point in the timeplot is ~4 or more.
 
 I think we should rethink the purpose of this plot and capture that purpose.]]></Description>
@@ -4233,19 +4384,19 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 					</Labels>
 					<Persistent>true</Persistent>
 					<ShowLegend>true</ShowLegend>
-					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-					<VerScaleToExpression><![CDATA[50]]></VerScaleToExpression>
+					<VerScaleFromExpression><![CDATA[0.0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1.0]]></VerScaleToExpression>
 					<VerScaleType>FIXED</VerScaleType>
 					<DrawLine>true</DrawLine>
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
-						<Title><![CDATA[True Positive Tests ]]></Title>
-					<Expression><![CDATA[TruePositivePerMonth]]></Expression>
-					<Color>-8097537</Color>
+						<Title><![CDATA[(True Positive/ Total Disease Positive) Per Year]]></Title>
+					<Expression><![CDATA[TruePositiveBloodPerYear]]></Expression>
+					<Color>-65536</Color>
 					<Expression2><![CDATA[time()]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
 						<PointStyle>CIRCLE</PointStyle>
-						<LineWidth>1.0</LineWidth>
+						<LineWidth>0.0</LineWidth>
 						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
 					</DatasetExpression>
 					<SamplesToKeep>240</SamplesToKeep>
@@ -4259,7 +4410,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 					<Description><![CDATA[This histogram plots the number of months each Cow was infected before being diagnosed through Fecal testing. 
 Y axis: Percentage of the total number of Cows diagnosed through Fecal testing.
 X axis: Number of months between time of infection and diagnosis.]]></Description>
-					<X>-20</X><Y>430</Y>
+					<X>-10</X><Y>820</Y>
 					<Label><X>150</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4678,7 +4829,187 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+				<Text>
+					<Id>1499533107949</Id>
+					<Name><![CDATA[text13]]></Name>
+					<X>1580</X><Y>-790</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Fecal Test Sensitivity Per Year]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1499533305101</Id>
+					<Name><![CDATA[text14]]></Name>
+					<X>1970</X><Y>-790</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Fecal Test Specificity Per Year]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
+			<Charts>
+    			<Plot>
+					<Id>1499532739286</Id>
+					<Name><![CDATA[TruePositiveFecalTestsPerYear]]></Name>
+					<Description><![CDATA[TODO discuss whether this graph is even useful. Open up a git issue to start discussion. It only captures True Positive test results and compares to the total number infected from mother and environment. It also fails to capture any information on initially infected herd numbers, which is why the value at any point in the timeplot is ~4 or more.
+
+I think we should rethink the purpose of this plot and capture that purpose.]]></Description>
+					<X>1510</X><Y>-800</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>400</Width>
+					<Height>300</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>320</Width>
+						<Height>210</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<VerScaleFromExpression><![CDATA[0.0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1.0]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[(True Positive/ Total Disease Positive) Per Year]]></Title>
+					<Expression><![CDATA[TruePositiveFecalPerYear]]></Expression>
+					<Color>-3308225</Color>
+					<Expression2><![CDATA[time()]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>0.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
+					<HorScaleToExpression><![CDATA[240]]></HorScaleToExpression>
+					<HorScaleType>FIXED</HorScaleType>
+    			</Plot>
+    			<Plot>
+					<Id>1499533174522</Id>
+					<Name><![CDATA[TrueNegativeFecalTestsPerYear]]></Name>
+					<Description><![CDATA[TODO: Read description of TruePositiveTestsOverDiseasedPopulation and do the same for this timeplot.]]></Description>
+					<X>1920</X><Y>-800</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1480492800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>400</Width>
+					<Height>300</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>320</Width>
+						<Height>210</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<VerScaleFromExpression><![CDATA[0.0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1.0]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[(True Negative/ Total Disease Negative) per Year]]></Title>
+					<Expression><![CDATA[TrueNegativesFecalPerYear]]></Expression>
+					<Color>-3308225</Color>
+					<Expression2><![CDATA[time()]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>0.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[0]]></HorizontalAxisExpression>
+					</DatasetExpression>
+					<SamplesToKeep>240</SamplesToKeep>
+					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
+					<HorScaleToExpression><![CDATA[240]]></HorScaleToExpression>
+					<HorScaleType>FIXED</HorScaleType>
+    			</Plot>
+			</Charts>
 
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
@@ -6692,7 +7023,7 @@ main.FecalTestingTimeToDiagnosisHistogram.refresh();
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestTruePositive++;
-main.countFecalTestTruePositivePerMonth++;
+main.countFecalTestTruePositivePerYear++;
 main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -6734,7 +7065,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestTruePositive++;
-main.countFecalTestTruePositivePerMonth++;
+main.countFecalTestTruePositivePerYear++;
 main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -6763,7 +7094,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestTruePositive++;
-main.countFecalTestTruePositivePerMonth++;
+main.countFecalTestTruePositivePerYear++;
 main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -6792,7 +7123,7 @@ main.removedByTruePositiveFecalTestCountPerYear++;]]></Code>
 					<Properties Width="140" Height="30" Previous="1478898241268" >
 						<FillColor/>
 						<Code><![CDATA[main.countFecalTrueNegative++;
-main.countFecalTrueNegativePerMonth++;]]></Code>
+main.countFecalTrueNegativePerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Return">
@@ -6906,7 +7237,7 @@ main.BloodTestingTimeToDiagnosisHistogram.refresh();
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestTruePositive++;
-main.countBloodTestTruePositivePerMonth++;
+main.countBloodTestTruePositivePerYear++;
 main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -6948,7 +7279,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestTruePositive++;
-main.countBloodTestTruePositivePerMonth++;
+main.countBloodTestTruePositivePerYear++;
 main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -6977,7 +7308,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestTruePositive++;
-main.countBloodTestTruePositivePerMonth++;
+main.countBloodTestTruePositivePerYear++;
 main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
@@ -7006,7 +7337,7 @@ main.removedByTruePositiveBloodTestCountPerYear++;]]></Code>
 					<Properties Width="140" Height="30" Previous="1479236233930" >
 						<FillColor/>
 						<Code><![CDATA[main.countBloodTrueNegative++;
-main.countBloodTrueNegativePerMonth++;]]></Code>
+main.countBloodTrueNegativePerYear++;]]></Code>
 					</Properties>	
 				</ActionChartElement>
 				<ActionChartElement Class="Return">
@@ -7032,7 +7363,7 @@ main.countBloodTrueNegativePerMonth++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveFecal = true;
 main.countFecalTestFalsePositive++;
-main.countFecalTestFalsePositivePerMonth++;
+main.countFecalTestFalsePositivePerYear++;
 
 main.removedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 					</Properties>	
@@ -7049,7 +7380,7 @@ main.removedByFalsePositiveFecalTestCountPerYear++;]]></Code>
 						<FillColor/>
 						<Code><![CDATA[this.toRemoveBlood = true;
 main.countBloodTestFalsePositive++;
-main.countBloodTestFalsePositivePerMonth++;
+main.countBloodTestFalsePositivePerYear++;
 
 main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					</Properties>	
