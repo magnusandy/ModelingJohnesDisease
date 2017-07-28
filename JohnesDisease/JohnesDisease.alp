@@ -6307,7 +6307,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration) 
-&& randomTrue(main.InitialInfectedPercentage)]]></Condition>
+&& randomTrue(main.InitialInfectedPercentage) && !isBullPurchased]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6340,7 +6340,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
-&& randomTrue(main.InitialSubClinicalPercentage)]]></Condition>
+&& randomTrue(main.InitialSubClinicalPercentage) && !isBullPurchased]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6373,7 +6373,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
-&& randomTrue(main.InitialClinicalPercentage)]]></Condition>
+&& randomTrue(main.InitialClinicalPercentage) && !isBullPurchased]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
