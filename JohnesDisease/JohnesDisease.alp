@@ -601,6 +601,22 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1501216885420</Id>
+					<Name><![CDATA[MaxBullAgeStatic]]></Name>
+					<Description><![CDATA[Please make this the same as max bull age]]></Description>
+					<X>-150</X><Y>-120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="true" AccessType="public" StaticVariable="true">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[72]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476136317567</Id>
 					<Name><![CDATA[InitialPopulation]]></Name>
@@ -6759,7 +6775,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(isBullPurchased == true) || (!this.isFemale && this.currentAge > 0)]]></Condition>
+						<Condition><![CDATA[(isBullPurchased == true) || (!this.isFemale && this.currentAge > 0 && this.currentAge <= Main.MaxBullAgeStatic)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
