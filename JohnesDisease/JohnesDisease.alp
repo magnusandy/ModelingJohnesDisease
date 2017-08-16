@@ -6369,8 +6369,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration) 
-&& randomTrue(main.InitialInfectedPercentage) && !isBullPurchased]]></Condition>
+						<Condition><![CDATA[isThisCattleInfected()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6402,8 +6401,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
-&& randomTrue(main.InitialSubClinicalPercentage) && !isBullPurchased]]></Condition>
+						<Condition><![CDATA[isThisCattleSubClinical()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6435,8 +6433,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
-&& randomTrue(main.InitialClinicalPercentage) && !isBullPurchased]]></Condition>
+						<Condition><![CDATA[isThisCattleClinical()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -7470,7 +7467,7 @@ main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 				<Event>
 					<Id>1476486708425</Id>
 					<Name><![CDATA[UpdateCurrentAge]]></Name>
-					<X>-140</X><Y>360</Y>
+					<X>-270</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7505,7 +7502,7 @@ main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1476213133776</Id>
 					<Name><![CDATA[InitialCowPopulation]]></Name>
-					<X>-140</X><Y>380</Y>
+					<X>-270</X><Y>380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7531,12 +7528,85 @@ else
 					<ReturnType><![CDATA[boolean]]></ReturnType>
 					<Id>1502699521001</Id>
 					<Name><![CDATA[isBullTransitionFun]]></Name>
-					<X>-140</X><Y>400</Y>
+					<X>-270</X><Y>410</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[return isBullPurchased || (!isFemale && currentAge > 0 && currentAge <= maxBullAge);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1502868498388</Id>
+					<Name><![CDATA[isThisCattleInfected]]></Name>
+					<Description><![CDATA[Used by the InitializeInfected transition as a state entry condition for JohnesStateChart]]></Description>
+					<X>-470</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (!isBullPurchased) {
+	return 	(currentAge >= main.MeanLatencyDuration) 
+			&& randomTrue(main.InitialInfectedPercentage); //For females
+} else return randomTrue(main.purchasedBullInfectedPercentage); //For males
+
+/*
+TODO delete this after testing
+old code in InitializeInfected transition:
+
+(currentAge >= main.MeanLatencyDuration) 
+&& randomTrue(main.InitialInfectedPercentage) && !isBullPurchased
+*/]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1502868500182</Id>
+					<Name><![CDATA[isThisCattleSubClinical]]></Name>
+					<Description><![CDATA[Used by the InitializeSubClinical transition as a state entry condition for JohnesStateChart]]></Description>
+					<X>-470</X><Y>100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (!isBullPurchased) {
+	return 	(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
+			&& randomTrue(main.InitialSubClinicalPercentage); //For females
+} else return randomTrue(main.purchasedBullSubClinicalPercentage); //For males
+
+/*
+TODO remove this after testing
+old code in InitializeSubClinical transition:
+
+(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
+&& randomTrue(main.InitialSubClinicalPercentage) && !isBullPurchased
+*/]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1502868503283</Id>
+					<Name><![CDATA[isThisCattleClinical]]></Name>
+					<Description><![CDATA[Used by the InitalizeClinical transition as a state entry condition for JohnesStateChart]]></Description>
+					<X>-470</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[return 	(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
+		&& randomTrue(main.InitialClinicalPercentage) 
+		&& !isBullPurchased;
+		
+/*
+TODO remove this after testing
+old code in InitalizeClinical transition
+
+
+(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
+		&& randomTrue(main.InitialClinicalPercentage) 
+		&& !isBullPurchased;
+*/]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
@@ -8242,6 +8312,70 @@ else
 						<Name>SansSerif</Name>
 						<Size>10</Size>
 						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1502869837145</Id>
+					<Name><![CDATA[JohnesStateChartFunctionGroup]]></Name>
+					<X>-400</X><Y>100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1502869767361</Id>
+					<Name><![CDATA[rectangle1]]></Name>
+					<X>-100</X><Y>-60</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>200</Width>
+					<Height>110</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1502869796420</Id>
+					<Name><![CDATA[JohnesStateChartText]]></Name>
+					<X>-70</X><Y>-60</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Johnes State Chart Functions]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
