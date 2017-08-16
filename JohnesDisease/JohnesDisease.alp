@@ -2780,10 +2780,10 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 						<Condition><![CDATA[item.inState(Cow.Clinical)]]></Condition>
 					</StatisticsItem>
 					<StatisticsItem>
-						<Name><![CDATA[WeightedFemalePrevalence]]></Name>
+						<Name><![CDATA[WeightedPrevalence]]></Name>
 						<Type>average</Type>
 						<Expression><![CDATA[item.inState(Cow.SubClinical) ? SubclinicalPrevalenceModifier : item.inState(Cow.Clinical) ? ClinicalPrevalenceModifier : 0]]></Expression>
-						<Condition><![CDATA[item.isFemale]]></Condition>
+						<Condition><![CDATA[true]]></Condition>
 					</StatisticsItem>
 					<StatisticsItem>
 						<Name><![CDATA[FemalePrevalence]]></Name>
@@ -5907,9 +5907,9 @@ main.envInfectedCountPerMonth = main.envInfectedCountPerMonth +1;]]></Action>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[this.inState(PreWeaningCalf) ? 
-	(main.cows.WeightedFemalePrevalence()* main.FrequencyOfInfectiveContact * main.PreWeaningCalfIntensityOfPrevalenceModifer) : 
+	(main.cows.WeightedPrevalence()* main.FrequencyOfInfectiveContact * main.PreWeaningCalfIntensityOfPrevalenceModifer) : 
 	this.inState(PostWeaningCalf) ? 
-		(main.cows.WeightedFemalePrevalence() * main.FrequencyOfInfectiveContact * main.PostWeaningCalfIntensityOfPrevalenceModifer) : 
+		(main.cows.WeightedPrevalence() * main.FrequencyOfInfectiveContact * main.PostWeaningCalfIntensityOfPrevalenceModifer) : 
 		0]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_YEAR]]></Unit>
 						</Rate>
