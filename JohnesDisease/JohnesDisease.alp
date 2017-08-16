@@ -1738,7 +1738,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1502867896296</Id>
-					<Name><![CDATA[bullInfectedPercentage]]></Name>
+					<Name><![CDATA[purchasedBullInfectedPercentage]]></Name>
 					<X>-560</X><Y>-60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1762,7 +1762,7 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1502867942003</Id>
-					<Name><![CDATA[bullSubClinicalPercentage]]></Name>
+					<Name><![CDATA[purchasedBullSubClinicalPercentage]]></Name>
 					<X>-560</X><Y>-40</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -8578,7 +8578,7 @@ else
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1502867617792</Id>
-					<Name><![CDATA[bullInfectedPercentageVar]]></Name>
+					<Name><![CDATA[purchasedBullInfectedPercentageVar]]></Name>
 					<X>-180</X><Y>620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -8593,7 +8593,7 @@ else
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1502867692922</Id>
-					<Name><![CDATA[bullSubClinicalPercentageVar]]></Name>
+					<Name><![CDATA[purchasedBullSubClinicalPercentageVar]]></Name>
 					<X>-180</X><Y>650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -10360,7 +10360,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<MinValue><![CDATA[0.0]]></MinValue>
 						<MaxValue><![CDATA[0.05]]></MaxValue>
 						<LinkTo>true</LinkTo>
-						<Link>bullInfectedPercentageVar</Link>
+						<Link>purchasedBullInfectedPercentageVar</Link>
 					</ExtendedProperties>
 				</Control>
 				<Control Type="Slider">
@@ -10384,7 +10384,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<MinValue><![CDATA[0.0]]></MinValue>
 						<MaxValue><![CDATA[0.05]]></MaxValue>
 						<LinkTo>true</LinkTo>
-						<Link>bullSubClinicalPercentageVar</Link>
+						<Link>purchasedBullSubClinicalPercentageVar</Link>
 					</ExtendedProperties>
 				</Control>
 			</Controls>
@@ -10587,15 +10587,15 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[FertileAge]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[bullInfectedPercentage]]></ParameterName>
+					<ParameterName><![CDATA[purchasedBullInfectedPercentage]]></ParameterName>
 					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[bullInfectedPercentageVar]]></Code>
+						<Code><![CDATA[purchasedBullInfectedPercentageVar]]></Code>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[bullSubClinicalPercentage]]></ParameterName>
+					<ParameterName><![CDATA[purchasedBullSubClinicalPercentage]]></ParameterName>
 					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[bullSubClinicalPercentageVar]]></Code>
+						<Code><![CDATA[purchasedBullSubClinicalPercentageVar]]></Code>
 					</ParameterValue>
 				</Parameter>
 			</Parameters>			
