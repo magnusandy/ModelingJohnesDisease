@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.0.4.201703301517" AlpVersion="8.0.4">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.1.0.201706091042" AlpVersion="8.0.4">
 <Model>
 	<Id>1476133888231</Id>
 	<Name><![CDATA[JohnesDisease]]></Name>
@@ -1736,6 +1736,54 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1502867896296</Id>
+					<Name><![CDATA[purchasedBullInfectedPercentage]]></Name>
+					<X>-560</X><Y>-60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.02]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1502867896294</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1502867942003</Id>
+					<Name><![CDATA[purchasedBullSubClinicalPercentage]]></Name>
+					<X>-560</X><Y>-40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.01]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1502867942001</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<Events>
 				<Event>
@@ -1873,7 +1921,7 @@ this.PerYearRemovals.refresh();]]></Action>
 					</Properties>
 					<Action><![CDATA[if (cows.adultMales()  < MaxMales) {
 	boolean purchasedBull = true;
-	Cow newCow = this.add_cows(purchasedBull); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
+	Cow newCow = this.add_cows(purchasedBull, MaxBullAge); //this function also returns the new cow, which might be handy if we need to add it to an array of children or something
 	//newCow.currentAge = PurchasedBullAge;
 	
 }
@@ -2184,7 +2232,7 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 					</RecurrenceCode>
 					<FreezeXAxis>true</FreezeXAxis>
-					<VerticalAxisExpression><![CDATA[cows.Prevalence()]]></VerticalAxisExpression>
+					<VerticalAxisExpression><![CDATA[cows.FemalePrevalence()]]></VerticalAxisExpression>
 					<SamplesToKeep>240</SamplesToKeep>
 				</DataSet>
     			<DataSet>
@@ -2680,6 +2728,9 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 						<Parameter>
 							<Name><![CDATA[isBullPurchased]]></Name>
 						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maxBullAge]]></Name>
+						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
@@ -2732,10 +2783,10 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 						<Name><![CDATA[WeightedPrevalence]]></Name>
 						<Type>average</Type>
 						<Expression><![CDATA[item.inState(Cow.SubClinical) ? SubclinicalPrevalenceModifier : item.inState(Cow.Clinical) ? ClinicalPrevalenceModifier : 0]]></Expression>
-						<Condition><![CDATA[item.isFemale]]></Condition>
+						<Condition><![CDATA[true]]></Condition>
 					</StatisticsItem>
 					<StatisticsItem>
-						<Name><![CDATA[Prevalence]]></Name>
+						<Name><![CDATA[FemalePrevalence]]></Name>
 						<Type>average</Type>
 						<Expression><![CDATA[item.inState(Cow.SubClinical) ? 1 : item.inState(Cow.Clinical) ? 1 : 0]]></Expression>
 						<Condition><![CDATA[item.isFemale]]></Condition>
@@ -2795,7 +2846,7 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 					<LongitudeCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</LongitudeCode>
-					<NodeCode><![CDATA[(self.isBullPurchased)?this.malePen:this.femalePen;
+					<NodeCode><![CDATA[(self.isBullPurchased) ? this.malePen : this.femalePen;
 ]]></NodeCode>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
@@ -5103,7 +5154,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 					<Id>1476134210769</Id>
 					<Name><![CDATA[gender]]></Name>
 					<Description><![CDATA[initially set all cows to female, cows being born during model will be 50/50 female/male]]></Description>
-					<X>-230</X><Y>170</Y>
+					<X>-270</X><Y>170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5119,7 +5170,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1476136556281</Id>
 					<Name><![CDATA[agentColor]]></Name>
-					<X>-111</X><Y>100</Y>
+					<X>-110</X><Y>110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5134,7 +5185,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1476210270621</Id>
 					<Name><![CDATA[birthTime]]></Name>
-					<X>-230</X><Y>250</Y>
+					<X>-270</X><Y>250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5149,7 +5200,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1476210364893</Id>
 					<Name><![CDATA[currentAge]]></Name>
-					<X>-230</X><Y>270</Y>
+					<X>-270</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5165,7 +5216,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 					<Id>1476214008773</Id>
 					<Name><![CDATA[startingAge]]></Name>
 					<Description><![CDATA[used in the calculation of current age, for the initial cows in the model some will start at an age older than 0]]></Description>
-					<X>-230</X><Y>230</Y>
+					<X>-270</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5180,7 +5231,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1476216497330</Id>
 					<Name><![CDATA[isFemale]]></Name>
-					<X>-230</X><Y>190</Y>
+					<X>-270</X><Y>190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5195,7 +5246,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1476724586274</Id>
 					<Name><![CDATA[offspring]]></Name>
-					<X>-230</X><Y>290</Y>
+					<X>-270</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5210,7 +5261,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1476724733626</Id>
 					<Name><![CDATA[mother]]></Name>
-					<X>-230</X><Y>310</Y>
+					<X>-270</X><Y>310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5240,7 +5291,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1477184118014</Id>
 					<Name><![CDATA[isCalf]]></Name>
-					<X>-230</X><Y>210</Y>
+					<X>-270</X><Y>210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5255,7 +5306,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1478899343651</Id>
 					<Name><![CDATA[toRemoveFecal]]></Name>
-					<X>-130</X><Y>190</Y>
+					<X>-154</X><Y>171</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5270,7 +5321,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1479241954231</Id>
 					<Name><![CDATA[numBloodTests]]></Name>
-					<X>-130</X><Y>230</Y>
+					<X>-154</X><Y>211</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5285,7 +5336,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1480359236025</Id>
 					<Name><![CDATA[infectionAge]]></Name>
-					<X>-130</X><Y>250</Y>
+					<X>-154</X><Y>231</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5297,7 +5348,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1480359355431</Id>
 					<Name><![CDATA[fecalRemovalAge]]></Name>
-					<X>-130</X><Y>270</Y>
+					<X>-154</X><Y>251</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5309,7 +5360,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1480360083386</Id>
 					<Name><![CDATA[bloodRemovalAge]]></Name>
-					<X>-130</X><Y>290</Y>
+					<X>-154</X><Y>271</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5321,7 +5372,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="PlainVariable">
 					<Id>1480361524772</Id>
 					<Name><![CDATA[toRemoveBlood]]></Name>
-					<X>-130</X><Y>210</Y>
+					<X>-154</X><Y>191</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5336,7 +5387,7 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 				<Variable Class="Parameter">
 					<Id>1492815962627</Id>
 					<Name><![CDATA[isBullPurchased]]></Name>
-					<X>-130</X><Y>310</Y>
+					<X>-280</X><Y>70</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5351,6 +5402,30 @@ I think we should rethink the purpose of this plot and capture that purpose.]]><
 						<ParameterEditor>
 							<Id>1492815962625</Id>
 							<EditorContolType>CHECK_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1502701088951</Id>
+					<Name><![CDATA[maxBullAge]]></Name>
+					<X>-280</X><Y>100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[main.MaxBullAge]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1502701088949</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
 							<DelimeterType>NO_DELIMETER</DelimeterType>
@@ -5643,6 +5718,7 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1492728359305</Id>
 					<Name><![CDATA[Bull]]></Name>
+					<Description><![CDATA[Note: The initial population does not add bulls through the main.purchaseBull event, hence the reason for setting it manually upon entry.]]></Description>
 					<X>550</X><Y>160</Y>
 					<Label><X>35</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -5651,7 +5727,9 @@ if (this.isFemale && (this.inState(NotPregnant) || this.inState(Pregnant))) {
 					<Properties Width="140" Height="40">
 						<EntryAction><![CDATA[this.isCalf = false;
 this.gender = GenderList.Male;
+this.isBullPurchased = true;
 this.isFemale = false;
+this.moveTo(main.malePen); //Needed for initialization situation where bulls are initialized with random ages and are not purchased.
 
 ]]></EntryAction>
 						<FillColor>-65536</FillColor>
@@ -6290,8 +6368,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration) 
-&& randomTrue(main.InitialInfectedPercentage)]]></Condition>
+						<Condition><![CDATA[isThisCattleInfected()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6323,8 +6400,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
-&& randomTrue(main.InitialSubClinicalPercentage)]]></Condition>
+						<Condition><![CDATA[isThisCattleSubClinical()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6356,8 +6432,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
-&& randomTrue(main.InitialClinicalPercentage)]]></Condition>
+						<Condition><![CDATA[isThisCattleClinical()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6749,6 +6824,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>28</X><Y>14</Y></Point>
 						<Point><X>58</X><Y>30</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
@@ -6757,7 +6833,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[isBullPurchased == true]]></Condition>
+						<Condition><![CDATA[isBullTransitionFun()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6782,13 +6858,13 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<Point><X>0</X><Y>382</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1492728359305" Target="1476721237689" Trigger="timeout">
+					<Properties Source="1492728359305" Target="1476721237689" Trigger="condition">
 						<Action><![CDATA[main.removedByBullPopulationControlCountPerYear +=1;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[main.MaxBullAge ]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[true]]></Condition>
+						<Condition><![CDATA[currentAge >= maxBullAge]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -7390,7 +7466,7 @@ main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 				<Event>
 					<Id>1476486708425</Id>
 					<Name><![CDATA[UpdateCurrentAge]]></Name>
-					<X>-140</X><Y>360</Y>
+					<X>-270</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7425,7 +7501,7 @@ main.removedByFalsePositiveBloodTestCountPerYear++;]]></Code>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1476213133776</Id>
 					<Name><![CDATA[InitialCowPopulation]]></Name>
-					<X>-140</X><Y>380</Y>
+					<X>-270</X><Y>380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7445,6 +7521,91 @@ else
 {
 	return 0;
 }]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1502699521001</Id>
+					<Name><![CDATA[isBullTransitionFun]]></Name>
+					<X>-270</X><Y>410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[return isBullPurchased || (!isFemale && currentAge > 0 && currentAge <= maxBullAge);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1502868498388</Id>
+					<Name><![CDATA[isThisCattleInfected]]></Name>
+					<Description><![CDATA[Used by the InitializeInfected transition as a state entry condition for JohnesStateChart]]></Description>
+					<X>-470</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (!isBullPurchased) {
+	return 	(currentAge >= main.MeanLatencyDuration) 
+			&& randomTrue(main.InitialInfectedPercentage); //For females
+} else return randomTrue(main.purchasedBullInfectedPercentage); //For males
+
+/*
+TODO delete this after testing
+old code in InitializeInfected transition:
+
+(currentAge >= main.MeanLatencyDuration) 
+&& randomTrue(main.InitialInfectedPercentage) && !isBullPurchased
+*/]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1502868500182</Id>
+					<Name><![CDATA[isThisCattleSubClinical]]></Name>
+					<Description><![CDATA[Used by the InitializeSubClinical transition as a state entry condition for JohnesStateChart]]></Description>
+					<X>-470</X><Y>100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (!isBullPurchased) {
+	return 	(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
+			&& randomTrue(main.InitialSubClinicalPercentage); //For females
+} else return randomTrue(main.purchasedBullSubClinicalPercentage); //For males
+
+/*
+TODO remove this after testing
+old code in InitializeSubClinical transition:
+
+(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration) 
+&& randomTrue(main.InitialSubClinicalPercentage) && !isBullPurchased
+*/]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1502868503283</Id>
+					<Name><![CDATA[isThisCattleClinical]]></Name>
+					<Description><![CDATA[Used by the InitalizeClinical transition as a state entry condition for JohnesStateChart]]></Description>
+					<X>-470</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[return 	(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
+		&& randomTrue(main.InitialClinicalPercentage) 
+		&& !isBullPurchased;
+		
+/*
+TODO remove this after testing
+old code in InitalizeClinical transition
+
+
+(currentAge >= main.MeanLatencyDuration + main.MeanInfectedDuration + main.MeanSubClinicalDuration)
+		&& randomTrue(main.InitialClinicalPercentage) 
+		&& !isBullPurchased;
+*/]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
@@ -7506,6 +7667,70 @@ else
 			</ContainerLinks>
 
 			<Shapes>
+				<Group>
+					<Id>1502701441027</Id>
+					<Name><![CDATA[parametersGroup]]></Name>
+					<X>-290</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1502701476957</Id>
+					<Name><![CDATA[rectangle]]></Name>
+					<X>-10</X><Y>-10</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>150</Width>
+					<Height>110</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1502701474550</Id>
+					<Name><![CDATA[ParametersText]]></Name>
+					<X>40</X><Y>-10</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Parameters]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
 				<Group>
 					<Id>1477183354132</Id>
 					<Name><![CDATA[cow]]></Name>
@@ -7968,7 +8193,7 @@ else
 					<X>-71</X><Y>100</Y>
 					<Label><X>7.23</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
@@ -8031,9 +8256,9 @@ else
 					<Id>1477592094344</Id>
 					<Name><![CDATA[cowVariablesGroup]]></Name>
 					<X>-133</X><Y>238</Y>
-					<Label><X>11.558</X><Y>0</Y></Label>
+					<Label><X>11.276</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
@@ -8046,7 +8271,7 @@ else
 				<Rectangle>
 					<Id>1477592094346</Id>
 					<Name><![CDATA[rectangle4]]></Name>
-					<X>-108.759</X><Y>-88.989</Y>
+					<X>-167</X><Y>-86.461</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -8060,8 +8285,8 @@ else
 					<LineColor>-16777216</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>242.724</Width>
-					<Height>172.549</Height>
+					<Width>297.698</Width>
+					<Height>167.647</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -8070,7 +8295,7 @@ else
 					<Id>1477592094348</Id>
 					<Name><![CDATA[staticParms3]]></Name>
 					<Description><![CDATA[anything in this box shouldn't need updating or tuning, they are known values]]></Description>
-					<X>-32</X><Y>-90</Y>
+					<X>-31.22</X><Y>-87.443</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -8086,6 +8311,70 @@ else
 						<Name>SansSerif</Name>
 						<Size>10</Size>
 						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Group>
+					<Id>1502869837145</Id>
+					<Name><![CDATA[JohnesStateChartFunctionGroup]]></Name>
+					<X>-400</X><Y>100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Rectangle>
+					<Id>1502869767361</Id>
+					<Name><![CDATA[rectangle1]]></Name>
+					<X>-100</X><Y>-60</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>200</Width>
+					<Height>110</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1502869796420</Id>
+					<Name><![CDATA[JohnesStateChartText]]></Name>
+					<X>-70</X><Y>-60</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Johnes State Chart Functions]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
@@ -8417,6 +8706,36 @@ else
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[2]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1502867617792</Id>
+					<Name><![CDATA[purchasedBullInfectedPercentageVar]]></Name>
+					<X>-180</X><Y>620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.02]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1502867692922</Id>
+					<Name><![CDATA[purchasedBullSubClinicalPercentageVar]]></Name>
+					<X>-180</X><Y>650</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.01]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -9584,6 +9903,188 @@ else
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+				<Text>
+					<Id>1502867510084</Id>
+					<Name><![CDATA[text33]]></Name>
+					<X>720</X><Y>360</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Percentage of Bulls Infected]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1502867578682</Id>
+					<Name><![CDATA[text34]]></Name>
+					<X>720</X><Y>430</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Percentage of Bulls SubCLinical]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1502867812101</Id>
+					<Name><![CDATA[text35]]></Name>
+					<X>720</X><Y>400</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[min]]></Text>
+					<TextCode><![CDATA[slider_initialInfectedPercentage1.getMin()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1502867812102</Id>
+					<Name><![CDATA[text36]]></Name>
+					<X>920</X><Y>400</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[max]]></Text>
+					<TextCode><![CDATA[slider_initialInfectedPercentage1.getMax()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1502867812103</Id>
+					<Name><![CDATA[text37]]></Name>
+					<X>820</X><Y>400</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[value]]></Text>
+					<TextCode><![CDATA[slider_initialInfectedPercentage1.getValue()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1502867867637</Id>
+					<Name><![CDATA[text38]]></Name>
+					<X>720</X><Y>470</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[min]]></Text>
+					<TextCode><![CDATA[slider_initialInfectedPercentage2.getMin()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1502867867638</Id>
+					<Name><![CDATA[text39]]></Name>
+					<X>920</X><Y>470</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[max]]></Text>
+					<TextCode><![CDATA[slider_initialInfectedPercentage2.getMax()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1502867867639</Id>
+					<Name><![CDATA[text40]]></Name>
+					<X>820</X><Y>470</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[value]]></Text>
+					<TextCode><![CDATA[slider_initialInfectedPercentage2.getValue()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
 			</Shapes>
 			<Controls>
 				<Control Type="Button">
@@ -9971,6 +10472,54 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<Link>fecalTestResultDelayVar</Link>
 					</ExtendedProperties>
 				</Control>
+				<Control Type="Slider">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1502867600731</Id>
+					<Name><![CDATA[slider_initialInfectedPercentage1]]></Name>
+					<X>720</X><Y>370</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="200" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>HORIZONTAL</Orientation>
+						<MinValue><![CDATA[0.0]]></MinValue>
+						<MaxValue><![CDATA[0.05]]></MaxValue>
+						<LinkTo>true</LinkTo>
+						<Link>purchasedBullInfectedPercentageVar</Link>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Slider">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1502867847266</Id>
+					<Name><![CDATA[slider_initialInfectedPercentage2]]></Name>
+					<X>720</X><Y>440</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="200" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>HORIZONTAL</Orientation>
+						<MinValue><![CDATA[0.0]]></MinValue>
+						<MaxValue><![CDATA[0.05]]></MaxValue>
+						<LinkTo>true</LinkTo>
+						<Link>purchasedBullSubClinicalPercentageVar</Link>
+					</ExtendedProperties>
+				</Control>
 			</Controls>
 			<Areas>
 				<Area>
@@ -10169,6 +10718,18 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[FertileAge]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[purchasedBullInfectedPercentage]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[purchasedBullInfectedPercentageVar]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[purchasedBullSubClinicalPercentage]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[purchasedBullSubClinicalPercentageVar]]></Code>
+					</ParameterValue>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
@@ -10549,6 +11110,12 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			<FreeformParamValue>	
 				<Id>1495313280537</Id>
 			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1502867896296</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1502867942003</Id>
+			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1476136317567</Id>
 				<Type>FIXED</Type>
@@ -10729,6 +11296,14 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1495313280537</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1502867896296</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1502867942003</Id>
 				<Type>FIXED</Type>
 			</RangeVariationParamValue>
 			<ModelTimeProperties>
