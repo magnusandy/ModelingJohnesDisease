@@ -139,7 +139,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005380602</Id>
 					<Name><![CDATA[deceasedCows]]></Name>
-					<X>-560</X><Y>-560</Y>
+					<X>-560</X><Y>-790</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -154,7 +154,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005402066</Id>
 					<Name><![CDATA[infectedFromEnvironment]]></Name>
-					<X>-560</X><Y>-520</Y>
+					<X>-560</X><Y>-750</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -169,7 +169,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1477005428740</Id>
 					<Name><![CDATA[infectedFromMother]]></Name>
-					<X>-560</X><Y>-540</Y>
+					<X>-560</X><Y>-770</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -181,7 +181,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478900354664</Id>
 					<Name><![CDATA[removedUsingFecalTesting]]></Name>
-					<X>-560</X><Y>-480</Y>
+					<X>-560</X><Y>-710</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -196,7 +196,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478900549762</Id>
 					<Name><![CDATA[countFecalTestTruePositive]]></Name>
-					<X>-560</X><Y>-420</Y>
+					<X>-560</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -211,7 +211,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478900572314</Id>
 					<Name><![CDATA[countFecalTestFalsePositive]]></Name>
-					<X>-560</X><Y>-400</Y>
+					<X>-560</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -226,7 +226,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478904071124</Id>
 					<Name><![CDATA[countBloodTestTruePositive]]></Name>
-					<X>-560</X><Y>-380</Y>
+					<X>-560</X><Y>-610</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -241,7 +241,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478904088388</Id>
 					<Name><![CDATA[countBloodTestFalsePositive]]></Name>
-					<X>-560</X><Y>-360</Y>
+					<X>-560</X><Y>-590</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -256,7 +256,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1478904119386</Id>
 					<Name><![CDATA[removedUsingBloodTesting]]></Name>
-					<X>-560</X><Y>-460</Y>
+					<X>-560</X><Y>-690</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -463,7 +463,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1480449397229</Id>
 					<Name><![CDATA[countFecalTrueNegative]]></Name>
-					<X>-560</X><Y>-440</Y>
+					<X>-560</X><Y>-670</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -475,7 +475,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1480449415425</Id>
 					<Name><![CDATA[countBloodTrueNegative]]></Name>
-					<X>-560</X><Y>-500</Y>
+					<X>-560</X><Y>-730</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -487,7 +487,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1492809219160</Id>
 					<Name><![CDATA[PopulationFemaleEquilibrium]]></Name>
-					<X>-560</X><Y>-580</Y>
+					<X>-560</X><Y>-810</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -514,7 +514,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1496891302439</Id>
 					<Name><![CDATA[countFecalTestTruePositivePerYear]]></Name>
-					<X>-810</X><Y>-480</Y>
+					<X>-800</X><Y>-670</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -529,7 +529,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1496891302455</Id>
 					<Name><![CDATA[countFecalTestFalsePositivePerYear]]></Name>
-					<X>-810</X><Y>-460</Y>
+					<X>-800</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -544,7 +544,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1496891302457</Id>
 					<Name><![CDATA[countBloodTestTruePositivePerYear]]></Name>
-					<X>-810</X><Y>-440</Y>
+					<X>-800</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -559,7 +559,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1496891302459</Id>
 					<Name><![CDATA[countBloodTestFalsePositivePerYear]]></Name>
-					<X>-810</X><Y>-420</Y>
+					<X>-800</X><Y>-610</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -574,7 +574,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1496892029612</Id>
 					<Name><![CDATA[countFecalTrueNegativePerYear]]></Name>
-					<X>-810</X><Y>-380</Y>
+					<X>-800</X><Y>-570</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -589,7 +589,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1496892029614</Id>
 					<Name><![CDATA[countBloodTrueNegativePerYear]]></Name>
-					<X>-810</X><Y>-400</Y>
+					<X>-800</X><Y>-590</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -598,6 +598,21 @@
 						<Type><![CDATA[int]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503346034870</Id>
+					<Name><![CDATA[latestDiseaseFreeRatioVar]]></Name>
+					<X>-560</X><Y>-570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[1.0 - removedUsingBloodTesting/cows.size()]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -1778,6 +1793,109 @@
 						<ParameterEditor>
 							<Id>1502867942001</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1503333581559</Id>
+					<Name><![CDATA[InitialTestingFrequency]]></Name>
+					<Description><![CDATA[The initial frequency of blood and fecal testing.]]></Description>
+					<X>-250</X><Y>-360</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[12]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1503333581557</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1503333631378</Id>
+					<Name><![CDATA[MaximumTestingWaitTime]]></Name>
+					<Description><![CDATA[The frequency of which testing will occur if the confidence in a disease free herd is at its maximum.]]></Description>
+					<X>-250</X><Y>-340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[]]></Type>
+						<UnitType><![CDATA[TIME]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MONTH]]></UnitOfValue>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeUnitValue">
+							<Code><![CDATA[24]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1503333631376</Id>
+							<EditorContolType>UNIT_EDITOR</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1503335183370</Id>
+					<Name><![CDATA[ConfidenceOfDiseaseFreeHerdRatio]]></Name>
+					<Description><![CDATA[This value represents the ratio of disease free cattle to total popultion where you can have maximum confidence that your herd is disease free. (This value can never really be 0 because false positive testing is possible, hence why this value is based on BloodTestSpecificity.)]]></Description>
+					<X>-250</X><Y>-320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[BloodTestSpecificity]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1503335183368</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1503346542396</Id>
+					<Name><![CDATA[StaticTestingFrequencyFlag]]></Name>
+					<X>-250</X><Y>-300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[boolean]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1503346542394</Id>
+							<EditorContolType>CHECK_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
 							<DelimeterType>NO_DELIMETER</DelimeterType>
@@ -2974,11 +3092,12 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 				<Group>
 					<Id>1477593396370</Id>
 					<Name><![CDATA[variablesGroup]]></Name>
-					<X>-400</X><Y>-460</Y>
+					<X>-400</X><Y>-667</Y>
 					<Label><X>14.895</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
@@ -6522,6 +6641,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1478919099703</Id>
 					<Name><![CDATA[waitUntilFecalTestDate]]></Name>
+					<Description><![CDATA[This wait time will change based on confidence of herd disease percentage.]]></Description>
 					<X>260</X><Y>820</Y>
 					<Label><X>-10</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -6533,12 +6653,12 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<Point><X>110</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>60.0</IconOffset>
-					<Properties Source="1478918964624" Target="1478919747192" Trigger="condition">
+					<Properties Source="1478918964624" Target="1478919747192" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[12]]></Code>
+							<Code><![CDATA[fecalTestingWaitTimeCalc()]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[timeToDate(time()).getMonth() == main.FecalTestingDate.getMonth()]]></Condition>
+						<Condition><![CDATA[fecalTestingWaitTimeCalc()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -6599,6 +6719,7 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1478920665062</Id>
 					<Name><![CDATA[waitUntilBloodTestDate]]></Name>
+					<Description><![CDATA[This wait time will change based on confidence of herd disease percentage.]]></Description>
 					<X>970</X><Y>820</Y>
 					<Label><X>-130</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -6609,12 +6730,12 @@ main.momInfectedCountPerMonth = main.momInfectedCountPerMonth +1;]]></Action>
 						<Point><X>-130</X><Y>0</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1478920665042" Target="1478920665054" Trigger="condition">
+					<Properties Source="1478920665042" Target="1478920665054" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[timeToDate(time()).getMonth() == main.BloodTestingDate.getMonth()]]></Code>
+							<Code><![CDATA[bloodTestingWaitTimeCalc()]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[timeToDate(time()).getMonth() == main.BloodTestingDate.getMonth()]]></Condition>
+						<Condition><![CDATA[bloodTestingWaitTimeCalc()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
@@ -7607,6 +7728,53 @@ old code in InitalizeClinical transition
 		&& !isBullPurchased;
 */]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1503334889074</Id>
+					<Name><![CDATA[fecalTestingWaitTimeCalc]]></Name>
+					<X>-270</X><Y>440</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (main.StaticTestingFrequencyFlag) {
+	return main.InitialTestingFrequency;
+} else {
+	//if (main.latestDiseaseFreeRatioVar <= main.ConfidenceOfDiseaseFreeHerdRatio) {
+		return (double)main.MaximumTestingWaitTime; //Cast to double because Month uses double
+	//} else {
+	//	
+	//}
+}
+
+
+//return timeToDate(time()).getMonth() == main.FecalTestingDate.getMonth();]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1503334906250</Id>
+					<Name><![CDATA[bloodTestingWaitTimeCalc]]></Name>
+					<X>-270</X><Y>470</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (main.StaticTestingFrequencyFlag) {
+	return main.InitialTestingFrequency;
+} else {
+	//if (main.latestDiseaseFreeRatioVar <= main.ConfidenceOfDiseaseFreeHerdRatio) {
+		return (double)main.MaximumTestingWaitTime; //Cast to double because Month uses double
+	//} else {
+	//	
+	//}
+}
+
+
+//return timeToDate(time()).getMonth() == main.BloodTestingDate.getMonth();
+]]></Body>
+				</Function>
 			</Functions>
 			<AgentLinks>
 				<AgentLink>
@@ -7740,6 +7908,7 @@ old code in InitalizeClinical transition
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<OnClickCode><![CDATA[traceln(this); //TODO remove]]></OnClickCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>5</Z>
@@ -8487,7 +8656,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496901811568</Id>
 					<Name><![CDATA[bloodTestingEnabledVar]]></Name>
-					<X>-180</X><Y>50</Y>
+					<X>-240</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8502,7 +8671,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496901841320</Id>
 					<Name><![CDATA[ratioBullsVar]]></Name>
-					<X>-180</X><Y>340</Y>
+					<X>-240</X><Y>450</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8517,7 +8686,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496901842204</Id>
 					<Name><![CDATA[initialInfectedPercentageVar]]></Name>
-					<X>-180</X><Y>530</Y>
+					<X>-240</X><Y>620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8532,7 +8701,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496901842417</Id>
 					<Name><![CDATA[initialPopulationVar]]></Name>
-					<X>-180</X><Y>310</Y>
+					<X>-240</X><Y>420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8547,7 +8716,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496901842543</Id>
 					<Name><![CDATA[fecalTestingEnabledVar]]></Name>
-					<X>-180</X><Y>80</Y>
+					<X>-240</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8562,7 +8731,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496902089784</Id>
 					<Name><![CDATA[initialClinicalPercentageVar]]></Name>
-					<X>-180</X><Y>590</Y>
+					<X>-240</X><Y>680</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8577,7 +8746,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496902089965</Id>
 					<Name><![CDATA[initialSubclinicalPercentageVar]]></Name>
-					<X>-180</X><Y>560</Y>
+					<X>-240</X><Y>650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8592,7 +8761,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496902252400</Id>
 					<Name><![CDATA[maxFemaleAgeVar]]></Name>
-					<X>-180</X><Y>370</Y>
+					<X>-240</X><Y>480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8607,7 +8776,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496902304242</Id>
 					<Name><![CDATA[maxBullAgeVar]]></Name>
-					<X>-180</X><Y>400</Y>
+					<X>-240</X><Y>510</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8622,7 +8791,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496902649081</Id>
 					<Name><![CDATA[fecalTestingDateVar]]></Name>
-					<X>-180</X><Y>140</Y>
+					<X>-240</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8637,7 +8806,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496902680872</Id>
 					<Name><![CDATA[bloodTestingDateVar]]></Name>
-					<X>-180</X><Y>110</Y>
+					<X>-240</X><Y>110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8652,7 +8821,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1496905048152</Id>
 					<Name><![CDATA[purchasedBullAgeVar]]></Name>
-					<X>-180</X><Y>430</Y>
+					<X>-240</X><Y>540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8667,7 +8836,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1497252121319</Id>
 					<Name><![CDATA[positiveCowRemovalDelayVar]]></Name>
-					<X>-180</X><Y>170</Y>
+					<X>-240</X><Y>170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8682,7 +8851,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1497252598000</Id>
 					<Name><![CDATA[bloodTestResultDelayVar]]></Name>
-					<X>-180</X><Y>200</Y>
+					<X>-240</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8697,7 +8866,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1497252685450</Id>
 					<Name><![CDATA[fecalTestResultDelayVar]]></Name>
-					<X>-180</X><Y>230</Y>
+					<X>-240</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8712,7 +8881,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1502867617792</Id>
 					<Name><![CDATA[purchasedBullInfectedPercentageVar]]></Name>
-					<X>-180</X><Y>620</Y>
+					<X>-240</X><Y>710</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8727,7 +8896,7 @@ old code in InitalizeClinical transition
 				<Variable Class="PlainVariable">
 					<Id>1502867692922</Id>
 					<Name><![CDATA[purchasedBullSubClinicalPercentageVar]]></Name>
-					<X>-180</X><Y>650</Y>
+					<X>-240</X><Y>740</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8736,6 +8905,51 @@ old code in InitalizeClinical transition
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0.01]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503333771523</Id>
+					<Name><![CDATA[InitialTestingFrequencyVar]]></Name>
+					<X>-240</X><Y>260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[12]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503333913003</Id>
+					<Name><![CDATA[MaximumTestingWaitTimeVar]]></Name>
+					<X>-240</X><Y>290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[24]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503346646329</Id>
+					<Name><![CDATA[StaticTestingFrequencyFlagVar]]></Name>
+					<X>-240</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -8767,7 +8981,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1496902467274</Id>
 					<Name><![CDATA[TestingVariables]]></Name>
-					<X>-190</X><Y>10</Y>
+					<X>-250</X><Y>10</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8789,7 +9003,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1496902565438</Id>
 					<Name><![CDATA[CowVariables]]></Name>
-					<X>-180</X><Y>270</Y>
+					<X>-240</X><Y>380</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8811,7 +9025,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1496902585947</Id>
 					<Name><![CDATA[InfectionVariables]]></Name>
-					<X>-180</X><Y>490</Y>
+					<X>-240</X><Y>580</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8833,7 +9047,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1496905169096</Id>
 					<Name><![CDATA[testCheckBoxes]]></Name>
-					<X>110</X><Y>130</Y>
+					<X>60</X><Y>130</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8855,7 +9069,7 @@ old code in InitalizeClinical transition
 				<Line>
 					<Id>1496905247182</Id>
 					<Name><![CDATA[line]]></Name>
-					<X>110</X><Y>150</Y>
+					<X>60</X><Y>150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8949,7 +9163,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1496906345780</Id>
 					<Name><![CDATA[testCheckBoxes1]]></Name>
-					<X>110</X><Y>230</Y>
+					<X>60</X><Y>230</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8971,7 +9185,7 @@ old code in InitalizeClinical transition
 				<Line>
 					<Id>1496906365764</Id>
 					<Name><![CDATA[line2]]></Name>
-					<X>110</X><Y>250</Y>
+					<X>60</X><Y>250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9338,7 +9552,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224364946</Id>
 					<Name><![CDATA[text1]]></Name>
-					<X>110</X><Y>300</Y>
+					<X>60</X><Y>300</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9361,7 +9575,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224364947</Id>
 					<Name><![CDATA[text11]]></Name>
-					<X>210</X><Y>300</Y>
+					<X>160</X><Y>300</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9384,7 +9598,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224364948</Id>
 					<Name><![CDATA[text12]]></Name>
-					<X>160</X><Y>300</Y>
+					<X>110</X><Y>300</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9407,7 +9621,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224367729</Id>
 					<Name><![CDATA[text13]]></Name>
-					<X>110</X><Y>370</Y>
+					<X>60</X><Y>370</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9430,7 +9644,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224367730</Id>
 					<Name><![CDATA[text14]]></Name>
-					<X>210</X><Y>370</Y>
+					<X>160</X><Y>370</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9453,7 +9667,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224367731</Id>
 					<Name><![CDATA[text15]]></Name>
-					<X>160</X><Y>370</Y>
+					<X>110</X><Y>370</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9476,7 +9690,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224404533</Id>
 					<Name><![CDATA[text16]]></Name>
-					<X>110</X><Y>250</Y>
+					<X>60</X><Y>250</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9498,7 +9712,7 @@ old code in InitalizeClinical transition
 				<Text>
 					<Id>1497224475007</Id>
 					<Name><![CDATA[text17]]></Name>
-					<X>110</X><Y>320</Y>
+					<X>60</X><Y>320</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -10085,6 +10299,188 @@ old code in InitalizeClinical transition
 					</Font>
 					<Alignment>CENTER</Alignment>
 				</Text>
+				<Text>
+					<Id>1503333955704</Id>
+					<Name><![CDATA[text41]]></Name>
+					<X>250</X><Y>390</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Maximum Testing Frequency (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1503334033265</Id>
+					<Name><![CDATA[text42]]></Name>
+					<X>300</X><Y>440</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[min]]></Text>
+					<TextCode><![CDATA[slider.getMin()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1503334033266</Id>
+					<Name><![CDATA[text43]]></Name>
+					<X>400</X><Y>440</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[max]]></Text>
+					<TextCode><![CDATA[slider.getMax()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1503334033267</Id>
+					<Name><![CDATA[text44]]></Name>
+					<X>350</X><Y>440</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[value]]></Text>
+					<TextCode><![CDATA[slider.getValue()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1503334039818</Id>
+					<Name><![CDATA[text45]]></Name>
+					<X>250</X><Y>460</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Initial Testing Frequency (Months)]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1503334303284</Id>
+					<Name><![CDATA[text46]]></Name>
+					<X>300</X><Y>510</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[min]]></Text>
+					<TextCode><![CDATA[slider1.getMin()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1503334303285</Id>
+					<Name><![CDATA[text47]]></Name>
+					<X>400</X><Y>510</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[max]]></Text>
+					<TextCode><![CDATA[slider1.getMax()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1503334303286</Id>
+					<Name><![CDATA[text48]]></Name>
+					<X>350</X><Y>510</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[value]]></Text>
+					<TextCode><![CDATA[slider1.getValue()]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
 			</Shapes>
 			<Controls>
 				<Control Type="Button">
@@ -10118,7 +10514,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1496905312804</Id>
 					<Name><![CDATA[checkbox_bloodTesting]]></Name>
-					<X>100</X><Y>160</Y>
+					<X>50</X><Y>160</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -10141,7 +10537,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1496905815443</Id>
 					<Name><![CDATA[checkbox_fecalTesting]]></Name>
-					<X>100</X><Y>190</Y>
+					<X>50</X><Y>190</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -10356,7 +10752,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1497224034946</Id>
 					<Name><![CDATA[slider_bloodTestMonth]]></Name>
-					<X>110</X><Y>270</Y>
+					<X>60</X><Y>270</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -10380,7 +10776,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1497224176624</Id>
 					<Name><![CDATA[slider_fecalTestMonth]]></Name>
-					<X>110</X><Y>340</Y>
+					<X>60</X><Y>340</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -10519,6 +10915,77 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 						<LinkTo>true</LinkTo>
 						<Link>purchasedBullSubClinicalPercentageVar</Link>
 					</ExtendedProperties>
+				</Control>
+				<Control Type="Slider">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1503333941321</Id>
+					<Name><![CDATA[slider]]></Name>
+					<X>300</X><Y>410</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>HORIZONTAL</Orientation>
+						<MinValue><![CDATA[1]]></MinValue>
+						<MaxValue><![CDATA[60]]></MaxValue>
+						<LinkTo>true</LinkTo>
+						<Link>MaximumTestingWaitTimeVar</Link>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Slider">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1503334065000</Id>
+					<Name><![CDATA[slider1]]></Name>
+					<X>300</X><Y>480</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>HORIZONTAL</Orientation>
+						<MinValue><![CDATA[1]]></MinValue>
+						<MaxValue><![CDATA[60]]></MaxValue>
+						<LinkTo>true</LinkTo>
+						<Link>InitialTestingFrequencyVar</Link>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="CheckBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1503346715326</Id>
+					<Name><![CDATA[checkbox_staticTestingFrequency]]></Name>
+					<X>50</X><Y>400</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="160" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="12" Style="1"/>
+						<LabelText><![CDATA[StaticTestingFrequency]]></LabelText>
+						<LinkTo>true</LinkTo>
+						<Link>StaticTestingFrequencyFlagVar</Link>
+	 				</ExtendedProperties>
 				</Control>
 			</Controls>
 			<Areas>
@@ -10729,6 +11196,29 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 					<ParameterName><![CDATA[purchasedBullSubClinicalPercentage]]></ParameterName>
 					<ParameterValue Class="CodeValue">
 						<Code><![CDATA[purchasedBullSubClinicalPercentageVar]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialTestingFrequency]]></ParameterName>
+					<ParameterValue Class="CodeUnitValue">
+						<Code><![CDATA[InitialTestingFrequencyVar]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MaximumTestingWaitTime]]></ParameterName>
+					<ParameterValue Class="CodeUnitValue">
+						<Code><![CDATA[MaximumTestingWaitTimeVar]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ConfidenceOfDiseaseFreeHerdRatio]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[StaticTestingFrequencyFlag]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[StaticTestingFrequencyFlagVar]]></Code>
 					</ParameterValue>
 				</Parameter>
 			</Parameters>			
@@ -11116,6 +11606,18 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			<FreeformParamValue>	
 				<Id>1502867942003</Id>
 			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1503333581559</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1503333631378</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1503335183370</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1503346542396</Id>
+			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1476136317567</Id>
 				<Type>FIXED</Type>
@@ -11304,6 +11806,22 @@ histogramDataSmallRange.add( root.PrevelanceOverTime );
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1502867942003</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1503333581559</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1503333631378</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1503335183370</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1503346542396</Id>
 				<Type>FIXED</Type>
 			</RangeVariationParamValue>
 			<ModelTimeProperties>
