@@ -640,6 +640,165 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336020</Id>
+					<Name><![CDATA[removedByFemalePopulationControlCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1470</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336022</Id>
+					<Name><![CDATA[removedByBullPopulationControlCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1450</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336024</Id>
+					<Name><![CDATA[removedByClinicalSicknessCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1430</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336026</Id>
+					<Name><![CDATA[removedByYoungBullCullingCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336028</Id>
+					<Name><![CDATA[removedByTruePositiveBloodTestCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1390</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336030</Id>
+					<Name><![CDATA[removedByFalsePositiveBloodTestCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1370</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336036</Id>
+					<Name><![CDATA[removedByTruePositiveFecalTestCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336038</Id>
+					<Name><![CDATA[removedByFalsePositiveFecalTestCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1330</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336040</Id>
+					<Name><![CDATA[removedByFailedPregnancyCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1310</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336042</Id>
+					<Name><![CDATA[removedByOldAgeCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1503437336044</Id>
+					<Name><![CDATA[removedByYoungFemaleCullingCountPerTestCycle]]></Name>
+					<X>-740</X><Y>-1270</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1476136317567</Id>
 					<Name><![CDATA[InitialPopulation]]></Name>
@@ -2313,6 +2472,74 @@ countFecalTrueNegativePerYear = 0;
 
 this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 				</Event>
+				<Event>
+					<Id>1503437093798</Id>
+					<Name><![CDATA[perTestCycleHelper]]></Name>
+					<X>-950</X><Y>-1400</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1503475200000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[testingWaitTimeCalc()]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[//log latest values 
+latestDiseaseFreeRatioVar = removedByTruePositiveBloodTestCountPerTestCycle + 
+							removedByFalsePositiveBloodTestCountPerTestCycle;
+
+RemovalByFemalePopulationControlPerTestCycle.add(removedByFemalePopulationControlCountPerTestCycle);
+removedByFemalePopulationControlCountPerTestCycle = 0;
+
+RemovalByBullPopulationControlPerTestCycle.add(removedByBullPopulationControlCountPerTestCycle);
+removedByBullPopulationControlCountPerTestCycle = 0;
+
+RemovalByClinicalSicknessPerTestCycle.add(removedByClinicalSicknessCountPerTestCycle);
+removedByClinicalSicknessCountPerTestCycle = 0;
+
+RemovalByFailedPregnancyPerTestCycle.add(removedByFailedPregnancyCountPerTestCycle);
+removedByFailedPregnancyCountPerTestCycle = 0;
+
+RemovalByFalsePositiveBloodTestPerTestCycle.add(removedByFalsePositiveBloodTestCountPerTestCycle);
+removedByFalsePositiveBloodTestCountPerTestCycle = 0;
+
+RemovalByFalsePositiveFecalTestPerTestCycle.add(removedByFalsePositiveFecalTestCountPerTestCycle);
+removedByFalsePositiveFecalTestCountPerTestCycle = 0;
+
+RemovalByOldAgePerTestCycle.add(removedByOldAgeCountPerTestCycle);
+removedByOldAgeCountPerTestCycle = 0;
+
+RemovalByTruePositiveBloodTestPerTestCycle.add(removedByTruePositiveBloodTestCountPerTestCycle);
+removedByTruePositiveBloodTestCountPerTestCycle = 0;
+
+RemovalByTruePositiveFecalTestPerTestCycle.add(removedByTruePositiveFecalTestCountPerTestCycle);
+removedByTruePositiveFecalTestCountPerTestCycle = 0;
+
+RemovalByYoungBullCullingPerTestCycle.add(removedByYoungBullCullingCountPerTestCycle);
+removedByYoungBullCullingCountPerTestCycle = 0;
+
+RemovalByYoungFemaleCullingPerTestCycle.add(removedByYoungFemaleCullingCountPerTestCycle);
+removedByYoungFemaleCullingCountPerTestCycle = 0;
+
+this.PerTestCycleRemovals.refresh();]]></Action>
+				</Event>
 			</Events>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
@@ -2343,7 +2570,7 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
     			<DataSet>
 					<Id>1479503623169</Id>
 					<Name><![CDATA[EnvInfectionsPerMonth]]></Name>
-					<X>-340</X><Y>-1214</Y>
+					<X>-340</X><Y>-1200</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2365,7 +2592,7 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
     			<DataSet>
 					<Id>1479505066791</Id>
 					<Name><![CDATA[BirthsPerMonthSet]]></Name>
-					<X>-340</X><Y>-1254</Y>
+					<X>-340</X><Y>-1240</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2387,7 +2614,7 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
     			<DataSet>
 					<Id>1479506130608</Id>
 					<Name><![CDATA[MomInfectionsPerMonth]]></Name>
-					<X>-340</X><Y>-1234</Y>
+					<X>-340</X><Y>-1220</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2873,6 +3100,248 @@ this.TrueNegativeFecalTestsPerYear.refresh();]]></Action>
 					</RecurrenceCode>
 					<FreezeXAxis>true</FreezeXAxis>
 					<SamplesToKeep>240</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590905</Id>
+					<Name><![CDATA[RemovalByFemalePopulationControlPerTestCycle]]></Name>
+					<X>-340</X><Y>-1470</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590908</Id>
+					<Name><![CDATA[RemovalByBullPopulationControlPerTestCycle]]></Name>
+					<X>-340</X><Y>-1450</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590911</Id>
+					<Name><![CDATA[RemovalByClinicalSicknessPerTestCycle]]></Name>
+					<X>-340</X><Y>-1430</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590914</Id>
+					<Name><![CDATA[RemovalByYoungBullCullingPerTestCycle]]></Name>
+					<X>-340</X><Y>-1410</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590917</Id>
+					<Name><![CDATA[RemovalByTruePositiveBloodTestPerTestCycle]]></Name>
+					<X>-340</X><Y>-1390</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590920</Id>
+					<Name><![CDATA[RemovalByFalsePositiveBloodTestPerTestCycle]]></Name>
+					<X>-340</X><Y>-1370</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590923</Id>
+					<Name><![CDATA[RemovalByTruePositiveFecalTestPerTestCycle]]></Name>
+					<X>-340</X><Y>-1350</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590926</Id>
+					<Name><![CDATA[RemovalByFalsePositiveFecalTestPerTestCycle]]></Name>
+					<X>-340</X><Y>-1330</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590929</Id>
+					<Name><![CDATA[RemovalByFailedPregnancyPerTestCycle]]></Name>
+					<X>-340</X><Y>-1310</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590932</Id>
+					<Name><![CDATA[RemovalByOldAgePerTestCycle]]></Name>
+					<X>-340</X><Y>-1290</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
+				</DataSet>
+    			<DataSet>
+					<Id>1503438590935</Id>
+					<Name><![CDATA[RemovalByYoungFemaleCullingPerTestCycle]]></Name>
+					<X>-340</X><Y>-1270</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1479542400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<SamplesToKeep>20</SamplesToKeep>
 				</DataSet>
 			</AnalysisData>
 			<AgentLinks>
@@ -5202,7 +5671,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 				<Rectangle>
 					<Id>1503423673793</Id>
 					<Name><![CDATA[rectangle2]]></Name>
-					<X>-430</X><Y>-170</Y>
+					<X>-430</X><Y>-390</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5217,7 +5686,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>920</Width>
-					<Height>340</Height>
+					<Height>560</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -5225,7 +5694,7 @@ TODO: Decide whether or not to perhaps merge this graph with the births timeplot
 				<Text>
 					<Id>1503423676416</Id>
 					<Name><![CDATA[text16]]></Name>
-					<X>-420</X><Y>-170</Y>
+					<X>-410</X><Y>-390</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
